@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="WaitingDots">
+        <attr name="autoplay" format="boolean" />
+        <attr name="dotsColor" />
+        <attr name="jumpHeight" format="integer" />
+        <attr name="period" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="DynamicProgressBar">
+        <attr name="currentProgress" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="ExpandableLayout">
+        <attr name="expandable_animation">
+            <enum name="normal" value="0" />
+            <enum name="accelerate" value="1" />
+            <enum name="bounce" value="2" />
+            <enum name="overshoot" value="3" />
+        </attr>
+        <attr name="expandable_duration" format="integer" />
+        <attr name="expandable_isExpanded" format="boolean" />
+        <attr name="expandable_parentLayout" format="reference" />
+        <attr name="expandable_secondLayout" format="reference" />
+        <attr name="expandable_showSpinner" format="boolean" />
+        <attr name="expandable_spinner" format="reference" />
+        <attr name="expandable_spinner_animate" format="boolean" />
+        <attr name="expandable_spinner_color" format="color" />
+        <attr name="expandable_spinner_gravity">
+            <enum name="start" value="0" />
+            <enum name="end" value="1" />
+        </attr>
+        <attr name="expandable_spinner_margin" format="dimension" />
+        <attr name="expandable_spinner_rotation" format="integer" />
+        <attr name="expandable_spinner_size" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="Pinview">
+        <attr name="cursorVisible" format="boolean" />
+        <attr name="forceKeyboard" format="boolean" />
+        <attr name="hint" format="string" />
+        <attr name="inputType">
+            <enum name="text" value="0" />
+            <enum name="number" value="1" />
+        </attr>
+        <attr name="password" format="boolean" />
+        <attr name="pinBackground" format="reference" />
+        <attr name="pinHeight" format="dimension" />
+        <attr name="pinLength" format="integer" />
+        <attr name="pinWidth" format="dimension" />
+        <attr name="splitWidth" format="dimension" />
+        <attr name="textSize" format="dimension" />
+    </declare-styleable>
+</resources>

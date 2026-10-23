@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_25sdp">
+        <LinearLayout
+            android:orientation="vertical"
+            android:background="@drawable/bg_dialog"
+            android:padding="@dimen/_15sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textSize="@dimen/_11sdp"
+                android:textColor="@color/textColor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:text="@string/message_not_support_tv"
+                android:fontFamily="@font/pro_display_medium"
+                android:textAlignment="center"
+                android:layout_marginVertical="@dimen/_10sdp"/>
+            <Button
+                android:textSize="@dimen/_12sdp"
+                android:textColor="@color/white"
+                android:layout_gravity="center"
+                android:id="@+id/btnOk"
+                android:background="@drawable/bg_button_rate"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_33sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="@string/ok"
+                android:textAllCaps="false"
+                android:fontFamily="@font/pro_display_bold"
+                app:backgroundTint="@null"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

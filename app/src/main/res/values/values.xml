@@ -1,0 +1,537 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+  <array name="ad_site_filters">
+    <item>dddsa.com</item>
+    <item>sdsda.com</item>
+  </array>
+  <array name="audiourl_filters">
+    <item>mpeg</item>
+    <item>mp3</item>
+  </array>
+  <array name="imageurl_filters">
+    <item>image</item>
+    <item>jpg</item>
+    <item>jpeg</item>
+    <item>gif</item>
+    <item>webp</item>
+  </array>
+  <array name="ristricted_sites">
+    <item>sda.com</item>
+    <item>sssad.org</item>
+  </array>
+  <array name="videourl_filters">
+    <item>mp4</item>
+    <item>video</item>
+    <item>googleusercontent</item>
+    <item>embed</item>
+    <item>m3u8</item>
+    <item>webm</item>
+  </array>
+  <color name="ads_black">#212121</color>
+  <color name="black">#ff000000</color>
+  <color name="cardview_dark_background">#ff424242</color>
+  <color name="colorAccent">#0161da</color>
+  <color name="colorPrimary">#0161da</color>
+  <color name="colorWhite_ffffff">#ffffff</color>
+  <color name="color_ads_bg">#f6f6f6</color>
+  <color name="color_ads_border">#bfbfc1</color>
+  <color name="color_ads_text_bg">#0979fd</color>
+  <color name="color_background_remote">#323232</color>
+  <color name="color_bg_loading">#ffffff</color>
+  <color name="color_border_channel">#ad0dff</color>
+  <color name="color_default">#949494</color>
+  <color name="color_des">#222222</color>
+  <color name="color_gray">#6c6b6b</color>
+  <color name="color_gray1">#ececec</color>
+  <color name="color_gray4">#d4d4d4</color>
+  <color name="color_gray9">#939393</color>
+  <color name="color_halloween">#2f0137</color>
+  <color name="color_halloween_accent">#fffac8</color>
+  <color name="color_halloween_orange">#ff8a00</color>
+  <color name="color_hint">#949494</color>
+  <color name="color_intro">#f9f9ff</color>
+  <color name="color_line">#eeeeee</color>
+  <color name="color_main">#4d72f5</color>
+  <color name="color_main_15">#264d72f5</color>
+  <color name="color_premium">#e7ecff</color>
+  <color name="color_sb">#839eff</color>
+  <color name="color_secondary">#f3f6ff</color>
+  <color name="color_setting">#f3f6ff</color>
+  <color name="color_shimmer">#cccccc</color>
+  <color name="color_text_ads_des">#838383</color>
+  <color name="color_text_new">#202020</color>
+  <color name="color_txt">#151515</color>
+  <color name="color_violet">#99bdff</color>
+  <color name="color_white_ads">#ffffff</color>
+  <color name="gnt_text_secondary">#212121</color>
+  <color name="onboard_background_loading">#80cccccc</color>
+  <color name="onboard_line">#e7e7e7</color>
+  <color name="textColor">#333333</color>
+  <color name="textColorSecondary">#455a64</color>
+  <color name="text_color">#575757</color>
+  <color name="text_color_default">#888888</color>
+  <color name="text_default">#999999</color>
+  <color name="transparency">#00000000</color>
+  <color name="transparent">#00ffffff</color>
+  <color name="white">#ffffff</color>
+  <color name="white50">#4f000000</color>
+  <dimen name="ads_icon_size">44dp</dimen>
+  <dimen name="ads_margin_gone">16dp</dimen>
+  <dimen name="ads_padding">4dp</dimen>
+  <dimen name="customactivityoncrash_activity_horizontal_margin">16dp</dimen>
+  <dimen name="customactivityoncrash_activity_vertical_margin">16dp</dimen>
+  <dimen name="dp_1">1dp</dimen>
+  <dimen name="item_touch_helper_max_drag_scroll_per_frame">20dp</dimen>
+  <dimen name="p16">16dp</dimen>
+  <dimen name="p56">56dp</dimen>
+  <dimen name="sdk_native_height">130dp</dimen>
+  <dimen name="size_icon_small">24dp</dimen>
+  <string name="Close">Close</string>
+  <string name="Download">Download</string>
+  <string name="Downloads">Downloads</string>
+  <string name="LOADING">Loading...</string>
+  <string name="NoUrlFound">No Url Found in you input</string>
+  <string name="Permissiondenied">:( Permission denied</string>
+  <string name="Preview">Preview</string>
+  <string name="PrivacyPolicy">Privacy Policy</string>
+  <string name="Share">Share App</string>
+  <string name="Shareusing">Share using</string>
+  <string name="SizeUnknown">Size: unknown</string>
+  <string name="Submitnonworking">Submit non working link</string>
+  <string name="Wait">Wait...</string>
+  <string name="_1_press_check_always_allow_from_this_computer">1. Press CHECK “Always allow from this computer”.</string>
+  <string name="_1_your_android_device_needs_to_be_connected_to_the_same_wi_fi_network_as_your_fire_stick_tv">1. Your Android Device needs to be connected to the same Wi-Fi network as your Fire Stick/TV.</string>
+  <string name="_2_on_fire_stick_tv_home_screen_scroll_right_and_select_settings_screen">2. On Fire Stick/TV Home screen, scroll right and select Settings screen.</string>
+  <string name="_2_select_ok_button">2. Select OK button.</string>
+  <string name="_3_scroll_right_and_select_my_fire_tv">3. Scroll right and select My Fire TV</string>
+  <string name="_4_scroll_down_and_select_developer_options">4. Scroll down and select Developer options.</string>
+  <string name="_5_turn_on_adb_debugging">5. Turn On ADB debugging.</string>
+  <string name="about_20s">If you lose physical control then wait about 20 second, the system will automatically accept it for you</string>
+  <string name="access_history">Access history</string>
+  <string name="add_channel">Add channel</string>
+  <string name="add_iptv">Add IPTV link</string>
+  <string name="all_updates_amp_new_feature">All updates &amp; new feature</string>
+  <string name="allow_usb_debugging_on_tv">Allow USB Debugging on TV</string>
+  <string name="app_activity_permission_allow_notifications_settings">Application require permission to send notifications to be able to start streaming service.\n\nPlease allow sending notifications in application settings.</string>
+  <string name="app_activity_permission_enable_notifications">Application require notifications to be enabled to start streaming service.\n\nPlease enable notifications in application settings.</string>
+  <string name="app_activity_permission_notification_settings">Open settings</string>
+  <string name="app_activity_permission_notifications_required_title">Notifications required</string>
+  <string name="app_activity_permission_permission_required_title">Permission required</string>
+  <string name="app_name">Cast To TV</string>
+  <string name="app_notification_channel_error">Error notifications</string>
+  <string name="app_notification_channel_streaming">Streaming notifications</string>
+  <string name="appbar_scrolling_view_behavior">com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior</string>
+  <string name="are_you_sure_to_exit_the_browser">Are you sure to exit the browser?</string>
+  <string name="are_you_sure_you_want_to_exit">Are you sure you want to exit?</string>
+  <string name="are_you_sure_you_want_to_exit_app">Are you sure you want to exit app?</string>
+  <string name="auto_renewing_monthly">Auto renewing monthly</string>
+  <string name="bottom_sheet_behavior">com.google.android.material.bottomsheet.BottomSheetBehavior</string>
+  <string name="buffering">Buffering…</string>
+  <string name="can_channel_not_connect">Can\'t find channel, Please connect to TV</string>
+  <string name="can_find_channel">Can\'t find channel</string>
+  <string name="cancel">Cancel</string>
+  <string name="cancel_dialog">Cancel</string>
+  <string name="cast">Cast</string>
+  <string name="cast_photo">Cast Photos</string>
+  <string name="cast_videos">Cast Videos</string>
+  <string name="cast_web_browser">Cast Web Browser</string>
+  <string name="cast_youtube">Youtube</string>
+  <string name="channel">Channel</string>
+  <string name="choose_a_screencast_scene">Choose a screencast scene</string>
+  <string name="close">Close</string>
+  <string name="code_scan_hint">Hover over the code to scan it</string>
+  <string name="code_verification">Code Verification</string>
+  <string name="coming_soon">coming soon</string>
+  <string name="completely_ad_free_for_a_lifetime">Completely Ad-free for a lifetime!</string>
+  <string name="confirm_exit">Confirm Exit</string>
+  <string name="confirm_exit_app">Confirm Exit App</string>
+  <string name="connect">Connect</string>
+  <string name="connect_fail">Connect failed, Please reconnect!</string>
+  <string name="connected_successfully">Connected Successfully</string>
+  <string name="connecting">Connect to TV</string>
+  <string name="connecting_to">Connecting to</string>
+  <string name="connection_successful">Connection successful. Now you can control the TV via smartphone.</string>
+  <string name="continue_s">Continue</string>
+  <string name="continue_sub">Continue</string>
+  <string name="copy">Copy</string>
+  <string name="dailymotion">Dailymotion</string>
+  <string name="des_channel_roku_1">Please install the channel to enable screen mirroring and media content casting</string>
+  <string name="des_channel_roku_2">Please tap to “Add Channel” to install the channel on your Roku device.</string>
+  <string name="des_channel_roku_3_1">You will need to enter the code displayed on the TV screen, below the numeric keypad..</string>
+  <string name="des_channel_roku_4">The channel has been installed.\nEverything is ready!</string>
+  <string name="des_channel_roku_4_error">The channel was not installed due to an error.\nPlease try again</string>
+  <string name="des_check_ss">Click allow your physical remote control\nOr use the buttons on the bottom of your TV</string>
+  <string name="des_connect_loading_new_intro">Please wait a few seconds for the application to complete setup.</string>
+  <string name="des_done_new_intro">Enjoy unlimited access to premium features for\nonly %s/year. Cancel anytime!</string>
+  <string name="des_done_new_intro_1">Press Continue to start using Cast to TV.</string>
+  <string name="des_lifetime_expried">Now upto 60% off, this year, next year, and forever</string>
+  <string name="des_month">/ Month</string>
+  <string name="des_not_support_ir">IR not found in your smart phone To use this TV remote application need IR in your device</string>
+  <string name="des_rate">Your approval helps spread the world and grow your product!</string>
+  <string name="des_turn_on_new_intro">Make sure your phone and Smart TV are connected to the same Wifi.</string>
+  <string name="des_week">/ Week</string>
+  <string name="des_welcome_new_intro">To control your Smart TV, please take a minute to complete the setup steps.</string>
+  <string name="des_year_expried">Now upto 60% off for yearly. There’s no better deal.</string>
+  <string name="different_videos_may_require_different_modes_try_to_swith_the_mode_when_videos_can_t_be_cast_successfully">Different videos may require different modes. Try to switch the mode when videos can’t be cast successfully.</string>
+  <string name="direct_mirror">Direct Mirror</string>
+  <string name="disconnect">Disconnect</string>
+  <string name="done">Done</string>
+  <string name="eight">8</string>
+  <string name="empty">Empty</string>
+  <string name="empty_text">Empty text</string>
+  <string name="enable_the_wireless">Enable the wireless display function on your phone and wait for the device searching. Click to name device to connect.</string>
+  <string name="enjoy_full_access_only">Enjoy full access. Only</string>
+  <string name="enter_the_code_shown_in_your_tv_or_scan_the_qr_code_to_start_mirroring">Enter the Code shown in your TV or scan the QR code to Start Mirroring.</string>
+  <string name="enter_the_pin_code">Enter the pin code</string>
+  <string name="error">Error</string>
+  <string name="error_activity_close_app">Close app</string>
+  <string name="error_activity_error_details">Error details</string>
+  <string name="error_activity_error_occurred_explanation">An unexpected error occurred.\nSorry for the inconvenience.</string>
+  <string name="error_code">The code is invalid, please re-enter the code or restart the browser!</string>
+  <string name="error_socket">Something is wrong, please check the internet or restart the app and the browser!</string>
+  <string name="exit_app">Exit App</string>
+  <string name="extract_link">Extracting video link …</string>
+  <string name="fail_connect_sony">Connected fail. Please try again!!</string>
+  <string name="feedback">Contact Us</string>
+  <string name="feedback_1">Feedback</string>
+  <string name="file_available">File available</string>
+  <string name="five">5</string>
+  <string name="four">4</string>
+  <string name="four_ensure">Your TV and device must be connected to the same WiFi network</string>
+  <string name="general">General</string>
+  <string name="get_it_now">GET IT NOW!</string>
+  <string name="get_premium">Get Premium</string>
+  <string name="get_started">Get Started!</string>
+  <string name="guide_1">Helps to open window in smart TV screen from your phone</string>
+  <string name="guide_2">Cast to TV and enjoy the best experience of watching videos and movies</string>
+  <string name="guide_3">Control your TV using mobile phone with WiFi connection.</string>
+  <string name="guide_connect_same_wifi">1. Make sure your phone and TV device is connected on same WIFI.</string>
+  <string name="help">Help</string>
+  <string name="hint_iptv">http://www.example.com/file.m3u</string>
+  <string name="history">History</string>
+  <string name="hithere">hi there</string>
+  <string name="home">Home</string>
+  <string name="how_to_cast">How to Cast</string>
+  <string name="hty_1">01. Connect to device</string>
+  <string name="hty_connect2">2. Click the connect button.</string>
+  <string name="hty_connect3">3. Look for the device you want to connect to.</string>
+  <string name="hty_connect4">4. Select the feature you want to use: cast photos or cast video, youtube, screen mirror,…etc.</string>
+  <string name="hty_mirror2">2. Tap to Screen Mirroring feature.</string>
+  <string name="hty_mirror3">3. Select the connection which you want mirror.</string>
+  <string name="hty_mirror4">4. Tap to “Start” button and mirror anything in your phone to other devices: desktop, TV, PC, browser,…</string>
+  <string name="hty_remote2">2. Click the connect button and connect to TV device successfully..</string>
+  <string name="hty_remote3">3. Select the feature you want to use: cast photos or cast video,… .</string>
+  <string name="hty_remote4">4. Select the image or video you want to show on your TV and start enjoying.</string>
+  <string name="i_got_it">I Got It</string>
+  <string name="i_know_don_t_show_this_again">I know, don’t show this again.</string>
+  <string name="improved_streaming_quality">Improved Streaming Quality</string>
+  <string name="instagram">Instagram</string>
+  <string name="installing">Installing…</string>
+  <string name="intro_connect">Screen Mirror</string>
+  <string name="intro_connects">Connect to TV</string>
+  <string name="intro_remote">Cast connection guide</string>
+  <string name="keyboard_input">Keyboard Input</string>
+  <string name="lag_english">English</string>
+  <string name="lag_finnish">Suomalainen</string>
+  <string name="lag_french">Français</string>
+  <string name="lag_german">Deutsch</string>
+  <string name="lag_hindi">हिन्दी</string>
+  <string name="lag_indonesian">Indonesia</string>
+  <string name="lag_italy">Italy</string>
+  <string name="lag_norwegian">Norsk</string>
+  <string name="lag_portuguese">Português</string>
+  <string name="lag_russian">русский</string>
+  <string name="lag_spanish">Español</string>
+  <string name="lag_turkish">Türk</string>
+  <string name="lag_vn">Việt Nam</string>
+  <string name="language">Language</string>
+  <string name="later">Maybe later</string>
+  <string name="life_time">Lifetime</string>
+  <string name="lifetime_regular">Regular price for life time %s</string>
+  <string name="limited_offer">Limited time offer</string>
+  <string name="local_resource">Local Resource</string>
+  <string name="make_sure_your_phone">Make sure your phone and TV device is connected on same WiFi and turn off VPN.</string>
+  <string name="maybe_later">Maybe later</string>
+  <string name="menu_iptv">IPTV</string>
+  <string name="menu_iptv_playlist">IPTV Playlist</string>
+  <string name="menu_photo">Photo</string>
+  <string name="menu_video">Video</string>
+  <string name="message_not_support_tv">Sorry. The remote control feature for your TV will be updated in next version. We look forward to your support!</string>
+  <string name="mirror_phone_s_screen_to_tv">Mirror phone’s screen to TV</string>
+  <string name="mirror_web_browser">Mirror Web Browser</string>
+  <string name="mirror_web_cast">Mirror Web Cast</string>
+  <string name="mobile_screen_sharing_to_tv">Mobile screen sharing to TV</string>
+  <string name="month">Month</string>
+  <string name="monthly">Monthly</string>
+  <string name="more">More Setting</string>
+  <string name="more_options">More options</string>
+  <string name="new_version">New version is available</string>
+  <string name="new_version_available">New Version Available</string>
+  <string name="nine">9</string>
+  <string name="no">No</string>
+  <string name="no_internet">No internet connection</string>
+  <string name="no_resource_found">No Resource Found</string>
+  <string name="no_tv_found">Please connect to use the channel</string>
+  <string name="not_support">This function is not supported when casting photo</string>
+  <string name="note_remote">Note: Remote TV function works well on some TV devices.</string>
+  <string name="ok">OK</string>
+  <string name="on_your_tv_if_prompt_asked_for_allow_debugging">On your TV if prompt asked for Allow Debugging</string>
+  <string name="one">1</string>
+  <string name="one_time_payment">One-time Payment</string>
+  <string name="one_time_with_all">One time with all update forever!</string>
+  <string name="only_price">ONLY %s</string>
+  <string name="only_year">ONLY %s / year</string>
+  <string name="open_this_url_on_other_device">1. Open this URL on the other device’s browser (PC, Xbox, smart TV,…):</string>
+  <string name="pairing_des">Please confirm the connection on your TV</string>
+  <string name="pairing_with_tv">Pairing with TV</string>
+  <string name="pay_once_a_month">Pay once a month</string>
+  <string name="photo_online">Photo Online</string>
+  <string name="playlist">Playlist</string>
+  <string name="please_leave_a_feedback_to_help_us_improve_product">Please leave a feedback to help us improve product</string>
+  <string name="please_make_sure_the_target_device_has_network_adb_enabled">Please make sure the target device has network ADB enabled.</string>
+  <string name="please_play_the_video_first_and_the_resource_button_will_be_available_after_the_resource_detected">Please play the video first and the resource button will be available after the resource detected.</string>
+  <string name="please_select_the_tv_to_connect">Please select the TV to connect</string>
+  <string name="please_update_app_to_new_version_to_continue_using">Please, update app to new version to continue using.</string>
+  <string name="privacy_policy">Privacy Policy</string>
+  <string name="privacy_policy_des">This transaction can only be used on the Android system. Payment is charged via Google Play at confirmation of purchase. Subscription automatically renews before the end of the trial period, unless canceled before 24 hours, cancellation will take effect after the end of the trial period. You can manage your subscription and turn off auto-renew from your Google Play settings. Subscriptions canceled during the trial period will not be charged.</string>
+  <string name="rate">Give us 5-star</string>
+  <string name="refresh_page">Refresh Page</string>
+  <string name="regular_price_for_year_s">Regular price for year %s</string>
+  <string name="remote">Remote</string>
+  <string name="remote_tv">Remote Control</string>
+  <string name="remove_ads">Remove ads</string>
+  <string name="remove_ads_in_app">Remove Ads in app</string>
+  <string name="return_to_premium_with_special_discount">Return to premium with special discount</string>
+  <string name="route_mode">Route mode</string>
+  <string name="s_year">%s/year</string>
+  <string name="save_50">Save 50%</string>
+  <string name="scan_qr">Scan QR</string>
+  <string name="scanner_error">Scanner error: %s</string>
+  <string name="screen_mirroring">Screen Mirroring</string>
+  <string name="search_here">Search here</string>
+  <string name="select_the_connection">Select The Connection You Want</string>
+  <string name="send">Send</string>
+  <string name="setting">Setting</string>
+  <string name="seven">7</string>
+  <string name="share">Share</string>
+  <string name="share_app">Share this app</string>
+  <string name="share_this">Share App</string>
+  <string name="six">6</string>
+  <string name="skip">Skip</string>
+  <string name="smart_tv">Smart TV</string>
+  <string name="sorry">Sorry</string>
+  <string name="special_offer_for_you">Special offer for you!</string>
+  <string name="speech_not_supported">Sorry! Your device doesn\'t support speech input</string>
+  <string name="speech_prompt">Say something…</string>
+  <string name="start">Start</string>
+  <string name="start_cast">Start Cast</string>
+  <string name="start_mirroring">START MIRRORING</string>
+  <string name="start_trial">Start Free Trial</string>
+  <string name="start_with_full_access">Start With Full Access</string>
+  <string name="stop_mirroring">STOP MIRRORING</string>
+  <string name="submit">Submit</string>
+  <string name="subscription_terms">Subscription Terms</string>
+  <string name="success">Success</string>
+  <string name="suretodelete">Are you sure you want to delete?</string>
+  <string name="tab_to_connect">Tap to Connect</string>
+  <string name="tap_to_start">Tap to start</string>
+  <string name="terms_amp_conditions">Terms &amp; Conditions</string>
+  <string name="text_ads_detail">Now, You can enjoy your media on the big screen.</string>
+  <string name="text_ads_success">Successful!</string>
+  <string name="text_allow">Allow</string>
+  <string name="text_browser">Browser</string>
+  <string name="text_click_name">Click name device to connect</string>
+  <string name="text_connect_to_tv">Connect your device</string>
+  <string name="text_connected">Connected</string>
+  <string name="text_connected_fail">Connected Failed!</string>
+  <string name="text_connecting">Connecting</string>
+  <string name="text_content_sale_not_purchase2">Don\'t miss out on our limited-time sale! Open the app now and save on premium content.</string>
+  <string name="text_content_sale_not_purchase3">Hurry! Limited stock available at a discount. Open the app now to claim your discount.</string>
+  <string name="text_content_sale_not_purchase4">Welcome back! As a thank you, we\'re offering you a discount on your next purchase. Open the app now to redeem.</string>
+  <string name="text_content_sale_not_purchase5">Open the app now and get an exclusive discount on your next purchase! Don\'t miss out!</string>
+  <string name="text_content_sale_not_purchase6">Get a discount on premium content when you open the app now. It\'s only for a limited time, so hurry!</string>
+  <string name="text_content_sale_not_purchase7">Ready to save big? Open the app now and use code DISCOUNT to get a discount on your purchase.</string>
+  <string name="text_content_sale_not_purchase8">New products just added and discounted! Open the app now to get your discount on your purchase. You won\'t want to miss this!</string>
+  <string name="text_content_trial1">Don\'t forget to extend your payment after trial</string>
+  <string name="text_content_trial2">It\'s time to extend your payment after trial.</string>
+  <string name="text_content_trial3">Extend your trial package today !</string>
+  <string name="text_deny">Deny</string>
+  <string name="text_error_1">Can\'t connect to TV</string>
+  <string name="text_error_2">Not working at all</string>
+  <string name="text_error_3">Crash &amp; Bugs</string>
+  <string name="text_error_4">Suggestions</string>
+  <string name="text_faq">FAQ</string>
+  <string name="text_faq_detail_1">To your device to detect and find your smart TV, both of them need to be connected to the same Wifi network. For Chromecast specifically, if you can\'t detect, please make sure that your Chromecast has already been setup via Google Home app.</string>
+  <string name="text_faq_detail_2">Yes, it is Screen Mirroring feature. You can tap to the Screen Mirroring button, choose a device to connect and stream to your TV</string>
+  <string name="text_faq_detail_3">Restart the phone\'s Wifi and see if the connection is successful. Please make sure that the Wifi of the phone and TV is the same. Shorten the distance between your phone and TV</string>
+  <string name="text_faq_detail_4">Kindly click to the connected device and tap the disconnect button</string>
+  <string name="text_faq_detail_5">Please make sure that the Wifi of the phone and TV is the same and the best signal. You can reconnect to TV device.</string>
+  <string name="text_faq_detail_6">Screen mirroring and Casting is a safe way to share your screen with another device because you connect your device via home network. Therefore, there’s no risk of losing any data. When you use screen mirroring, your data is securely stored on your device. The copy of your screen that is beamed to your TV is immediately deleted once it hits the big screen. Our app does not collect any data whatsoever!</string>
+  <string name="text_faq_detail_7">Some content involves copyright protection and cannot be displayed on third-party devices, such as Netflix, Disney Plus, HBO max,… Tap to Remote control button and choose a Channel on your TV which you want to display. Moreover, You can download the video or look for the same video on other free apps to have a try.</string>
+  <string name="text_faq_detail_8">This is most often related to the volume settings on the device. In this case, you may need to ensure that the volume is turned up on the device and that the vibrate switch is not set to silent when mirroring. Since the sound is technically coming from the sender device, you have to enable it to do so.</string>
+  <string name="text_faq_detail_9">Absolutely. Howerver, free user can\'t mirror screen, use other features with banner and interstitial ads. Subscribed user can use unlimited and benefit from an ad free experience.</string>
+  <string name="text_faq_title_1">How can I connect this app to my smart TVs?</string>
+  <string name="text_faq_title_2">Does “Cast to TV” app allow me to cast my screen in real time?</string>
+  <string name="text_faq_title_3">I can’t find cast device</string>
+  <string name="text_faq_title_4">How can I disconnect this app to my device?</string>
+  <string name="text_faq_title_5">Why does app getting disconnected after a while?</string>
+  <string name="text_faq_title_6">Is “Cast to TV” app safe?</string>
+  <string name="text_faq_title_7">My video plays sound without image</string>
+  <string name="text_faq_title_8">Why my TV has no sound when mirror screen?</string>
+  <string name="text_faq_title_9">Is Cast to TV absolutely free?</string>
+  <string name="text_faqs">FAQs</string>
+  <string name="text_feedback">Please tell us more details so that we can locate and solve your problem</string>
+  <string name="text_free_trial">3 Days Free Trial. Then %s/year</string>
+  <string name="text_guild_smart_1">1. Make sure that your device and TV are connected to the same Wifi network and turn off VPN</string>
+  <string name="text_guild_smart_2">2. Enable the “Miracast Display” function on your TV. (Enable it manually on some device, go to system setting to check)</string>
+  <string name="text_guild_smart_3">3. Click “Start” button.</string>
+  <string name="text_guild_smart_4">4. Enable the wireless display function on your phone and wait for device showing.</string>
+  <string name="text_no_photo">There’s no local photo</string>
+  <string name="text_no_video">There’s no local video</string>
+  <string name="text_noti_main">Smart Notifications</string>
+  <string name="text_permission">Access library in your device</string>
+  <string name="text_permission_android_13_detail">Allow Screen Mirror to access photos, media and files on your device?</string>
+  <string name="text_permission_audio_detail">Allow Screen Mirror to access music and audio on your device?</string>
+  <string name="text_permission_photo_detail">Allow Screen Mirror to access photos and videos on your device?</string>
+  <string name="text_premission_notification_detail">Enable notifications so you don\'t miss any updates from us</string>
+  <string name="text_screen_mirror">Screen Mirror</string>
+  <string name="text_suggest_open_wifi">You are not connecting Wifi. Please turn on Wifi network to connect your device!</string>
+  <string name="text_tell_us_problem">Tell us the problem you encountered?</string>
+  <string name="text_title_sale_not_purchase2">Limited-Time Offer 🎉🎉🎉</string>
+  <string name="text_title_sale_not_purchase3">Exclusive Discount for You 🎉🎁🎉</string>
+  <string name="text_title_sale_not_purchase4">Don\'t Miss Out 🎉🎁🎉</string>
+  <string name="text_title_sale_not_purchase5">New Discounts Added 🎉🎉🎉</string>
+  <string name="text_title_trial1">Are you satisfied with our premium features?🎉🎁🎉</string>
+  <string name="text_title_trial2">Keep watching anything on a bigger screen without ad !🎉🎁🎉</string>
+  <string name="text_title_trial3">Dear friend, we are still waiting for you🎉🎉🎉</string>
+  <string name="text_turn_on_wifi">Turn on Wifi</string>
+  <string name="text_tv_cast">TV Cast</string>
+  <string name="thanks_ads">Thank your for using our app!</string>
+  <string name="the_super_sale_you_ve_been_waiting_for">The super sale you’ve been waiting for</string>
+  <string name="then_year"> Then %s/year</string>
+  <string name="three">3</string>
+  <string name="title_1">Screen Mirroring</string>
+  <string name="title_2">Cast to TV</string>
+  <string name="title_3">Remote universal</string>
+  <string name="title_br1">1. Make sure your phone and cast device are connected to the same Wi-Fi.</string>
+  <string name="title_code_dialog">Click in the blank enter the Code shown on your TV or scan the  QR code to Start mirroring.</string>
+  <string name="title_connect_loading_new_intro">Connecting to TV…</string>
+  <string name="title_connect_web">You can cast the media from your phone now</string>
+  <string name="title_disconnect">Are you sure you want to disconnect\n %s?</string>
+  <string name="title_disconnect_web">Disconnect with web browser</string>
+  <string name="title_done_new_intro">All setup completed!</string>
+  <string name="title_install_1">Install the channel</string>
+  <string name="title_install_2">Confirm installation</string>
+  <string name="title_install_3">Installing the channel</string>
+  <string name="title_install_3_1">Confirm Passcode</string>
+  <string name="title_install_4">Channel installed!</string>
+  <string name="title_install_4_error">Channel not installed</string>
+  <string name="title_rate1">Your 5-star rating is our best gift!</string>
+  <string name="title_turn_on_new_intro">Turn On Your Smart TV</string>
+  <string name="title_web_cast">Web Browser Cast</string>
+  <string name="title_welcome_new_intro">Cast to TV</string>
+  <string name="to_fulfill_your_uninterrupted_experience">To fulfill your uninterrupted experience</string>
+  <string name="totally_ad_free">Totally Ad-free</string>
+  <string name="try_3_days_for_free_then">Try 3 days for free. Then</string>
+  <string name="try_3day">Try 3 Days for FREE</string>
+  <string name="try_again">Try Again</string>
+  <string name="tutorial">How to use</string>
+  <string name="two">2</string>
+  <string name="txt1_setting">Unlimited Screen Mirroring</string>
+  <string name="txt2_setting">Completely Ad-Free</string>
+  <string name="txt3_setting">Stream videos from Youtube</string>
+  <string name="txt_ad">AD</string>
+  <string name="txt_album_photo">Album Photos</string>
+  <string name="txt_album_video">Album Video</string>
+  <string name="txt_all_photo">All Photos</string>
+  <string name="txt_all_video">All Video</string>
+  <string name="txt_cast_direct">1. Connect to TV</string>
+  <string name="txt_cast_direct_2">2. If your TV shows confirmation dialog, accept it before moving to the next step.</string>
+  <string name="txt_cast_direct_3">3. Tap “Start” button to mirror screen.</string>
+  <string name="txt_cast_web_2">2. Click “Start” button.</string>
+  <string name="txt_cast_web_3">3. Click “Start Mirroring” button.</string>
+  <string name="txt_cast_web_4">4. Enter the Code shown in your TV or scan the QR code to Start Mirroring.</string>
+  <string name="txt_des_reward_ads">Watch a short video to unlock for free or get Premium version to enjoy unlimited access</string>
+  <string name="txt_detail_direct">Sharing screen don’t need Enable Miracast</string>
+  <string name="txt_facebook">Facebook</string>
+  <string name="txt_hapic">Vibrate Feedback</string>
+  <string name="txt_iap_description">- Subscribed users have unlimited use and access to all of its Premium features, without any ads.\n- Non-subscribed users can continuously use the app with advertisements, and have a limited for use of Premium features. \n- Payment will be charged to your Google Account at confirmation of purchase.\n- Subscriptions automatically renew unless auto-renew is disabled at least 24 hours before the end of the current period.\n- Account will be charged for renewal within 24-hour prior to the end of the current period, and identify the cost of renewal.\n- Any unused portion of a free trial period, if offered, will be forfeited when the user purchases a subscription to that publication, where applicable.- Subscriptions may be managed by the user and auto-renewal may be turned off by going to the user Account Settings after purchase. Note that uninstalling the app will not cancel your subscription.\n1. On your Android phone or tablet, let open the Google Play Store.\n2. Check if you are signed in to the correct Google Account.\n3. Tap Menu Subscriptions and Select the subscription you want to cancel.\n4. Tap Cancel subscription.</string>
+  <string name="txt_message_iap" formatted="false">- Subscribed users have unlimited use and access to all of its Premium features, without any ads.\n- Non-subscribed users can continuously use the app with advertisements, and have a limited for use of Premium features.\n- Users can subscribe start 3 day free trial then Yearly (%s)\n- Or Users can subscribe to Monthly (%s) auto-renewing subscriptions.\n- Alternatively, users can purchase the full app (LIFETIME) for a one-time payment of (%s). All updates and new features are received. \n- Payment will be charged to your Google Account at confirmation of purchase.\n- Subscriptions automatically renew unless auto-renew is disabled at least 24 hours before the end of the current period.\n- Account will be charged for renewal within 24-hour prior to the end of the current period, and identify the cost of renewal.\n- Any unused portion of a free trial period, if offered, will be forfeited when the user purchases a subscription to that publication, where applicable.- Subscriptions may be managed by the user and auto-renewal may be turned off by going to the user Account Settings after purchase. Note that uninstalling the app will not cancel your subscription.\n1. On your Android phone or tablet, let open the Google Play Store.\n2. Check if you are signed in to the correct Google Account.\n3. Tap Menu Subscriptions and Select the subscription you want to cancel.\n4. Tap Cancel subscription.</string>
+  <string name="txt_message_iap_week" formatted="false">- Subscribed users have unlimited use and access to all of its Premium features, without any ads.\n- Non-subscribed users can continuously use the app with advertisements, and have a limited for use of Premium features. Users can subscribe to Weekly (%s) auto-renewing subscriptions.\n- Alternatively, users can purchase the full app (LIFETIME) for a one-time payment of (%s). All updates and new features are received. \n- Payment will be charged to your Google Account at confirmation of purchase.\n- Subscriptions automatically renew unless auto-renew is disabled at least 24 hours before the end of the current period.\n- Account will be charged for renewal within 24-hour prior to the end of the current period, and identify the cost of renewal.\n- Any unused portion of a free trial period, if offered, will be forfeited when the user purchases a subscription to that publication, where applicable.- Subscriptions may be managed by the user and auto-renewal may be turned off by going to the user Account Settings after purchase. Note that uninstalling the app will not cancel your subscription.\n1. On your Android phone or tablet, let open the Google Play Store.\n2. Check if you are signed in to the correct Google Account.\n3. Tap Menu Subscriptions and Select the subscription you want to cancel.\n4. Tap Cancel subscription.</string>
+  <string name="txt_photo">Photo</string>
+  <string name="txt_popular">Popular</string>
+  <string name="txt_price" formatted="false">%s/%s</string>
+  <string name="txt_price_year">%s / year</string>
+  <string name="txt_tab">Swipe to navigate \nTap for “OK”</string>
+  <string name="txt_tiktok">Tiktok</string>
+  <string name="typing_url_in">Typing URL in your PC’s web browser</string>
+  <string name="ultimate_screen_mirroring">Ultimate Screen Mirroring</string>
+  <string name="unlimited_access">Unlimited Access</string>
+  <string name="unlock_all_features_with_pro">Unlock All Features with PRO</string>
+  <string name="update_now">Update Now</string>
+  <string name="use_wifi_remote_mode">Use Wifi Remote Mode</string>
+  <string name="user_guide">User Guide</string>
+  <string name="version">Version:</string>
+  <string name="view_tutorial_video_here">View tutorial video here.</string>
+  <string name="vimeo">Vimeo</string>
+  <string name="vs_month_plan">vs monthly plan</string>
+  <string name="vs_weekly_plan">vs weekly plan</string>
+  <string name="watch_ads">Watch Ads</string>
+  <string name="we_ve_sent_a_connection_request_to_your_tv">We’ve sent a connection\nrequest to your TV!</string>
+  <string name="web_resource">Web Resource</string>
+  <string name="week">Week</string>
+  <string name="weekly">Weekly</string>
+  <string name="welcome_back">Welcome Back!</string>
+  <string name="which_features_do_you_plan_to_use_the_most">Which features do you plan to use the most?</string>
+  <string name="wifi_connected">Wifi Connected</string>
+  <string name="year">year</string>
+  <string name="you_can_also_refresh_page_to_have_a_try">You can also refresh page to have a try.</string>
+  <string name="you_may_need_to_accept_a_prompt_on_the_target_device_if_you_are_connecting_to_it_for_the_first_time_from_this_device">You may need to accept a prompt on the target device if you are connecting to it for the first time from this device.</string>
+  <string name="zero">0</string>
+  <style name="AnimationDialog" parent="">
+    <item name="android:windowEnterAnimation">@anim/abc_slide_in_bottom</item>
+    <item name="android:windowExitAnimation">@anim/abc_slide_out_bottom</item>
+  </style>
+  <style name="CustomBottomSheetDialogTheme" parent="@style/Theme.Design.Light.BottomSheetDialog">
+    <item name="bottomSheetStyle">@style/CustomBottomSheetStyle</item>
+  </style>
+  <style name="CustomBottomSheetStyle" parent="@style/Widget.Design.BottomSheet.Modal">
+    <item name="android:background">@android:color/transparent</item>
+  </style>
+  <style name="DialogAnimation" parent="">
+    <item name="android:windowEnterAnimation">@anim/abc_slide_in_bottom</item>
+    <item name="android:windowExitAnimation">@anim/abc_slide_out_bottom</item>
+  </style>
+  <style name="SeekBarColor" parent="@style/Widget.AppCompat.SeekBar">
+    <item name="colorAccent">@color/color_sb</item>
+  </style>
+  <style name="Semibold_14" parent="">
+    <item name="android:textSize">14sp</item>
+    <item name="android:textColor">@color/black</item>
+    <item name="android:includeFontPadding">false</item>
+    <item name="android:fontFamily">@font/pro_display_semibold</item>
+    <item name="fontWeight">600</item>
+    <item name="lineHeight">20sp</item>
+  </style>
+  <style name="ShapeAppearance.App.Circle" parent="@style/ShapeAppearance.MaterialComponents.MediumComponent">
+    <item name="cornerFamily">rounded</item>
+    <item name="cornerSize">50%</item>
+  </style>
+  <style name="TabLayoutTextStyle" parent="">
+    <item name="android:textSize">16sp</item>
+    <item name="android:textColor">@color/color_default</item>
+    <item name="fontFamily">@font/pro_display_bold</item>
+  </style>
+  <style name="Theme.CastTV" parent="@style/Theme.AppCompat.Light.NoActionBar">
+  </style>
+  <style name="Theme.Splash" parent="@style/Theme.CastTV">
+    <item name="android:windowBackground">@drawable/bg_splash</item>
+  </style>
+  <style name="progressBarBlue" parent="@style/Theme.AppCompat">
+    <item name="colorAccent">@color/color_main</item>
+  </style>
+  <style name="rounded_corner" parent="">
+    <item name="cornerSize">12dp</item>
+  </style>
+    <string name="error_server">Something is wrong, please check the internet or restart the app</string>
+</resources>

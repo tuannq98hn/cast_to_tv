@@ -1,0 +1,459 @@
+{
+  "v": "5.9.4",
+  "fr": 25,
+  "ip": 0,
+  "op": 41,
+  "w": 100,
+  "h": 100,
+  "nm": "icon messenger",
+  "ddd": 0,
+  "assets": [
+    {
+      "id": "image_0",
+      "w": 99,
+      "h": 100,
+      "u": "",
+      "p": "data:image/png;base64,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",
+      "e": 1
+    }
+  ],
+  "layers": [
+    {
+      "ddd": 0,
+      "ind": 1,
+      "ty": 2,
+      "nm": "Layer 1",
+      "refId": "image_0",
+      "sr": 1,
+      "ks": {
+        "o": {
+          "a": 0,
+          "k": 100,
+          "ix": 11
+        },
+        "r": {
+          "a": 0,
+          "k": 0,
+          "ix": 10
+        },
+        "p": {
+          "a": 0,
+          "k": [
+            50,
+            50.394,
+            0
+          ],
+          "ix": 2,
+          "l": 2
+        },
+        "a": {
+          "a": 0,
+          "k": [
+            49.25,
+            49.642,
+            0
+          ],
+          "ix": 1,
+          "l": 2
+        },
+        "s": {
+          "a": 1,
+          "k": [
+            {
+              "i": {
+                "x": [
+                  0.833,
+                  0.833,
+                  0.833
+                ],
+                "y": [
+                  1,
+                  1,
+                  -1.606
+                ]
+              },
+              "o": {
+                "x": [
+                  0.674,
+                  0.674,
+                  0.333
+                ],
+                "y": [
+                  0,
+                  0,
+                  0
+                ]
+              },
+              "t": 0,
+              "s": [
+                68.724,
+                68.724,
+                100
+              ]
+            },
+            {
+              "i": {
+                "x": [
+                  0.546,
+                  0.546,
+                  0.667
+                ],
+                "y": [
+                  1,
+                  1,
+                  1
+                ]
+              },
+              "o": {
+                "x": [
+                  0.167,
+                  0.167,
+                  0.167
+                ],
+                "y": [
+                  0,
+                  0,
+                  2.606
+                ]
+              },
+              "t": 20,
+              "s": [
+                100,
+                100,
+                100
+              ]
+            },
+            {
+              "t": 40,
+              "s": [
+                68.724,
+                68.724,
+                100
+              ]
+            }
+          ],
+          "ix": 6,
+          "l": 2
+        }
+      },
+      "ao": 0,
+      "ip": 0,
+      "op": 1938,
+      "st": 0,
+      "bm": 0
+    },
+    {
+      "ddd": 0,
+      "ind": 2,
+      "ty": 4,
+      "nm": "Shape Layer 1",
+      "parent": 1,
+      "sr": 1,
+      "ks": {
+        "o": {
+          "a": 0,
+          "k": 100,
+          "ix": 11
+        },
+        "r": {
+          "a": 0,
+          "k": 0,
+          "ix": 10
+        },
+        "p": {
+          "a": 0,
+          "k": [
+            49.25,
+            49.185,
+            0
+          ],
+          "ix": 2,
+          "l": 2
+        },
+        "a": {
+          "a": 0,
+          "k": [
+            0,
+            0,
+            0
+          ],
+          "ix": 1,
+          "l": 2
+        },
+        "s": {
+          "a": 0,
+          "k": [
+            115.866,
+            115.866,
+            100
+          ],
+          "ix": 6,
+          "l": 2
+        }
+      },
+      "ao": 0,
+      "shapes": [
+        {
+          "ty": "gr",
+          "it": [
+            {
+              "ind": 0,
+              "ty": "sh",
+              "ix": 1,
+              "ks": {
+                "a": 0,
+                "k": {
+                  "i": [
+                    [
+                      -0.25,
+                      0.75
+                    ],
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      -1.75,
+                      1.5
+                    ],
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      0.75,
+                      -2.25
+                    ],
+                    [
+                      1,
+                      -1.5
+                    ],
+                    [
+                      2.5,
+                      -0.25
+                    ],
+                    [
+                      3,
+                      0.25
+                    ],
+                    [
+                      2,
+                      0.5
+                    ],
+                    [
+                      0,
+                      0
+                    ]
+                  ],
+                  "o": [
+                    [
+                      0.25,
+                      -0.75
+                    ],
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      1.75,
+                      -1.5
+                    ],
+                    [
+                      0,
+                      0
+                    ],
+                    [
+                      -0.75,
+                      2.25
+                    ],
+                    [
+                      -1,
+                      1.5
+                    ],
+                    [
+                      -2.5,
+                      0.25
+                    ],
+                    [
+                      -3,
+                      -0.25
+                    ],
+                    [
+                      -2,
+                      -0.5
+                    ],
+                    [
+                      0,
+                      0
+                    ]
+                  ],
+                  "v": [
+                    [
+                      -31,
+                      7.75
+                    ],
+                    [
+                      -8,
+                      -21
+                    ],
+                    [
+                      4.5,
+                      -13
+                    ],
+                    [
+                      22.25,
+                      -23.25
+                    ],
+                    [
+                      33.5,
+                      -11.25
+                    ],
+                    [
+                      24,
+                      9.75
+                    ],
+                    [
+                      9.75,
+                      19.5
+                    ],
+                    [
+                      -9,
+                      19.5
+                    ],
+                    [
+                      -26,
+                      21.75
+                    ],
+                    [
+                      -29.5,
+                      16.25
+                    ]
+                  ],
+                  "c": false
+                },
+                "ix": 2
+              },
+              "nm": "Path 1",
+              "mn": "ADBE Vector Shape - Group",
+              "hd": false
+            },
+            {
+              "ty": "st",
+              "c": {
+                "a": 0,
+                "k": [
+                  0.996078012504,
+                  0.996078012504,
+                  0.996078012504,
+                  1
+                ],
+                "ix": 3
+              },
+              "o": {
+                "a": 0,
+                "k": 100,
+                "ix": 4
+              },
+              "w": {
+                "a": 0,
+                "k": 0,
+                "ix": 5
+              },
+              "lc": 1,
+              "lj": 1,
+              "ml": 4,
+              "bm": 0,
+              "nm": "Stroke 1",
+              "mn": "ADBE Vector Graphic - Stroke",
+              "hd": false
+            },
+            {
+              "ty": "fl",
+              "c": {
+                "a": 0,
+                "k": [
+                  1,
+                  1,
+                  1,
+                  1
+                ],
+                "ix": 4
+              },
+              "o": {
+                "a": 0,
+                "k": 100,
+                "ix": 5
+              },
+              "r": 1,
+              "bm": 0,
+              "nm": "Fill 1",
+              "mn": "ADBE Vector Graphic - Fill",
+              "hd": false
+            },
+            {
+              "ty": "tr",
+              "p": {
+                "a": 0,
+                "k": [
+                  0,
+                  0
+                ],
+                "ix": 2
+              },
+              "a": {
+                "a": 0,
+                "k": [
+                  0,
+                  0
+                ],
+                "ix": 1
+              },
+              "s": {
+                "a": 0,
+                "k": [
+                  100,
+                  100
+                ],
+                "ix": 3
+              },
+              "r": {
+                "a": 0,
+                "k": 0,
+                "ix": 6
+              },
+              "o": {
+                "a": 0,
+                "k": 100,
+                "ix": 7
+              },
+              "sk": {
+                "a": 0,
+                "k": 0,
+                "ix": 4
+              },
+              "sa": {
+                "a": 0,
+                "k": 0,
+                "ix": 5
+              },
+              "nm": "Transform"
+            }
+          ],
+          "nm": "Shape 1",
+          "np": 3,
+          "cix": 2,
+          "bm": 0,
+          "ix": 1,
+          "mn": "ADBE Vector Group",
+          "hd": false
+        }
+      ],
+      "ip": 0,
+      "op": 1938,
+      "st": 0,
+      "ct": 1,
+      "bm": 0
+    }
+  ],
+  "markers": []
+}

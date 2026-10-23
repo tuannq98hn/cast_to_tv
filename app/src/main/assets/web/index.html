@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Cast to TV</title>
+    <link rel="icon" type="image/x-icon" href="image/favicon.png" />
+    <style>
+      body {
+          padding: 0;
+          margin: 0;
+      }
+
+      .img_clss {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+      }
+
+      ._center {
+          margin-top: 50px;
+      }
+
+      #_parent {
+          background: #222222;
+          display: flex;
+          height: 100%;
+          align-items: center;
+      }
+
+      #_msg {
+          font-size: 40px;
+          color: rgba(255, 255, 255, 0.87);
+          margin-left: auto;
+          margin-right: auto;
+          display: block;
+          text-align: center;
+          width: max-content;
+          margin-top: 77px;
+      }
+
+      #splash_screen {
+          padding-top: 20px;
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+      }
+    </style>
+</head>
+<body>
+<div id="_parent">
+    <div id="splash_screen">
+        <img src="image/icon_header.png" class="img_clss _top" />
+        <img src="image/img_webcast_tv.png" class="img_clss _center" />
+        <label id="_msg">You can cast the media from your phone now.</label>
+    </div>
+</div>
+
+<script>
+      document.body.parentElement.style.overflow="hidden";
+          let splashScreen = "<div id='splash_screen'>\n" +
+              "        <img src='logo.png' class='img_clss _top'>\n" +
+              "        <img src='img_webcast_tv.png' class='img_clss _center'>\n" +
+              "        <label id='_msg'>You can cast the media from your phone now.</label>\n" +
+              "    </div>";
+          let parentView = document.getElementById("_parent");
+          parentView.style.height = innerHeight + "px";
+          window.onresize = function () {
+              let parentView = document.getElementById("_parent");
+              if (parentView) {
+                  parentView.style.height = innerHeight + "px";
+              }
+              let player = document.getElementById("video_player");
+              if (player) {
+                  player.width = window.innerWidth;
+                  player.height = window.innerHeight;
+              }
+              player = document.getElementById("audio_player");
+              if (player) {
+                  player.style.width = innerWidth / 2 + "px";
+                  player.style.height = innerHeight / 2 + "px";
+              }
+          };
+
+          let videoPlayer = "<div style='width: 100%;height: 100%;display: block'><video controls width='100%' height='100%' id='video_player' autoplay style='position: absolute;z-index: 1'><track id='_subtitle' kind='subtitles'/></video><div style='position: absolute;z-index: 2' id='play_button'><img src='image/img_play_cast.png'><label style='display: block;margin-left: auto;margin-right: auto;font-size: 28px;color: white;width: max-content;text-align: center'>Press to play</label></div></div>";
+
+          let adjustSplashSize = function () {
+              let splashHeightRatioToScreen = 0.53;
+              let splashImgHeight = innerHeight * splashHeightRatioToScreen;
+              let splashImgWidth = splashImgHeight * 746 / 572;
+              let elements = document.getElementsByClassName("_center");
+              if (elements.length > 0) {
+                  elements[0].width = splashImgWidth;
+                  elements[0].height = splashImgHeight;
+              }
+          };
+          adjustSplashSize();
+
+          let loadMedia = function (player, url) {
+              player.src = url;
+              ws.send("{command:68,duration:" + player.duration + ",status:200}");
+
+          };
+          let play = function (player) {
+              player.play();
+          };
+          let pause = function (player) {
+              player.pause();
+          };
+          let seek = function (player, position) {
+              player.currentTime = position / 1000;
+          };
+          let volume = function (player, volume) {
+              if(volume!==-1){
+                  player.volume = volume / 100;
+              }else{
+                  ws.send("{command:4,volume:" + player.volume + ",status:200}");
+              }
+          };
+          let volumeUp = function (player, volume) {
+              if(volume!==-1){
+                  player.volume += volume / 100;
+              }else{
+                  ws.send("{command:4,volume:" + player.volume + ",status:200}");
+              }
+          };
+          let volumeDown = function (player, volume) {
+              if(volume!==-1){
+                  player.volume -= volume / 100;
+              }else{
+                  ws.send("{command:4,volume:" + player.volume + ",status:200}");
+              }
+          };
+          let fastForward = function (player, timeSpace) {
+              player.currentTime += timeSpace / 1000;
+          };
+          let rewind = function (player, timeSpace) {
+              player.currentTime -= timeSpace / 1000;
+          };
+          let stop = function (player) {
+              parentView.innerHTML = splashScreen;
+              adjustSplashSize();
+          };
+          let addSubtitle = function (player, subtitleUrl) {
+              let trackElement = document.createElement("track");
+              trackElement.src = subtitleUrl;
+              trackElement.default = true;
+              trackElement.kind = "subtitles";
+              player.appendChild(trackElement);
+          };
+          let callWithCommand = function (receivedData, player) {
+              switch (receivedData.command) {
+                  case 1:
+                      play(player);
+                      break;
+                  case 2:
+                      pause(player);
+                      break;
+                  case 3:
+                      stop(player);
+                      break;
+                  case 4:
+                      volume(player, receivedData.volume);
+                      break;
+                  case 5:
+                      fastForward(player, receivedData.space);
+                      break;
+                  case 6:
+                      rewind(player, receivedData.space);
+                      break;
+                  case 7:
+                      seek(player, receivedData.position);
+                      break;
+                  case 8:
+                      if (receivedData.subtitle) {
+                          addSubtitle(player, receivedData.subtitle.url);
+                      }
+                      break;
+                  case 9:
+                      loadMedia(player, receivedData.url);
+                      break;
+                  case 10:
+                      ws.send("{command:10,duration:" + (isNaN(player.duration) ? 0 : player.duration) + ",status:200}");
+                      break;
+                  case 11:
+                      ws.send("{command:11,position:" + player.currentTime + ",status:200}");
+                      break;
+                  case 12:
+                      volumeUp(player, receivedData.volume);
+                      break;
+                  case 13:
+                      volumeDown(player, receivedData.volume);
+                      break;
+              }
+          };
+          let isIE = function () {
+                 return (!!window.ActiveXObject || 'ActiveXObject' in window);
+          };
+          let attachStateListener = function (player) {
+              player.addEventListener("play", function () {
+                  let playButton = document.getElementById("play_button");
+                  if (playButton) {
+                      if (isIE()) {
+                          playButton.style.display = "none";
+                      }else {
+                          playButton.remove();
+                      }
+                  }
+                  ws.send("{command:1,status:200}");
+              });
+              player.addEventListener("pause", function () {
+                  ws.send("{command:2,status:200}");
+              });
+              player.addEventListener("volumechange", function () {
+                  console.log("volumechange:" + player.volume);
+                  ws.send("{command:4,volume:" + player.volume + ",status:200}");
+              });
+              player.addEventListener("ended", function () {
+                  console.log("ended:");
+                  ws.send("{command:12,status:200}");
+              });
+              player.addEventListener("error", function (event) {
+                  console.log("error:" + event.errorCode);
+                  ws.send("{command:9,status:500}");
+              });
+              player.addEventListener("seeked", function () {
+                  ws.send("{command:7,position:" + player.currentTime + ",status:200}");
+              });
+              player.addEventListener("timeupdate", function () {
+               ws.send(""+player.currentTime);
+             });
+
+          };
+
+          let playVideo = function (receivedData) {
+              let player = document.getElementById("video_player");
+              if (!player) {
+                  parentView.innerHTML = videoPlayer;
+                  player = document.getElementById("video_player");
+                  player.width = window.innerWidth;
+                  player.height = window.innerHeight;
+                  let playButton = document.getElementById("play_button");
+                  if (playButton) {
+                      playButton.style.left = (innerWidth - 270) / 2 + "px";
+                      playButton.style.top = (innerHeight - 270) / 2 + "px";
+                      playButton.onclick = function () {
+                          play(player);
+                      };
+                  }
+                  attachStateListener(player);
+              }
+              callWithCommand(receivedData, player);
+          };
+
+          let audioPlayer = "<div style='display: block;margin-left:auto;margin-right:auto'><audio controls preload='auto' id='audio_player' autoplay style='display: block;margin-left: auto;margin-right: auto'></audio></div>";
+
+          let playAudio = function (receivedData) {
+              let player = document.getElementById("audio_player");
+              if (!player) {
+                  parentView.innerHTML = audioPlayer;
+                  player = document.getElementById("audio_player");
+                  player.style.width = innerWidth / 2 + "px";
+                  player.style.height = innerHeight / 2 + "px";
+                  attachStateListener(player);
+              }
+              callWithCommand(receivedData, player);
+          };
+
+          let imageViewer = "<div style='display: block;margin-left: auto;margin-right: auto;padding:0'><img id='image_viewer' style='margin:0;padding:0'></div>";
+
+          let displayImage = function (receivedData) {
+              if (receivedData.command === 3) {
+                  stop();
+                  return;
+              }
+              let ratio = 1;
+              if (receivedData.width && receivedData.height) {
+                  ratio = receivedData.width / receivedData.height;
+              }
+              let viewer = document.getElementById("image_viewer");
+              if (!viewer) {
+                  parentView.innerHTML = imageViewer;
+                  viewer = document.getElementById("image_viewer");
+              }
+              viewer.style.transform = "rotateZ(0deg)";
+              if (ratio > 1 && receivedData.width > window.innerHeight && "orientation" in receivedData && receivedData.orientation % 180 !== 0) {
+                      viewer.width = window.innerHeight;
+                      viewer.height = window.innerHeight / ratio;
+              } else {
+                  if (receivedData.height > window.innerHeight) {
+                      if (ratio * window.innerHeight > window.innerWidth) {
+                          if (window.innerWidth / ratio > window.innerHeight) {
+                              viewer.height = window.innerHeight;
+                              viewer.width = viewer.height * ratio;
+                          } else {
+                              viewer.width = window.innerWidth;
+                              viewer.height = viewer.width / ratio;
+                          }
+                      } else {
+                          viewer.height = window.innerHeight;
+                          viewer.width = ratio * viewer.height;
+                      }
+                  } else {
+                      viewer.width = receivedData.width;
+                      viewer.height = receivedData.height;
+                  }
+              }
+              if ("orientation" in receivedData) {
+                  viewer.style.transform = "rotateZ(" + receivedData.orientation + "deg)";
+              }
+              viewer.src = receivedData.url;
+          };
+           loadXMLDoc("/wsinfo");
+
+          var xhr;
+
+          function loadXMLDoc(url) {
+              xhr = null;
+              if (window.XMLHttpRequest) {// code for all new browsers
+                  xhr = new XMLHttpRequest();
+              }
+              if (xhr !== null) {
+                  xhr.onreadystatechange = state_Change;
+                  xhr.open("GET", url, true);
+                  xhr.send(null);
+
+
+              }
+              else {
+                  alert("Your browser does not support XMLHTTP.");
+              }
+          }
+
+
+          function state_Change() {
+              if (xhr.readyState === 4) {// 4 = "loaded"
+                  if (xhr.status === 200) {// 200 = OK
+                      console.log(xhr.responseText);
+                      runWebSocket(xhr.responseText);
+                  }
+                  else {
+                      alert("Problem retrieving XML data" + xhr.status);
+                  }
+              }
+          }
+          var ws;
+          var counter = 0;
+          function runWebSocket(wsAddress) {
+              if ("WebSocket" in window) {
+                  console.log("WebSocket is supported by your Browser!");
+                  // Let us open a web ws
+                  ws = new WebSocket("ws://" + wsAddress);
+                  ws.onopen = function () {
+                      // Web Socket is connected, send data using send()
+                      ws.send("Message to send\n");
+                      console.log("Message is sent...");
+                  };
+                  ws.onmessage = function (evt) {
+                     let receivedData = JSON.parse(evt.data);
+                     if (receivedData.command !== 10 && receivedData.command !== 11&& receivedData.command !== 4) {
+                       ws.send("{command:" + receivedData.command +",type:"+receivedData.type+ ",status:200}");
+                       }
+                       switch (receivedData.type) {
+                      case 1:
+                         playVideo(receivedData);
+                       break;
+                    case 2:
+                      playAudio(receivedData);
+                      break;
+                  case 3:
+                      displayImage(receivedData);
+                      break;
+                  default:
+                      playVideo(receivedData);
+              }
+                  };
+                  ws.onclose = function () {
+                      // websocket is closed.
+                      console.log("Connection is closed...");
+                      alert("Connection is closed...");
+                  };
+              }
+              else {
+                  // The browser doesn't support WebSocket
+                  alert("WebSocket NOT supported by your Browser!");
+              }
+          }
+
+          window.onbeforeunload = function () {
+              ws.onclose = function () {
+              }; // disable onclose handler first
+              ws.close()
+          };
+    </script>
+</body>
+</html>

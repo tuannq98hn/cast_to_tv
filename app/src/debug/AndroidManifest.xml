@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Debug only: exports the reminder receiver and all activities so adb can fire/open them for testing and screenshots. -->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <application>
+        <receiver
+            android:name="com.casttotv.screen.mirroring.service.RemindAlarmReceiver"
+            android:exported="true"
+            tools:replace="android:exported" />
+        <activity
+            android:name="com.casttotv.screen.mirroring.ui.activities.splash.SplashActivity"
+            android:exported="true"
+            tools:replace="android:exported" />
+        <activity
+            android:name="com.casttotv.screen.mirroring.ui.activities.main.MainActivity"
+            android:exported="true"
+            tools:replace="android:exported" />
+        <activity
+            android:name="com.casttotv.screen.mirroring.ui.activities.function.connect.SearchTVActivity"
+            android:exported="true"
+            tools:replace="android:exported" />
+        <activity
+            android:name="com.casttotv.screen.mirroring.ui.activities.photo_off.PhotoOfflineActivity"
+            android:exported="true"
+            tools:replace="android:exported" />
+        <activity
+            android:name="com.casttotv.screen.mirroring.ui.activities.function.media.MediaActivity"
+            android:exported="true"
+            tools:replace="android:exported" />
+        <activity
+            android:name="com.casttotv.screen.mirroring.ui.activities.function.media.DetailMediaActivity"
+            android:exported="true"
+            tools:replace="android:exported" />
+        <activity
+            android:name="com.casttotv.screen.mirroring.ui.activities.function.play.CastMediaActivity"
+            android:exported="true"
+            tools:replace="android:exported" />
+        <activity
+            android:name="com.casttotv.screen.mirroring.ui.activities.function.screen_mirror.ScreenMirroringActivity"
+            android:exported="true"
+            tools:replace="android:exported" />
+        <activity
+            android:name="com.casttotv.screen.mirroring.ui.activities.function.screen_mirror.QrScanActivity"
+            android:exported="true"
+            tools:replace="android:exported" />
+        <activity
+            android:name="com.casttotv.screen.mirroring.ui.activities.function.remote.RemoteActivity"
+            android:exported="true"
+            tools:replace="android:exported" />
+        <activity
+            android:name="com.casttotv.screen.mirroring.ui.activities.function.remote.GuideFireTVActivity"
+            android:exported="true"
+            tools:replace="android:exported" />
+        <activity
+            android:name="com.casttotv.screen.mirroring.ui.activities.setting.SettingActivity"
+            android:exported="true"
+            tools:replace="android:exported" />
+        <activity
+            android:name="com.casttotv.screen.mirroring.ui.activities.howto.HowToUseActivity"
+            android:exported="true"
+            tools:replace="android:exported" />
+        <activity
+            android:name="com.casttotv.screen.mirroring.ui.activities.feedback.FeedbackActivity"
+            android:exported="true"
+            tools:replace="android:exported" />
+        <activity
+            android:name="com.casttotv.screen.mirroring.ui.activities.language.LanguageFirstActivity"
+            android:exported="true"
+            tools:replace="android:exported" />
+        <activity
+            android:name="com.casttotv.screen.mirroring.ui.activities.intro.IntroActivity"
+            android:exported="true"
+            tools:replace="android:exported" />
+        <activity
+            android:name="com.casttotv.screen.mirroring.ui.activities.new_intro.NewIntroActivity"
+            android:exported="true"
+            tools:replace="android:exported" />
+        <activity
+            android:name="com.casttotv.screen.mirroring.ui.activities.purchase.PurchaseActivity"
+            android:exported="true"
+            tools:replace="android:exported" />
+        <activity
+            android:name="com.casttotv.screen.mirroring.ui.activities.function.MediaActionActivity"
+            android:exported="true"
+            tools:replace="android:exported" />
+        <activity
+            android:name="com.casttotv.screen.mirroring.ui.activities.purchase.SubSaleActivity"
+            android:exported="true"
+            tools:replace="android:exported" />
+        <activity
+            android:name="com.casttotv.screen.mirroring.ui.activities.support.HelpActivity"
+            android:exported="true"
+            tools:replace="android:exported" />
+        <activity
+            android:name="com.casttotv.screen.mirroring.ui.activities.function.browser.FileBrowserActivity"
+            android:exported="true"
+            tools:replace="android:exported" />
+        <activity
+            android:name="com.casttotv.screen.mirroring.ui.activities.channel_roku.InstallChannelRokuActivity"
+            android:exported="true"
+            tools:replace="android:exported" />
+        <activity
+            android:name="com.casttotv.screen.mirroring.ui.activities.webcast.WebCastActivity"
+            android:exported="true"
+            tools:replace="android:exported" />
+        <activity
+            android:name="com.casttotv.screen.mirroring.ui.activities.webcast.HistoryBrowserActivity"
+            android:exported="true"
+            tools:replace="android:exported" />
+        <activity
+            android:name="com.casttotv.screen.mirroring.ui.activities.function.youtube_browser.YoutubeBrowserActivity"
+            android:exported="true"
+            tools:replace="android:exported" />
+    </application>
+</manifest>

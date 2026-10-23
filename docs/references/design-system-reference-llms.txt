@@ -1,0 +1,23 @@
+CastToTV design tokens (from app/src/main/res/values/values.xml; the shipped app is the source of truth)
+
+Colors
+- color_main #4d72f5 — primary blue: buttons, accents, progress (style progressBarBlue)
+- colorPrimary #0161da
+- textColor #333333 (body), textColorSecondary #455a64, text_color #575757, text_default #999999
+- white #ffffff (status bar is white with dark icons, set in BaseActivity), black #000000
+- Use @color/... names; do not hardcode hex in layouts.
+
+Typography
+- Quicksand Medium (assets/fonts/Quicksand_Medium.ttf) through TextViewCGT / ButtonCGT / SearchViewCGT (ui/view, cached by Fonts.kt)
+- SF Pro Display regular/medium/semibold/bold, Roboto regular/medium in res/font
+- Text sizes in ssp (@dimen/_14ssp), spacing and view sizes in sdp (@dimen/_12sdp)
+
+Shape
+- Rounded corners 12dp (style rounded_corner) on cards and images
+
+Motion
+- Lottie animations in assets/: anim_splash, anim_loading, loading_cast, anim_success_connect, anim_fail_connect, anim_mirror, ...
+- Screen transitions slide_in_right / slide_out_left
+
+Layout
+- Portrait only. Theme.CastTV = AppCompat Light NoActionBar; Theme.Splash uses @drawable/bg_splash.
