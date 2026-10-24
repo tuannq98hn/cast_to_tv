@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
     android:tag="layout/activity_history_browser_0"
+    android:background="@color/dc_bg"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
     <RelativeLayout
@@ -12,35 +13,35 @@
         app:layout_constraintTop_toTopOf="parent">
         <RelativeLayout
             android:id="@+id/rlHeader"
-            android:background="@color/white"
             android:layout_width="match_parent"
-            android:layout_height="@dimen/_45sdp"
+            android:layout_height="@dimen/_56sdp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent">
             <LinearLayout
                 android:id="@+id/llBack"
-                android:padding="@dimen/_10sdp"
+                android:padding="@dimen/_8sdp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerVertical="true">
-                <ImageButton
-                    android:background="@drawable/ic_back_arrow"
+                <ImageView
+                    android:background="@drawable/dc_bg_key"
+                    android:padding="@dimen/_9sdp"
+                    android:src="@drawable/ic_back_arrow"
+                    app:tint="@color/dc_text_primary"
                     android:focusable="false"
                     android:clickable="false"
-                    android:layout_width="@dimen/_24sdp"
-                    android:layout_height="@dimen/_24sdp"/>
+                    android:layout_width="@dimen/_40sdp"
+                    android:layout_height="@dimen/_40sdp"/>
             </LinearLayout>
             <TextView
-                android:textSize="@dimen/_14sdp"
-                android:textColor="@color/text_color"
+                style="@style/DC.Text.Heading"
                 android:id="@+id/tvTitleTab"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/history"
                 android:layout_toRightOf="@+id/llBack"
-                android:layout_centerVertical="true"
-                android:fontFamily="@font/pro_display_bold"/>
+                android:layout_centerVertical="true"/>
             <LinearLayout
                 android:orientation="horizontal"
                 android:id="@+id/ll2"
@@ -63,7 +64,7 @@
             </LinearLayout>
         </RelativeLayout>
         <View
-            android:background="@color/color_ads_border"
+            android:background="@color/dc_divider"
             android:layout_width="match_parent"
             android:layout_height="1dp"
             android:layout_below="@+id/rlHeader"/>

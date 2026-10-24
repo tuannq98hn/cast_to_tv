@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Fully rounded fill; tint with backgroundTint (splash loader pills, wave bars). -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle">
+    <solid android:color="#ffffffff"/>
+    <corners android:radius="999dp"/>
+</shape>

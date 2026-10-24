@@ -9,20 +9,21 @@
     android:paddingHorizontal="@dimen/_24sdp">
     <LinearLayout
         android:orientation="vertical"
-        android:background="@drawable/bg_border"
-        android:padding="@dimen/_20sdp"
+        android:background="@drawable/dc_bg_dialog"
+        android:padding="@dimen/_24sdp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <TextView
-            android:textSize="@dimen/_14sdp"
-            android:textColor="@color/color_text_new"
+            android:textSize="@dimen/_16sdp"
+            android:textColor="@color/dc_text_primary"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/_6sdp"
             android:text="@string/enter_the_pin_code"
             android:fontFamily="@font/pro_display_medium"/>
         <EditText
-            android:textColor="@color/color_txt"
+            android:textColor="@color/dc_text_primary"
+            android:textColorHint="@color/dc_text_subtle"
             android:id="@+id/edt_pinCodeInput"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -30,17 +31,17 @@
             android:minHeight="48dp"
             android:lines="1"
             android:fontFamily="@font/pro_display_medium"
-            android:backgroundTint="@color/color_gray4"/>
+            android:backgroundTint="@color/dc_primary_soft"/>
         <LinearLayout
             android:orientation="horizontal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/_15sdp">
             <TextView
-                android:textColor="@color/color_txt"
+                android:textColor="@color/dc_text_body"
                 android:gravity="center"
                 android:id="@+id/tv_pinCodeCancel"
-                android:background="@drawable/bg_button_cancel"
+                android:background="@drawable/dc_bg_button_secondary"
                 android:padding="@dimen/_10sdp"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
@@ -53,7 +54,7 @@
                 android:textColor="@color/white"
                 android:gravity="center"
                 android:id="@+id/tv_pinCodeOk"
-                android:background="@drawable/bg_button"
+                android:background="@drawable/dc_bg_cta_gradient"
                 android:padding="@dimen/_10sdp"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"

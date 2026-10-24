@@ -7,9 +7,9 @@
     android:endX="32"
     android:endY="152">
     <item
-        android:color="#ff0e0e0e"
+        android:color="#4d22d3ee"
         android:offset="0"/>
     <item
-        android:color="#ff323232"
+        android:color="#cc1e293b"
         android:offset="0.46"/>
 </gradient>

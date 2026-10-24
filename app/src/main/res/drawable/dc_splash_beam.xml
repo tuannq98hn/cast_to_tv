@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Stitch splash stream beam: dashed curve M12 36 C22 36 28 26 36 12 (pre-cut dashes) ending in a cyan dot. -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android" android:width="48dp" android:height="48dp" android:viewportWidth="48" android:viewportHeight="48">
+    <path android:strokeColor="#cc22d3ee" android:strokeWidth="2.5" android:pathData="M12.01,36.00L14.98,35.69M17.83,34.73L20.41,33.24M22.73,31.34L24.82,29.17M26.71,26.85L28.46,24.42M30.12,21.92L31.70,19.36M33.24,16.78L34.74,14.19"/>
+    <path android:fillColor="#00f2fe" android:pathData="M33,12a3,3 0,1 0,6 0a3,3 0,1 0,-6 0Z"/>
+</vector>

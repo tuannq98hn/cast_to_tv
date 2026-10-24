@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Connected dot: emerald-400 with a 2dp ring in the canvas color. -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="oval">
+    <solid android:color="#34d399"/>
+    <stroke android:width="2dp" android:color="@color/dc_bg_alt"/>
+</shape>

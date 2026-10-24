@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
-    android:background="@color/white"
-    android:padding="@dimen/_20sdp"
+    android:background="@drawable/dc_bg_dialog"
+    android:padding="@dimen/_24sdp"
     android:layout_width="@dimen/_250sdp"
     android:layout_height="wrap_content">
     <com.casttotv.screen.mirroring.ui.view.TextViewCGT
         android:textSize="@dimen/_15sdp"
-        android:textColor="@color/black"
+        android:textColor="@color/dc_text_primary"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/pairing_with_tv"/>
     <com.casttotv.screen.mirroring.ui.view.TextViewCGT
         android:textSize="@dimen/_13sdp"
-        android:textColor="@color/color_gray"
+        android:textColor="@color/dc_text_secondary"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/_5sdp"
@@ -26,13 +26,15 @@
         android:layout_marginTop="@dimen/_15sdp">
         <com.casttotv.screen.mirroring.ui.view.ButtonCGT
             android:id="@+id/btn_cancel"
-            android:background="@color/white"
+            android:background="@android:color/transparent"
+            android:textColor="@color/dc_primary"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/cancel"/>
         <com.casttotv.screen.mirroring.ui.view.ButtonCGT
             android:id="@+id/btn_ok"
-            android:background="@color/white"
+            android:background="@android:color/transparent"
+            android:textColor="@color/dc_primary"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/ok"/>

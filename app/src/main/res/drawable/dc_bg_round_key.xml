@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Stitch header icon button (Screen Mirroring / Device Discovery / Photo / Video): surface-container/70 disc, no stroke, ripple. -->
+<ripple xmlns:android="http://schemas.android.com/apk/res/android" android:color="@color/dc_ripple">
+    <item>
+        <shape android:shape="oval">
+            <solid android:color="#b31b2029"/>
+        </shape>
+    </item>
+</ripple>

@@ -1,0 +1,2805 @@
+{
+ "bounds": {
+  "height": 884,
+  "width": 390,
+  "x": 3376,
+  "y": 1635
+ },
+ "children": [
+  {
+   "bounds": {
+    "height": 882,
+    "width": 388,
+    "x": 1,
+    "y": 1
+   },
+   "constraints": {
+    "horizontal": "STRETCH",
+    "vertical": "STRETCH"
+   },
+   "id": "1:2561",
+   "name": "Background Ambient Lighting Atmosphere",
+   "styles": {
+    "fills": [
+     {
+      "cssString": "radial-gradient(200% 88% at 50% 85%, #2563eb26 0%, #2563eb00 60%)",
+      "geometry": {
+       "center": {
+        "percentX": 50,
+        "percentY": 85
+       },
+       "radius": {
+        "percentX": 200,
+        "percentY": 88
+       },
+       "rotation": 0
+      },
+      "stops": [
+       {
+        "color": "#2563eb26",
+        "position": 0
+       },
+       {
+        "color": "#2563eb00",
+        "position": 0.6
+       }
+      ],
+      "type": "GRADIENT_RADIAL"
+     },
+     {
+      "cssString": "radial-gradient(158% 70% at 80% 40%, #8b5cf638 0%, #8b5cf600 50%)",
+      "geometry": {
+       "center": {
+        "percentX": 80,
+        "percentY": 40
+       },
+       "radius": {
+        "percentX": 158,
+        "percentY": 70
+       },
+       "rotation": 0
+      },
+      "stops": [
+       {
+        "color": "#8b5cf638",
+        "position": 0
+       },
+       {
+        "color": "#8b5cf600",
+        "position": 0.5
+       }
+      ],
+      "type": "GRADIENT_RADIAL"
+     },
+     {
+      "cssString": "radial-gradient(188% 83% at 20% 25%, #00f2fe2e 0%, #00f2fe00 45%)",
+      "geometry": {
+       "center": {
+        "percentX": 20,
+        "percentY": 25
+       },
+       "radius": {
+        "percentX": 188,
+        "percentY": 83
+       },
+       "rotation": 0
+      },
+      "stops": [
+       {
+        "color": "#00f2fe2e",
+        "position": 0
+       },
+       {
+        "color": "#00f2fe00",
+        "position": 0.45
+       }
+      ],
+      "type": "GRADIENT_RADIAL"
+     }
+    ]
+   },
+   "type": "RECTANGLE"
+  },
+  {
+   "bounds": {
+    "height": 320,
+    "width": 320,
+    "x": -79,
+    "y": -95
+   },
+   "geometry": {
+    "cornerRadius": 9999
+   },
+   "id": "1:2562",
+   "name": "Overlay+Blur",
+   "styles": {
+    "effects": [
+     {
+      "radius": 90,
+      "type": "LAYER_BLUR"
+     }
+    ],
+    "fills": [
+     "#06b6d41a"
+    ]
+   },
+   "type": "RECTANGLE"
+  },
+  {
+   "bounds": {
+    "height": 320,
+    "width": 320,
+    "x": 165,
+    "y": 294.98
+   },
+   "constraints": {
+    "horizontal": "MAX",
+    "vertical": "SCALE"
+   },
+   "geometry": {
+    "cornerRadius": 9999
+   },
+   "id": "1:2563",
+   "name": "Overlay+Blur",
+   "styles": {
+    "effects": [
+     {
+      "radius": 100,
+      "type": "LAYER_BLUR"
+     }
+    ],
+    "fills": [
+     "#9333ea26"
+    ]
+   },
+   "type": "RECTANGLE"
+  },
+  {
+   "bounds": {
+    "height": 691,
+    "width": 388,
+    "x": 1,
+    "y": 33
+   },
+   "children": [
+    {
+     "bounds": {
+      "height": 280,
+      "width": 288,
+      "x": 50,
+      "y": 167.5
+     },
+     "children": [
+      {
+       "bounds": {
+        "height": 256,
+        "width": 288,
+        "x": 0,
+        "y": 0
+       },
+       "children": [
+        {
+         "bounds": {
+          "height": 176,
+          "width": 176,
+          "x": 56,
+          "y": 40
+         },
+         "geometry": {
+          "cornerRadius": 9999
+         },
+         "id": "1:2567",
+         "name": "Radar Pulse Echo Rings",
+         "styles": {
+          "strokeAlign": "INSIDE",
+          "strokeCap": "NONE",
+          "strokeJoin": "MITER",
+          "strokeWeight": 1,
+          "strokes": [
+           "#22d3ee40"
+          ]
+         },
+         "type": "RECTANGLE"
+        },
+        {
+         "bounds": {
+          "height": 224,
+          "width": 224,
+          "x": 32,
+          "y": 16
+         },
+         "geometry": {
+          "cornerRadius": 9999
+         },
+         "id": "1:2568",
+         "name": "Border",
+         "styles": {
+          "strokeAlign": "INSIDE",
+          "strokeCap": "NONE",
+          "strokeJoin": "MITER",
+          "strokeWeight": 1,
+          "strokes": [
+           "#6366f133"
+          ]
+         },
+         "type": "RECTANGLE"
+        },
+        {
+         "bounds": {
+          "height": 160,
+          "width": 256,
+          "x": 16,
+          "y": 48
+         },
+         "children": [
+          {
+           "bounds": {
+            "height": 160,
+            "width": 256,
+            "x": 0,
+            "y": 0
+           },
+           "constraints": {
+            "horizontal": "CENTER",
+            "vertical": "CENTER"
+           },
+           "geometry": {
+            "cornerRadius": 16
+           },
+           "id": "1:2570",
+           "name": "3D Smart TV Screen Frame:shadow",
+           "styles": {
+            "effects": [
+             {
+              "color": "#8b5cf6",
+              "offsetX": 0,
+              "offsetY": 0,
+              "opacity": 0.35,
+              "radius": 80,
+              "spread": -10,
+              "type": "DROP_SHADOW"
+             },
+             {
+              "color": "#00f2fe",
+              "offsetX": 0,
+              "offsetY": 0,
+              "opacity": 0.45,
+              "radius": 45,
+              "spread": -8,
+              "type": "DROP_SHADOW"
+             }
+            ],
+            "fills": [
+             "#ffffff01"
+            ]
+           },
+           "type": "RECTANGLE"
+          },
+          {
+           "bounds": {
+            "height": 122,
+            "width": 234,
+            "x": 11,
+            "y": 11
+           },
+           "children": [
+            {
+             "bounds": {
+              "height": 120,
+              "width": 232,
+              "x": 1,
+              "y": 1
+             },
+             "constraints": {
+              "horizontal": "STRETCH",
+              "vertical": "STRETCH"
+             },
+             "id": "1:2572",
+             "name": "Dynamic Grid Matrix Background",
+             "opacity": 0.15,
+             "styles": {
+              "fills": [
+               {
+                "cssString": "linear-gradient(90deg, #00f2fe4d 6%, #00f2fe00 6%)",
+                "geometry": {
+                 "angle": 0,
+                 "end": {
+                  "percentX": 100,
+                  "percentY": 50
+                 },
+                 "start": {
+                  "percentX": 0,
+                  "percentY": 50
+                 }
+                },
+                "stops": [
+                 {
+                  "color": "#00f2fe4d",
+                  "position": 0.0625
+                 },
+                 {
+                  "color": "#00f2fe00",
+                  "position": 0.0625
+                 }
+                ],
+                "type": "GRADIENT_LINEAR"
+               },
+               {
+                "cssString": "linear-gradient(180deg, #00f2fe4d 6%, #00f2fe00 6%)",
+                "geometry": {
+                 "angle": 90,
+                 "end": {
+                  "percentX": 50,
+                  "percentY": 100
+                 },
+                 "start": {
+                  "percentX": 50,
+                  "percentY": 0
+                 }
+                },
+                "stops": [
+                 {
+                  "color": "#00f2fe4d",
+                  "position": 0.0625
+                 },
+                 {
+                  "color": "#00f2fe00",
+                  "position": 0.0625
+                 }
+                ],
+                "type": "GRADIENT_LINEAR"
+               }
+              ]
+             },
+             "type": "RECTANGLE"
+            },
+            {
+             "bounds": {
+              "height": 60,
+              "width": 232,
+              "x": 1,
+              "y": 1
+             },
+             "constraints": {
+              "horizontal": "STRETCH",
+              "vertical": "SCALE"
+             },
+             "id": "1:2573",
+             "name": "TV Screen Bezel Gloss Highlight",
+             "styles": {
+              "fills": [
+               {
+                "cssString": "linear-gradient(180deg, #ffffff1a 0%, #ffffff00 100%)",
+                "geometry": {
+                 "angle": 90,
+                 "end": {
+                  "percentX": 50,
+                  "percentY": 100
+                 },
+                 "start": {
+                  "percentX": 50,
+                  "percentY": 0
+                 }
+                },
+                "stops": [
+                 {
+                  "color": "#ffffff1a",
+                  "position": 0
+                 },
+                 {
+                  "color": "#ffffff00",
+                  "position": 1
+                 }
+                ],
+                "type": "GRADIENT_LINEAR"
+               }
+              ]
+             },
+             "type": "RECTANGLE"
+            },
+            {
+             "bounds": {
+              "height": 55,
+              "width": 161.41,
+              "x": 36.29,
+              "y": 33.5
+             },
+             "children": [
+              {
+               "bounds": {
+                "height": 28,
+                "width": 46,
+                "x": 57.71,
+                "y": 0
+               },
+               "children": [
+                {
+                 "bounds": {
+                  "height": 12,
+                  "width": 4,
+                  "x": 0,
+                  "y": 8
+                 },
+                 "constraints": {
+                  "horizontal": "MIN",
+                  "vertical": "CENTER"
+                 },
+                 "geometry": {
+                  "cornerRadius": 9999
+                 },
+                 "id": "1:2576",
+                 "name": "Background",
+                 "styles": {
+                  "fills": [
+                   "#22d3ee"
+                  ]
+                 },
+                 "type": "RECTANGLE"
+                },
+                {
+                 "bounds": {
+                  "height": 20,
+                  "width": 10,
+                  "x": 4,
+                  "y": 4
+                 },
+                 "children": [
+                  {
+                   "bounds": {
+                    "height": 20,
+                    "width": 4,
+                    "x": 6,
+                    "y": 0
+                   },
+                   "geometry": {
+                    "cornerRadius": 9999
+                   },
+                   "id": "1:2578",
+                   "name": "Background",
+                   "styles": {
+                    "fills": [
+                     "#67e8f9"
+                    ]
+                   },
+                   "type": "RECTANGLE"
+                  }
+                 ],
+                 "id": "1:2577",
+                 "name": "Margin",
+                 "styles": {
+                  "layout": {
+                   "counterAxisSizingMode": "FIXED",
+                   "mode": "VERTICAL",
+                   "primaryAxisSizingMode": "FIXED"
+                  },
+                  "padding": {
+                   "bottom": 0,
+                   "left": 6,
+                   "right": 0,
+                   "top": 0
+                  }
+                 },
+                 "type": "FRAME"
+                },
+                {
+                 "bounds": {
+                  "height": 28,
+                  "width": 12,
+                  "x": 14,
+                  "y": 0
+                 },
+                 "children": [
+                  {
+                   "bounds": {
+                    "height": 28,
+                    "width": 6,
+                    "x": 6,
+                    "y": 0
+                   },
+                   "geometry": {
+                    "cornerRadius": 9999
+                   },
+                   "id": "1:2580",
+                   "name": "Background",
+                   "styles": {
+                    "fills": [
+                     "#ffffff"
+                    ]
+                   },
+                   "type": "RECTANGLE"
+                  }
+                 ],
+                 "id": "1:2579",
+                 "name": "Margin",
+                 "styles": {
+                  "layout": {
+                   "counterAxisSizingMode": "FIXED",
+                   "mode": "VERTICAL",
+                   "primaryAxisSizingMode": "FIXED"
+                  },
+                  "padding": {
+                   "bottom": 0,
+                   "left": 6,
+                   "right": 0,
+                   "top": 0
+                  }
+                 },
+                 "type": "FRAME"
+                },
+                {
+                 "bounds": {
+                  "height": 20,
+                  "width": 10,
+                  "x": 26,
+                  "y": 4
+                 },
+                 "children": [
+                  {
+                   "bounds": {
+                    "height": 20,
+                    "width": 4,
+                    "x": 6,
+                    "y": 0
+                   },
+                   "geometry": {
+                    "cornerRadius": 9999
+                   },
+                   "id": "1:2582",
+                   "name": "Background",
+                   "styles": {
+                    "fills": [
+                     "#67e8f9"
+                    ]
+                   },
+                   "type": "RECTANGLE"
+                  }
+                 ],
+                 "id": "1:2581",
+                 "name": "Margin",
+                 "styles": {
+                  "layout": {
+                   "counterAxisSizingMode": "FIXED",
+                   "mode": "VERTICAL",
+                   "primaryAxisSizingMode": "FIXED"
+                  },
+                  "padding": {
+                   "bottom": 0,
+                   "left": 6,
+                   "right": 0,
+                   "top": 0
+                  }
+                 },
+                 "type": "FRAME"
+                },
+                {
+                 "bounds": {
+                  "height": 12,
+                  "width": 10,
+                  "x": 36,
+                  "y": 8
+                 },
+                 "children": [
+                  {
+                   "bounds": {
+                    "height": 12,
+                    "width": 4,
+                    "x": 6,
+                    "y": 0
+                   },
+                   "geometry": {
+                    "cornerRadius": 9999
+                   },
+                   "id": "1:2584",
+                   "name": "Background",
+                   "styles": {
+                    "fills": [
+                     "#22d3ee"
+                    ]
+                   },
+                   "type": "RECTANGLE"
+                  }
+                 ],
+                 "id": "1:2583",
+                 "name": "Margin",
+                 "styles": {
+                  "layout": {
+                   "counterAxisSizingMode": "FIXED",
+                   "mode": "VERTICAL",
+                   "primaryAxisSizingMode": "FIXED"
+                  },
+                  "padding": {
+                   "bottom": 0,
+                   "left": 6,
+                   "right": 0,
+                   "top": 0
+                  }
+                 },
+                 "type": "FRAME"
+                }
+               ],
+               "constraints": {
+                "horizontal": "CENTER",
+                "vertical": "MIN"
+               },
+               "id": "1:2575",
+               "name": "Animated Waveform Transmitter Bar",
+               "styles": {
+                "layout": {
+                 "counterAxisAlignItems": "CENTER",
+                 "counterAxisSizingMode": "AUTO",
+                 "mode": "HORIZONTAL",
+                 "primaryAxisSizingMode": "AUTO"
+                }
+               },
+               "type": "FRAME"
+              },
+              {
+               "bounds": {
+                "height": 27,
+                "width": 161.41,
+                "x": 0,
+                "y": 28
+               },
+               "children": [
+                {
+                 "bounds": {
+                  "height": 21,
+                  "width": 161.41,
+                  "x": 0,
+                  "y": 6
+                 },
+                 "children": [
+                  {
+                   "bounds": {
+                    "height": 15,
+                    "width": 139.41,
+                    "x": 11,
+                    "y": 3
+                   },
+                   "characters": "4K HDR ULTRA LOSSLESS",
+                   "id": "1:2587",
+                   "name": "Text",
+                   "styles": {
+                    "fills": [
+                     "#67e8f9"
+                    ],
+                    "fontFamily": "Liberation Sans",
+                    "fontSize": 10,
+                    "fontStyle": "Bold",
+                    "fontWeight": 600,
+                    "letterSpacing": {
+                     "unit": "PIXELS",
+                     "value": 0.5
+                    },
+                    "lineHeight": {
+                     "unit": "PIXELS",
+                     "value": 15
+                    },
+                    "textAlignVertical": "CENTER"
+                   },
+                   "type": "TEXT"
+                  }
+                 ],
+                 "geometry": {
+                  "cornerRadius": 9999
+                 },
+                 "id": "1:2586",
+                 "name": "4K HDR Lossless Stream Pill Badge",
+                 "styles": {
+                  "fills": [
+                   "#06b6d426"
+                  ],
+                  "layout": {
+                   "counterAxisSizingMode": "AUTO",
+                   "mode": "VERTICAL",
+                   "primaryAxisSizingMode": "AUTO"
+                  },
+                  "padding": {
+                   "bottom": 2,
+                   "left": 10,
+                   "right": 10,
+                   "top": 2
+                  },
+                  "strokeAlign": "INSIDE",
+                  "strokeCap": "NONE",
+                  "strokeJoin": "MITER",
+                  "strokeWeight": 1,
+                  "strokes": [
+                   "#22d3ee4d"
+                  ]
+                 },
+                 "type": "FRAME"
+                }
+               ],
+               "id": "1:2585",
+               "name": "4K HDR Lossless Stream Pill Badge:margin",
+               "styles": {
+                "layout": {
+                 "counterAxisSizingMode": "AUTO",
+                 "mode": "VERTICAL",
+                 "primaryAxisSizingMode": "AUTO"
+                },
+                "padding": {
+                 "bottom": 0,
+                 "left": 0,
+                 "right": 0,
+                 "top": 6
+                }
+               },
+               "type": "FRAME"
+              }
+             ],
+             "constraints": {
+              "horizontal": "CENTER",
+              "vertical": "CENTER"
+             },
+             "id": "1:2574",
+             "name": "Mirrored Cast Screen Content Simulation",
+             "styles": {
+              "layout": {
+               "counterAxisAlignItems": "CENTER",
+               "counterAxisSizingMode": "AUTO",
+               "mode": "VERTICAL",
+               "primaryAxisSizingMode": "AUTO"
+              }
+             },
+             "type": "FRAME"
+            }
+           ],
+           "constraints": {
+            "horizontal": "STRETCH",
+            "vertical": "MIN"
+           },
+           "geometry": {
+            "cornerRadius": 12
+           },
+           "id": "1:2571",
+           "name": "Inner Cinema Display Panel",
+           "styles": {
+            "fills": [
+             {
+              "cssString": "linear-gradient(165deg, #0c1626 0%, #101c33 50%, #070b14 100%)",
+              "geometry": {
+               "angle": 75,
+               "end": {
+                "percentX": 71,
+                "percentY": 129
+               },
+               "start": {
+                "percentX": 29,
+                "percentY": -29
+               }
+              },
+              "stops": [
+               {
+                "color": "#0c1626",
+                "position": 0
+               },
+               {
+                "color": "#101c33",
+                "position": 0.5
+               },
+               {
+                "color": "#070b14",
+                "position": 1
+               }
+              ],
+              "type": "GRADIENT_LINEAR"
+             }
+            ],
+            "layout": {
+             "counterAxisAlignItems": "CENTER",
+             "counterAxisSizingMode": "FIXED",
+             "mode": "HORIZONTAL",
+             "primaryAxisAlignItems": "CENTER",
+             "primaryAxisSizingMode": "FIXED"
+            },
+            "strokeAlign": "INSIDE",
+            "strokeCap": "NONE",
+            "strokeJoin": "MITER",
+            "strokeWeight": 1,
+            "strokes": [
+             "#22d3ee33"
+            ]
+           },
+           "type": "FRAME"
+          },
+          {
+           "bounds": {
+            "height": 6,
+            "width": 80,
+            "x": 88,
+            "y": 143
+           },
+           "constraints": {
+            "horizontal": "CENTER",
+            "vertical": "MIN"
+           },
+           "geometry": {
+            "cornerRadius": 9999
+           },
+           "id": "1:2588",
+           "name": "Sleek TV Base Stand Accent",
+           "styles": {
+            "effects": [
+             {
+              "color": "#00f2fe",
+              "offsetX": 0,
+              "offsetY": 2,
+              "opacity": 0.8,
+              "radius": 8,
+              "type": "DROP_SHADOW"
+             }
+            ],
+            "fills": [
+             {
+              "cssString": "linear-gradient(90deg, #22d3ee00 0%, #22d3ee99 50%, #22d3ee00 100%)",
+              "geometry": {
+               "angle": 0,
+               "end": {
+                "percentX": 100,
+                "percentY": 50
+               },
+               "start": {
+                "percentX": 0,
+                "percentY": 50
+               }
+              },
+              "stops": [
+               {
+                "color": "#22d3ee00",
+                "position": 0
+               },
+               {
+                "color": "#22d3ee99",
+                "position": 0.5
+               },
+               {
+                "color": "#22d3ee00",
+                "position": 1
+               }
+              ],
+              "type": "GRADIENT_LINEAR"
+             }
+            ]
+           },
+           "type": "RECTANGLE"
+          }
+         ],
+         "constraints": {
+          "horizontal": "CENTER",
+          "vertical": "CENTER"
+         },
+         "geometry": {
+          "cornerRadius": 16
+         },
+         "id": "1:2569",
+         "name": "3D Smart TV Screen Frame",
+         "styles": {
+          "effects": [
+           {
+            "radius": 24,
+            "type": "BACKGROUND_BLUR"
+           }
+          ],
+          "fills": [
+           "#121826a6"
+          ],
+          "layout": {
+           "counterAxisAlignItems": "CENTER",
+           "counterAxisSizingMode": "FIXED",
+           "itemSpacing": 10,
+           "mode": "VERTICAL",
+           "primaryAxisAlignItems": "SPACE_BETWEEN",
+           "primaryAxisSizingMode": "FIXED"
+          },
+          "padding": {
+           "bottom": 10,
+           "left": 10,
+           "right": 10,
+           "top": 10
+          },
+          "strokeAlign": "INSIDE",
+          "strokeCap": "NONE",
+          "strokeJoin": "MITER",
+          "strokeWeight": 1,
+          "strokes": [
+           "#ffffff14"
+          ]
+         },
+         "type": "FRAME"
+        },
+        {
+         "bounds": {
+          "height": 176,
+          "width": 96,
+          "x": 169.98,
+          "y": 91.56
+         },
+         "children": [
+          {
+           "bounds": {
+            "height": 176,
+            "width": 95.99,
+            "x": 0,
+            "y": 0
+           },
+           "constraints": {
+            "horizontal": "MAX",
+            "vertical": "MAX"
+           },
+           "geometry": {
+            "cornerRadius": 22
+           },
+           "id": "1:2590",
+           "name": "Floating Mobile Device Overlay (Screen Mirroring Origin):shadow",
+           "styles": {
+            "effects": [
+             {
+              "color": "#000000",
+              "offsetX": 0,
+              "offsetY": 25,
+              "opacity": 0.25,
+              "radius": 50,
+              "spread": -12,
+              "type": "DROP_SHADOW"
+             }
+            ],
+            "fills": [
+             "#ffffff01"
+            ]
+           },
+           "type": "RECTANGLE"
+          },
+          {
+           "bounds": {
+            "height": 4,
+            "width": 24,
+            "x": 36,
+            "y": 7
+           },
+           "constraints": {
+            "horizontal": "CENTER",
+            "vertical": "MIN"
+           },
+           "geometry": {
+            "cornerRadius": 9999
+           },
+           "id": "1:2591",
+           "name": "Dynamic Notch/Speaker Pill",
+           "styles": {
+            "fills": [
+             "#ffffff4d"
+            ]
+           },
+           "type": "RECTANGLE"
+          },
+          {
+           "bounds": {
+            "height": 142,
+            "width": 82,
+            "x": 7,
+            "y": 15
+           },
+           "children": [
+            {
+             "bounds": {
+              "height": 40.01,
+              "width": 40.01,
+              "x": 21.3,
+              "y": 39.99
+             },
+             "children": [
+              {
+               "bounds": {
+                "height": 38,
+                "width": 38,
+                "x": 1,
+                "y": 1
+               },
+               "constraints": {
+                "horizontal": "STRETCH",
+                "vertical": "STRETCH"
+               },
+               "geometry": {
+                "cornerRadius": 9999
+               },
+               "id": "1:2594",
+               "name": "Overlay",
+               "styles": {
+                "fills": [
+                 "#22d3ee4d"
+                ]
+               },
+               "type": "RECTANGLE"
+              },
+              {
+               "bounds": {
+                "height": 20,
+                "width": 20,
+                "x": 10,
+                "y": 10
+               },
+               "children": [
+                {
+                 "bounds": {
+                  "height": 13.33,
+                  "width": 16.67,
+                  "x": 1.67,
+                  "y": 3.33
+                 },
+                 "constraints": {
+                  "horizontal": "SCALE",
+                  "vertical": "SCALE"
+                 },
+                 "id": "1:2596",
+                 "name": "Vector",
+                 "styles": {
+                  "strokeAlign": "CENTER",
+                  "strokeCap": "ROUND",
+                  "strokeJoin": "ROUND",
+                  "strokeWeight": 1.8331835269927979,
+                  "strokes": [
+                   "#67e8f9"
+                  ]
+                 },
+                 "type": "VECTOR"
+                },
+                {
+                 "bounds": {
+                  "height": 0,
+                  "width": 0.01,
+                  "x": 1.67,
+                  "y": 16.67
+                 },
+                 "constraints": {
+                  "horizontal": "SCALE",
+                  "vertical": "SCALE"
+                 },
+                 "id": "1:2597",
+                 "name": "Vector",
+                 "styles": {
+                  "strokeAlign": "CENTER",
+                  "strokeCap": "ROUND",
+                  "strokeJoin": "ROUND",
+                  "strokeWeight": 1.8331835269927979,
+                  "strokes": [
+                   "#67e8f9"
+                  ]
+                 },
+                 "type": "VECTOR"
+                }
+               ],
+               "constraints": {
+                "horizontal": "CENTER",
+                "vertical": "CENTER"
+               },
+               "id": "1:2595",
+               "name": "SVG - Cast Symbol Icon",
+               "type": "FRAME"
+              }
+             ],
+             "constraints": {
+              "horizontal": "CENTER",
+              "vertical": "CENTER"
+             },
+             "geometry": {
+              "cornerRadius": 9999
+             },
+             "id": "1:2593",
+             "name": "Central Cast Icon & Pulse Wave",
+             "styles": {
+              "fills": [
+               "#06b6d433"
+              ],
+              "layout": {
+               "counterAxisAlignItems": "CENTER",
+               "counterAxisSizingMode": "FIXED",
+               "mode": "HORIZONTAL",
+               "primaryAxisAlignItems": "CENTER",
+               "primaryAxisSizingMode": "FIXED"
+              },
+              "strokeAlign": "INSIDE",
+              "strokeCap": "NONE",
+              "strokeJoin": "MITER",
+              "strokeWeight": 1,
+              "strokes": [
+               "#22d3ee80"
+              ]
+             },
+             "type": "FRAME"
+            },
+            {
+             "bounds": {
+              "height": 22,
+              "width": 42.56,
+              "x": 20.02,
+              "y": 80.01
+             },
+             "children": [
+              {
+               "bounds": {
+                "height": 14,
+                "width": 42.01,
+                "x": 0,
+                "y": 8
+               },
+               "characters": "CASTING",
+               "id": "1:2599",
+               "name": "Text",
+               "styles": {
+                "fills": [
+                 "#a5f3fc"
+                ],
+                "fontFamily": "Liberation Sans",
+                "fontSize": 9,
+                "fontStyle": "Bold",
+                "fontWeight": 700,
+                "letterSpacing": {
+                 "unit": "PIXELS",
+                 "value": 0.22499999403953552
+                },
+                "lineHeight": {
+                 "unit": "PIXELS",
+                 "value": 13.5
+                },
+                "textAlignVertical": "CENTER"
+               },
+               "type": "TEXT"
+              }
+             ],
+             "id": "1:2598",
+             "name": "Margin",
+             "styles": {
+              "layout": {
+               "counterAxisSizingMode": "AUTO",
+               "mode": "VERTICAL",
+               "primaryAxisSizingMode": "AUTO"
+              },
+              "padding": {
+               "bottom": 0,
+               "left": 0,
+               "right": 0.5455596446990967,
+               "top": 8
+              }
+             },
+             "type": "FRAME"
+            }
+           ],
+           "constraints": {
+            "horizontal": "STRETCH",
+            "vertical": "MIN"
+           },
+           "geometry": {
+            "cornerRadius": 16
+           },
+           "id": "1:2592",
+           "name": "Inner Phone Glass Screen",
+           "styles": {
+            "fills": [
+             {
+              "cssString": "linear-gradient(180deg, #083344cc 0%, #0d1c31 50%, #080d18 100%)",
+              "geometry": {
+               "angle": 90,
+               "end": {
+                "percentX": 50,
+                "percentY": 100
+               },
+               "start": {
+                "percentX": 50,
+                "percentY": 0
+               }
+              },
+              "stops": [
+               {
+                "color": "#083344cc",
+                "position": 0
+               },
+               {
+                "color": "#0d1c31",
+                "position": 0.5
+               },
+               {
+                "color": "#080d18",
+                "position": 1
+               }
+              ],
+              "type": "GRADIENT_LINEAR"
+             }
+            ],
+            "layout": {
+             "counterAxisAlignItems": "CENTER",
+             "counterAxisSizingMode": "FIXED",
+             "itemSpacing": 0.016395073384046555,
+             "mode": "VERTICAL",
+             "primaryAxisAlignItems": "CENTER",
+             "primaryAxisSizingMode": "FIXED"
+            },
+            "padding": {
+             "bottom": 8,
+             "left": 19.022645950317383,
+             "right": 18.416728973388672,
+             "top": 8
+            },
+            "strokeAlign": "INSIDE",
+            "strokeCap": "NONE",
+            "strokeJoin": "MITER",
+            "strokeWeight": 1,
+            "strokes": [
+             "#67e8f933"
+            ]
+           },
+           "type": "FRAME"
+          },
+          {
+           "bounds": {
+            "height": 1.99,
+            "width": 32,
+            "x": 32,
+            "y": 161
+           },
+           "constraints": {
+            "horizontal": "CENTER",
+            "vertical": "MIN"
+           },
+           "geometry": {
+            "cornerRadius": 9999
+           },
+           "id": "1:2600",
+           "name": "iOS Virtual Home Bar Indicator inside phone",
+           "styles": {
+            "fills": [
+             "#ffffff66"
+            ]
+           },
+           "type": "RECTANGLE"
+          }
+         ],
+         "constraints": {
+          "horizontal": "MAX",
+          "vertical": "MAX"
+         },
+         "geometry": {
+          "cornerRadius": 22,
+          "rotation": 4
+         },
+         "id": "1:2589",
+         "name": "Floating Mobile Device Overlay (Screen Mirroring Origin)",
+         "styles": {
+          "effects": [
+           {
+            "radius": 24,
+            "type": "BACKGROUND_BLUR"
+           }
+          ],
+          "fills": [
+           "#0a111e"
+          ],
+          "layout": {
+           "counterAxisAlignItems": "CENTER",
+           "counterAxisSizingMode": "FIXED",
+           "itemSpacing": 4,
+           "mode": "VERTICAL",
+           "primaryAxisSizingMode": "FIXED"
+          },
+          "padding": {
+           "bottom": 6,
+           "left": 6,
+           "right": 6,
+           "top": 6
+          },
+          "strokeAlign": "INSIDE",
+          "strokeCap": "NONE",
+          "strokeJoin": "MITER",
+          "strokeWeight": 1,
+          "strokes": [
+           "#22d3ee66"
+          ]
+         },
+         "type": "FRAME"
+        },
+        {
+         "bounds": {
+          "height": 56,
+          "width": 56,
+          "x": 120,
+          "y": 160
+         },
+         "children": [
+          {
+           "bounds": {
+            "height": 56,
+            "width": 56,
+            "x": 0,
+            "y": 0
+           },
+           "children": [
+            {
+             "bounds": {
+              "height": 56,
+              "width": 56,
+              "x": 0,
+              "y": 0
+             },
+             "children": [
+              {
+               "bounds": {
+                "height": 28,
+                "width": 28,
+                "x": 14,
+                "y": 14
+               },
+               "constraints": {
+                "horizontal": "SCALE",
+                "vertical": "SCALE"
+               },
+               "id": "1:2604",
+               "name": "Vector",
+               "styles": {
+                "dashPattern": [
+                 3.5,
+                 3.5
+                ],
+                "strokeAlign": "CENTER",
+                "strokeCap": "NONE",
+                "strokeJoin": "MITER",
+                "strokeWeight": 2.9166665077209473,
+                "strokes": [
+                 "#22d3eecc"
+                ]
+               },
+               "type": "VECTOR"
+              },
+              {
+               "bounds": {
+                "height": 7,
+                "width": 7,
+                "x": 38.5,
+                "y": 10.5
+               },
+               "constraints": {
+                "horizontal": "SCALE",
+                "vertical": "SCALE"
+               },
+               "id": "1:2605",
+               "name": "Vector",
+               "styles": {
+                "fills": [
+                 "#00f2fe"
+                ]
+               },
+               "type": "VECTOR"
+              }
+             ],
+             "id": "1:2603",
+             "name": "SVG",
+             "type": "FRAME"
+            }
+           ],
+           "id": "1:2602",
+           "name": "SVG",
+           "styles": {
+            "effects": [
+             {
+              "color": "#00f2fe",
+              "offsetX": 0,
+              "offsetY": 0,
+              "opacity": 0.9,
+              "radius": 8,
+              "type": "DROP_SHADOW"
+             }
+            ],
+            "layout": {
+             "counterAxisSizingMode": "FIXED",
+             "mode": "VERTICAL",
+             "primaryAxisSizingMode": "FIXED"
+            }
+           },
+           "type": "FRAME"
+          }
+         ],
+         "constraints": {
+          "horizontal": "MAX",
+          "vertical": "MAX"
+         },
+         "id": "1:2601",
+         "name": "Radiating Holographic Stream Beams",
+         "styles": {
+          "layout": {
+           "counterAxisSizingMode": "AUTO",
+           "mode": "VERTICAL",
+           "primaryAxisSizingMode": "AUTO"
+          }
+         },
+         "type": "FRAME"
+        }
+       ],
+       "id": "1:2566",
+       "name": "Centerpiece 3D Holographic Display Assembly",
+       "styles": {
+        "layout": {
+         "counterAxisAlignItems": "CENTER",
+         "counterAxisSizingMode": "FIXED",
+         "mode": "HORIZONTAL",
+         "primaryAxisAlignItems": "CENTER",
+         "primaryAxisSizingMode": "FIXED"
+        }
+       },
+       "type": "FRAME"
+      }
+     ],
+     "id": "1:2565",
+     "name": "Centerpiece 3D Holographic Display Assembly:margin",
+     "styles": {
+      "layout": {
+       "counterAxisSizingMode": "FIXED",
+       "mode": "VERTICAL",
+       "primaryAxisSizingMode": "FIXED"
+      },
+      "padding": {
+       "bottom": 24,
+       "left": 0,
+       "right": 0,
+       "top": 0
+      }
+     },
+     "type": "FRAME"
+    },
+    {
+     "bounds": {
+      "height": 76,
+      "width": 238.31,
+      "x": 74.85,
+      "y": 447.5
+     },
+     "children": [
+      {
+       "bounds": {
+        "height": 64,
+        "width": 238.31,
+        "x": 0,
+        "y": 12
+       },
+       "children": [
+        {
+         "bounds": {
+          "height": 36,
+          "width": 238.31,
+          "x": 0,
+          "y": 0
+         },
+         "children": [
+          {
+           "bounds": {
+            "height": 36,
+            "width": 140.86,
+            "x": 48.72,
+            "y": 0
+           },
+           "characters": "Cast to TV",
+           "constraints": {
+            "horizontal": "CENTER",
+            "vertical": "MIN"
+           },
+           "id": "1:2609",
+           "name": "Text",
+           "styles": {
+            "fills": [
+             "#ffffff"
+            ],
+            "fontFamily": "Liberation Sans",
+            "fontSize": 30,
+            "fontStyle": "Bold",
+            "fontWeight": 800,
+            "letterSpacing": {
+             "unit": "PIXELS",
+             "value": -0.75
+            },
+            "lineHeight": {
+             "unit": "PIXELS",
+             "value": 36
+            },
+            "textAlignHorizontal": "CENTER",
+            "textAlignVertical": "CENTER"
+           },
+           "type": "TEXT"
+          }
+         ],
+         "constraints": {
+          "horizontal": "STRETCH",
+          "vertical": "MIN"
+         },
+         "id": "1:2608",
+         "name": "Heading 1",
+         "styles": {
+          "layout": {
+           "counterAxisAlignItems": "CENTER",
+           "counterAxisSizingMode": "FIXED",
+           "mode": "VERTICAL",
+           "primaryAxisSizingMode": "AUTO"
+          }
+         },
+         "type": "FRAME"
+        },
+        {
+         "bounds": {
+          "height": 20,
+          "width": 238.31,
+          "x": 0,
+          "y": 44
+         },
+         "children": [
+          {
+           "bounds": {
+            "height": 20,
+            "width": 238.31,
+            "x": 0,
+            "y": 0
+           },
+           "characters": "Ultra HD Wireless Streaming Engine",
+           "constraints": {
+            "horizontal": "CENTER",
+            "vertical": "MIN"
+           },
+           "id": "1:2611",
+           "name": "Text",
+           "styles": {
+            "fills": [
+             "#a5f3fcb2"
+            ],
+            "fontFamily": "Liberation Sans",
+            "fontSize": 14,
+            "fontStyle": "Regular",
+            "fontWeight": 500,
+            "letterSpacing": {
+             "unit": "PIXELS",
+             "value": 0.3499999940395355
+            },
+            "lineHeight": {
+             "unit": "PIXELS",
+             "value": 20
+            },
+            "textAlignHorizontal": "CENTER",
+            "textAlignVertical": "CENTER"
+           },
+           "type": "TEXT"
+          }
+         ],
+         "constraints": {
+          "horizontal": "STRETCH",
+          "vertical": "MIN"
+         },
+         "id": "1:2610",
+         "name": "Container",
+         "styles": {
+          "layout": {
+           "counterAxisAlignItems": "CENTER",
+           "counterAxisSizingMode": "FIXED",
+           "mode": "VERTICAL",
+           "primaryAxisSizingMode": "AUTO"
+          }
+         },
+         "type": "FRAME"
+        }
+       ],
+       "id": "1:2607",
+       "name": "App Branding Titles",
+       "styles": {
+        "layout": {
+         "counterAxisSizingMode": "AUTO",
+         "itemSpacing": 8,
+         "mode": "VERTICAL",
+         "primaryAxisSizingMode": "AUTO"
+        }
+       },
+       "type": "FRAME"
+      }
+     ],
+     "id": "1:2606",
+     "name": "App Branding Titles:margin",
+     "styles": {
+      "layout": {
+       "counterAxisSizingMode": "AUTO",
+       "mode": "VERTICAL",
+       "primaryAxisSizingMode": "AUTO"
+      },
+      "padding": {
+       "bottom": 0,
+       "left": 0,
+       "right": 0,
+       "top": 12
+      }
+     },
+     "type": "FRAME"
+    }
+   ],
+   "constraints": {
+    "horizontal": "STRETCH",
+    "vertical": "STRETCH"
+   },
+   "id": "1:2564",
+   "name": "MainContentArea",
+   "styles": {
+    "layout": {
+     "counterAxisAlignItems": "CENTER",
+     "counterAxisSizingMode": "FIXED",
+     "mode": "VERTICAL",
+     "primaryAxisAlignItems": "CENTER",
+     "primaryAxisSizingMode": "FIXED"
+    },
+    "padding": {
+     "bottom": 0,
+     "left": 24,
+     "right": 24,
+     "top": 0
+    }
+   },
+   "type": "FRAME"
+  },
+  {
+   "bounds": {
+    "height": 159,
+    "width": 388,
+    "x": 1,
+    "y": 724
+   },
+   "children": [
+    {
+     "bounds": {
+      "height": 34,
+      "width": 221.86,
+      "x": 83.07,
+      "y": 0
+     },
+     "children": [
+      {
+       "bounds": {
+        "height": 6,
+        "width": 120,
+        "x": 50.93,
+        "y": 0
+       },
+       "children": [
+        {
+         "bounds": {
+          "height": 6,
+          "width": 24,
+          "x": 0,
+          "y": 0
+         },
+         "constraints": {
+          "horizontal": "MIN",
+          "vertical": "CENTER"
+         },
+         "geometry": {
+          "cornerRadius": 9999
+         },
+         "id": "1:2615",
+         "name": "Background+Shadow",
+         "styles": {
+          "effects": [
+           {
+            "color": "#00f2fe",
+            "offsetX": 0,
+            "offsetY": 0,
+            "radius": 10,
+            "type": "DROP_SHADOW"
+           }
+          ],
+          "fills": [
+           "#22d3ee"
+          ]
+         },
+         "type": "RECTANGLE"
+        },
+        {
+         "bounds": {
+          "height": 6,
+          "width": 32,
+          "x": 24,
+          "y": 0
+         },
+         "children": [
+          {
+           "bounds": {
+            "height": 6,
+            "width": 24,
+            "x": 8,
+            "y": 0
+           },
+           "geometry": {
+            "cornerRadius": 9999
+           },
+           "id": "1:2617",
+           "name": "Overlay+Shadow",
+           "styles": {
+            "effects": [
+             {
+              "color": "#00f2fe",
+              "offsetX": 0,
+              "offsetY": 0,
+              "radius": 8,
+              "type": "DROP_SHADOW"
+             }
+            ],
+            "fills": [
+             "#22d3eecc"
+            ]
+           },
+           "type": "RECTANGLE"
+          }
+         ],
+         "id": "1:2616",
+         "name": "Margin",
+         "styles": {
+          "layout": {
+           "counterAxisSizingMode": "FIXED",
+           "mode": "VERTICAL",
+           "primaryAxisSizingMode": "FIXED"
+          },
+          "padding": {
+           "bottom": 0,
+           "left": 8,
+           "right": 0,
+           "top": 0
+          }
+         },
+         "type": "FRAME"
+        },
+        {
+         "bounds": {
+          "height": 6,
+          "width": 32,
+          "x": 56,
+          "y": 0
+         },
+         "children": [
+          {
+           "bounds": {
+            "height": 6,
+            "width": 24,
+            "x": 8,
+            "y": 0
+           },
+           "geometry": {
+            "cornerRadius": 9999
+           },
+           "id": "1:2619",
+           "name": "Overlay",
+           "styles": {
+            "fills": [
+             "#22d3ee66"
+            ]
+           },
+           "type": "RECTANGLE"
+          }
+         ],
+         "id": "1:2618",
+         "name": "Margin",
+         "styles": {
+          "layout": {
+           "counterAxisSizingMode": "FIXED",
+           "mode": "VERTICAL",
+           "primaryAxisSizingMode": "FIXED"
+          },
+          "padding": {
+           "bottom": 0,
+           "left": 8,
+           "right": 0,
+           "top": 0
+          }
+         },
+         "type": "FRAME"
+        },
+        {
+         "bounds": {
+          "height": 6,
+          "width": 32,
+          "x": 88,
+          "y": 0
+         },
+         "children": [
+          {
+           "bounds": {
+            "height": 6,
+            "width": 24,
+            "x": 8,
+            "y": 0
+           },
+           "geometry": {
+            "cornerRadius": 9999
+           },
+           "id": "1:2621",
+           "name": "Overlay",
+           "styles": {
+            "fills": [
+             "#ffffff26"
+            ]
+           },
+           "type": "RECTANGLE"
+          }
+         ],
+         "id": "1:2620",
+         "name": "Margin",
+         "styles": {
+          "layout": {
+           "counterAxisSizingMode": "FIXED",
+           "mode": "VERTICAL",
+           "primaryAxisSizingMode": "FIXED"
+          },
+          "padding": {
+           "bottom": 0,
+           "left": 8,
+           "right": 0,
+           "top": 0
+          }
+         },
+         "type": "FRAME"
+        }
+       ],
+       "constraints": {
+        "horizontal": "CENTER",
+        "vertical": "MIN"
+       },
+       "id": "1:2614",
+       "name": "Loading Progress",
+       "styles": {
+        "layout": {
+         "counterAxisAlignItems": "CENTER",
+         "counterAxisSizingMode": "AUTO",
+         "mode": "HORIZONTAL",
+         "primaryAxisSizingMode": "AUTO"
+        }
+       },
+       "type": "FRAME"
+      },
+      {
+       "bounds": {
+        "height": 28,
+        "width": 221.86,
+        "x": 0,
+        "y": 6
+       },
+       "children": [
+        {
+         "bounds": {
+          "height": 16,
+          "width": 221.86,
+          "x": 0,
+          "y": 12
+         },
+         "children": [
+          {
+           "bounds": {
+            "height": 8,
+            "width": 8,
+            "x": 0,
+            "y": 4
+           },
+           "children": [
+            {
+             "bounds": {
+              "height": 8,
+              "width": 8,
+              "x": 0,
+              "y": 0
+             },
+             "constraints": {
+              "horizontal": "STRETCH",
+              "vertical": "STRETCH"
+             },
+             "geometry": {
+              "cornerRadius": 9999
+             },
+             "id": "1:2625",
+             "name": "Background",
+             "opacity": 0.75,
+             "styles": {
+              "fills": [
+               "#22d3ee"
+              ]
+             },
+             "type": "RECTANGLE"
+            },
+            {
+             "bounds": {
+              "height": 8,
+              "width": 8,
+              "x": 0,
+              "y": 0
+             },
+             "geometry": {
+              "cornerRadius": 9999
+             },
+             "id": "1:2626",
+             "name": "Background",
+             "styles": {
+              "fills": [
+               "#06b6d4"
+              ]
+             },
+             "type": "RECTANGLE"
+            }
+           ],
+           "constraints": {
+            "horizontal": "MIN",
+            "vertical": "CENTER"
+           },
+           "id": "1:2624",
+           "name": "Container",
+           "styles": {
+            "layout": {
+             "counterAxisSizingMode": "FIXED",
+             "mode": "HORIZONTAL",
+             "primaryAxisSizingMode": "FIXED"
+            }
+           },
+           "type": "FRAME"
+          },
+          {
+           "bounds": {
+            "height": 16,
+            "width": 213.86,
+            "x": 8,
+            "y": 0
+           },
+           "children": [
+            {
+             "bounds": {
+              "height": 16,
+              "width": 205.86,
+              "x": 8,
+              "y": 0
+             },
+             "characters": "Initializing 60FPS Lossless Stream...",
+             "id": "1:2628",
+             "name": "Text",
+             "styles": {
+              "fills": [
+               "#cbd5e1"
+              ],
+              "fontFamily": "Liberation Sans",
+              "fontSize": 12,
+              "fontStyle": "Regular",
+              "fontWeight": 500,
+              "letterSpacing": {
+               "unit": "PIXELS",
+               "value": 0.30000001192092896
+              },
+              "lineHeight": {
+               "unit": "PIXELS",
+               "value": 16
+              },
+              "textAlignVertical": "CENTER"
+             },
+             "type": "TEXT"
+            }
+           ],
+           "id": "1:2627",
+           "name": "Margin",
+           "styles": {
+            "layout": {
+             "counterAxisSizingMode": "AUTO",
+             "mode": "VERTICAL",
+             "primaryAxisSizingMode": "AUTO"
+            },
+            "padding": {
+             "bottom": 0,
+             "left": 8,
+             "right": 0,
+             "top": 0
+            }
+           },
+           "type": "FRAME"
+          }
+         ],
+         "id": "1:2623",
+         "name": "Engine Status Label",
+         "styles": {
+          "layout": {
+           "counterAxisAlignItems": "CENTER",
+           "counterAxisSizingMode": "AUTO",
+           "mode": "HORIZONTAL",
+           "primaryAxisSizingMode": "AUTO"
+          }
+         },
+         "type": "FRAME"
+        }
+       ],
+       "id": "1:2622",
+       "name": "Engine Status Label:margin",
+       "styles": {
+        "layout": {
+         "counterAxisSizingMode": "AUTO",
+         "mode": "VERTICAL",
+         "primaryAxisSizingMode": "AUTO"
+        },
+        "padding": {
+         "bottom": 0,
+         "left": 0,
+         "right": 0,
+         "top": 12
+        }
+       },
+       "type": "FRAME"
+      }
+     ],
+     "constraints": {
+      "horizontal": "CENTER",
+      "vertical": "MIN"
+     },
+     "id": "1:2613",
+     "name": "Loading Status & Minimalist Radar Pill",
+     "styles": {
+      "layout": {
+       "counterAxisAlignItems": "CENTER",
+       "counterAxisSizingMode": "AUTO",
+       "mode": "VERTICAL",
+       "primaryAxisSizingMode": "AUTO"
+      }
+     },
+     "type": "FRAME"
+    },
+    {
+     "bounds": {
+      "height": 57,
+      "width": 340,
+      "x": 24,
+      "y": 34
+     },
+     "children": [
+      {
+       "bounds": {
+        "height": 33,
+        "width": 340,
+        "x": 0,
+        "y": 24
+       },
+       "children": [
+        {
+         "bounds": {
+          "height": 33,
+          "width": 145.03,
+          "x": 0,
+          "y": 0
+         },
+         "children": [
+          {
+           "bounds": {
+            "height": 33,
+            "width": 118.27,
+            "x": 0,
+            "y": 0
+           },
+           "characters": "AETHERCAST CORE\nV3.4",
+           "id": "1:2632",
+           "name": "Text",
+           "styles": {
+            "fills": [
+             "#64748b"
+            ],
+            "fontFamily": "Liberation Sans",
+            "fontSize": 11,
+            "fontStyle": "Bold",
+            "fontWeight": 600,
+            "letterSpacing": {
+             "unit": "PIXELS",
+             "value": 0.550000011920929
+            },
+            "lineHeight": {
+             "unit": "PIXELS",
+             "value": 16.5
+            },
+            "textAlignVertical": "CENTER"
+           },
+           "type": "TEXT"
+          }
+         ],
+         "constraints": {
+          "horizontal": "MIN",
+          "vertical": "CENTER"
+         },
+         "id": "1:2631",
+         "name": "Container",
+         "styles": {
+          "layout": {
+           "counterAxisSizingMode": "AUTO",
+           "mode": "VERTICAL",
+           "primaryAxisSizingMode": "AUTO"
+          },
+          "padding": {
+           "bottom": 0,
+           "left": 0,
+           "right": 26.760000228881836,
+           "top": 0
+          }
+         },
+         "type": "FRAME"
+        },
+        {
+         "bounds": {
+          "height": 4,
+          "width": 15.95,
+          "x": 145.03,
+          "y": 14.5
+         },
+         "children": [
+          {
+           "bounds": {
+            "height": 4,
+            "width": 3.95,
+            "x": 12,
+            "y": 0
+           },
+           "geometry": {
+            "cornerRadius": 9999
+           },
+           "id": "1:2634",
+           "name": "Background",
+           "styles": {
+            "fills": [
+             "#475569"
+            ]
+           },
+           "type": "RECTANGLE"
+          }
+         ],
+         "id": "1:2633",
+         "name": "Margin",
+         "styles": {
+          "layout": {
+           "counterAxisSizingMode": "FIXED",
+           "mode": "VERTICAL",
+           "primaryAxisSizingMode": "FIXED"
+          },
+          "padding": {
+           "bottom": 0,
+           "left": 12,
+           "right": 0,
+           "top": 0
+          }
+         },
+         "type": "FRAME"
+        },
+        {
+         "bounds": {
+          "height": 33,
+          "width": 179.02,
+          "x": 160.98,
+          "y": 0
+         },
+         "children": [
+          {
+           "bounds": {
+            "height": 33,
+            "width": 102.9,
+            "x": 12,
+            "y": 0
+           },
+           "characters": "AIRPLAY • DLNA •\nMIRACAST",
+           "id": "1:2636",
+           "name": "Text",
+           "styles": {
+            "fills": [
+             "#22d3eecc"
+            ],
+            "fontFamily": "Liberation Sans",
+            "fontSize": 11,
+            "fontStyle": "Bold",
+            "fontWeight": 600,
+            "letterSpacing": {
+             "unit": "PIXELS",
+             "value": 0.550000011920929
+            },
+            "lineHeight": {
+             "unit": "PIXELS",
+             "value": 16.5
+            },
+            "textAlignVertical": "CENTER"
+           },
+           "type": "TEXT"
+          }
+         ],
+         "id": "1:2635",
+         "name": "Margin",
+         "styles": {
+          "layout": {
+           "counterAxisSizingMode": "AUTO",
+           "mode": "VERTICAL",
+           "primaryAxisSizingMode": "AUTO"
+          },
+          "padding": {
+           "bottom": 0,
+           "left": 12,
+           "right": 64.12000274658203,
+           "top": 0
+          }
+         },
+         "type": "FRAME"
+        }
+       ],
+       "id": "1:2630",
+       "name": "Version & Encrypted Protocol Badge",
+       "styles": {
+        "layout": {
+         "counterAxisAlignItems": "CENTER",
+         "counterAxisSizingMode": "AUTO",
+         "mode": "HORIZONTAL",
+         "primaryAxisSizingMode": "AUTO"
+        }
+       },
+       "type": "FRAME"
+      }
+     ],
+     "id": "1:2629",
+     "name": "Version & Encrypted Protocol Badge:margin",
+     "styles": {
+      "layout": {
+       "counterAxisSizingMode": "AUTO",
+       "mode": "VERTICAL",
+       "primaryAxisSizingMode": "AUTO"
+      },
+      "padding": {
+       "bottom": 0,
+       "left": 0,
+       "right": 0,
+       "top": 24
+      }
+     },
+     "type": "FRAME"
+    },
+    {
+     "bounds": {
+      "height": 28,
+      "width": 128,
+      "x": 130,
+      "y": 91
+     },
+     "children": [
+      {
+       "bounds": {
+        "height": 4,
+        "width": 128,
+        "x": 0,
+        "y": 24
+       },
+       "geometry": {
+        "cornerRadius": 9999
+       },
+       "id": "1:2638",
+       "name": "iOS Native Home Indicator Bar",
+       "styles": {
+        "fills": [
+         "#ffffff40"
+        ]
+       },
+       "type": "RECTANGLE"
+      }
+     ],
+     "id": "1:2637",
+     "name": "iOS Native Home Indicator Bar:margin",
+     "styles": {
+      "layout": {
+       "counterAxisSizingMode": "FIXED",
+       "mode": "VERTICAL",
+       "primaryAxisSizingMode": "FIXED"
+      },
+      "padding": {
+       "bottom": 0,
+       "left": 0,
+       "right": 0,
+       "top": 24
+      }
+     },
+     "type": "FRAME"
+    }
+   ],
+   "constraints": {
+    "horizontal": "STRETCH",
+    "vertical": "MIN"
+   },
+   "id": "1:2612",
+   "name": "Footer - LoadingSection",
+   "styles": {
+    "layout": {
+     "counterAxisAlignItems": "CENTER",
+     "counterAxisSizingMode": "FIXED",
+     "mode": "VERTICAL",
+     "primaryAxisSizingMode": "AUTO"
+    },
+    "padding": {
+     "bottom": 40,
+     "left": 24,
+     "right": 24,
+     "top": 0
+    }
+   },
+   "type": "FRAME"
+  },
+  {
+   "bounds": {
+    "height": 32,
+    "width": 388,
+    "x": 1,
+    "y": 1
+   },
+   "children": [
+    {
+     "bounds": {
+      "height": 20,
+      "width": 27.7,
+      "x": 32,
+      "y": 12
+     },
+     "children": [
+      {
+       "bounds": {
+        "height": 20,
+        "width": 27.7,
+        "x": 0,
+        "y": 0
+       },
+       "characters": "9:41",
+       "id": "1:2641",
+       "name": "Text",
+       "styles": {
+        "fills": [
+         "#ffffffe5"
+        ],
+        "fontFamily": "Liberation Sans",
+        "fontSize": 15,
+        "fontStyle": "Regular",
+        "fontWeight": 500,
+        "letterSpacing": {
+         "unit": "PIXELS",
+         "value": -0.375
+        },
+        "lineHeight": {
+         "unit": "PIXELS",
+         "value": 20
+        },
+        "textAlignVertical": "CENTER"
+       },
+       "type": "TEXT"
+      }
+     ],
+     "constraints": {
+      "horizontal": "MIN",
+      "vertical": "CENTER"
+     },
+     "id": "1:2640",
+     "name": "Left: Clock",
+     "styles": {
+      "layout": {
+       "counterAxisSizingMode": "AUTO",
+       "mode": "VERTICAL",
+       "primaryAxisSizingMode": "AUTO"
+      }
+     },
+     "type": "FRAME"
+    },
+    {
+     "bounds": {
+      "height": 16,
+      "width": 76,
+      "x": 280,
+      "y": 14
+     },
+     "children": [
+      {
+       "bounds": {
+        "height": 16,
+        "width": 16,
+        "x": 0,
+        "y": 0
+       },
+       "children": [
+        {
+         "bounds": {
+          "height": 3.33,
+          "width": 2,
+          "x": 1.33,
+          "y": 10.67
+         },
+         "constraints": {
+          "horizontal": "SCALE",
+          "vertical": "SCALE"
+         },
+         "id": "1:2644",
+         "name": "Vector",
+         "styles": {
+          "fills": [
+           "#ffffffe5"
+          ]
+         },
+         "type": "VECTOR"
+        },
+        {
+         "bounds": {
+          "height": 6,
+          "width": 2,
+          "x": 5,
+          "y": 8
+         },
+         "constraints": {
+          "horizontal": "SCALE",
+          "vertical": "SCALE"
+         },
+         "id": "1:2645",
+         "name": "Vector",
+         "styles": {
+          "fills": [
+           "#ffffffe5"
+          ]
+         },
+         "type": "VECTOR"
+        },
+        {
+         "bounds": {
+          "height": 8.67,
+          "width": 2,
+          "x": 8.67,
+          "y": 5.33
+         },
+         "constraints": {
+          "horizontal": "SCALE",
+          "vertical": "SCALE"
+         },
+         "id": "1:2646",
+         "name": "Vector",
+         "styles": {
+          "fills": [
+           "#ffffffe5"
+          ]
+         },
+         "type": "VECTOR"
+        },
+        {
+         "bounds": {
+          "height": 11.33,
+          "width": 2,
+          "x": 12.33,
+          "y": 2.67
+         },
+         "constraints": {
+          "horizontal": "SCALE",
+          "vertical": "SCALE"
+         },
+         "id": "1:2647",
+         "name": "Vector",
+         "styles": {
+          "fills": [
+           "#ffffffe5"
+          ]
+         },
+         "type": "VECTOR"
+        }
+       ],
+       "constraints": {
+        "horizontal": "MIN",
+        "vertical": "CENTER"
+       },
+       "id": "1:2643",
+       "name": "SVG - Cellular Signal Icon",
+       "type": "FRAME"
+      },
+      {
+       "bounds": {
+        "height": 16,
+        "width": 24,
+        "x": 16,
+        "y": 0
+       },
+       "children": [
+        {
+         "bounds": {
+          "height": 16,
+          "width": 16,
+          "x": 8,
+          "y": 0
+         },
+         "children": [
+          {
+           "bounds": {
+            "height": 16,
+            "width": 16,
+            "x": 0,
+            "y": 0
+           },
+           "children": [
+            {
+             "bounds": {
+              "height": 11.33,
+              "width": 16,
+              "x": 0,
+              "y": 2.67
+             },
+             "constraints": {
+              "horizontal": "SCALE",
+              "vertical": "SCALE"
+             },
+             "id": "1:2651",
+             "name": "Vector",
+             "styles": {
+              "fills": [
+               "#ffffffe5"
+              ]
+             },
+             "type": "VECTOR"
+            }
+           ],
+           "constraints": {
+            "horizontal": "MIN",
+            "vertical": "CENTER"
+           },
+           "id": "1:2650",
+           "name": "SVG",
+           "type": "FRAME"
+          }
+         ],
+         "id": "1:2649",
+         "name": "SVG - WiFi Icon",
+         "styles": {
+          "layout": {
+           "counterAxisSizingMode": "FIXED",
+           "mode": "VERTICAL",
+           "primaryAxisAlignItems": "CENTER",
+           "primaryAxisSizingMode": "FIXED"
+          }
+         },
+         "type": "FRAME"
+        }
+       ],
+       "id": "1:2648",
+       "name": "SVG - WiFi Icon:margin",
+       "styles": {
+        "layout": {
+         "counterAxisSizingMode": "FIXED",
+         "mode": "VERTICAL",
+         "primaryAxisSizingMode": "FIXED"
+        },
+        "padding": {
+         "bottom": 0,
+         "left": 8,
+         "right": 0,
+         "top": 0
+        }
+       },
+       "type": "FRAME"
+      },
+      {
+       "bounds": {
+        "height": 12,
+        "width": 36,
+        "x": 40,
+        "y": 2
+       },
+       "children": [
+        {
+         "bounds": {
+          "height": 12,
+          "width": 28,
+          "x": 8,
+          "y": 0
+         },
+         "children": [
+          {
+           "bounds": {
+            "height": 12,
+            "width": 24,
+            "x": 0,
+            "y": 0
+           },
+           "children": [
+            {
+             "bounds": {
+              "height": 7,
+              "width": 19,
+              "x": 2.5,
+              "y": 2.5
+             },
+             "constraints": {
+              "horizontal": "STRETCH",
+              "vertical": "STRETCH"
+             },
+             "geometry": {
+              "cornerRadius": 1.5
+             },
+             "id": "1:2655",
+             "name": "Background",
+             "styles": {
+              "fills": [
+               "#ffffff"
+              ]
+             },
+             "type": "RECTANGLE"
+            }
+           ],
+           "constraints": {
+            "horizontal": "MIN",
+            "vertical": "CENTER"
+           },
+           "geometry": {
+            "cornerRadius": 4
+           },
+           "id": "1:2654",
+           "name": "Border",
+           "styles": {
+            "layout": {
+             "counterAxisAlignItems": "CENTER",
+             "counterAxisSizingMode": "FIXED",
+             "mode": "HORIZONTAL",
+             "primaryAxisSizingMode": "FIXED"
+            },
+            "padding": {
+             "bottom": 1.5,
+             "left": 1.5,
+             "right": 1.5,
+             "top": 1.5
+            },
+            "strokeAlign": "INSIDE",
+            "strokeCap": "NONE",
+            "strokeJoin": "MITER",
+            "strokeWeight": 1,
+            "strokes": [
+             "#ffffffb2"
+            ]
+           },
+           "type": "FRAME"
+          },
+          {
+           "bounds": {
+            "height": 6,
+            "width": 4,
+            "x": 24,
+            "y": 3
+           },
+           "children": [
+            {
+             "bounds": {
+              "height": 6,
+              "width": 2,
+              "x": 2,
+              "y": 0
+             },
+             "geometry": {
+              "bottomLeftRadius": 0,
+              "bottomRightRadius": 2,
+              "cornerRadius": "mixed",
+              "topLeftRadius": 0,
+              "topRightRadius": 2
+             },
+             "id": "1:2657",
+             "name": "Vertical Divider",
+             "styles": {
+              "fills": [
+               "#ffffffb2"
+              ]
+             },
+             "type": "RECTANGLE"
+            }
+           ],
+           "id": "1:2656",
+           "name": "Margin",
+           "styles": {
+            "layout": {
+             "counterAxisSizingMode": "FIXED",
+             "mode": "VERTICAL",
+             "primaryAxisSizingMode": "FIXED"
+            },
+            "padding": {
+             "bottom": 0,
+             "left": 2,
+             "right": 0,
+             "top": 0
+            }
+           },
+           "type": "FRAME"
+          }
+         ],
+         "id": "1:2653",
+         "name": "Battery Container",
+         "styles": {
+          "layout": {
+           "counterAxisAlignItems": "CENTER",
+           "counterAxisSizingMode": "AUTO",
+           "mode": "HORIZONTAL",
+           "primaryAxisSizingMode": "AUTO"
+          }
+         },
+         "type": "FRAME"
+        }
+       ],
+       "id": "1:2652",
+       "name": "Battery Container:margin",
+       "styles": {
+        "layout": {
+         "counterAxisSizingMode": "AUTO",
+         "mode": "VERTICAL",
+         "primaryAxisSizingMode": "AUTO"
+        },
+        "padding": {
+         "bottom": 0,
+         "left": 8,
+         "right": 0,
+         "top": 0
+        }
+       },
+       "type": "FRAME"
+      }
+     ],
+     "constraints": {
+      "horizontal": "MIN",
+      "vertical": "CENTER"
+     },
+     "id": "1:2642",
+     "name": "Right: Status Icons (Cellular, WiFi, Battery)",
+     "styles": {
+      "layout": {
+       "counterAxisAlignItems": "CENTER",
+       "counterAxisSizingMode": "AUTO",
+       "mode": "HORIZONTAL",
+       "primaryAxisSizingMode": "AUTO"
+      }
+     },
+     "type": "FRAME"
+    }
+   ],
+   "constraints": {
+    "horizontal": "STRETCH",
+    "vertical": "MIN"
+   },
+   "id": "1:2639",
+   "name": "Header - iOSStatusBar",
+   "styles": {
+    "layout": {
+     "counterAxisAlignItems": "CENTER",
+     "counterAxisSizingMode": "AUTO",
+     "itemSpacing": 220.3000030517578,
+     "mode": "HORIZONTAL",
+     "primaryAxisAlignItems": "SPACE_BETWEEN",
+     "primaryAxisSizingMode": "FIXED"
+    },
+    "padding": {
+     "bottom": 0,
+     "left": 32,
+     "right": 32,
+     "top": 12
+    }
+   },
+   "type": "FRAME"
+  }
+ ],
+ "constraints": {
+  "horizontal": "MIN",
+  "vertical": "STRETCH"
+ },
+ "id": "1:2560",
+ "name": "Cast to TV - Splash Screen (Dark Cinema)",
+ "styles": {
+  "effects": [
+   {
+    "color": "#000000",
+    "offsetX": 0,
+    "offsetY": 25,
+    "opacity": 0.25,
+    "radius": 50,
+    "spread": -12,
+    "type": "DROP_SHADOW"
+   }
+  ],
+  "fills": [
+   "#ffffff",
+   "#080c14",
+   "#070b12"
+  ],
+  "strokeAlign": "INSIDE",
+  "strokeCap": "NONE",
+  "strokeJoin": "MITER",
+  "strokeWeight": 1,
+  "strokes": [
+   "#ffffff0d"
+  ]
+ },
+ "type": "FRAME"
+}

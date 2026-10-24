@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Dark Cinema gold CTA (Settings "Start Free Trial"): linear-gradient(#fbbf24, #f59e0b, #d97706), r16. -->
+<ripple xmlns:android="http://schemas.android.com/apk/res/android" android:color="@color/dc_ripple">
+    <item>
+        <shape android:shape="rectangle">
+            <gradient android:angle="0" android:startColor="@color/dc_gold" android:centerColor="@color/dc_amber" android:endColor="@color/dc_amber_deep"/>
+            <corners android:radius="@dimen/_16sdp"/>
+        </shape>
+    </item>
+</ripple>

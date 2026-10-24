@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Dark Cinema exit icon tile: outer r16 linear-gradient(135deg, #161c2c, #0b0f19) with an inset r12 tile linear-gradient(45deg, #f43f5e33, #dc26261a). -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <gradient android:angle="315" android:startColor="#161c2c" android:endColor="#0b0f19"/>
+            <corners android:radius="@dimen/_16sdp"/>
+        </shape>
+    </item>
+    <item android:left="@dimen/_8sdp" android:top="@dimen/_8sdp" android:right="@dimen/_8sdp" android:bottom="@dimen/_8sdp">
+        <shape android:shape="rectangle">
+            <gradient android:angle="45" android:startColor="#33f43f5e" android:endColor="#1adc2626"/>
+            <corners android:radius="@dimen/_12sdp"/>
+        </shape>
+    </item>
+</layer-list>

@@ -77,7 +77,7 @@
                 app:layout_constraintTop_toTopOf="parent">
                 <View
                     android:id="@+id/imHomeLG"
-                    android:background="@drawable/ic_bg_home_andoridtv"
+                    android:background="@drawable/bg_control"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_margin="@dimen/_5sdp"/>
@@ -141,7 +141,17 @@
                     app:layout_constraintBottom_toTopOf="@+id/guideline_lg20"
                     app:layout_constraintEnd_toStartOf="@+id/guideline_lg17"
                     app:layout_constraintStart_toStartOf="@+id/guideline_lg16"
-                    app:layout_constraintTop_toBottomOf="@+id/guideline_lg19"/>
+                    app:layout_constraintTop_toBottomOf="@+id/guideline_lg19">
+                    <TextView
+                        style="@style/DC.Remote.OkLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/ok"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"/>
+                </androidx.constraintlayout.widget.ConstraintLayout>
                 <androidx.constraintlayout.widget.Guideline
                     android:orientation="vertical"
                     android:id="@+id/guideline_lg16"
@@ -279,7 +289,7 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/ctTouchpadLG"
-        android:background="@drawable/img_touchpad_ss"
+        android:background="@drawable/dc_bg_glass_card"
         android:visibility="gone"
         android:layout_width="0dp"
         android:layout_height="0dp"
@@ -319,6 +329,33 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="@+id/guideline21"
             app:layout_constraintTop_toTopOf="@+id/guideline212"/>
+        <TextView
+            android:id="@+id/tvTouchHint"
+            android:textSize="@dimen/_12ssp"
+            android:textColor="@color/dc_text_muted"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/txt_tab"
+            android:fontFamily="@font/pro_display_regular"
+            app:layout_constraintBottom_toTopOf="@+id/guideline212"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+        <TextView
+            style="@style/DC.Remote.TouchLabel"
+            android:text="@string/touchpad_back"
+            app:layout_constraintBottom_toBottomOf="@+id/viewReturn"
+            app:layout_constraintEnd_toEndOf="@+id/viewReturn"
+            app:layout_constraintStart_toStartOf="@+id/viewReturn"
+            app:layout_constraintTop_toTopOf="@+id/viewReturn"/>
+        <TextView
+            style="@style/DC.Remote.TouchLabel"
+            android:text="@string/touchpad_exit"
+            app:layout_constraintBottom_toBottomOf="@+id/viewExit"
+            app:layout_constraintEnd_toEndOf="@+id/viewExit"
+            app:layout_constraintStart_toStartOf="@+id/viewExit"
+            app:layout_constraintTop_toTopOf="@+id/viewExit"/>
     </androidx.constraintlayout.widget.ConstraintLayout>
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/ctNumberLG"

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Dark Cinema D-pad (Stitch "Smart Remote Redesigned"): halo rings, glass disc, arrow pads, dark OK disc with cyan rim + glow.
+     Shared by every brand remote; pressed overlays in dc_dpad_press_*. Viewport = 310 ring box, disc r140 at center. -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="310dp" android:height="310dp" android:viewportWidth="310" android:viewportHeight="310">
+    <path android:strokeColor="#0dffffff" android:strokeWidth="1"
+        android:pathData="M0.5,155a154.5,154.5 0,1 0,309 0a154.5,154.5 0,1 0,-309 0Z"/>
+    <path android:strokeColor="#0f22d3ee" android:strokeWidth="1"
+        android:pathData="M8,155a147,147 0,1 0,294 0a147,147 0,1 0,-294 0Z"/>
+    <path android:strokeColor="#14ffffff" android:strokeWidth="1"
+        android:pathData="M15,155a140,140 0,1 0,280 0a140,140 0,1 0,-280 0Z">
+        <aapt:attr name="android:fillColor">
+            <gradient android:type="linear" android:startX="155" android:startY="15" android:endX="155" android:endY="295"
+                android:startColor="#1c2333" android:centerColor="#141a28" android:endColor="#0b0f19"/>
+        </aapt:attr>
+    </path>
+    <path android:strokeColor="#0affffff" android:strokeWidth="1"
+        android:pathData="M23,155a132,132 0,1 0,264 0a132,132 0,1 0,-264 0Z"/>
+    <path android:fillColor="#0dffffff" android:strokeColor="#1affffff" android:strokeWidth="1"
+        android:pathData="M139,45a16,16 0,1 0,32 0a16,16 0,1 0,-32 0ZM139,265a16,16 0,1 0,32 0a16,16 0,1 0,-32 0ZM29,155a16,16 0,1 0,32 0a16,16 0,1 0,-32 0ZM249,155a16,16 0,1 0,32 0a16,16 0,1 0,-32 0Z"/>
+    <path android:strokeColor="@color/dc_key_icon" android:strokeWidth="2.5" android:strokeLineCap="round" android:strokeLineJoin="round"
+        android:pathData="M147.5,49L155,41.5L162.5,49M147.5,261L155,268.5L162.5,261M49,147.5L41.5,155L49,162.5M261,147.5L268.5,155L261,162.5"/>
+    <!-- OK glow (approximates the cyan box-shadow without blur). -->
+    <path android:pathData="M80,155a75,75 0,1 0,150 0a75,75 0,1 0,-150 0Z">
+        <aapt:attr name="android:fillColor">
+            <gradient android:type="radial" android:centerX="155" android:centerY="155" android:gradientRadius="75">
+                <item android:offset="0.6" android:color="#4d22d3ee"/>
+                <item android:offset="1" android:color="#0022d3ee"/>
+            </gradient>
+        </aapt:attr>
+    </path>
+    <path android:strokeColor="#b322d3ee" android:strokeWidth="2"
+        android:pathData="M108,155a47,47 0,1 0,94 0a47,47 0,1 0,-94 0Z">
+        <aapt:attr name="android:fillColor">
+            <gradient android:type="radial" android:centerX="155" android:centerY="140" android:gradientRadius="60"
+                android:startColor="#123447" android:endColor="#0a1220"/>
+        </aapt:attr>
+    </path>
+    <path android:strokeColor="#4d22d3ee" android:strokeWidth="1"
+        android:pathData="M115.5,155a39.5,39.5 0,1 0,79 0a39.5,39.5 0,1 0,-79 0Z"/>
+</vector>

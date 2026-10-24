@@ -1,10 +1,53 @@
-CastToTV design tokens (from app/src/main/res/values/values.xml; the shipped app is the source of truth)
+CastToTV design tokens (from app/src/main/res/values/values.xml; design source: Figma "Dark Cinema", ADR-0002)
+
+Dark Cinema (Figma "CastToTV / Page 1", plan docs/exec-plans/completed/2026-10-23-dark-cinema-ui.md)
+Values picked from docs/references/figma-dark-cinema/tokens.md + nodes/*.json. Use these for every redesigned
+or self-styled screen; legacy tokens below are pre-redesign (APK 14.7.4) values; some may now be unused (TD-011).
+
+Colors (@color/dc_*)
+- Backgrounds: dc_bg #070b14 (window, status/nav bar), dc_bg_alt #0a0e17, dc_surface #0f131d, dc_surface_raised #171c25
+- Accents: dc_primary #00f2fe (cyan, active/selected, colorAccent), dc_primary_soft #22d3ee,
+  dc_violet #8b5cf6, dc_violet_soft #c0c1ff, dc_indigo #4f46e5, dc_blue #3b82f6
+- Status: dc_gold #fbbf24 (premium), dc_success #10b981, dc_danger #f43f5e, dc_danger_deep #dc2626
+- Text: dc_text_primary #ffffff (titles), dc_text_body #dfe2f0, dc_text_secondary #b9cacb, dc_text_muted #94a3b8,
+  dc_text_subtle #64748b, dc_text_on_primary #002022 (text on solid cyan)
+- Glass/fills (Android #AARRGGBB): dc_glass_start/end #99192239 -> #b20d1322, dc_glass_stroke #14ffffff,
+  dc_chip_bg #14ffffff, dc_chip_stroke #1fffffff, dc_icon_tile_* (#3306b6d4 -> #333b82f6, stroke #4d06b6d4),
+  dc_key_* (#cc1e293b -> #f20f172a, stroke #12ffffff), dc_dialog_* (#bf192030 -> #e00d111b, stroke #1affffff),
+  dc_sheet_bg #f20f131d, dc_sheet_stroke #99334155, dc_scrim #99000000, dc_divider #1affffff, dc_ripple #33ffffff
+
+Shared drawables (@drawable/dc_bg_*). No real blur (minSdk 24): translucent gradient + 1dp stroke.
+- dc_bg_glass_card   feature/list card, gradient top->bottom, r16 (Figma "Button - Photo Cast")
+- dc_bg_chip         pill chip / small pill button, r999 (Figma "More options dropdown pill")
+- dc_bg_icon_tile    cyan icon tile behind feature icons, r12 (Figma "Background+Border+Shadow"); other hues = per-screen copy
+- dc_bg_cta_gradient primary CTA with ripple, cyan -> blue -> indigo, r16 (Figma PRO "Button")
+- dc_bg_key          remote key / round-rect icon button with ripple, r16 (Figma "Button - Back", header back)
+- dc_bg_dialog       center modal card, r32 (Figma "The Modal Card")
+- dc_bg_sheet        bottom sheet, top corners r36 (Figma "Main - NotificationBottomSheet")
+
+Text styles (@style/DC.Text.*, parent DC.Text = white, includeFontPadding false). Figma "Liberation Sans" -> pro_display_*.
+- DC.Text.Title     22ssp bold          screen title
+- DC.Text.Heading   18ssp semibold, lh 26   header / section title (item_header tv_title)
+- DC.Text.CardTitle 15ssp bold          card title
+- DC.Text.Button    16ssp semibold, centered
+- DC.Text.Body      14ssp medium, lh 20, dc_text_body
+- DC.Text.Caption   12ssp regular, lh 16, dc_text_muted
+- DC.Text.Label     10ssp bold caps, letterSpacing 0.05, dc_text_secondary
+
+Shared header: layout/item_header.xml (bound by BaseActivity.bindHeader) — back button on dc_bg_key tinted white,
+title DC.Text.Heading. IDs unchanged.
+
+Theme
+- Theme.CastTV = Theme.AppCompat.NoActionBar (dark): windowBackground/statusBar/navigationBar dc_bg, colorAccent dc_primary,
+  textColorPrimary white. BaseActivity sets status bar dc_bg with light icons. Theme.Splash uses @drawable/bg_splash.
+
+Legacy tokens (pre-redesign; screens not yet migrated)
 
 Colors
 - color_main #4d72f5 — primary blue: buttons, accents, progress (style progressBarBlue)
 - colorPrimary #0161da
 - textColor #333333 (body), textColorSecondary #455a64, text_color #575757, text_default #999999
-- white #ffffff (status bar is white with dark icons, set in BaseActivity), black #000000
+- white #ffffff, black #000000
 - Use @color/... names; do not hardcode hex in layouts.
 
 Typography
@@ -20,4 +63,4 @@ Motion
 - Screen transitions slide_in_right / slide_out_left
 
 Layout
-- Portrait only. Theme.CastTV = AppCompat Light NoActionBar; Theme.Splash uses @drawable/bg_splash.
+- Portrait only.

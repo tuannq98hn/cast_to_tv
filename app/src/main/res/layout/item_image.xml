@@ -10,7 +10,7 @@
         android:scaleType="centerCrop"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:siBorderColor="@color/color_main"
+        app:siBorderColor="@color/dc_primary"
         app:siBorderWidth="@dimen/_3sdp"
         app:siRadius="@dimen/_6sdp"/>
 </androidx.constraintlayout.widget.ConstraintLayout>

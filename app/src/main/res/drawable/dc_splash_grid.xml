@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Stitch splash TV matrix grid: 16px lines, cyan rgba(0,242,254,.3) at 15% opacity. Stretched over the panel. -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android" android:width="236dp" android:height="122dp" android:viewportWidth="236" android:viewportHeight="122">
+    <path android:strokeColor="#0c00f2fe" android:strokeWidth="1" android:pathData="M16,0V122M32,0V122M48,0V122M64,0V122M80,0V122M96,0V122M112,0V122M128,0V122M144,0V122M160,0V122M176,0V122M192,0V122M208,0V122M224,0V122M0,16H236M0,32H236M0,48H236M0,64H236M0,80H236M0,96H236M0,112H236"/>
+</vector>

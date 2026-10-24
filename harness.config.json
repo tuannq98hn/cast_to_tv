@@ -38,7 +38,7 @@
   ],
   "loop": {
     "max_parallel": 1,
-    "max_iterations": 30,
+    "max_iterations": 60,
     "max_attempts": 3,
     "poll_ms": 3000,
     "review": true,

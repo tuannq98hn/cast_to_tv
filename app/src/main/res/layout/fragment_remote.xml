@@ -16,13 +16,13 @@
         android:layout_marginHorizontal="@dimen/_10sdp"
         app:layout_constraintBottom_toTopOf="@+id/ctRokuRemote"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHeight_percent="0.08"
+        app:layout_constraintHeight_percent="0.1"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/ctRokuBack"
-            android:background="@drawable/item_btn_big_type0"
+            style="@style/DC.Remote.Key"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_marginEnd="@dimen/_8sdp"
@@ -30,17 +30,35 @@
             app:layout_constraintHorizontal_weight="1"
             app:layout_constraintStart_toStartOf="parent">
             <ImageView
-                android:layout_width="@dimen/size_icon_small"
-                android:layout_height="@dimen/size_icon_small"
+                android:id="@+id/ctRokuBackIcon"
+                style="@style/DC.Remote.KeyIcon"
                 android:src="@drawable/ic_back_arrow_white"
-                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintBottom_toTopOf="@+id/ctRokuBackLabel"
+                app:layout_constraintVertical_chainStyle="packed"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
                 app:layout_constraintTop_toTopOf="parent"/>
+            <TextView
+                android:id="@+id/ctRokuBackLabel"
+                style="@style/DC.Text"
+                android:fontFamily="@font/pro_display_semibold"
+                android:letterSpacing="0.06"
+                android:textAllCaps="true"
+                android:textColor="@color/dc_text_muted"
+                android:textSize="@dimen/_7ssp"
+                android:maxLines="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:text="@string/remote_key_back"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ctRokuBackIcon"/>
         </androidx.constraintlayout.widget.ConstraintLayout>
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/ctRokuHome"
-            android:background="@drawable/item_btn_big_type0"
+            style="@style/DC.Remote.Key"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_marginLeft="@dimen/_8sdp"
@@ -50,17 +68,35 @@
             app:layout_constraintHorizontal_weight="1"
             app:layout_constraintStart_toEndOf="@+id/ctRokuBack">
             <ImageView
-                android:layout_width="@dimen/size_icon_small"
-                android:layout_height="@dimen/size_icon_small"
+                android:id="@+id/ctRokuHomeIcon"
+                style="@style/DC.Remote.KeyIcon"
                 android:src="@drawable/ic_home_v2"
-                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintBottom_toTopOf="@+id/ctRokuHomeLabel"
+                app:layout_constraintVertical_chainStyle="packed"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
                 app:layout_constraintTop_toTopOf="parent"/>
+            <TextView
+                android:id="@+id/ctRokuHomeLabel"
+                style="@style/DC.Text"
+                android:fontFamily="@font/pro_display_semibold"
+                android:letterSpacing="0.06"
+                android:textAllCaps="true"
+                android:textColor="@color/dc_text_muted"
+                android:textSize="@dimen/_7ssp"
+                android:maxLines="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:text="@string/home"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ctRokuHomeIcon"/>
         </androidx.constraintlayout.widget.ConstraintLayout>
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/ctRokuInfo"
-            android:background="@drawable/item_btn_big_type0"
+            style="@style/DC.Remote.Key"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_marginLeft="@dimen/_8sdp"
@@ -70,17 +106,35 @@
             app:layout_constraintHorizontal_weight="1"
             app:layout_constraintStart_toEndOf="@+id/ctRokuHome">
             <ImageView
-                android:layout_width="@dimen/size_icon_small"
-                android:layout_height="@dimen/size_icon_small"
+                android:id="@+id/ctRokuInfoIcon"
+                style="@style/DC.Remote.KeyIcon"
                 android:src="@drawable/ic_remote_infor"
-                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintBottom_toTopOf="@+id/ctRokuInfoLabel"
+                app:layout_constraintVertical_chainStyle="packed"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
                 app:layout_constraintTop_toTopOf="parent"/>
+            <TextView
+                android:id="@+id/ctRokuInfoLabel"
+                style="@style/DC.Text"
+                android:fontFamily="@font/pro_display_semibold"
+                android:letterSpacing="0.06"
+                android:textAllCaps="true"
+                android:textColor="@color/dc_text_muted"
+                android:textSize="@dimen/_7ssp"
+                android:maxLines="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:text="@string/remote_key_menu"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ctRokuInfoIcon"/>
         </androidx.constraintlayout.widget.ConstraintLayout>
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/ctRokuPower"
-            android:background="@drawable/item_btn_small_power"
+            style="@style/DC.Remote.Key.Power"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_marginStart="@dimen/_8sdp"
@@ -88,21 +142,35 @@
             app:layout_constraintHorizontal_weight="1"
             app:layout_constraintStart_toEndOf="@+id/ctRokuInfo">
             <ImageView
+                android:id="@+id/ctRokuPowerIcon"
                 android:layout_width="@dimen/size_icon_small"
                 android:layout_height="@dimen/size_icon_small"
                 android:src="@drawable/ic_power_v2"
-                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintBottom_toTopOf="@+id/ctRokuPowerLabel"
+                app:layout_constraintVertical_chainStyle="packed"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
                 app:layout_constraintTop_toTopOf="parent"/>
+            <TextView
+                android:id="@+id/ctRokuPowerLabel"
+                style="@style/DC.Text"
+                android:fontFamily="@font/pro_display_semibold"
+                android:letterSpacing="0.06"
+                android:textAllCaps="true"
+                android:textColor="@color/dc_text_primary"
+                android:textSize="@dimen/_7ssp"
+                android:maxLines="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:text="@string/remote_key_power"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ctRokuPowerIcon"/>
             <ImageView
                 android:id="@+id/imvVipPower"
-                android:focusable="false"
-                android:clickable="false"
-                android:layout_width="@dimen/_12sdp"
-                android:layout_height="@dimen/_12sdp"
-                android:layout_margin="@dimen/_3sdp"
-                android:src="@drawable/ic_tag_vip"
+                style="@style/DC.Remote.Crown"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="parent"/>
         </androidx.constraintlayout.widget.ConstraintLayout>
@@ -125,25 +193,25 @@
             android:id="@+id/guideline1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:layout_constraintGuide_percent="0.33"/>
+            app:layout_constraintGuide_percent="0.345"/>
         <androidx.constraintlayout.widget.Guideline
             android:orientation="vertical"
             android:id="@+id/guideline2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:layout_constraintGuide_percent="0.67"/>
+            app:layout_constraintGuide_percent="0.655"/>
         <androidx.constraintlayout.widget.Guideline
             android:orientation="horizontal"
             android:id="@+id/guideline3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:layout_constraintGuide_percent="0.33"/>
+            app:layout_constraintGuide_percent="0.345"/>
         <androidx.constraintlayout.widget.Guideline
             android:orientation="horizontal"
             android:id="@+id/guideline4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:layout_constraintGuide_percent="0.66"/>
+            app:layout_constraintGuide_percent="0.655"/>
         <LinearLayout
             android:orientation="horizontal"
             android:id="@+id/llRokuUp"
@@ -183,16 +251,23 @@
         <LinearLayout
             android:orientation="horizontal"
             android:id="@+id/llRokuOk"
+            android:gravity="center"
             android:layout_width="0dp"
             android:layout_height="0dp"
             app:layout_constraintBottom_toBottomOf="@+id/guideline4"
             app:layout_constraintLeft_toLeftOf="@+id/guideline1"
             app:layout_constraintRight_toRightOf="@+id/guideline2"
-            app:layout_constraintTop_toTopOf="@+id/guideline3"/>
+            app:layout_constraintTop_toTopOf="@+id/guideline3">
+            <TextView
+                style="@style/DC.Remote.OkLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ok"/>
+        </LinearLayout>
     </androidx.constraintlayout.widget.ConstraintLayout>
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/ctRokuTouchpad"
-        android:background="@drawable/bg_tab_remote"
+        android:background="@drawable/dc_bg_glass_card"
         android:visibility="gone"
         android:layout_width="0dp"
         android:layout_height="0dp"
@@ -202,7 +277,7 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ctRokuHeader">
         <TextView
-            android:textColor="#c4c4c4"
+            android:textColor="@color/dc_text_muted"
             android:gravity="center"
             android:paddingLeft="@dimen/_4sdp"
             android:paddingTop="@dimen/_10sdp"
@@ -213,7 +288,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/txt_tab"
-            android:fontFamily="@font/roboto_regular"
+            android:fontFamily="@font/pro_display_regular"
             android:paddingHorizontal="@dimen/_4sdp"
             android:paddingVertical="@dimen/_10sdp"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -221,246 +296,168 @@
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toTopOf="parent"/>
     </androidx.constraintlayout.widget.ConstraintLayout>
-    <androidx.constraintlayout.widget.ConstraintLayout
+    <!-- Bottom keys (Stitch): mic / keyboard / private listening, then media rail and volume rail -->
+    <LinearLayout
         android:id="@+id/ctRokuButton"
-        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginLeft="@dimen/_10sdp"
-        android:layout_marginRight="@dimen/_10sdp"
         android:layout_marginHorizontal="@dimen/_10sdp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHeight_percent="0.28"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ctRokuRemote">
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/constraintLayout2"
-            android:layout_width="0dp"
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
             android:layout_height="0dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/constraintLayout"
-            app:layout_constraintHorizontal_weight="1"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
-            <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_weight="1">
+            <FrameLayout
                 android:id="@+id/ctRokuVoice"
-                android:background="@drawable/item_btn_big_type0"
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
+                style="@style/DC.Remote.Key"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
                 android:layout_weight="1"
-                app:layout_constraintHeight_percent="0.305"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_weight="1">
+                android:layout_marginEnd="@dimen/_6sdp">
                 <ImageView
-                    android:layout_width="@dimen/size_icon_small"
-                    android:layout_height="@dimen/size_icon_small"
-                    android:src="@drawable/ic_remote_micro"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintLeft_toLeftOf="parent"
-                    app:layout_constraintRight_toRightOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"/>
+                    style="@style/DC.Remote.KeyIcon"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_remote_micro"/>
                 <ImageView
                     android:id="@+id/imvVipVoice"
-                    android:focusable="false"
-                    android:clickable="false"
-                    android:layout_width="@dimen/_12sdp"
-                    android:layout_height="@dimen/_12sdp"
-                    android:layout_margin="@dimen/_3sdp"
-                    android:src="@drawable/ic_tag_vip"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"/>
-            </androidx.constraintlayout.widget.ConstraintLayout>
-            <androidx.constraintlayout.widget.ConstraintLayout
-                android:id="@+id/ctRokuPre"
-                android:background="@drawable/item_btn_big_type0"
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="1"
-                app:layout_constraintBottom_toTopOf="@+id/ctRokuVolumeDown"
-                app:layout_constraintHeight_percent="0.305"
-                app:layout_constraintTop_toBottomOf="@+id/ctRokuVoice"
-                app:layout_constraintVertical_weight="1">
-                <ImageView
-                    android:layout_width="@dimen/size_icon_small"
-                    android:layout_height="@dimen/size_icon_small"
-                    android:src="@drawable/ic_pre"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintLeft_toLeftOf="parent"
-                    app:layout_constraintRight_toRightOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"/>
-            </androidx.constraintlayout.widget.ConstraintLayout>
-            <androidx.constraintlayout.widget.ConstraintLayout
-                android:id="@+id/ctRokuVolumeDown"
-                android:background="@drawable/item_btn_big_type0"
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="1"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintHeight_percent="0.305">
-                <ImageView
-                    android:layout_width="@dimen/size_icon_small"
-                    android:layout_height="@dimen/size_icon_small"
-                    android:src="@drawable/ic_volume_down_roku"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintLeft_toLeftOf="parent"
-                    app:layout_constraintRight_toRightOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"/>
-            </androidx.constraintlayout.widget.ConstraintLayout>
-        </androidx.constraintlayout.widget.ConstraintLayout>
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/constraintLayout"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_marginLeft="@dimen/_30sdp"
-            android:layout_marginRight="@dimen/_30sdp"
-            android:layout_marginHorizontal="@dimen/_30sdp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/constraintLayout3"
-            app:layout_constraintHorizontal_weight="1"
-            app:layout_constraintStart_toEndOf="@+id/constraintLayout2"
-            app:layout_constraintTop_toTopOf="parent">
-            <androidx.constraintlayout.widget.ConstraintLayout
+                    style="@style/DC.Remote.Crown"
+                    android:layout_gravity="top|end"/>
+            </FrameLayout>
+            <FrameLayout
                 android:id="@+id/ctRokuKeyBoard"
-                android:background="@drawable/item_btn_big_type0"
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
+                style="@style/DC.Remote.Key"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
                 android:layout_weight="1"
-                app:layout_constraintHeight_percent="0.305"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_weight="1">
+                android:layout_marginHorizontal="@dimen/_3sdp">
                 <ImageView
-                    android:layout_width="@dimen/size_icon_small"
-                    android:layout_height="@dimen/size_icon_small"
-                    android:src="@drawable/ic_remote_keyboard"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintLeft_toLeftOf="parent"
-                    app:layout_constraintRight_toRightOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"/>
+                    style="@style/DC.Remote.KeyIcon"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_remote_keyboard"/>
                 <ImageView
                     android:id="@+id/imvVipKeyboard"
-                    android:focusable="false"
-                    android:clickable="false"
-                    android:layout_width="@dimen/_12sdp"
-                    android:layout_height="@dimen/_12sdp"
-                    android:layout_margin="@dimen/_3sdp"
-                    android:src="@drawable/ic_tag_vip"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"/>
-            </androidx.constraintlayout.widget.ConstraintLayout>
-            <androidx.constraintlayout.widget.ConstraintLayout
-                android:id="@+id/ctRokuPause"
-                android:background="@drawable/item_btn_big_type0"
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="1"
-                app:layout_constraintBottom_toTopOf="@+id/ctRokuMute"
-                app:layout_constraintHeight_percent="0.305"
-                app:layout_constraintTop_toBottomOf="@+id/ctRokuKeyBoard"
-                app:layout_constraintVertical_weight="1">
-                <ImageView
-                    android:layout_width="@dimen/size_icon_small"
-                    android:layout_height="@dimen/size_icon_small"
-                    android:src="@drawable/ic_remote_play_p"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintLeft_toLeftOf="parent"
-                    app:layout_constraintRight_toRightOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"/>
-            </androidx.constraintlayout.widget.ConstraintLayout>
-            <androidx.constraintlayout.widget.ConstraintLayout
-                android:id="@+id/ctRokuMute"
-                android:background="@drawable/item_btn_big_type0"
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="1"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintHeight_percent="0.305"
-                app:layout_constraintVertical_weight="1">
-                <ImageView
-                    android:layout_width="@dimen/size_icon_small"
-                    android:layout_height="@dimen/size_icon_small"
-                    android:src="@drawable/ic_mute_roku"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintLeft_toLeftOf="parent"
-                    app:layout_constraintRight_toRightOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"/>
-            </androidx.constraintlayout.widget.ConstraintLayout>
-        </androidx.constraintlayout.widget.ConstraintLayout>
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/constraintLayout3"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_weight="1"
-            app:layout_constraintStart_toEndOf="@+id/constraintLayout"
-            app:layout_constraintTop_toTopOf="parent">
-            <androidx.constraintlayout.widget.ConstraintLayout
+                    style="@style/DC.Remote.Crown"
+                    android:layout_gravity="top|end"/>
+            </FrameLayout>
+            <FrameLayout
                 android:id="@+id/ctHeadPhone"
-                android:background="@drawable/item_btn_big_type0"
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
+                style="@style/DC.Remote.Key"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
                 android:layout_weight="1"
-                app:layout_constraintHeight_percent="0.305"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_weight="1">
+                android:layout_marginStart="@dimen/_6sdp">
                 <ImageView
                     android:id="@+id/imvHeadPhone"
-                    android:layout_width="@dimen/size_icon_small"
-                    android:layout_height="@dimen/size_icon_small"
-                    android:src="@drawable/ic_headphones_off"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintLeft_toLeftOf="parent"
-                    app:layout_constraintRight_toRightOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"/>
+                    style="@style/DC.Remote.KeyIcon"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_headphones_off"/>
                 <ImageView
                     android:id="@+id/imvVipMute"
-                    android:focusable="false"
-                    android:clickable="false"
-                    android:layout_width="@dimen/_12sdp"
-                    android:layout_height="@dimen/_12sdp"
-                    android:layout_margin="@dimen/_3sdp"
-                    android:src="@drawable/ic_tag_vip"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"/>
-            </androidx.constraintlayout.widget.ConstraintLayout>
-            <androidx.constraintlayout.widget.ConstraintLayout
+                    style="@style/DC.Remote.Crown"
+                    android:layout_gravity="top|end"/>
+            </FrameLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:background="@drawable/dc_bg_remote_bar"
+            android:padding="@dimen/_4sdp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginTop="@dimen/_8sdp">
+            <FrameLayout
+                android:id="@+id/ctRokuPre"
+                android:background="@drawable/dc_bg_remote_bar_key"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+                <ImageView
+                    style="@style/DC.Remote.KeyIcon"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_pre"/>
+            </FrameLayout>
+            <View
+                android:background="@color/dc_divider"
+                android:layout_width="1dp"
+                android:layout_height="@dimen/_14sdp"
+                android:layout_gravity="center_vertical"/>
+            <FrameLayout
+                android:id="@+id/ctRokuPause"
+                android:background="@drawable/dc_bg_remote_bar_accent"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginHorizontal="@dimen/_4sdp">
+                <ImageView
+                    style="@style/DC.Remote.KeyIcon.Accent"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_remote_play_p"/>
+            </FrameLayout>
+            <View
+                android:background="@color/dc_divider"
+                android:layout_width="1dp"
+                android:layout_height="@dimen/_14sdp"
+                android:layout_gravity="center_vertical"/>
+            <FrameLayout
                 android:id="@+id/ctRokuForward"
-                android:background="@drawable/item_btn_big_type0"
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="1"
-                app:layout_constraintBottom_toTopOf="@+id/ctRokuVolumeUp"
-                app:layout_constraintHeight_percent="0.305"
-                app:layout_constraintTop_toBottomOf="@+id/ctHeadPhone"
-                app:layout_constraintVertical_weight="1">
+                android:background="@drawable/dc_bg_remote_bar_key"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
                 <ImageView
-                    android:layout_width="@dimen/size_icon_small"
-                    android:layout_height="@dimen/size_icon_small"
-                    android:src="@drawable/ic_remote_next"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintLeft_toLeftOf="parent"
-                    app:layout_constraintRight_toRightOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"/>
-            </androidx.constraintlayout.widget.ConstraintLayout>
-            <androidx.constraintlayout.widget.ConstraintLayout
+                    style="@style/DC.Remote.KeyIcon"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_remote_next"/>
+            </FrameLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:background="@drawable/dc_bg_remote_bar"
+            android:padding="@dimen/_4sdp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginTop="@dimen/_8sdp">
+            <FrameLayout
+                android:id="@+id/ctRokuVolumeDown"
+                android:background="@drawable/dc_bg_remote_bar_key"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+                <ImageView
+                    style="@style/DC.Remote.KeyIcon"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_volume_down_roku"/>
+            </FrameLayout>
+            <FrameLayout
+                android:id="@+id/ctRokuMute"
+                android:background="@drawable/dc_bg_remote_bar_box"
+                android:layout_width="@dimen/_44sdp"
+                android:layout_height="match_parent"
+                android:layout_marginVertical="@dimen/_3sdp">
+                <ImageView
+                    style="@style/DC.Remote.KeyIcon"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_mute_roku"/>
+            </FrameLayout>
+            <FrameLayout
                 android:id="@+id/ctRokuVolumeUp"
-                android:background="@drawable/item_btn_big_type0"
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="1"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintHeight_percent="0.305"
-                app:layout_constraintVertical_weight="1">
+                android:background="@drawable/dc_bg_remote_bar_key"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
                 <ImageView
-                    android:layout_width="@dimen/size_icon_small"
-                    android:layout_height="@dimen/size_icon_small"
-                    android:src="@drawable/ic_volume_up_roku"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintLeft_toLeftOf="parent"
-                    app:layout_constraintRight_toRightOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"/>
-            </androidx.constraintlayout.widget.ConstraintLayout>
-        </androidx.constraintlayout.widget.ConstraintLayout>
-    </androidx.constraintlayout.widget.ConstraintLayout>
+                    style="@style/DC.Remote.KeyIcon"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_volume_up_roku"/>
+            </FrameLayout>
+        </LinearLayout>
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

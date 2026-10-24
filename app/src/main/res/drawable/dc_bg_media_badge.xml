@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Duration / count badge on media thumbnails: #0a0e17cc pill. No real blur. -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle">
+    <solid android:color="@color/dc_media_scrim"/>
+    <corners android:radius="999dp"/>
+</shape>

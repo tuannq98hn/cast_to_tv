@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="@color/white"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fillViewport="true">
@@ -17,6 +16,11 @@
                 android:layout_height="440dp"
                 android:scaleType="centerCrop"
                 app:layout_constraintTop_toTopOf="parent"/>
+            <View
+                android:background="@drawable/dc_scrim_fade_bottom"
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                app:layout_constraintBottom_toBottomOf="@+id/imgBanner"/>
             <LinearLayout
                 android:gravity="center_vertical"
                 android:orientation="horizontal"
@@ -32,7 +36,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/imgBanner">
                 <TextView
                     android:textSize="14sp"
-                    android:textColor="@color/black"
+                    android:textColor="@color/dc_text_body"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:text="@string/please_select_the_tv_to_connect"
@@ -41,7 +45,7 @@
                 <ProgressBar
                     android:layout_width="24dp"
                     android:layout_height="24dp"
-                    android:indeterminateTint="@color/color_main"/>
+                    android:indeterminateTint="@color/dc_primary"/>
             </LinearLayout>
             <LinearLayout
                 android:gravity="center"
@@ -51,7 +55,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/llLoading">
                 <TextView
                     android:textSize="24sp"
-                    android:textColor="@color/black"
+                    android:textColor="@color/dc_text_primary"
                     android:gravity="center"
                     android:id="@+id/tvTitle"
                     android:visibility="visible"
@@ -64,7 +68,7 @@
                     android:layout_marginHorizontal="16dp"/>
                 <TextView
                     android:textSize="16sp"
-                    android:textColor="@color/black"
+                    android:textColor="@color/dc_text_body"
                     android:gravity="center"
                     android:id="@+id/tvDescription1"
                     android:visibility="gone"
@@ -77,7 +81,7 @@
                     android:layout_marginHorizontal="16dp"/>
                 <TextView
                     android:textSize="16sp"
-                    android:textColor="@color/black"
+                    android:textColor="@color/dc_text_muted"
                     android:gravity="center"
                     android:id="@+id/tvDescription"
                     android:visibility="visible"
@@ -89,7 +93,6 @@
                     android:layout_marginHorizontal="16dp"/>
                 <androidx.recyclerview.widget.RecyclerView
                     android:id="@+id/rcvList"
-                    android:background="@drawable/bg_border8_white"
                     android:visibility="gone"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"

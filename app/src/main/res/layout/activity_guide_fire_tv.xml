@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
-    android:background="@color/color_background_remote"
+    android:background="@color/dc_bg"
     android:paddingLeft="@dimen/_12sdp"
     android:visibility="visible"
     android:layout_width="match_parent"
@@ -16,7 +16,7 @@
         android:src="@drawable/ic_close_1"/>
     <TextView
         android:textSize="@dimen/_24sdp"
-        android:textColor="@color/white"
+        android:textColor="@color/dc_text_primary"
         android:gravity="center"
         android:layout_gravity="center_horizontal"
         android:layout_width="wrap_content"
@@ -26,7 +26,7 @@
         android:fontFamily="@font/pro_display_medium"/>
     <TextView
         android:textSize="@dimen/_12sdp"
-        android:textColor="@color/white"
+        android:textColor="@color/dc_text_body"
         android:paddingRight="@dimen/_24sdp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -35,7 +35,7 @@
         android:fontFamily="@font/pro_display_regular"/>
     <TextView
         android:textSize="@dimen/_12sdp"
-        android:textColor="@color/white"
+        android:textColor="@color/dc_text_body"
         android:paddingRight="@dimen/_24sdp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -44,7 +44,7 @@
         android:fontFamily="@font/pro_display_regular"/>
     <TextView
         android:textSize="@dimen/_12sdp"
-        android:textColor="@color/white"
+        android:textColor="@color/dc_text_body"
         android:paddingRight="@dimen/_24sdp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -53,7 +53,7 @@
         android:fontFamily="@font/pro_display_regular"/>
     <TextView
         android:textSize="@dimen/_12sdp"
-        android:textColor="@color/white"
+        android:textColor="@color/dc_text_body"
         android:paddingRight="@dimen/_24sdp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -62,7 +62,7 @@
         android:fontFamily="@font/pro_display_regular"/>
     <TextView
         android:textSize="@dimen/_12sdp"
-        android:textColor="@color/white"
+        android:textColor="@color/dc_text_body"
         android:paddingRight="@dimen/_24sdp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

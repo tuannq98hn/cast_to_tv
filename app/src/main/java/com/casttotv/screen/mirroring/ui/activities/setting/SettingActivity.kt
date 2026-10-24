@@ -35,7 +35,7 @@ class SettingActivity : BaseActivity() {
             header.imvBack.setOnClickListener { finish() }
             tbVibrate.isChecked = AppPrefs.hapticFeedback
             tbVibrate.setOnCheckedChangeListener { _, checked -> AppPrefs.hapticFeedback = checked }
-            tvVersion.text = getString(R.string.version) + " 14.7.4"
+            tvVersion.text = getString(R.string.version) + " " + packageManager.getPackageInfo(packageName, 0).versionName
             clPremium.setOnClickListener {
                 open(PurchaseActivity::class.java) { putExtra(PurchaseActivity.EXTRA_FROM, "screen_setting") }
             }

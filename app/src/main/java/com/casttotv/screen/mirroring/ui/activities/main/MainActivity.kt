@@ -75,7 +75,9 @@ class MainActivity : BaseActivity() {
             rlMirror.setOnClickListener { openFeature(Feature.MIRROR) }
             rlRemote.setOnClickListener { openFeature(Feature.REMOTE) }
             ctYoutube.setOnClickListener { openFeature(Feature.YOUTUBE) }
-            ctVimeo.setOnClickListener { openFeature(Feature.VIMEO) }
+            // Vimeo tile left out of the Stitch Home redesign on request; Feature.VIMEO kept for re-adding.
+            btnRemoteConsole.setOnClickListener { openFeature(Feature.REMOTE) }
+            btnLiveChannels.setOnClickListener { open(RemoteActivity::class.java) { putExtra(RemoteActivity.EXTRA_OPEN_CHANNELS, true) } }
             ctDriver.setOnClickListener { openFeature(Feature.WEB) }
             llPhotoOff.setOnClickListener { withMediaPermission(Feature.PHOTO, imagePermission()) }
             llVideoOff.setOnClickListener { withMediaPermission(Feature.VIDEO, videoPermission()) }
@@ -98,12 +100,17 @@ class MainActivity : BaseActivity() {
         castPremium.setAnimation(if (Premium.isActive) R.raw.anim_member else R.raw.anim_premium)
         castPremium.repeatCount = -1
         castPremium.playAnimation()
-        if (TvConnect.isConnected) {
+        val connected = TvConnect.isConnected
+        viewConnectedDot.isVisible = connected
+        tvConnectAction.setText(if (connected) R.string.disconnect else R.string.connect)
+        if (connected) {
+            imvConnect.imageTintList = null // brand icons keep their colors
             imvConnect.setImageResource(TvConnect.currentType().icon)
             tvTitleConnect.text = TvConnect.deviceName
             tvStatusConnect.setText(R.string.text_connected)
         } else {
-            imvConnect.setImageResource(R.drawable.ic_no_connect_home)
+            imvConnect.imageTintList = android.content.res.ColorStateList.valueOf(getColor(R.color.dc_primary_soft))
+            imvConnect.setImageResource(R.drawable.dc_ic_radar)
             tvTitleConnect.setText(R.string.text_connect_to_tv)
             tvStatusConnect.setText(R.string.tab_to_connect)
         }

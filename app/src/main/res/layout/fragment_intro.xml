@@ -11,13 +11,14 @@
         <ImageView
             android:layout_gravity="center"
             android:id="@+id/img_intro"
-            android:layout_width="@dimen/_240sdp"
-            android:layout_height="@dimen/_212sdp"
+            android:background="@drawable/dc_bg_glass_card"
+            android:padding="@dimen/_12sdp"
+            android:layout_width="@dimen/_260sdp"
+            android:layout_height="@dimen/_232sdp"
             android:src="@drawable/bg_intro_1"/>
         <TextView
-            android:textSize="@dimen/_24sdp"
-            android:textStyle="bold"
-            android:textColor="@color/color_txt"
+            style="@style/DC.Text"
+            android:textSize="@dimen/_22ssp"
             android:gravity="center"
             android:layout_gravity="center"
             android:id="@+id/tv_title"
@@ -30,8 +31,8 @@
             android:fontFamily="@font/pro_display_bold"
             android:layout_marginHorizontal="@dimen/_30sdp"/>
         <TextView
-            android:textSize="@dimen/_14sdp"
-            android:textColor="#949494"
+            style="@style/DC.Text.Body"
+            android:textColor="@color/dc_text_muted"
             android:gravity="center"
             android:layout_gravity="center"
             android:id="@+id/tv_intro"

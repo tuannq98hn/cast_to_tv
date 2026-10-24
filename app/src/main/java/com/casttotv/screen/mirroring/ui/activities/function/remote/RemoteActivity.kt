@@ -36,8 +36,6 @@ class RemoteActivity : BaseActivity() {
         binding = ActivityRemoteBinding.inflate(layoutInflater)
         setContentView(binding.root)
         with(binding.include) {
-            imvBack.setImageResource(R.drawable.ic_back_arrow_white)
-            tvTitle.setTextColor(ContextCompat.getColor(this@RemoteActivity, R.color.white))
             castConnect.visibility = View.VISIBLE
             castPremium.visibility = View.GONE
             imvBack.setOnClickListener { finish() }
@@ -50,6 +48,7 @@ class RemoteActivity : BaseActivity() {
         binding.llTouchPad.setOnClickListener { select(Tab.TOUCH) }
         binding.llNumber.setOnClickListener { select(Tab.NUMBER) }
         binding.llChannel.setOnClickListener { select(Tab.CHANNEL) }
+        if (intent.getBooleanExtra(EXTRA_OPEN_CHANNELS, false)) tab = Tab.CHANNEL
         buildPages()
         lifecycleScope.launch {
             repeatOnLifecycle(Lifecycle.State.STARTED) {
@@ -99,7 +98,10 @@ class RemoteActivity : BaseActivity() {
         imvChannel.setImageResource(R.drawable.ic_tab_channel_off)
         imvNumber.setImageResource(R.drawable.ic_tab_number_off)
         imvTouchPad.setImageResource(R.drawable.ic_tab_touch_off)
-        listOf(llRemote, llNumber, llTouchPad, llChannel).forEach { it.setBackgroundResource(R.color.transparent) }
+        mapOf(Tab.REMOTE to llRemote, Tab.NUMBER to llNumber, Tab.TOUCH to llTouchPad, Tab.CHANNEL to llChannel).forEach { (t, ll) ->
+            ll.setBackgroundResource(R.color.transparent)
+            ll.isSelected = t == tab // drives the tab label color
+        }
         val type = TvConnect.device?.let(TvConnect::typeOf)
         llNumber.isVisible = TvConnect.isConnected && type != DeviceType.ROKU && type != DeviceType.FIRE_TV
         renderHeader()
@@ -133,7 +135,15 @@ class RemoteActivity : BaseActivity() {
 
     private fun renderHeader() = with(binding.include) {
         if (tab == Tab.CHANNEL) return@with
-        tvTitle.text = if (TvConnect.isConnected) TvConnect.deviceName else getString(R.string.remote)
-        castConnect.setImageResource(if (TvConnect.isConnected) R.drawable.ic_header_connected else R.drawable.ic_header_not_connect)
+        val connected = TvConnect.isConnected
+        tvTitle.setText(R.string.remote_tv)
+        tvDeviceName.text = if (connected) TvConnect.deviceName else getString(R.string.tab_to_connect)
+        viewDeviceDot.isVisible = connected
+        castConnect.setImageResource(if (connected) R.drawable.dc_ic_cast_connected else R.drawable.dc_ic_cast)
+    }
+
+    companion object {
+        /** Open on the Channels tab (Home "Channel" shortcut). */
+        const val EXTRA_OPEN_CHANNELS = "open_channels"
     }
 }

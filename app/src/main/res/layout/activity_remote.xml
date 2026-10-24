@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="@drawable/bg_background_main"
+    android:background="@color/dc_bg"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
     <LinearLayout
@@ -10,7 +10,7 @@
         app:layout_constraintTop_toTopOf="parent">
         <include
             android:id="@+id/include"
-            layout="@layout/item_header"/>
+            layout="@layout/layout_remote_header"/>
     </LinearLayout>
     <com.casttotv.screen.mirroring.customview.CustomViewPager
         android:id="@+id/vpHomeMain"
@@ -27,16 +27,15 @@
         android:orientation="horizontal"
         android:id="@+id/llBottom"
         android:background="@drawable/bg_tabar_remote"
+        android:padding="@dimen/_5sdp"
         android:layout_width="match_parent"
-        android:layout_height="@dimen/_36sdp"
-        android:layout_marginLeft="@dimen/_16sdp"
+        android:layout_height="@dimen/_48sdp"
         android:layout_marginTop="@dimen/_8sdp"
-        android:layout_marginRight="@dimen/_16sdp"
         android:layout_marginHorizontal="@dimen/_16sdp"
         app:layout_constraintTop_toBottomOf="@+id/llHeader">
         <LinearLayout
             android:gravity="center"
-            android:orientation="vertical"
+            android:orientation="horizontal"
             android:id="@+id/llRemote"
             android:background="@drawable/bg_item_tab"
             android:layout_width="0dp"
@@ -46,63 +45,104 @@
                 android:id="@+id/imvRemote"
                 android:focusable="false"
                 android:clickable="false"
-                android:layout_width="@dimen/_24sdp"
-                android:layout_height="@dimen/_24sdp"
+                android:layout_width="@dimen/_14sdp"
+                android:layout_height="@dimen/_14sdp"
                 android:src="@drawable/ic_tab_remote_on"/>
+            <TextView
+                style="@style/DC.Text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_6sdp"
+                android:duplicateParentState="true"
+                android:fontFamily="@font/pro_display_bold"
+                android:lines="1"
+                android:text="@string/remote_tab_dpad"
+                android:textColor="@color/dc_tab_label"
+                android:textSize="@dimen/_11ssp"/>
         </LinearLayout>
         <LinearLayout
             android:gravity="center"
-            android:orientation="vertical"
+            android:orientation="horizontal"
             android:id="@+id/llTouchPad"
             android:background="@drawable/ripple_effect_color_main"
-            android:focusable="false"
-            android:clickable="false"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="1">
+            android:layout_weight="1"
+            android:layout_marginStart="@dimen/_5sdp">
             <ImageView
                 android:id="@+id/imvTouchPad"
                 android:focusable="false"
                 android:clickable="false"
-                android:layout_width="@dimen/_24sdp"
-                android:layout_height="@dimen/_24sdp"
+                android:layout_width="@dimen/_14sdp"
+                android:layout_height="@dimen/_14sdp"
                 android:src="@drawable/ic_tab_touch_off"/>
+            <TextView
+                style="@style/DC.Text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_6sdp"
+                android:duplicateParentState="true"
+                android:fontFamily="@font/pro_display_bold"
+                android:lines="1"
+                android:text="@string/remote_tab_touch"
+                android:textColor="@color/dc_tab_label"
+                android:textSize="@dimen/_11ssp"/>
         </LinearLayout>
         <LinearLayout
             android:gravity="center"
-            android:orientation="vertical"
+            android:orientation="horizontal"
             android:id="@+id/llNumber"
             android:background="@drawable/ripple_effect_color_main"
-            android:focusable="false"
-            android:clickable="false"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="1">
+            android:layout_weight="1"
+            android:layout_marginStart="@dimen/_5sdp">
             <ImageView
                 android:id="@+id/imvNumber"
                 android:focusable="false"
                 android:clickable="false"
-                android:layout_width="@dimen/_24sdp"
-                android:layout_height="@dimen/_24sdp"
+                android:layout_width="@dimen/_14sdp"
+                android:layout_height="@dimen/_14sdp"
                 android:src="@drawable/ic_tab_number_off"/>
+            <TextView
+                style="@style/DC.Text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_6sdp"
+                android:duplicateParentState="true"
+                android:fontFamily="@font/pro_display_bold"
+                android:lines="1"
+                android:text="@string/remote_tab_number"
+                android:textColor="@color/dc_tab_label"
+                android:textSize="@dimen/_11ssp"/>
         </LinearLayout>
         <LinearLayout
             android:gravity="center"
-            android:orientation="vertical"
+            android:orientation="horizontal"
             android:id="@+id/llChannel"
             android:background="@drawable/ripple_effect_color_main"
-            android:focusable="false"
-            android:clickable="false"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="1">
+            android:layout_weight="1"
+            android:layout_marginStart="@dimen/_5sdp">
             <ImageView
                 android:id="@+id/imvChannel"
                 android:focusable="false"
                 android:clickable="false"
-                android:layout_width="@dimen/_24sdp"
-                android:layout_height="@dimen/_24sdp"
+                android:layout_width="@dimen/_14sdp"
+                android:layout_height="@dimen/_14sdp"
                 android:src="@drawable/ic_tab_channel_off"/>
+            <TextView
+                style="@style/DC.Text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_6sdp"
+                android:duplicateParentState="true"
+                android:fontFamily="@font/pro_display_bold"
+                android:lines="1"
+                android:text="@string/remote_tab_apps"
+                android:textColor="@color/dc_tab_label"
+                android:textSize="@dimen/_11ssp"/>
         </LinearLayout>
     </LinearLayout>
     <FrameLayout android:visibility="gone"

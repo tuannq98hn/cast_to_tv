@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
     android:tag="layout/fragment_mirror_web_0"
-    android:background="@color/white"
+    android:background="@color/dc_bg"
     android:focusable="true"
     android:focusableInTouchMode="true"
     android:clickable="true"
@@ -17,15 +17,16 @@
         app:layout_constraintTop_toTopOf="parent">
         <ImageView
             android:id="@+id/imv_back"
-            android:background="@drawable/ripple_effect_exit"
-            android:padding="@dimen/_7sdp"
+            android:background="@drawable/dc_bg_key"
+            app:tint="@color/dc_text_primary"
+            android:padding="@dimen/_9sdp"
             android:layout_width="@dimen/_40sdp"
             android:layout_height="@dimen/_40sdp"
             android:src="@drawable/ic_back_arrow"
             android:layout_centerVertical="true"/>
         <TextView
             android:textSize="@dimen/_17sdp"
-            android:textColor="@color/color_text_new"
+            android:textColor="@color/dc_text_primary"
             android:id="@+id/tv_title"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -67,7 +68,7 @@
             </androidx.constraintlayout.widget.ConstraintLayout>
             <LinearLayout
                 android:orientation="vertical"
-                android:background="@drawable/bg_item_language"
+                android:background="@drawable/dc_bg_glass_card"
                 android:paddingTop="@dimen/_16sdp"
                 android:paddingBottom="@dimen/_16sdp"
                 android:layout_width="match_parent"
@@ -89,16 +90,16 @@
                     app:layout_constraintTop_toBottomOf="@+id/include6">
                     <TextView
                         android:textSize="@dimen/_14sdp"
-                        android:textColor="@color/color_txt"
+                        android:textColor="@color/dc_text_body"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/open_this_url_on_other_device"
                         android:fontFamily="@font/pro_display_regular"/>
                     <TextView
                         android:textSize="@dimen/_14sdp"
-                        android:textColor="#ff730d"
+                        android:textColor="@color/dc_primary"
                         android:id="@+id/tvLink"
-                        android:background="@drawable/bg_border8_white"
+                        android:background="@drawable/dc_bg_button_secondary"
                         android:paddingLeft="@dimen/_12sdp"
                         android:paddingTop="@dimen/_10sdp"
                         android:paddingRight="@dimen/_12sdp"
@@ -118,17 +119,18 @@
                         <LinearLayout
                             android:gravity="center"
                             android:id="@+id/llCopy"
-                            android:background="@drawable/bg_border8_premium"
+                            android:background="@drawable/dc_bg_button_secondary"
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
                             android:layout_weight="1">
                             <ImageView
                                 android:layout_width="@dimen/_24sdp"
                                 android:layout_height="@dimen/_24sdp"
-                                android:src="@drawable/ic_copy"/>
+                                android:src="@drawable/ic_copy"
+                                app:tint="@color/dc_primary"/>
                             <TextView
                                 android:textSize="@dimen/_12sdp"
-                                android:textColor="#202020"
+                                android:textColor="@color/dc_text_body"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="@string/copy"
@@ -138,7 +140,7 @@
                         <LinearLayout
                             android:gravity="center"
                             android:id="@+id/llShare"
-                            android:background="@drawable/bg_border8_premium"
+                            android:background="@drawable/dc_bg_button_secondary"
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
                             android:layout_weight="1"
@@ -146,10 +148,11 @@
                             <ImageView
                                 android:layout_width="@dimen/_24sdp"
                                 android:layout_height="@dimen/_24sdp"
-                                android:src="@drawable/ic_share_network"/>
+                                android:src="@drawable/ic_share_network"
+                                app:tint="@color/dc_primary"/>
                             <TextView
                                 android:textSize="@dimen/_12sdp"
-                                android:textColor="#202020"
+                                android:textColor="@color/dc_text_body"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="@string/share"
@@ -159,7 +162,7 @@
                     </LinearLayout>
                     <TextView
                         android:textSize="@dimen/_14sdp"
-                        android:textColor="@color/color_txt"
+                        android:textColor="@color/dc_text_body"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="@dimen/_8sdp"
@@ -176,7 +179,7 @@
                     app:layout_constraintTop_toBottomOf="@+id/include6">
                     <TextView
                         android:textSize="@dimen/_14sdp"
-                        android:textColor="@color/color_txt"
+                        android:textColor="@color/dc_text_body"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="@dimen/_12sdp"
@@ -190,10 +193,10 @@
     </androidx.core.widget.NestedScrollView>
     <Button
         android:textSize="@dimen/_16sdp"
-        android:textColor="@color/white"
+        android:textColor="@color/dc_text_on_cta"
         android:gravity="center"
         android:id="@+id/btn_start_screen_mirroring"
-        android:background="@drawable/bg_button"
+        android:background="@drawable/dc_bg_cta_mirror"
         android:layout_width="match_parent"
         android:layout_height="@dimen/_44sdp"
         android:layout_marginLeft="@dimen/_16sdp"
@@ -225,7 +228,7 @@
         android:gravity="center"
         android:orientation="vertical"
         android:id="@+id/llConnected"
-        android:background="#99000000"
+        android:background="@color/dc_scrim"
         android:visibility="gone"
         android:clickable="true"
         android:layout_width="match_parent"
@@ -233,7 +236,7 @@
         <LinearLayout
             android:gravity="center"
             android:orientation="vertical"
-            android:background="@drawable/bg_border"
+            android:background="@drawable/dc_bg_dialog"
             android:paddingTop="@dimen/_40sdp"
             android:paddingBottom="@dimen/_40sdp"
             android:layout_width="match_parent"
@@ -268,7 +271,7 @@
                 app:lottie_fileName="anim_fail_connect.json"/>
             <TextView
                 android:textSize="@dimen/_11sdp"
-                android:textColor="@color/black"
+                android:textColor="@color/dc_text_primary"
                 android:gravity="center"
                 android:id="@+id/tvStatusConnect"
                 android:layout_width="match_parent"

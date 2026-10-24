@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Stitch PRO Upgrade beam between TV and phone: dashed curve M4 36 C18 20 38 18 58 32, gradient cyan to indigo-400.
+     Dashes are pre-cut segments (VectorDrawable has no dash array). -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="64dp" android:height="48dp" android:viewportWidth="64" android:viewportHeight="48" android:alpha="0.8">
+    <path android:strokeWidth="2" android:strokeLineCap="round" android:pathData="M4.02,35.98L6.06,33.79M8.24,31.74L10.57,29.84M13.02,28.13L15.61,26.62M18.31,25.32L21.12,24.27M24.02,23.47L26.96,22.94M29.95,22.67L32.96,22.67M35.93,22.91L38.91,23.39M41.83,24.10L44.69,25.00M47.47,26.08L50.21,27.35M52.84,28.74L55.42,30.28M57.94,31.96L58.00,32.00">
+        <aapt:attr name="android:strokeColor">
+            <gradient android:type="linear" android:startX="4" android:startY="0" android:endX="58" android:endY="0"
+                android:startColor="#00F2FE" android:endColor="#818CF8"/>
+        </aapt:attr>
+    </path>
+</vector>

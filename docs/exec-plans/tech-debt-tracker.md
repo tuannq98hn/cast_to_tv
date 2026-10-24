@@ -14,6 +14,8 @@ Use this file to track known debt that is not fixed immediately.
 | TD-008 | Platform | `MediaStoreRepo` reads deprecated `MediaStore.*.DATA` file paths | May break on future Android versions / scoped storage | P3 | — | Open |
 | TD-009 | Harness | `.agents/skills/` (11 harness skills) missing from this copy of the template | Roles reference skills that do not exist | P2 | — | Closed 2026-10-23 (skills restored) |
 | TD-010 | CI | No CI runs the quality gate | Gate only runs in the agent loop | P3 | — | Open |
+| TD-011 | Billing | `PurchaseActivity` "More options" Monthly/Lifetime cards (`layout_options.xml`) have no click handler and no price; only the yearly CTA buys | Users can't pick monthly/lifetime | P2 | — | Open |
+| TD-011 | Resources | Dark Cinema restyle left legacy drawables/raws possibly unused (e.g. `raw/video_premium_1`, `raw/audio_intro`, `bg_header_miror`, `img_touchpad_ss*`, `img_setting`); full list per task in the plan's Progress Log "may now be unused" notes | APK size, lint noise | P3 | — | Open |
 
 ## Rules
 

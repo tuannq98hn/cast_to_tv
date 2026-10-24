@@ -361,4 +361,8 @@
   <string name="you_may_need_to_accept_a_prompt_on_the_target_device_if_you_are_connecting_to_it_for_the_first_time_from_this_device">Potrebbe essere necessario accettare una richiesta sul dispositivo di destinazione se ci si connette per la prima volta da questo dispositivo.</string>
   <string name="zero">0</string>
     <string name="error_server">Qualcosa non va, controlla Internet o riavvia l\'app</string>
+  <string name="remote_key_back">Indietro</string>
+  <string name="remote_key_menu">Menu</string>
+  <string name="remote_key_power">Accensione</string>
+  <string name="cast_stop">Interrompi</string>
 </resources>

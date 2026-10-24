@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!-- Dark Cinema active feedback chip: linear-gradient(#00f0ff2e, #2b7fff38), 1dp #00f0ff, pill. -->
 <shape xmlns:android="http://schemas.android.com/apk/res/android">
-    <corners android:radius="@dimen/_32sdp"/>
-    <solid android:color="@color/color_main"/>
+    <corners android:radius="999dp"/>
+    <gradient android:angle="315" android:startColor="@color/dc_feedback_chip_on_start" android:endColor="@color/dc_feedback_chip_on_end"/>
+    <stroke android:width="1dp" android:color="@color/dc_primary"/>
 </shape>

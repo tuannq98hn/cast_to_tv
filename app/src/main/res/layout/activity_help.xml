@@ -1,35 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
+    android:background="@color/dc_bg"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
     <RelativeLayout
-        android:layout_gravity="center_vertical"
-        android:orientation="horizontal"
-        android:background="@color/color_main"
+        android:padding="@dimen/_5sdp"
         android:layout_width="match_parent"
-        android:layout_height="@dimen/_50sdp">
+        android:layout_height="wrap_content">
         <ImageView
             android:id="@+id/imv_back"
-            android:padding="@dimen/_12sdp"
+            android:background="@drawable/dc_bg_key"
+            android:padding="@dimen/_9sdp"
             android:layout_width="@dimen/_40sdp"
             android:layout_height="@dimen/_40sdp"
-            android:src="@drawable/ic_left"
+            android:src="@drawable/ic_back_arrow"
+            app:tint="@color/dc_text_primary"
             android:layout_centerVertical="true"/>
         <TextView
-            android:textSize="@dimen/_17sdp"
-            android:textColor="@color/white"
+            style="@style/DC.Text.Heading"
             android:id="@+id/tv_title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/help"
-            android:layout_toRightOf="@+id/imv_back"
-            android:layout_centerInParent="true"
-            android:fontFamily="@font/pro_display_regular"
-            android:layout_marginStart="@dimen/_5sdp"/>
+            android:layout_toEndOf="@+id/imv_back"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/_10sdp"/>
     </RelativeLayout>
     <WebView
         android:id="@+id/wv_help"
+        android:background="@color/dc_bg"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
 </LinearLayout>

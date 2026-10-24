@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<selector xmlns:android="http://schemas.android.com/apk/res/android">
-    <item
-        android:state_selected="true"
-        android:drawable="@drawable/btn_cicler_power_on"/>
-    <item
-        android:state_pressed="true"
-        android:drawable="@drawable/btn_cicler_power_on"/>
-    <item android:drawable="@drawable/btn_cicler_power_off"/>
-</selector>
+<!-- Dark Cinema round power key (T4c): dc_bg_key_power gradient/stroke as an oval. -->
+<ripple xmlns:android="http://schemas.android.com/apk/res/android" android:color="@color/dc_ripple">
+    <item>
+        <shape android:shape="oval">
+            <gradient android:angle="270" android:startColor="@color/dc_danger" android:centerColor="@color/dc_power_mid" android:endColor="@color/dc_power_end"/>
+            <stroke android:width="1dp" android:color="@color/dc_power_stroke"/>
+        </shape>
+    </item>
+</ripple>

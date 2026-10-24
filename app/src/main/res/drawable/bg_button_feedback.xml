@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!-- Dark Cinema submit CTA (Figma Feedback): linear-gradient(90deg, #2b7fff, #00f0ff), r16. -->
 <shape xmlns:android="http://schemas.android.com/apk/res/android">
-    <solid android:color="@color/color_main"/>
-    <corners android:radius="@dimen/_24sdp"/>
+    <gradient android:angle="0" android:startColor="@color/dc_blue" android:endColor="@color/dc_primary"/>
+    <corners android:radius="@dimen/_16sdp"/>
 </shape>

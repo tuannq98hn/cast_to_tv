@@ -1,21 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
-    android:background="@color/white"
+    android:background="@android:color/transparent"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
     <RelativeLayout
         android:id="@+id/testing_1_button_month"
-        android:background="@drawable/bg_button_premium_off"
+        android:background="@drawable/dc_bg_glass_card"
         android:paddingLeft="@dimen/_16sdp"
         android:paddingTop="@dimen/_12sdp"
         android:paddingRight="@dimen/_16sdp"
         android:paddingBottom="@dimen/_12sdp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="@dimen/_16sdp"
-        android:layout_marginRight="@dimen/_16sdp"
-        android:layout_marginHorizontal="@dimen/_16sdp"
         android:paddingHorizontal="@dimen/_16sdp"
         android:paddingVertical="@dimen/_12sdp">
         <LinearLayout
@@ -25,14 +22,14 @@
             android:layout_centerVertical="true">
             <TextView
                 android:textSize="@dimen/_14sdp"
-                android:textColor="@color/color_text_new"
+                android:textColor="@color/dc_text_primary"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/monthly"
                 android:fontFamily="@font/pro_display_bold"/>
             <TextView
                 android:textSize="@dimen/_11sdp"
-                android:textColor="@color/color_default"
+                android:textColor="@color/dc_text_muted"
                 android:visibility="visible"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -48,14 +45,14 @@
             android:layout_alignParentEnd="true">
             <TextView
                 android:textSize="@dimen/_16sdp"
-                android:textColor="@color/color_text_new"
+                android:textColor="@color/dc_text_primary"
                 android:id="@+id/testing_1_button_month_price"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/pro_display_bold"/>
             <TextView
                 android:textSize="@dimen/_11sdp"
-                android:textColor="@color/color_default"
+                android:textColor="@color/dc_text_muted"
                 android:id="@+id/tv_price_sale_month"
                 android:visibility="visible"
                 android:layout_width="wrap_content"
@@ -66,12 +63,9 @@
     <RelativeLayout
         android:id="@+id/testing_1_button_one_time"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="@dimen/_16sdp"
-        android:layout_marginRight="@dimen/_16sdp"
-        android:layout_marginHorizontal="@dimen/_16sdp">
+        android:layout_height="wrap_content">
         <RelativeLayout
-            android:background="@drawable/bg_button_premium_off"
+            android:background="@drawable/dc_bg_glass_card"
             android:paddingLeft="@dimen/_16sdp"
             android:paddingTop="@dimen/_12sdp"
             android:paddingRight="@dimen/_16sdp"
@@ -88,14 +82,14 @@
                 android:layout_centerVertical="true">
                 <TextView
                     android:textSize="@dimen/_14sdp"
-                    android:textColor="@color/color_text_new"
+                    android:textColor="@color/dc_text_primary"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/life_time"
                     android:fontFamily="@font/pro_display_bold"/>
                 <TextView
                     android:textSize="@dimen/_11sdp"
-                    android:textColor="@color/color_default"
+                    android:textColor="@color/dc_text_muted"
                     android:visibility="visible"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -111,14 +105,14 @@
                 android:layout_alignParentEnd="true">
                 <TextView
                     android:textSize="@dimen/_16sdp"
-                    android:textColor="@color/color_text_new"
+                    android:textColor="@color/dc_text_primary"
                     android:id="@+id/testing_1_button_one_time_price"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/pro_display_bold"/>
                 <TextView
                     android:textSize="@dimen/_11sdp"
-                    android:textColor="@color/color_default"
+                    android:textColor="@color/dc_text_muted"
                     android:id="@+id/tv_price_sale_lifetime"
                     android:visibility="visible"
                     android:layout_width="wrap_content"

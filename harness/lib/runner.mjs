@@ -30,7 +30,7 @@ const CONTRACT = `
 
 // Messages CLIs print when an account/plan limit is hit. Only checked when a run FAILS,
 // so an agent merely talking about "rate limits" in code never triggers it.
-const LIMIT_RE = /usage limit|rate[ _-]?limit|quota|too many requests|\b429\b|limit (reached|exceeded)|hit your (usage )?limit|insufficient_quota|credit balance/i;
+const LIMIT_RE = /usage limit|rate[ _-]?limit|quota|too many requests|\b429\b|limit (reached|exceeded)|hit your (\w+ )?limit|insufficient_quota|credit balance/i;
 
 export function detectLimit(text) {
   if (!text || !LIMIT_RE.test(text)) return null;

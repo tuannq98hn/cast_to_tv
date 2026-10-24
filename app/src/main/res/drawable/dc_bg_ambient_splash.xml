@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Dark Cinema splash backdrop (Figma Splash Screen): cyan flare top-left, violet glow right, blue glow bottom. No blur. -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@color/dc_bg"/>
+    <item>
+        <shape android:shape="rectangle">
+            <gradient android:type="radial" android:centerX="0.1" android:centerY="0.05" android:gradientRadius="70%p"
+                android:startColor="@color/dc_glow_cyan_soft" android:endColor="@android:color/transparent"/>
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="rectangle">
+            <gradient android:type="radial" android:centerX="0.8" android:centerY="0.45" android:gradientRadius="90%p"
+                android:startColor="@color/dc_glow_violet" android:endColor="@android:color/transparent"/>
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="rectangle">
+            <gradient android:type="radial" android:centerX="0.5" android:centerY="0.85" android:gradientRadius="100%p"
+                android:startColor="@color/dc_glow_blue" android:endColor="@android:color/transparent"/>
+        </shape>
+    </item>
+</layer-list>

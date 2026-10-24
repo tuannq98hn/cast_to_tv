@@ -32,7 +32,7 @@
                 app:layout_constraintWidth_percent="0.22">
                 <TextView
                     android:textSize="@dimen/_17sdp"
-                    android:textColor="@color/text_color"
+                    android:textColor="@color/dc_text_primary"
                     android:gravity="center"
                     android:background="@drawable/button_number_add_channel"
                     android:clickable="false"
@@ -54,7 +54,7 @@
                 app:layout_constraintWidth_percent="0.22">
                 <TextView
                     android:textSize="@dimen/_17sdp"
-                    android:textColor="@color/text_color"
+                    android:textColor="@color/dc_text_primary"
                     android:gravity="center"
                     android:background="@drawable/button_number_add_channel"
                     android:clickable="false"
@@ -76,7 +76,7 @@
                 app:layout_constraintWidth_percent="0.22">
                 <TextView
                     android:textSize="@dimen/_17sdp"
-                    android:textColor="@color/text_color"
+                    android:textColor="@color/dc_text_primary"
                     android:gravity="center"
                     android:background="@drawable/button_number_add_channel"
                     android:clickable="false"
@@ -108,7 +108,7 @@
                 app:layout_constraintWidth_percent="0.22">
                 <TextView
                     android:textSize="@dimen/_17sdp"
-                    android:textColor="@color/text_color"
+                    android:textColor="@color/dc_text_primary"
                     android:gravity="center"
                     android:background="@drawable/button_number_add_channel"
                     android:clickable="false"
@@ -130,7 +130,7 @@
                 app:layout_constraintWidth_percent="0.22">
                 <TextView
                     android:textSize="@dimen/_17sdp"
-                    android:textColor="@color/text_color"
+                    android:textColor="@color/dc_text_primary"
                     android:gravity="center"
                     android:background="@drawable/button_number_add_channel"
                     android:clickable="false"
@@ -152,7 +152,7 @@
                 app:layout_constraintWidth_percent="0.22">
                 <TextView
                     android:textSize="@dimen/_17sdp"
-                    android:textColor="@color/text_color"
+                    android:textColor="@color/dc_text_primary"
                     android:gravity="center"
                     android:background="@drawable/button_number_add_channel"
                     android:clickable="false"
@@ -182,7 +182,7 @@
                 app:layout_constraintWidth_percent="0.22">
                 <TextView
                     android:textSize="@dimen/_17sdp"
-                    android:textColor="@color/text_color"
+                    android:textColor="@color/dc_text_primary"
                     android:gravity="center"
                     android:background="@drawable/button_number_add_channel"
                     android:clickable="false"
@@ -204,7 +204,7 @@
                 app:layout_constraintWidth_percent="0.22">
                 <TextView
                     android:textSize="@dimen/_17sdp"
-                    android:textColor="@color/text_color"
+                    android:textColor="@color/dc_text_primary"
                     android:gravity="center"
                     android:background="@drawable/button_number_add_channel"
                     android:clickable="false"
@@ -226,7 +226,7 @@
                 app:layout_constraintWidth_percent="0.22">
                 <TextView
                     android:textSize="@dimen/_17sdp"
-                    android:textColor="@color/text_color"
+                    android:textColor="@color/dc_text_primary"
                     android:gravity="center"
                     android:background="@drawable/button_number_add_channel"
                     android:clickable="false"
@@ -260,6 +260,7 @@
                     android:layout_width="@dimen/_20sdp"
                     android:layout_height="@dimen/_20sdp"
                     android:src="@drawable/ic_refresh"
+                    app:tint="@color/dc_key_icon"
                     android:layout_centerInParent="true"/>
             </RelativeLayout>
             <RelativeLayout
@@ -274,7 +275,7 @@
                 app:layout_constraintWidth_percent="0.22">
                 <TextView
                     android:textSize="@dimen/_17sdp"
-                    android:textColor="@color/text_color"
+                    android:textColor="@color/dc_text_primary"
                     android:gravity="center"
                     android:background="@drawable/button_number_add_channel"
                     android:clickable="false"
@@ -300,6 +301,7 @@
                     android:layout_width="@dimen/_20sdp"
                     android:layout_height="@dimen/_20sdp"
                     android:src="@drawable/ic_delete_number"
+                    app:tint="@color/dc_key_icon"
                     android:layout_centerInParent="true"/>
             </RelativeLayout>
             <RelativeLayout

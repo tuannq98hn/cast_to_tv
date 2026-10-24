@@ -5,7 +5,7 @@
     android:layout_height="match_parent">
     <LinearLayout
         android:orientation="vertical"
-        android:background="@drawable/bg_dialog"
+        android:background="@drawable/dc_bg_dialog"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginLeft="@dimen/_15sdp"
@@ -19,7 +19,7 @@
             android:layout_height="wrap_content">
             <TextView
                 android:textSize="@dimen/_14sdp"
-                android:textColor="@color/color_text_new"
+                android:textColor="@color/dc_text_primary"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/file_available"
@@ -36,10 +36,10 @@
                 android:layout_marginStart="@dimen/_10sdp"
                 android:layout_marginEnd="@dimen/_8sdp"
                 android:layout_alignParentEnd="true"
-                android:backgroundTint="#c1c1c1"/>
+                android:backgroundTint="@color/dc_text_muted"/>
         </RelativeLayout>
         <View
-            android:background="@color/color_ads_bg"
+            android:background="@color/dc_divider"
             android:layout_width="match_parent"
             android:layout_height="1dp"
             android:layout_marginLeft="@dimen/_8sdp"

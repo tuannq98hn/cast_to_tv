@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- dc_bg_dialog over an opaque dc_surface base: stands in for the Figma 28px background blur so the screen behind does not show through. -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@color/dc_surface"/>
+            <corners android:radius="@dimen/_32sdp"/>
+        </shape>
+    </item>
+    <item android:drawable="@drawable/dc_bg_dialog"/>
+</layer-list>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="@color/white"
+    android:background="@color/dc_bg"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
     <include
@@ -11,7 +11,7 @@
         android:visibility="gone"
         android:layout_width="match_parent"
         android:layout_height="@dimen/_1sdp"
-        app:indicatorColor="@color/white"
+        app:indicatorColor="@color/dc_primary"
         app:layout_constraintBottom_toBottomOf="@+id/viewHeader"/>
     <WebView
         android:id="@+id/page"
@@ -23,7 +23,9 @@
         android:id="@+id/ctl_bottom"
         android:layout_width="match_parent"
         android:layout_height="@dimen/_56sdp"
-        android:elevation="@dimen/_8sdp"
+        app:cardBackgroundColor="@color/dc_surface"
+        app:cardCornerRadius="0dp"
+        app:cardElevation="0dp"
         app:layout_constraintBottom_toBottomOf="parent">
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"

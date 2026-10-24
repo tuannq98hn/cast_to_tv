@@ -377,4 +377,8 @@
   <string name="you_may_need_to_accept_a_prompt_on_the_target_device_if_you_are_connecting_to_it_for_the_first_time_from_this_device">यदि आप इस डिवाइस से पहली बार कनेक्ट कर रहे हैं तो आपको लक्ष्य डिवाइस पर एक संकेत स्वीकार करने की आवश्यकता हो सकती है।</string>
   <string name="zero">0</string>
     <string name="error_server">कुछ गड़बड़ है, कृपया इंटरनेट जांचें या ऐप पुनः प्रारंभ करें</string>
+  <string name="remote_key_back">वापस</string>
+  <string name="remote_key_menu">मेनू</string>
+  <string name="remote_key_power">पावर</string>
+  <string name="cast_stop">रोकें</string>
 </resources>

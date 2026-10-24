@@ -1,13 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!-- Photo Cast grid tile (Stitch): rounded photo, bottom scrim with the photo name. -->
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
     android:padding="@dimen/_4sdp"
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
-    <com.google.android.material.imageview.ShapeableImageView
-        android:id="@+id/img_photo"
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="@dimen/_120sdp"
-        android:scaleType="centerCrop"
-        app:layout_constraintDimensionRatio="1:1"
-        app:shapeAppearanceOverlay="@style/rounded_corner"/>
+        android:layout_height="wrap_content">
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/img_photo"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@color/dc_surface_raised"
+            android:scaleType="centerCrop"
+            app:layout_constraintDimensionRatio="4:5"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:shapeAppearanceOverlay="@style/rounded_corner"
+            app:strokeColor="@color/dc_glass_stroke"
+            app:strokeWidth="1dp"/>
+        <View
+            android:background="@drawable/dc_bg_photo_scrim"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="@+id/img_photo"
+            app:layout_constraintEnd_toEndOf="@+id/img_photo"
+            app:layout_constraintHeight_percent="0.4"
+            app:layout_constraintStart_toStartOf="@+id/img_photo"/>
+        <TextView
+            android:id="@+id/tvPhotoName"
+            style="@style/DC.Text"
+            android:fontFamily="@font/pro_display_bold"
+            android:textSize="@dimen/_11ssp"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_8sdp"
+            android:layout_marginBottom="@dimen/_8sdp"
+            app:layout_constraintBottom_toBottomOf="@+id/img_photo"
+            app:layout_constraintEnd_toEndOf="@+id/img_photo"
+            app:layout_constraintStart_toStartOf="@+id/img_photo"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 </FrameLayout>

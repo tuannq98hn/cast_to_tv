@@ -1,6 +1,8 @@
 package com.casttotv.screen.mirroring.ui.activities.function.remote
 
 import android.app.Dialog
+import android.graphics.Color
+import android.graphics.drawable.ColorDrawable
 import android.os.Bundle
 import android.text.Editable
 import android.text.TextWatcher
@@ -39,11 +41,11 @@ class LgRemoteFragment : BaseRemoteFragment() {
         _binding = FragmentRemoteLgBinding.inflate(inflater, container, false)
         with(binding) {
             bindPressedBackground(
-                imHomeLG, R.drawable.ic_bg_btn_home_lg,
+                imHomeLG, R.drawable.bg_control,
                 mapOf(
-                    rltRemoteUp to R.drawable.ic_bg_btn_home_lg_up, rltRemoteDown to R.drawable.ic_bg_btn_home_lg_down,
-                    rltRemoteLeft to R.drawable.ic_bg_btn_home_lg_left, rltRemoteRight to R.drawable.ic_bg_btn_home_lg_right,
-                    rltRemoteOk to R.drawable.ic_bg_btn_home_lg_ok,
+                    rltRemoteUp to R.drawable.bg_control_up, rltRemoteDown to R.drawable.bg_control_down,
+                    rltRemoteLeft to R.drawable.bg_control_left, rltRemoteRight to R.drawable.bg_control_right,
+                    rltRemoteOk to R.drawable.bg_control_ok,
                 ),
             )
             bindPressedBackground(
@@ -154,7 +156,10 @@ class LgRemoteFragment : BaseRemoteFragment() {
     /** `i73`: text typed here is pushed to the focused field on the TV. */
     private fun showKeyboard() {
         val dialogBinding = DialogKeyboardBinding.inflate(layoutInflater)
-        val dialog = Dialog(requireContext()).apply { setContentView(dialogBinding.root) }
+        val dialog = Dialog(requireContext()).apply {
+            setContentView(dialogBinding.root)
+            window?.setBackgroundDrawable(ColorDrawable(Color.TRANSPARENT))
+        }
         val input = { TvConnect.device?.getCapability(TextInputControl::class.java) }
         dialogBinding.btnClose.setOnClickListener { dialog.dismiss() }
         dialogBinding.btnSend.setOnClickListener {

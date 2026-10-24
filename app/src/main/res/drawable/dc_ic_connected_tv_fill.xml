@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Material Symbols "connected_tv" FILL 1 (Apache 2.0): solid TV with cast waves cut out. Tint at the call site. -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android" android:width="24dp" android:height="24dp" android:viewportWidth="24" android:viewportHeight="24">
+    <path android:fillColor="#FFFFFFFF" android:fillType="evenOdd" android:pathData="M20,3H4c-1.1,0 -2,0.9 -2,2v12c0,1.1 0.9,2 2,2h4v2h8v-2h4c1.1,0 2,-0.9 2,-2V5c0,-1.1 -0.9,-2 -2,-2zM5,14v1.5h1.5c0,-0.83 -0.67,-1.5 -1.5,-1.5zM5,11v1.43c1.68,0 3.07,1.39 3.07,3.07H9.5c0,-2.48 -2.02,-4.5 -4.5,-4.5zM5,8v1.45c3.34,0 6.05,2.71 6.05,6.05H12.5c0,-4.14 -3.36,-7.5 -7.5,-7.5z"/>
+</vector>

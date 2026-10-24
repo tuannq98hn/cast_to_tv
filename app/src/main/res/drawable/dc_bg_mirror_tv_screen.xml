@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Stitch hero TV screen: gradient (to top right, cyan-950, slate-900, indigo-950), r8. -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle">
+    <gradient android:angle="45" android:startColor="#083344" android:centerColor="#0f172a" android:endColor="#1e1b4b"/>
+    <corners android:radius="@dimen/_6sdp"/>
+</shape>

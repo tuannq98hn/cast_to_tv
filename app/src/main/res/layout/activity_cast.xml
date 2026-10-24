@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!-- Cast player. Video mode (sl_video) follows Stitch "Video Player & Stream (Dark Cinema)"; photo mode (sl_photo) keeps the
+     Figma 1:922 card/console. Left out of the Stitch player (no feature behind them): live/bitrate/4K badges, aspect + audio
+     selectors, file chips, bookmark, soundbar level, subtitles, "Mirroring to Big Screen", queue, "Phone only", sync card. -->
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="@color/white"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
     <include
         android:id="@+id/include4"
-        layout="@layout/item_header"/>
+        layout="@layout/layout_media_header"/>
     <ScrollView
         android:id="@+id/sl_photo"
         android:visibility="visible"
@@ -30,10 +32,8 @@
                     android:id="@+id/vpImage"
                     android:layout_width="0dp"
                     android:layout_height="0dp"
-                    android:layout_marginLeft="@dimen/_16sdp"
-                    android:layout_marginRight="@dimen/_16sdp"
                     android:layout_marginHorizontal="@dimen/_16sdp"
-                    app:cardCornerRadius="10dp"
+                    android:layout_marginTop="@dimen/_8sdp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintDimensionRatio="1:1"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -42,114 +42,95 @@
             </androidx.constraintlayout.widget.ConstraintLayout>
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/rcvImage"
-                android:paddingLeft="@dimen/_16sdp"
-                android:paddingRight="@dimen/_16sdp"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/_80sdp"
-                android:layout_marginTop="@dimen/_24sdp"
+                android:layout_marginTop="@dimen/_16sdp"
                 android:paddingHorizontal="@dimen/_16sdp"
+                android:clipToPadding="false"
                 app:layout_constraintTop_toBottomOf="@+id/constraintLayout2"/>
             <LinearLayout
                 android:orientation="horizontal"
                 android:id="@+id/linearLayout2"
+                android:gravity="center_vertical"
+                android:background="@drawable/dc_bg_media_card"
+                android:padding="@dimen/_14sdp"
                 android:layout_width="match_parent"
-                android:layout_height="@dimen/_56sdp"
-                android:layout_marginLeft="@dimen/_20sdp"
-                android:layout_marginTop="@dimen/_24sdp"
-                android:layout_marginRight="@dimen/_20sdp"
-                android:layout_marginHorizontal="@dimen/_20sdp"
-                app:layout_constraintTop_toBottomOf="@+id/rcvImage">
-                <RelativeLayout
-                    android:id="@+id/rl_stop_image"
-                    android:background="@drawable/bg_btn_cast"
-                    android:layout_width="@dimen/_56sdp"
-                    android:layout_height="match_parent">
-                    <ImageView
-                        android:focusable="false"
-                        android:clickable="false"
-                        android:layout_width="@dimen/_16sdp"
-                        android:layout_height="@dimen/_16sdp"
-                        android:src="@drawable/ic_stop_video"
-                        android:layout_centerInParent="true"/>
-                </RelativeLayout>
-                <LinearLayout
-                    android:orientation="horizontal"
-                    android:background="@drawable/bg_btn_cast"
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_marginLeft="@dimen/_16sdp"
-                    android:layout_marginRight="@dimen/_16sdp"
-                    android:layout_weight="1"
-                    android:layout_marginHorizontal="@dimen/_16sdp">
-                    <RelativeLayout
-                        android:id="@+id/rlBack"
-                        android:background="@drawable/ripple_effect_exit"
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1">
-                        <ImageView
-                            android:background="@drawable/ic_back_play"
-                            android:clickable="false"
-                            android:layout_width="@dimen/_24sdp"
-                            android:layout_height="@dimen/_24sdp"
-                            android:layout_centerInParent="true"/>
-                    </RelativeLayout>
-                    <RelativeLayout
-                        android:id="@+id/rlt_play_pause_media_player"
-                        android:background="@drawable/ripple_effect_exit"
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1">
-                        <ImageView
-                            android:id="@+id/img_play_pause_media_player"
-                            android:focusable="false"
-                            android:clickable="false"
-                            android:layout_width="@dimen/_35sdp"
-                            android:layout_height="@dimen/_35sdp"
-                            android:src="@drawable/ic_play_media_player"
-                            android:layout_centerInParent="true"/>
-                    </RelativeLayout>
-                    <RelativeLayout
-                        android:id="@+id/rlNext"
-                        android:background="@drawable/ripple_effect_exit"
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1">
-                        <ImageView
-                            android:background="@drawable/ic_next_play"
-                            android:clickable="false"
-                            android:layout_width="@dimen/_24sdp"
-                            android:layout_height="@dimen/_24sdp"
-                            android:layout_centerInParent="true"/>
-                    </RelativeLayout>
-                </LinearLayout>
-                <RelativeLayout
-                    android:id="@+id/rlRote"
-                    android:background="@drawable/bg_btn_cast"
-                    android:layout_width="@dimen/_56sdp"
-                    android:layout_height="match_parent">
-                    <ImageView
-                        android:layout_width="@dimen/_24sdp"
-                        android:layout_height="@dimen/_24sdp"
-                        android:src="@drawable/ic_rotate"
-                        android:layout_centerInParent="true"/>
-                </RelativeLayout>
-            </LinearLayout>
-            <androidx.constraintlayout.widget.Guideline
-                android:orientation="horizontal"
-                android:id="@+id/guideline7"
-                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                app:layout_constraintGuide_percent="0.78"/>
+                android:layout_marginHorizontal="@dimen/_16sdp"
+                android:layout_marginTop="@dimen/_16sdp"
+                app:layout_constraintTop_toBottomOf="@+id/rcvImage">
+                <FrameLayout
+                    android:id="@+id/rl_stop_image"
+                    android:background="@drawable/dc_bg_player_stop"
+                    android:layout_width="@dimen/_40sdp"
+                    android:layout_height="@dimen/_40sdp">
+                    <ImageView
+                        android:layout_width="@dimen/_14sdp"
+                        android:layout_height="@dimen/_14sdp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_stop_video"
+                        app:tint="@color/dc_danger"/>
+                </FrameLayout>
+                <Space android:layout_width="0dp" android:layout_height="0dp" android:layout_weight="1"/>
+                <FrameLayout
+                    android:id="@+id/rlBack"
+                    android:background="@drawable/dc_bg_player_btn"
+                    android:layout_width="@dimen/_40sdp"
+                    android:layout_height="@dimen/_40sdp">
+                    <ImageView
+                        android:layout_width="@dimen/_20sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_back_play"
+                        app:tint="@color/dc_text_primary"/>
+                </FrameLayout>
+                <Space android:layout_width="0dp" android:layout_height="0dp" android:layout_weight="1"/>
+                <FrameLayout
+                    android:id="@+id/rlt_play_pause_media_player"
+                    android:layout_width="@dimen/_56sdp"
+                    android:layout_height="@dimen/_56sdp">
+                    <ImageView
+                        android:id="@+id/img_play_pause_media_player"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/ic_play_media_player"/>
+                </FrameLayout>
+                <Space android:layout_width="0dp" android:layout_height="0dp" android:layout_weight="1"/>
+                <FrameLayout
+                    android:id="@+id/rlNext"
+                    android:background="@drawable/dc_bg_player_btn"
+                    android:layout_width="@dimen/_40sdp"
+                    android:layout_height="@dimen/_40sdp">
+                    <ImageView
+                        android:layout_width="@dimen/_20sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_next_play"
+                        app:tint="@color/dc_text_primary"/>
+                </FrameLayout>
+                <Space android:layout_width="0dp" android:layout_height="0dp" android:layout_weight="1"/>
+                <FrameLayout
+                    android:id="@+id/rlRote"
+                    android:background="@drawable/dc_bg_player_btn"
+                    android:layout_width="@dimen/_40sdp"
+                    android:layout_height="@dimen/_40sdp">
+                    <ImageView
+                        android:layout_width="@dimen/_20sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_rotate"
+                        app:tint="@color/dc_text_primary"/>
+                </FrameLayout>
+            </LinearLayout>
             <TextView
-                android:textSize="@dimen/_12sdp"
-                android:textColor="@color/color_main"
+                style="@style/DC.Text.CardTitle"
+                android:textColor="@color/dc_primary"
                 android:id="@+id/tv_time"
                 android:visibility="gone"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_12sdp"
                 android:text="00:00"
-                android:fontFamily="@font/pro_display_medium"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/linearLayout2"/>
@@ -158,326 +139,361 @@
     <ScrollView
         android:id="@+id/sl_video"
         android:visibility="gone"
+        android:scrollbars="none"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:fillViewport="true"
         app:layout_constraintBottom_toTopOf="@+id/adsView"
         app:layout_constraintTop_toBottomOf="@+id/include4">
-        <androidx.constraintlayout.widget.ConstraintLayout
+        <LinearLayout
             android:id="@+id/ct_video"
-            android:padding="@dimen/_13sdp"
+            android:orientation="vertical"
+            android:paddingHorizontal="@dimen/_14sdp"
+            android:paddingTop="@dimen/_6sdp"
+            android:paddingBottom="@dimen/_16sdp"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            app:layout_constraintBottom_toTopOf="@+id/main_ads_native"
-            app:layout_constraintTop_toBottomOf="@+id/include4">
-            <ImageView
-                android:id="@+id/image_view"
-                android:layout_width="0dp"
-                android:layout_height="0dp"
-                android:src="@drawable/ic_icon_default_tv"
-                app:layout_constraintDimensionRatio="1.7:1"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"/>
+            android:layout_height="wrap_content">
+            <!-- Casting status bar -->
             <LinearLayout
+                android:gravity="center_vertical"
                 android:orientation="horizontal"
-                android:id="@+id/linearLayout3"
-                android:padding="@dimen/_10sdp"
+                android:background="@drawable/dc_bg_casting_card"
+                android:padding="@dimen/_9sdp"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:weightSum="3"
-                app:layout_constraintTop_toBottomOf="@+id/image_view">
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:background="@drawable/dc_bg_radar_well"
+                    android:padding="@dimen/_5sdp"
+                    android:layout_width="@dimen/_26sdp"
+                    android:layout_height="@dimen/_26sdp"
+                    android:src="@drawable/dc_ic_cast_connected"
+                    android:importantForAccessibility="no"
+                    app:tint="@color/dc_primary_soft"/>
                 <LinearLayout
-                    android:gravity="center"
                     android:orientation="vertical"
-                    android:id="@+id/imvRemote"
-                    android:background="@drawable/ripple_effect_exit"
-                    android:visibility="gone"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1">
-                    <LinearLayout
-                        android:gravity="center"
-                        android:orientation="vertical"
-                        android:background="@drawable/bg_btn_cast"
-                        android:focusable="false"
-                        android:clickable="false"
-                        android:layout_width="@dimen/_45sdp"
-                        android:layout_height="@dimen/_45sdp">
-                        <ImageView
-                            android:focusable="false"
-                            android:clickable="false"
-                            android:layout_width="@dimen/_15sdp"
-                            android:layout_height="@dimen/_15sdp"
-                            android:src="@drawable/ic_remote"/>
-                    </LinearLayout>
+                    android:layout_weight="1"
+                    android:layout_marginStart="@dimen/_9sdp">
                     <TextView
-                        android:textSize="@dimen/_11sdp"
-                        android:textColor="@color/black"
+                        style="@style/DC.Text"
+                        android:fontFamily="@font/pro_display_bold"
+                        android:letterSpacing="0.08"
+                        android:textAllCaps="true"
+                        android:textColor="@color/dc_primary_soft"
+                        android:textSize="@dimen/_8ssp"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="@dimen/_3sdp"
-                        android:text="@string/remote"
-                        android:fontFamily="@font/roboto_regular"/>
+                        android:text="@string/text_connected"/>
+                    <TextView
+                        style="@style/DC.Text"
+                        android:id="@+id/tvCastingDevice"
+                        android:fontFamily="@font/pro_display_semibold"
+                        android:textSize="@dimen/_12ssp"
+                        android:maxLines="1"
+                        android:ellipsize="end"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_1sdp"/>
                 </LinearLayout>
             </LinearLayout>
-            <LinearLayout
-                android:orientation="horizontal"
-                android:id="@+id/linearLayout4"
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/_55sdp"
-                android:layout_marginTop="@dimen/_20sdp"
-                app:layout_constraintTop_toBottomOf="@+id/linearLayout3">
-                <LinearLayout
-                    android:gravity="center"
-                    android:orientation="vertical"
-                    android:id="@+id/ll_show_list"
-                    android:background="@drawable/ripple_effect_exit"
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1">
-                    <LinearLayout
-                        android:gravity="center"
-                        android:orientation="vertical"
-                        android:background="@drawable/bg_btn_cast"
-                        android:focusable="false"
-                        android:clickable="false"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent">
-                        <ImageView
-                            android:focusable="false"
-                            android:clickable="false"
-                            android:layout_width="@dimen/_20sdp"
-                            android:layout_height="@dimen/_20sdp"
-                            android:src="@drawable/ic_play_list_video"/>
-                    </LinearLayout>
-                </LinearLayout>
-                <LinearLayout
-                    android:orientation="horizontal"
-                    android:background="@drawable/bg_btn_cast"
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_marginLeft="@dimen/_16sdp"
-                    android:layout_marginRight="@dimen/_16sdp"
-                    android:layout_weight="3"
-                    android:layout_marginHorizontal="@dimen/_16sdp">
-                    <LinearLayout
-                        android:gravity="center"
-                        android:id="@+id/rlt_volume_down_media_player"
-                        android:background="@drawable/ripple_effect_exit"
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1">
-                        <ImageView
-                            android:layout_width="@dimen/_26sdp"
-                            android:layout_height="@dimen/_26sdp"
-                            android:src="@drawable/ic_minus_black"/>
-                    </LinearLayout>
-                    <LinearLayout
-                        android:gravity="center"
-                        android:id="@+id/ll_mute"
-                        android:background="@drawable/ripple_effect_exit"
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_marginLeft="@dimen/_10sdp"
-                        android:layout_marginRight="@dimen/_10sdp"
-                        android:layout_weight="1"
-                        android:layout_marginHorizontal="@dimen/_10sdp">
-                        <ImageView
-                            android:layout_width="@dimen/_28sdp"
-                            android:layout_height="@dimen/_28sdp"
-                            android:src="@drawable/ic_volume_off"/>
-                    </LinearLayout>
-                    <LinearLayout
-                        android:gravity="center"
-                        android:id="@+id/rlt_volume_up_media_player"
-                        android:background="@drawable/ripple_effect_exit"
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1">
-                        <ImageView
-                            android:layout_width="@dimen/_26sdp"
-                            android:layout_height="@dimen/_26sdp"
-                            android:src="@drawable/ic_add"/>
-                    </LinearLayout>
-                </LinearLayout>
-                <LinearLayout
-                    android:gravity="center"
-                    android:orientation="vertical"
-                    android:id="@+id/ll_stopVideo"
-                    android:background="@drawable/ripple_effect_exit"
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1">
-                    <LinearLayout
-                        android:gravity="center"
-                        android:orientation="vertical"
-                        android:background="@drawable/bg_btn_cast"
-                        android:focusable="false"
-                        android:clickable="false"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent">
-                        <ImageView
-                            android:focusable="false"
-                            android:clickable="false"
-                            android:layout_width="@dimen/_18sdp"
-                            android:layout_height="@dimen/_18sdp"
-                            android:src="@drawable/ic_stop_video"/>
-                    </LinearLayout>
-                </LinearLayout>
-            </LinearLayout>
+            <!-- Stage: thumbnail + progress -->
             <LinearLayout
                 android:orientation="vertical"
                 android:id="@+id/linearLayout5"
-                android:background="@drawable/bg_btn_cast"
-                android:padding="@dimen/_5sdp"
+                android:background="@drawable/dc_bg_media_card"
+                android:padding="@dimen/_8sdp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/_13sdp"
-                app:layout_constraintTop_toBottomOf="@+id/linearLayout4">
+                android:layout_marginTop="@dimen/_10sdp">
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/image_view"
+                    android:background="@color/dc_bg_alt"
+                    android:scaleType="centerCrop"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_150sdp"
+                    android:src="@drawable/ic_icon_default_tv"
+                    app:shapeAppearanceOverlay="@style/rounded_corner"/>
+                <SeekBar
+                    android:id="@+id/seekbar_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:paddingHorizontal="@dimen/_4sdp"
+                    android:paddingVertical="@dimen/_4sdp"
+                    android:splitTrack="false"
+                    android:progressDrawable="@drawable/dc_seekbar_progress"
+                    android:thumb="@drawable/dc_seekbar_thumb"/>
+                <RelativeLayout
+                    android:paddingHorizontal="@dimen/_4sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_2sdp">
+                    <TextView
+                        style="@style/DC.Text.Caption"
+                        android:textColor="@color/dc_text_primary"
+                        android:fontFamily="@font/pro_display_bold"
+                        android:id="@+id/textview_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0:0"
+                        android:singleLine="true"/>
+                    <TextView
+                        style="@style/DC.Text.Caption"
+                        android:textColor="@color/dc_text_primary"
+                        android:fontFamily="@font/pro_display_bold"
+                        android:id="@+id/textview_duration"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0:0"
+                        android:singleLine="true"
+                        android:layout_alignParentEnd="true"/>
+                </RelativeLayout>
+            </LinearLayout>
+            <!-- Transport: -15s, previous item, play/pause, next item, +15s -->
+            <LinearLayout
+                android:orientation="vertical"
+                android:id="@+id/linearLayout4"
+                android:background="@drawable/dc_bg_media_card"
+                android:paddingHorizontal="@dimen/_10sdp"
+                android:paddingVertical="@dimen/_10sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp">
                 <LinearLayout
-                    android:orientation="vertical"
+                    android:id="@+id/linearLayout3"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
-                    <TextView
-                        android:textSize="@dimen/_14sdp"
-                        android:textColor="@color/black"
-                        android:id="@+id/tv_name_video"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="@dimen/_10sdp"
-                        android:layout_marginRight="@dimen/_10sdp"
-                        android:text="name"
-                        android:lines="1"
-                        android:singleLine="true"
-                        android:fontFamily="@font/pro_display_medium"/>
-                    <RelativeLayout
+                    <LinearLayout
+                        android:id="@+id/rlt_prev_media_player"
+                        android:gravity="center"
                         android:orientation="horizontal"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="@dimen/_5sdp">
+                        android:background="@drawable/dc_bg_remote_bar_box"
+                        android:paddingHorizontal="@dimen/_9sdp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/_30sdp">
+                        <ImageView
+                            android:layout_width="@dimen/_14sdp"
+                            android:layout_height="@dimen/_14sdp"
+                            android:src="@drawable/dc_ic_replay"
+                            app:tint="@color/dc_key_icon"/>
                         <TextView
-                            android:textSize="@dimen/_13sdp"
-                            android:textColor="@color/black"
-                            android:id="@+id/textview_time"
+                            style="@style/DC.Text"
+                            android:fontFamily="@font/pro_display_bold"
+                            android:textColor="@color/dc_key_icon"
+                            android:textSize="@dimen/_10ssp"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginLeft="15dp"
-                            android:text="0:0"
-                            android:singleLine="true"/>
+                            android:layout_marginStart="@dimen/_4sdp"
+                            android:text="-15s"/>
+                    </LinearLayout>
+                    <Space android:layout_width="0dp" android:layout_height="0dp" android:layout_weight="1"/>
+                    <FrameLayout
+                        android:id="@+id/rlBackVideo"
+                        android:background="@drawable/dc_bg_remote_bar_key"
+                        android:layout_width="@dimen/_32sdp"
+                        android:layout_height="@dimen/_32sdp">
+                        <ImageView
+                            android:layout_width="@dimen/_18sdp"
+                            android:layout_height="@dimen/_18sdp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/dc_ic_skip_previous"
+                            app:tint="@color/dc_key_icon"/>
+                    </FrameLayout>
+                    <FrameLayout
+                        android:id="@+id/rl_pause_video"
+                        android:layout_width="@dimen/_46sdp"
+                        android:layout_height="@dimen/_46sdp"
+                        android:layout_marginHorizontal="@dimen/_10sdp">
+                        <ImageView
+                            android:id="@+id/imv_pause_video"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/ic_pause_media_player"/>
+                    </FrameLayout>
+                    <FrameLayout
+                        android:id="@+id/rlNextVideo"
+                        android:background="@drawable/dc_bg_remote_bar_key"
+                        android:layout_width="@dimen/_32sdp"
+                        android:layout_height="@dimen/_32sdp">
+                        <ImageView
+                            android:layout_width="@dimen/_18sdp"
+                            android:layout_height="@dimen/_18sdp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/dc_ic_skip_next"
+                            app:tint="@color/dc_key_icon"/>
+                    </FrameLayout>
+                    <Space android:layout_width="0dp" android:layout_height="0dp" android:layout_weight="1"/>
+                    <LinearLayout
+                        android:id="@+id/rlt_next_media_player"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:background="@drawable/dc_bg_remote_bar_box"
+                        android:paddingHorizontal="@dimen/_9sdp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/_30sdp">
                         <TextView
-                            android:textSize="@dimen/_13sdp"
-                            android:textColor="@color/black"
-                            android:id="@+id/textview_duration"
+                            style="@style/DC.Text"
+                            android:fontFamily="@font/pro_display_bold"
+                            android:textColor="@color/dc_key_icon"
+                            android:textSize="@dimen/_10ssp"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginRight="15dp"
-                            android:text="0:0"
-                            android:singleLine="true"
-                            android:layout_alignParentRight="true"/>
-                    </RelativeLayout>
-                    <SeekBar
-                        android:theme="@style/SeekBarColor"
-                        android:id="@+id/seekbar_time"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="@dimen/_10sdp"
-                        android:layout_marginTop="@dimen/_5sdp"
-                        android:layout_marginRight="@dimen/_10sdp"
-                        android:progressBackgroundTint="@color/color_sb"
-                        android:thumbTint="@color/color_main"
-                        android:layout_marginHorizontal="@dimen/_10sdp"
-                        app:layout_constraintLeft_toLeftOf="parent"
-                        app:layout_constraintRight_toRightOf="parent"
-                        app:layout_constraintTop_toTopOf="parent"/>
+                            android:layout_marginEnd="@dimen/_4sdp"
+                            android:text="+15s"/>
+                        <ImageView
+                            android:layout_width="@dimen/_14sdp"
+                            android:layout_height="@dimen/_14sdp"
+                            android:src="@drawable/dc_ic_forward_seek"
+                            app:tint="@color/dc_key_icon"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <!-- Remote shortcut: kept for the code path, hidden as before -->
+                <LinearLayout
+                    android:id="@+id/imvRemote"
+                    android:orientation="horizontal"
+                    android:visibility="gone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <!-- Now playing -->
+            <LinearLayout
+                android:orientation="vertical"
+                android:background="@drawable/dc_bg_media_card"
+                android:padding="@dimen/_12sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp">
+                <TextView
+                    style="@style/DC.Text"
+                    android:id="@+id/tv_name_video"
+                    android:fontFamily="@font/pro_display_bold"
+                    android:textSize="@dimen/_15ssp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="name"
+                    android:maxLines="2"
+                    android:ellipsize="end"/>
+            </LinearLayout>
+            <!-- TV controls: volume rail, playlist, stop -->
+            <LinearLayout
+                android:orientation="vertical"
+                android:background="@drawable/dc_bg_media_card"
+                android:padding="@dimen/_12sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp">
+                <LinearLayout
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:background="@drawable/dc_bg_remote_bar"
+                    android:padding="@dimen/_4sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_44sdp">
+                    <FrameLayout
+                        android:id="@+id/rlt_volume_down_media_player"
+                        android:background="@drawable/dc_bg_remote_bar_key"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+                        <ImageView
+                            android:layout_width="@dimen/_18sdp"
+                            android:layout_height="@dimen/_18sdp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/dc_ic_volume_down"
+                            app:tint="@color/dc_key_icon"/>
+                    </FrameLayout>
+                    <FrameLayout
+                        android:id="@+id/ll_mute"
+                        android:background="@drawable/dc_bg_remote_bar_box"
+                        android:layout_width="@dimen/_44sdp"
+                        android:layout_height="match_parent"
+                        android:layout_marginVertical="@dimen/_3sdp">
+                        <ImageView
+                            android:layout_width="@dimen/_18sdp"
+                            android:layout_height="@dimen/_18sdp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/dc_ic_volume_off"
+                            app:tint="@color/dc_primary_soft"/>
+                    </FrameLayout>
+                    <FrameLayout
+                        android:id="@+id/rlt_volume_up_media_player"
+                        android:background="@drawable/dc_bg_remote_bar_key"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+                        <ImageView
+                            android:layout_width="@dimen/_18sdp"
+                            android:layout_height="@dimen/_18sdp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/dc_ic_volume_up"
+                            app:tint="@color/dc_key_icon"/>
+                    </FrameLayout>
                 </LinearLayout>
                 <LinearLayout
                     android:orientation="horizontal"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/_10sdp"
-                    android:layout_marginBottom="@dimen/_5sdp"
-                    android:layout_weight="6">
-                    <RelativeLayout
-                        android:id="@+id/rlBackVideo"
-                        android:background="@drawable/ripple_effect_exit"
+                    android:layout_height="@dimen/_36sdp"
+                    android:layout_marginTop="@dimen/_10sdp">
+                    <LinearLayout
+                        android:id="@+id/ll_show_list"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:background="@drawable/dc_bg_quick_pill"
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
-                        android:layout_weight="1">
+                        android:layout_weight="1"
+                        android:layout_marginEnd="@dimen/_5sdp">
                         <ImageView
-                            android:background="@drawable/ic_back_play"
-                            android:clickable="false"
-                            android:layout_width="@dimen/_30sdp"
-                            android:layout_height="@dimen/_30sdp"
-                            android:layout_centerInParent="true"/>
-                    </RelativeLayout>
-                    <RelativeLayout
-                        android:id="@+id/rlt_prev_media_player"
-                        android:background="@drawable/ripple_effect_exit"
+                            android:layout_width="@dimen/_16sdp"
+                            android:layout_height="@dimen/_16sdp"
+                            android:src="@drawable/dc_ic_playlist_play"
+                            app:tint="@color/dc_primary_soft"/>
+                        <TextView
+                            style="@style/DC.Text"
+                            android:fontFamily="@font/pro_display_semibold"
+                            android:textColor="@color/dc_key_icon"
+                            android:textSize="@dimen/_11ssp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_6sdp"
+                            android:text="@string/playlist"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/ll_stopVideo"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:background="@drawable/dc_bg_player_stop_pill"
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
-                        android:layout_weight="1">
+                        android:layout_weight="1"
+                        android:layout_marginStart="@dimen/_5sdp">
                         <ImageView
-                            android:focusable="false"
-                            android:clickable="false"
-                            android:layout_width="@dimen/_24sdp"
-                            android:layout_height="@dimen/_24sdp"
-                            android:src="@drawable/ic_previous_media_player"
-                            android:layout_centerInParent="true"/>
-                    </RelativeLayout>
-                    <RelativeLayout
-                        android:id="@+id/rl_pause_video"
-                        android:background="@drawable/ripple_effect_exit"
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1">
-                        <ImageView
-                            android:id="@+id/imv_pause_video"
-                            android:focusable="false"
-                            android:clickable="false"
-                            android:layout_width="@dimen/_35sdp"
-                            android:layout_height="@dimen/_35sdp"
-                            android:src="@drawable/ic_pause_media_player"
-                            android:layout_centerInParent="true"/>
-                    </RelativeLayout>
-                    <RelativeLayout
-                        android:id="@+id/rlt_next_media_player"
-                        android:background="@drawable/ripple_effect_exit"
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1">
-                        <ImageView
-                            android:focusable="false"
-                            android:clickable="false"
-                            android:layout_width="@dimen/_24sdp"
-                            android:layout_height="@dimen/_24sdp"
-                            android:src="@drawable/ic_next_media_player"
-                            android:layout_centerInParent="true"/>
-                    </RelativeLayout>
-                    <RelativeLayout
-                        android:id="@+id/rlNextVideo"
-                        android:background="@drawable/ripple_effect_exit"
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1">
-                        <ImageView
-                            android:background="@drawable/ic_next_play"
-                            android:focusable="false"
-                            android:clickable="false"
-                            android:layout_width="@dimen/_30sdp"
-                            android:layout_height="@dimen/_30sdp"
-                            android:layout_centerInParent="true"/>
-                    </RelativeLayout>
+                            android:layout_width="@dimen/_16sdp"
+                            android:layout_height="@dimen/_16sdp"
+                            android:src="@drawable/dc_ic_stop"
+                            app:tint="@color/dc_danger"/>
+                        <TextView
+                            style="@style/DC.Text"
+                            android:fontFamily="@font/pro_display_semibold"
+                            android:textColor="#fda4af"
+                            android:textSize="@dimen/_11ssp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_6sdp"
+                            android:text="@string/cast_stop"/>
+                    </LinearLayout>
                 </LinearLayout>
             </LinearLayout>
-        </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
     </ScrollView>
     <FrameLayout android:visibility="gone"
         android:id="@+id/adsView"
         android:paddingTop="@dimen/_8sdp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"/>

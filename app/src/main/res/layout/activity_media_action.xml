@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!-- Share Cast Photo / Video (screens 26, 27): self-styled from Cast Player (media card + gradient CTA). -->
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
@@ -21,6 +22,8 @@
     <ImageView
         android:id="@+id/imv_photoAction"
         android:visibility="gone"
+        android:background="@drawable/dc_bg_media_card"
+        android:padding="@dimen/_12sdp"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginLeft="@dimen/_20sdp"
@@ -36,27 +39,23 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/rlt_native_ads"/>
     <TextView
-        android:textSize="@dimen/_14sdp"
-        android:textColor="@color/white"
+        style="@style/DC.Text.Button"
+        android:textColor="@color/dc_text_primary"
         android:gravity="center"
         android:id="@+id/btn_startCast"
-        android:background="@drawable/bg_btn_refresh"
-        android:paddingTop="@dimen/_10sdp"
-        android:paddingBottom="@dimen/_10sdp"
+        android:background="@drawable/dc_bg_cta_gradient"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="@dimen/_12sdp"
-        android:layout_marginRight="@dimen/_12sdp"
-        android:layout_marginBottom="@dimen/_10sdp"
+        android:layout_height="@dimen/_48sdp"
+        android:layout_marginHorizontal="@dimen/_16sdp"
+        android:layout_marginBottom="@dimen/_16sdp"
         android:text="@string/start_cast"
-        android:fontFamily="@font/pro_display_medium"
-        android:layout_marginHorizontal="@dimen/_12sdp"
-        android:paddingVertical="@dimen/_10sdp"
         app:layout_constraintBottom_toBottomOf="parent"/>
     <LinearLayout
         android:gravity="center"
         android:orientation="vertical"
         android:id="@+id/linear_videoView"
+        android:background="@drawable/dc_bg_media_card"
+        android:padding="@dimen/_12sdp"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_marginLeft="@dimen/_10sdp"
@@ -74,7 +73,7 @@
             android:layout_height="wrap_content"/>
     </LinearLayout>
     <ProgressBar
-        android:theme="@style/progressBarBlue"
+        android:indeterminateTint="@color/dc_primary"
         android:id="@+id/progressBar"
         android:visibility="gone"
         android:layout_width="@dimen/_40sdp"

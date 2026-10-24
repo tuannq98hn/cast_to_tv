@@ -10,12 +10,14 @@ import androidx.core.content.ContextCompat
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.core.view.WindowInsetsControllerCompat
+import androidx.core.view.isVisible
 import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.lifecycleScope
 import androidx.lifecycle.repeatOnLifecycle
 import com.casttotv.screen.mirroring.R
 import com.casttotv.screen.mirroring.data.AppPrefs
 import com.casttotv.screen.mirroring.databinding.ItemHeaderBinding
+import com.casttotv.screen.mirroring.databinding.LayoutMediaHeaderBinding
 import com.casttotv.screen.mirroring.tv.TvConnect
 import com.casttotv.screen.mirroring.ui.activities.function.connect.SearchTVActivity
 import com.casttotv.screen.mirroring.ui.dialogs.DisconnectDialog
@@ -39,11 +41,11 @@ abstract class BaseActivity : AppCompatActivity() {
         if (AppPrefs.hideNavigationBar) hideNavigationBar()
     }
 
-    /** `ak0.g0`: white status bar with dark icons; content kept below it under Android 15 edge-to-edge. */
+    /** `ak0.g0`: Dark Cinema status bar with light icons; content kept below it under Android 15 edge-to-edge. */
     private fun setupSystemBars() {
         @Suppress("DEPRECATION")
-        window.statusBarColor = ContextCompat.getColor(this, R.color.white)
-        WindowInsetsControllerCompat(window, window.decorView).isAppearanceLightStatusBars = true
+        window.statusBarColor = ContextCompat.getColor(this, R.color.dc_bg)
+        WindowInsetsControllerCompat(window, window.decorView).isAppearanceLightStatusBars = false
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(android.R.id.content)) { view, insets ->
             view.setPadding(0, insets.getInsets(WindowInsetsCompat.Type.statusBars()).top, 0, 0)
             // Consumed here so `fitsSystemWindows` layouts below don't pad for it a second time.
@@ -87,6 +89,31 @@ abstract class BaseActivity : AppCompatActivity() {
                 TvConnect.events.collect { renderConnection(header) }
             }
         }
+    }
+
+    /** [bindHeader] for the Stitch media header; [showStatus] = false hides the TV line (the screen shows it itself). */
+    fun bindMediaHeader(header: LayoutMediaHeaderBinding, title: CharSequence, showStatus: Boolean = true) {
+        header.tvTitle.text = title
+        header.llStatus.isVisible = showStatus
+        header.imvBack.setOnClickListener { onBackPressedDispatcher.onBackPressed() }
+        header.castConnect.setOnClickListener {
+            if (TvConnect.isConnected) DisconnectDialog(this, TvConnect.deviceName) { renderConnection(header) }.show()
+            else SearchTVActivity.open(this)
+        }
+        lifecycleScope.launch {
+            repeatOnLifecycle(Lifecycle.State.STARTED) {
+                renderConnection(header)
+                TvConnect.events.collect { renderConnection(header) }
+            }
+        }
+    }
+
+    private fun renderConnection(header: LayoutMediaHeaderBinding) {
+        val connected = TvConnect.isConnected
+        header.castConnect.setImageResource(if (connected) R.drawable.dc_ic_cast_connected else R.drawable.dc_ic_cast)
+        header.viewStatusDot.isVisible = connected
+        header.tvStatus.text = if (connected) TvConnect.deviceName else getString(R.string.tab_to_connect)
+        header.tvStatus.setTextColor(getColor(if (connected) R.color.dc_primary_soft else R.color.dc_text_muted))
     }
 
     private fun renderConnection(header: ItemHeaderBinding) = header.castConnect.setImageResource(

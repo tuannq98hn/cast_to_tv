@@ -29,7 +29,7 @@
         android:textColor="@color/white"
         android:gravity="center"
         android:id="@+id/tv_itemYoutubeQuality"
-        android:background="@drawable/bg_border_height"
+        android:background="@drawable/dc_bg_chip_active"
         android:paddingLeft="@dimen/_5sdp"
         android:paddingRight="@dimen/_5sdp"
         android:layout_width="wrap_content"
@@ -42,7 +42,7 @@
         app:layout_constraintTop_toTopOf="@+id/imv_itemYoutubeThumbnail"/>
     <TextView
         android:textSize="@dimen/_13sdp"
-        android:textColor="#323232"
+        android:textColor="@color/dc_text_primary"
         android:ellipsize="end"
         android:id="@+id/tv_itemYoutubeName"
         android:layout_width="0dp"
@@ -57,7 +57,7 @@
         app:layout_constraintTop_toBottomOf="@+id/tv_itemYoutubeQuality"/>
     <TextView
         android:textSize="@dimen/_11sdp"
-        android:textColor="#151515"
+        android:textColor="@color/dc_text_muted"
         android:gravity="center"
         android:id="@+id/tv_itemYoutubeFormat"
         android:layout_width="wrap_content"

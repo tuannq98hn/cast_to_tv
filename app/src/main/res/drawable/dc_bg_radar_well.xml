@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Stitch Main Hub device well: cyan-950/60 fill, 1dp cyan-500/40, r12. -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle">
+    <solid android:color="#99083344"/>
+    <stroke android:width="1dp" android:color="#6606b6d4"/>
+    <corners android:radius="@dimen/_10sdp"/>
+</shape>

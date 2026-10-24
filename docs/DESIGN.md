@@ -12,8 +12,16 @@ This document defines product and UI design rules shared across platforms.
 
 ## Source of Truth
 
-The shipped APK 14.7.4 is the design source: its layouts, drawables, Lottie files (`assets/*.json`) and strings
-were carried over. Match it unless a spec says otherwise. Tokens: `docs/references/design-system-reference-llms.txt`.
+The Figma file `CastToTV` / `Page 1` ("Dark Cinema") is the design source (ADR-0002). The shipped APK 14.7.4
+stays the source for behaviour and copy (strings), not for looks.
+
+- Frames: `docs/references/figma-dark-cinema/<frame>.png` + `nodes/<frame>.json`; generated `tokens.md`.
+  Frame → screen map: `docs/exec-plans/completed/2026-10-23-dark-cinema-ui.md`.
+- Tokens in code: `@color/dc_*`, `DC.*` styles, `dc_bg_*` drawables, dark `Theme.CastTV`.
+  Summary: `docs/references/design-system-reference-llms.txt`.
+- Screens without a frame are self-styled from those shared tokens/components only.
+- Frame elements that need behaviour the app lacks are left out; placeholder copy is never shipped.
+- No real blur below API 31: translucent gradient + 1dp stroke.
 
 ## Visual Parity Rule
 

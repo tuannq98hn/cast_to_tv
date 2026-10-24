@@ -6,33 +6,34 @@
         android:gravity="center"
         android:orientation="vertical"
         android:id="@+id/ct1"
-        android:background="@drawable/bg_border16_white"
-        android:paddingLeft="@dimen/_28sdp"
+        android:background="@drawable/dc_bg_dialog"
+        android:paddingLeft="@dimen/_16sdp"
         android:paddingTop="@dimen/_24sdp"
-        android:paddingRight="@dimen/_28sdp"
+        android:paddingRight="@dimen/_16sdp"
         android:paddingBottom="@dimen/_24sdp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="@dimen/_40sdp"
-        android:layout_marginRight="@dimen/_40sdp"
-        android:layout_marginHorizontal="@dimen/_40sdp"
-        android:paddingHorizontal="@dimen/_28sdp"
+        android:layout_marginLeft="@dimen/_24sdp"
+        android:layout_marginRight="@dimen/_24sdp"
+        android:layout_marginHorizontal="@dimen/_24sdp"
+        android:paddingHorizontal="@dimen/_16sdp"
         android:paddingVertical="@dimen/_24sdp"
         app:layout_constraintTop_toTopOf="parent">
         <TextView
             android:textSize="@dimen/_16sdp"
-            android:textColor="#949494"
+            android:textColor="@color/dc_text_muted"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Not really to buy?"
             android:fontFamily="@font/pro_display_medium"/>
         <TextView
             android:textSize="@dimen/_24sdp"
-            android:textColor="@color/color_text_new"
+            android:textColor="@color/dc_text_primary"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/_8sdp"
             android:text="Cast TV Discount"
+            android:gravity="center"
             android:fontFamily="@font/pro_display_bold"/>
         <LinearLayout
             android:orientation="horizontal"
@@ -52,7 +53,7 @@
                     android:src="@drawable/ic_screen"/>
                 <TextView
                     android:textSize="@dimen/_13sdp"
-                    android:textColor="@color/color_text_new"
+                    android:textColor="@color/dc_text_primary"
                     android:gravity="center_horizontal"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -73,7 +74,7 @@
                     android:src="@drawable/ic_unlock"/>
                 <TextView
                     android:textSize="@dimen/_13sdp"
-                    android:textColor="@color/color_text_new"
+                    android:textColor="@color/dc_text_primary"
                     android:gravity="center_horizontal"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -94,7 +95,7 @@
                     android:src="@drawable/ic_remove_ads"/>
                 <TextView
                     android:textSize="@dimen/_13sdp"
-                    android:textColor="@color/color_text_new"
+                    android:textColor="@color/dc_text_primary"
                     android:gravity="center_horizontal"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -113,15 +114,15 @@
             android:layout_marginTop="@dimen/_12sdp"
             android:paddingVertical="@dimen/_6sdp">
             <TextView
-                android:textSize="@dimen/_28sdp"
-                android:textColor="@color/color_main"
+                android:textSize="@dimen/_16sdp"
+                android:textColor="@color/dc_primary_soft"
                 android:id="@+id/tvPrice"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/pro_display_bold"/>
             <TextView
                 android:textSize="@dimen/_24sdp"
-                android:textColor="@color/color_text_new"
+                android:textColor="@color/dc_text_primary"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/year"
@@ -129,18 +130,22 @@
         </LinearLayout>
         <TextView
             android:textSize="@dimen/_14sdp"
-            android:textColor="@color/color_text_new"
+            android:textColor="@color/dc_text_primary"
             android:id="@+id/tvDesPrice"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/regular_price_for_year_s"
             android:fontFamily="@font/pro_display_medium"/>
-        <ImageView
+        <TextView
+            style="@style/DC.Text.Button"
+            android:textColor="@color/dc_text_primary"
+            android:textAllCaps="true"
             android:id="@+id/btnContinue"
+            android:background="@drawable/dc_bg_cta_gradient"
             android:layout_width="match_parent"
-            android:layout_height="@dimen/_56sdp"
-            android:layout_marginTop="@dimen/_12sdp"
-            android:src="@drawable/button_vip"/>
+            android:layout_height="@dimen/_48sdp"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:text="@string/continue_s"/>
     </LinearLayout>
     <ImageButton
         android:id="@+id/img_close"

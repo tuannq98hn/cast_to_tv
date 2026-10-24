@@ -142,6 +142,7 @@ class LanguageFirstActivity : BaseActivity() {
         override fun onBindViewHolder(holder: Holder, position: Int) = with(holder.binding) {
             val language = items[position]
             rbChecked.isChecked = language == selected
+            root.isSelected = rbChecked.isChecked
             imvIcon.setImageResource(language.icon)
             tvName.text = language.title
             root.setOnClickListener {

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Dark Cinema primary CTA: linear-gradient(90deg, #00f2fe, #3b82f6, #4f46e5), r16. -->
+<ripple xmlns:android="http://schemas.android.com/apk/res/android" android:color="@color/dc_ripple">
+    <item>
+        <shape android:shape="rectangle">
+            <gradient android:angle="0" android:startColor="@color/dc_primary" android:centerColor="@color/dc_blue" android:endColor="@color/dc_indigo"/>
+            <corners android:radius="@dimen/_16sdp"/>
+        </shape>
+    </item>
+</ripple>

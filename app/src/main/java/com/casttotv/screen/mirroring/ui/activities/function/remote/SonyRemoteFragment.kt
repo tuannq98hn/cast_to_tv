@@ -21,11 +21,11 @@ class SonyRemoteFragment : BaseRemoteFragment() {
         _binding = FragmentRemoteSonyBinding.inflate(inflater, container, false)
         with(binding) {
             bindPressedBackground(
-                imvHomeSony, R.drawable.img_remote_sony,
+                imvHomeSony, R.drawable.bg_control,
                 mapOf(
-                    llRemoteSonyUp to R.drawable.img_remote_sony_up, llRemoteSonyBottom to R.drawable.img_remote_sony_down,
-                    llRemoteSonyLeft to R.drawable.img_remote_sony_left, llRemoteSonyRight to R.drawable.img_remote_sony_right,
-                    llRemoteSonyOk to R.drawable.img_remote_sony_ok,
+                    llRemoteSonyUp to R.drawable.bg_control_up, llRemoteSonyBottom to R.drawable.bg_control_down,
+                    llRemoteSonyLeft to R.drawable.bg_control_left, llRemoteSonyRight to R.drawable.bg_control_right,
+                    llRemoteSonyOk to R.drawable.bg_control_ok,
                 ),
             )
             bindPressedBackground(

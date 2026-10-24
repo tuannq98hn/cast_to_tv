@@ -32,11 +32,11 @@ class FireTvRemoteFragment : BaseRemoteFragment() {
         _binding = FragmentRemoteFireTvNBinding.inflate(inflater, container, false)
         with(binding) {
             bindPressedBackground(
-                imvHomeFireTV, R.drawable.img_remote_fire_tv,
+                imvHomeFireTV, R.drawable.bg_control,
                 mapOf(
-                    rltRemoteUp to R.drawable.img_remote_fire_tv_up, rltRemoteDown to R.drawable.img_remote_fire_tv_down,
-                    rltRemoteLeft to R.drawable.img_remote_fire_tv_left, rltRemoteRight to R.drawable.img_remote_fire_tv_right,
-                    rltRemoteOk to R.drawable.img_remote_fire_tv_ok,
+                    rltRemoteUp to R.drawable.bg_control_up, rltRemoteDown to R.drawable.bg_control_down,
+                    rltRemoteLeft to R.drawable.bg_control_left, rltRemoteRight to R.drawable.bg_control_right,
+                    rltRemoteOk to R.drawable.bg_control_ok,
                 ),
             )
             ctTouchpadLG.setOnTouchListener(
@@ -99,7 +99,10 @@ class FireTvRemoteFragment : BaseRemoteFragment() {
     /** `k73`: typed characters become `input text`, delete becomes KEYCODE_DEL. */
     private fun showKeyboard() {
         val dialogBinding = DialogKeyboardFireTvBinding.inflate(layoutInflater)
-        val dialog = Dialog(requireContext()).apply { setContentView(dialogBinding.root) }
+        val dialog = Dialog(requireContext()).apply {
+            setContentView(dialogBinding.root)
+            window?.setBackgroundDrawable(ColorDrawable(Color.TRANSPARENT))
+        }
         dialogBinding.tvPinCodeOk.setOnClickListener { dialog.dismiss() }
         dialogBinding.edtPinCodeInput.setOnKeyListener { _, keyCode, event ->
             if (keyCode == KeyEvent.KEYCODE_DEL && event.action == KeyEvent.ACTION_DOWN) FireTvAdb.shell("input keyevent 67")

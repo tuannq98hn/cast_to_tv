@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Dark Cinema device icon well: #0a0e17 circle, Stitch rounded-xl (3rem) on a 48px tile = disc. -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="oval">
+    <solid android:color="@color/dc_bg_alt"/>
+</shape>

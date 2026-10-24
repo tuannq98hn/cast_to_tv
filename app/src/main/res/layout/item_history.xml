@@ -16,7 +16,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
         <TextView
-            android:textColor="@color/black"
+            android:textColor="@color/dc_text_muted"
             android:id="@+id/tvDate"
             android:visibility="gone"
             android:layout_width="wrap_content"
@@ -25,6 +25,8 @@
             android:text="@string/app_name"/>
         <RelativeLayout
             android:orientation="horizontal"
+            android:background="@drawable/bg_item_web_cast"
+            android:padding="@dimen/_10sdp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:layout_constraintEnd_toEndOf="parent"
@@ -32,8 +34,10 @@
             app:layout_constraintTop_toTopOf="parent">
             <ImageView
                 android:id="@+id/imvThumb"
-                android:layout_width="@dimen/_32sdp"
-                android:layout_height="@dimen/_32sdp"
+                android:background="@drawable/dc_bg_device_icon"
+                android:padding="@dimen/_6sdp"
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_40sdp"
                 android:src="@drawable/ic_google_web"
                 android:layout_centerVertical="true"/>
             <LinearLayout
@@ -48,7 +52,7 @@
                 android:layout_marginHorizontal="@dimen/_15sdp">
                 <TextView
                     android:textSize="@dimen/_12sdp"
-                    android:textColor="@color/textColor"
+                    android:textColor="@color/dc_text_primary"
                     android:ellipsize="end"
                     android:id="@+id/tvTitle"
                     android:layout_width="match_parent"
@@ -58,7 +62,7 @@
                     android:fontFamily="@font/pro_display_medium"/>
                 <TextView
                     android:textSize="@dimen/_10sdp"
-                    android:textColor="@color/color_text_ads_des"
+                    android:textColor="@color/dc_text_muted"
                     android:ellipsize="end"
                     android:id="@+id/tvLink"
                     android:layout_width="match_parent"
@@ -75,7 +79,7 @@
                 android:layout_height="@dimen/_22sdp"
                 android:layout_centerVertical="true"
                 android:layout_alignParentEnd="true"
-                android:backgroundTint="#a5a0a0"/>
+                android:backgroundTint="@color/dc_text_muted"/>
         </RelativeLayout>
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!-- Dark Cinema PIN box (Pinview default, File Browser code sheet): raised surface, 1dp glass stroke, r8. -->
 <shape xmlns:android="http://schemas.android.com/apk/res/android"
     android:padding="10dp"
     android:shape="rectangle">
     <stroke
-        android:width="0.5dp"
-        android:color="#000"/>
-    <solid android:color="#fff"/>
-    <corners android:radius="4dp"/>
+        android:width="1dp"
+        android:color="@color/dc_chip_stroke"/>
+    <solid android:color="@color/dc_surface_raised"/>
+    <corners android:radius="8dp"/>
 </shape>

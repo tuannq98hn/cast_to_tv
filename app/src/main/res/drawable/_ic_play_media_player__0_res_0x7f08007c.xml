@@ -2,14 +2,14 @@
 <gradient xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt"
     android:angle="0"
     android:type="linear"
-    android:startX="16"
-    android:startY="0"
-    android:endX="16"
-    android:endY="32">
+    android:startX="0"
+    android:startY="32"
+    android:endX="32"
+    android:endY="0">
     <item
-        android:color="#ff829dff"
+        android:color="#ff3131c0"
         android:offset="0"/>
     <item
-        android:color="#ff4d72f5"
+        android:color="#ff00f2fe"
         android:offset="1"/>
 </gradient>

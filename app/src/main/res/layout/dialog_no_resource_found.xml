@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
-    android:background="@drawable/bg_border"
+    android:background="@drawable/dc_bg_dialog"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_marginLeft="@dimen/_20sdp"
@@ -21,7 +21,7 @@
             android:layout_height="wrap_content">
             <TextView
                 android:textSize="@dimen/_14sdp"
-                android:textColor="@color/black"
+                android:textColor="@color/dc_text_primary"
                 android:layout_gravity="center_vertical"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -43,7 +43,7 @@
             android:layout_height="wrap_content">
             <TextView
                 android:textSize="@dimen/_12sdp"
-                android:textColor="@color/color_text_new"
+                android:textColor="@color/dc_text_muted"
                 android:id="@+id/textview"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -51,7 +51,7 @@
                 android:fontFamily="@font/pro_display_regular"/>
             <TextView
                 android:textSize="@dimen/_12sdp"
-                android:textColor="@color/color_text_new"
+                android:textColor="@color/dc_text_muted"
                 android:id="@+id/text2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -62,7 +62,7 @@
             <RelativeLayout
                 android:orientation="horizontal"
                 android:id="@+id/rl_refresh"
-                android:background="@drawable/bg_btn_refresh"
+                android:background="@drawable/dc_bg_cta_gradient"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/_20sdp"
@@ -93,6 +93,7 @@
         android:layout_marginTop="@dimen/_7sdp"
         android:layout_marginRight="@dimen/_4sdp"
         android:src="@drawable/ic_close_black"
+        app:tint="@color/dc_text_muted"
         android:layout_alignParentTop="true"
         android:layout_alignParentRight="true"/>
 </RelativeLayout>

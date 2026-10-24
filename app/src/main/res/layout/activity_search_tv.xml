@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!-- Dark Cinema Connect Devices (Figma 1:1073): scan card, device list, connection guide (empty state), web cast pill CTA. -->
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
-    android:background="@color/white"
+    android:background="@color/dc_bg"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
     <include
@@ -14,43 +15,44 @@
         android:layout_height="0dp"
         app:layout_constraintBottom_toTopOf="@+id/ll_web_cast"
         app:layout_constraintTop_toBottomOf="@+id/include9">
-        <RelativeLayout
+        <LinearLayout
             android:id="@+id/relativeLayout7"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:background="@drawable/dc_bg_glass_card"
+            android:paddingTop="@dimen/_16sdp"
+            android:paddingBottom="@dimen/_16sdp"
+            android:paddingHorizontal="@dimen/_16sdp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_marginHorizontal="@dimen/_16sdp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent">
-            <TextView
-                android:textSize="@dimen/_16sdp"
-                android:textColor="@color/color_text_new"
-                android:gravity="center"
-                android:id="@+id/txt_click"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/text_click_name"
-                android:fontFamily="@font/pro_display_bold"/>
             <com.airbnb.lottie.LottieAnimationView
-                android:layout_gravity="center"
                 android:id="@+id/img_anim_loading"
                 android:layout_width="@dimen/_164sdp"
                 android:layout_height="@dimen/_20sdp"
-                android:layout_marginTop="@dimen/_8sdp"
-                android:layout_below="@+id/txt_click"
-                android:layout_centerInParent="true"
                 app:lottie_autoPlay="true"
                 app:lottie_fileName="anim_dot_splash.json"
                 app:lottie_loop="true"/>
             <ImageView
-                android:layout_gravity="center"
                 android:id="@+id/imvNoWifi"
                 android:visibility="gone"
-                android:layout_width="@dimen/_144sdp"
-                android:layout_height="@dimen/_144sdp"
-                android:src="@drawable/img_no_wifi"
-                android:layout_centerInParent="true"/>
-        </RelativeLayout>
+                android:layout_width="@dimen/_120sdp"
+                android:layout_height="@dimen/_120sdp"
+                android:src="@drawable/img_no_wifi"/>
+            <TextView
+                android:id="@+id/txt_click"
+                style="@style/DC.Text.Body"
+                android:textColor="@color/dc_text_secondary"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:text="@string/text_click_name"/>
+        </LinearLayout>
         <LinearLayout
             android:orientation="horizontal"
             android:id="@+id/linearLayout"
@@ -60,22 +62,20 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/relativeLayout7">
             <TextView
-                android:textSize="@dimen/_14sdp"
-                android:textColor="@color/color_text_new"
                 android:id="@+id/tvNameWifiConnect"
+                style="@style/DC.Text.CardTitle"
+                android:textColor="@color/dc_text_body"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/_16sdp"
-                android:text="@string/wifi_connected"
-                android:fontFamily="@font/pro_display_bold"
-                android:layout_marginStart="@dimen/_8sdp"/>
+                android:layout_marginTop="@dimen/_12sdp"
+                android:text="@string/wifi_connected"/>
         </LinearLayout>
         <RelativeLayout
             android:id="@+id/rl_rv"
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_marginTop="@dimen/_16sdp"
-            android:layout_marginBottom="@dimen/_16sdp"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:layout_marginBottom="@dimen/_12sdp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/linearLayout">
             <androidx.recyclerview.widget.RecyclerView
@@ -88,9 +88,7 @@
             android:visibility="gone"
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_marginLeft="@dimen/_16sdp"
-            android:layout_marginTop="@dimen/_16sdp"
-            android:layout_marginRight="@dimen/_16sdp"
+            android:layout_marginTop="@dimen/_12sdp"
             android:layout_marginBottom="@dimen/_8sdp"
             android:layout_marginHorizontal="@dimen/_16sdp"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -99,106 +97,99 @@
             <LinearLayout
                 android:orientation="vertical"
                 android:id="@+id/ll_not_device"
-                android:background="@drawable/bg_item_language"
-                android:paddingTop="@dimen/_16sdp"
-                android:paddingBottom="@dimen/_16sdp"
+                android:background="@drawable/dc_bg_media_card"
+                android:padding="@dimen/_20sdp"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:paddingVertical="@dimen/_16sdp">
+                android:layout_height="wrap_content">
                 <LinearLayout
                     android:gravity="center_vertical"
                     android:orientation="horizontal"
-                    android:paddingLeft="@dimen/_16sdp"
-                    android:paddingRight="@dimen/_16sdp"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:paddingHorizontal="@dimen/_16sdp">
-                    <LinearLayout
-                        android:gravity="center"
-                        android:orientation="vertical"
-                        android:background="@drawable/bg_btn_refresh"
-                        android:layout_width="@dimen/_26sdp"
-                        android:layout_height="@dimen/_26sdp">
-                        <TextView
-                            android:textSize="@dimen/_14sdp"
-                            android:textColor="@color/white"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="1"
-                            android:fontFamily="@font/pro_display_medium"/>
-                    </LinearLayout>
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:background="@drawable/dc_bg_count_badge"
+                        android:padding="@dimen/_5sdp"
+                        android:layout_width="@dimen/_24sdp"
+                        android:layout_height="@dimen/_24sdp"
+                        android:src="@drawable/ic_help"
+                        app:tint="@color/dc_primary"/>
                     <TextView
-                        android:textSize="@dimen/_14sdp"
-                        android:textColor="@color/color_des"
+                        style="@style/DC.Text.CardTitle"
+                        android:textColor="@color/dc_text_body"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/make_sure_your_phone"
-                        android:fontFamily="@font/custom_font"
-                        android:layout_marginStart="@dimen/_10sdp"/>
+                        android:layout_marginStart="@dimen/_8sdp"
+                        android:text="@string/user_guide"/>
                 </LinearLayout>
                 <LinearLayout
-                    android:gravity="center_vertical"
                     android:orientation="horizontal"
-                    android:paddingLeft="@dimen/_16sdp"
-                    android:paddingRight="@dimen/_16sdp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/_10sdp"
-                    android:paddingHorizontal="@dimen/_16sdp">
-                    <LinearLayout
-                        android:gravity="center"
-                        android:orientation="vertical"
-                        android:background="@drawable/bg_btn_refresh"
-                        android:layout_width="@dimen/_26sdp"
-                        android:layout_height="@dimen/_26sdp">
-                        <TextView
-                            android:textSize="@dimen/_14sdp"
-                            android:textColor="@color/white"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="2"
-                            android:fontFamily="@font/pro_display_medium"/>
-                    </LinearLayout>
+                    android:layout_marginTop="@dimen/_16sdp">
                     <TextView
-                        android:textSize="@dimen/_14sdp"
-                        android:textColor="@color/color_des"
+                        style="@style/DC.Text"
+                        android:textSize="@dimen/_12ssp"
+                        android:fontFamily="@font/pro_display_bold"
+                        android:textColor="@color/dc_violet_soft"
+                        android:gravity="center"
+                        android:background="@drawable/dc_bg_step_badge"
+                        android:layout_width="@dimen/_24sdp"
+                        android:layout_height="@dimen/_24sdp"
+                        android:text="1"/>
+                    <TextView
+                        style="@style/DC.Text.Body"
+                        android:textColor="@color/dc_text_secondary"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/enable_the_wireless"
-                        android:fontFamily="@font/custom_font"
-                        android:layout_marginStart="@dimen/_10sdp"/>
+                        android:layout_marginStart="@dimen/_12sdp"
+                        android:text="@string/make_sure_your_phone"/>
                 </LinearLayout>
                 <LinearLayout
-                    android:gravity="center_vertical"
                     android:orientation="horizontal"
-                    android:paddingLeft="@dimen/_16sdp"
-                    android:paddingRight="@dimen/_16sdp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/_10sdp"
-                    android:paddingHorizontal="@dimen/_16sdp">
-                    <LinearLayout
-                        android:gravity="center"
-                        android:orientation="vertical"
-                        android:background="@drawable/bg_btn_refresh"
-                        android:layout_width="@dimen/_26sdp"
-                        android:layout_height="@dimen/_26sdp">
-                        <TextView
-                            android:textSize="@dimen/_14sdp"
-                            android:textColor="@color/white"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="3"
-                            android:fontFamily="@font/pro_display_medium"/>
-                    </LinearLayout>
+                    android:layout_marginTop="@dimen/_14sdp">
                     <TextView
-                        android:textSize="@dimen/_14sdp"
-                        android:textColor="@color/color_des"
+                        style="@style/DC.Text"
+                        android:textSize="@dimen/_12ssp"
+                        android:fontFamily="@font/pro_display_bold"
+                        android:textColor="@color/dc_violet_soft"
+                        android:gravity="center"
+                        android:background="@drawable/dc_bg_step_badge"
+                        android:layout_width="@dimen/_24sdp"
+                        android:layout_height="@dimen/_24sdp"
+                        android:text="2"/>
+                    <TextView
+                        style="@style/DC.Text.Body"
+                        android:textColor="@color/dc_text_secondary"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/connection_successful"
-                        android:fontFamily="@font/pro_display_regular"
-                        android:layout_marginStart="@dimen/_10sdp"/>
+                        android:layout_marginStart="@dimen/_12sdp"
+                        android:text="@string/enable_the_wireless"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_14sdp">
+                    <TextView
+                        style="@style/DC.Text"
+                        android:textSize="@dimen/_12ssp"
+                        android:fontFamily="@font/pro_display_bold"
+                        android:textColor="@color/dc_text_on_primary"
+                        android:gravity="center"
+                        android:background="@drawable/dc_bg_step_badge"
+                        android:backgroundTint="@color/dc_primary"
+                        android:layout_width="@dimen/_24sdp"
+                        android:layout_height="@dimen/_24sdp"
+                        android:text="3"/>
+                    <TextView
+                        style="@style/DC.Text.Body"
+                        android:textColor="@color/dc_text_secondary"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_12sdp"
+                        android:text="@string/connection_successful"/>
                 </LinearLayout>
             </LinearLayout>
         </ScrollView>
@@ -207,42 +198,40 @@
         android:gravity="center"
         android:orientation="horizontal"
         android:id="@+id/ll_web_cast"
-        android:background="@drawable/bg_btn_refresh"
-        android:padding="@dimen/_10sdp"
+        android:background="@drawable/dc_bg_cta_pill"
+        android:paddingHorizontal="@dimen/_20sdp"
         android:layout_width="match_parent"
-        android:layout_height="@dimen/_50sdp"
-        android:layout_marginLeft="@dimen/p16"
-        android:layout_marginRight="@dimen/p16"
-        android:layout_marginBottom="@dimen/_24sdp"
-        android:layout_marginHorizontal="@dimen/p16"
+        android:layout_height="@dimen/_46sdp"
+        android:layout_marginHorizontal="@dimen/_16sdp"
+        android:layout_marginBottom="@dimen/_20sdp"
         app:layout_constraintBottom_toTopOf="@+id/nativeAds">
+        <ImageView
+            android:layout_width="@dimen/_18sdp"
+            android:layout_height="@dimen/_18sdp"
+            android:layout_marginEnd="@dimen/_7sdp"
+            android:src="@drawable/dc_ic_language"
+            android:importantForAccessibility="no"
+            app:tint="#e0fdff"/>
         <TextView
-            android:textSize="@dimen/_16sdp"
-            android:textColor="@color/white"
-            android:gravity="center"
+            style="@style/DC.Text.Button"
+            android:textColor="#e0fdff"
             android:focusable="false"
             android:clickable="false"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="@dimen/_10sdp"
-            android:layout_marginRight="@dimen/_10sdp"
-            android:text="@string/cast_web_browser"
-            android:fontFamily="@font/pro_display_bold"
-            android:layout_marginHorizontal="@dimen/_10sdp"/>
+            android:text="@string/cast_web_browser"/>
     </LinearLayout>
     <FrameLayout android:visibility="gone"
         android:id="@+id/nativeAds"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:layout_marginBottom="8dp"
         android:layout_marginVertical="8dp"
         app:layout_constraintBottom_toBottomOf="parent"/>
     <LinearLayout
         android:gravity="center"
         android:orientation="vertical"
         android:id="@+id/llConnected"
-        android:background="#99000000"
+        android:background="@color/dc_scrim"
         android:visibility="gone"
         android:clickable="true"
         android:layout_width="match_parent"
@@ -250,46 +239,38 @@
         <LinearLayout
             android:gravity="center"
             android:orientation="vertical"
-            android:background="@drawable/bg_border"
-            android:padding="@dimen/_40sdp"
+            android:background="@drawable/dc_bg_dialog"
+            android:padding="@dimen/_32sdp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="@dimen/_40sdp"
-            app:layout_constraintTop_toTopOf="parent">
+            android:layout_margin="@dimen/_40sdp">
             <com.airbnb.lottie.LottieAnimationView
-                android:layout_gravity="center"
                 android:id="@+id/lottieConnecting"
                 android:layout_width="@dimen/_80sdp"
                 android:layout_height="@dimen/_80sdp"
-                android:layout_centerInParent="true"
                 app:lottie_autoPlay="true"
                 app:lottie_fileName="anim_loading.json"
                 app:lottie_loop="true"/>
             <com.airbnb.lottie.LottieAnimationView
-                android:layout_gravity="center"
                 android:id="@+id/lottieConnected"
                 android:visibility="gone"
                 android:layout_width="@dimen/_80sdp"
                 android:layout_height="@dimen/_80sdp"
-                android:layout_centerInParent="true"
                 app:lottie_fileName="anim_success_connect.json"/>
             <com.airbnb.lottie.LottieAnimationView
-                android:layout_gravity="center"
                 android:id="@+id/lottieConnectFail"
                 android:visibility="gone"
                 android:layout_width="@dimen/_80sdp"
                 android:layout_height="@dimen/_80sdp"
-                android:layout_centerInParent="true"
                 app:lottie_fileName="anim_fail_connect.json"/>
             <TextView
-                android:textSize="@dimen/_14sdp"
-                android:textColor="@color/black"
                 android:id="@+id/txt_status_connect"
+                style="@style/DC.Text.CardTitle"
+                android:gravity="center"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/_30sdp"
-                android:text="@string/text_connecting"
-                android:fontFamily="@font/pro_display_bold"/>
+                android:layout_marginTop="@dimen/_24sdp"
+                android:text="@string/text_connecting"/>
         </LinearLayout>
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -7,7 +7,7 @@
     android:layout_height="wrap_content">
     <LinearLayout
         android:orientation="vertical"
-        android:background="@drawable/bg_bottom_sheet_16_main"
+        android:background="@drawable/dc_bg_sheet"
         android:paddingLeft="16dp"
         android:paddingTop="24dp"
         android:paddingRight="16dp"
@@ -19,7 +19,7 @@
         app:layout_constraintBottom_toBottomOf="parent">
         <TextView
             android:textSize="13dp"
-            android:textColor="@color/color_text_new"
+            android:textColor="@color/dc_text_body"
             android:gravity="center"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -45,7 +45,7 @@
             android:textColor="@color/white"
             android:gravity="center"
             android:id="@+id/tvScanQr"
-            android:background="@drawable/bg_press_screen_mirror"
+            android:background="@drawable/dc_bg_cta_gradient"
             android:layout_width="match_parent"
             android:layout_height="48dp"
             android:text="@string/scan_qr"

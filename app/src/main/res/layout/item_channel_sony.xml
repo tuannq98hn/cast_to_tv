@@ -4,6 +4,8 @@
     android:layout_height="wrap_content">
     <RelativeLayout
         android:id="@+id/relativeLayout"
+        android:background="@drawable/dc_bg_glass_card"
+        android:layout_marginVertical="@dimen/_4sdp"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
         <androidx.cardview.widget.CardView

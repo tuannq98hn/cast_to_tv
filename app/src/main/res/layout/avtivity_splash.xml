@@ -1,30 +1,237 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!-- Splash (Stitch "Splash Screen (Dark Cinema)"): drifting lights, TV + phone emblem with radar rings, title, loader pills.
+     Motion runs in SplashActivity.startMotion(). Left out (no strings / not true for this app): tagline, 4K badge,
+     "CASTING" label, "Initializing 60FPS" status, engine/protocol footer. -->
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:orientation="vertical"
-    android:background="@drawable/bg_splash"
+    android:background="@drawable/dc_bg_ambient_splash"
+    android:clipChildren="false"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-    <com.airbnb.lottie.LottieAnimationView
-        android:id="@+id/lav_loading_gift"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
+    <View
+        android:id="@+id/blobCyan"
+        android:background="@drawable/dc_bg_splash_blob_cyan"
+        android:layout_width="@dimen/_240sdp"
+        android:layout_height="@dimen/_240sdp"
+        android:translationX="-80dp"
+        android:translationY="-90dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <View
+        android:id="@+id/blobPurple"
+        android:background="@drawable/dc_bg_splash_blob_purple"
+        android:layout_width="@dimen/_240sdp"
+        android:layout_height="@dimen/_240sdp"
+        android:translationX="90dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintDimensionRatio="1.5:1"
+        app:layout_constraintVertical_bias="0.35"/>
+
+    <!-- Emblem: radar rings, glowing TV with waveform, tilted phone casting, beam -->
+    <FrameLayout
+        android:id="@+id/emblem"
+        android:clipChildren="false"
+        android:layout_width="@dimen/_222sdp"
+        android:layout_height="@dimen/_197sdp"
+        app:layout_constraintBottom_toTopOf="@+id/txtSplashTitle"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.35"
-        app:layout_constraintWidth_percent="0.7"
-        app:lottie_autoPlay="true"
-        app:lottie_fileName="anim_splash.json"/>
-    <com.airbnb.lottie.LottieAnimationView
-        android:layout_width="0dp"
+        app:layout_constraintVertical_chainStyle="packed">
+        <View
+            android:id="@+id/ringInner"
+            android:background="@drawable/dc_bg_splash_ring_cyan"
+            android:layout_gravity="center"
+            android:layout_width="@dimen/_135sdp"
+            android:layout_height="@dimen/_135sdp"/>
+        <View
+            android:id="@+id/ringOuter"
+            android:background="@drawable/dc_bg_splash_ring_indigo"
+            android:layout_gravity="center"
+            android:layout_width="@dimen/_172sdp"
+            android:layout_height="@dimen/_172sdp"/>
+        <View
+            android:background="@drawable/dc_bg_splash_glow"
+            android:layout_gravity="center"
+            android:layout_width="@dimen/_250sdp"
+            android:layout_height="@dimen/_170sdp"/>
+        <LinearLayout
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:background="@drawable/dc_bg_splash_tv"
+            android:padding="@dimen/_8sdp"
+            android:layout_gravity="center"
+            android:layout_width="@dimen/_197sdp"
+            android:layout_height="@dimen/_123sdp">
+            <FrameLayout
+                android:background="@drawable/dc_bg_splash_panel"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_94sdp">
+                <ImageView
+                    android:scaleType="fitXY"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:src="@drawable/dc_splash_grid"
+                    android:importantForAccessibility="no"/>
+                <LinearLayout
+                    android:id="@+id/waveBars"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_30sdp">
+                    <View android:background="@drawable/dc_bg_pill" android:backgroundTint="#22d3ee"
+                        android:layout_width="@dimen/_3sdp" android:layout_height="@dimen/_9sdp"/>
+                    <View android:background="@drawable/dc_bg_pill" android:backgroundTint="#67e8f9"
+                        android:layout_width="@dimen/_3sdp" android:layout_height="@dimen/_15sdp" android:layout_marginStart="@dimen/_4sdp"/>
+                    <View android:background="@drawable/dc_bg_pill" android:backgroundTint="#ffffff"
+                        android:layout_width="@dimen/_5sdp" android:layout_height="@dimen/_22sdp" android:layout_marginStart="@dimen/_4sdp"/>
+                    <View android:background="@drawable/dc_bg_pill" android:backgroundTint="#67e8f9"
+                        android:layout_width="@dimen/_3sdp" android:layout_height="@dimen/_15sdp" android:layout_marginStart="@dimen/_4sdp"/>
+                    <View android:background="@drawable/dc_bg_pill" android:backgroundTint="#22d3ee"
+                        android:layout_width="@dimen/_3sdp" android:layout_height="@dimen/_9sdp" android:layout_marginStart="@dimen/_4sdp"/>
+                </LinearLayout>
+                <View
+                    android:background="@drawable/dc_bg_splash_gloss"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_47sdp"/>
+            </FrameLayout>
+            <View
+                android:background="@drawable/dc_bg_splash_stand"
+                android:layout_width="@dimen/_62sdp"
+                android:layout_height="@dimen/_4sdp"
+                android:layout_marginTop="@dimen/_6sdp"/>
+        </LinearLayout>
+        <ImageView
+            android:id="@+id/imgBeam"
+            android:layout_gravity="bottom|end"
+            android:layout_width="@dimen/_43sdp"
+            android:layout_height="@dimen/_43sdp"
+            android:layout_marginEnd="@dimen/_86sdp"
+            android:layout_marginBottom="@dimen/_31sdp"
+            android:src="@drawable/dc_splash_beam"
+            android:importantForAccessibility="no"/>
+        <LinearLayout
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:background="@drawable/dc_bg_splash_phone"
+            android:padding="@dimen/_5sdp"
+            android:rotation="-4"
+            android:layout_gravity="bottom|end"
+            android:layout_width="@dimen/_74sdp"
+            android:layout_height="@dimen/_135sdp"
+            android:layout_marginEnd="@dimen/_12sdp"
+            android:layout_marginBottom="-6dp">
+            <View
+                android:background="@drawable/dc_bg_pill"
+                android:backgroundTint="#4dffffff"
+                android:layout_width="@dimen/_18sdp"
+                android:layout_height="@dimen/_3sdp"
+                android:layout_marginBottom="@dimen/_3sdp"/>
+            <FrameLayout
+                android:background="@drawable/dc_bg_splash_phone_screen"
+                android:clipChildren="false"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+                <FrameLayout
+                    android:clipChildren="false"
+                    android:layout_gravity="center"
+                    android:layout_width="@dimen/_31sdp"
+                    android:layout_height="@dimen/_31sdp">
+                    <View
+                        android:id="@+id/phonePing"
+                        android:background="@drawable/dc_bg_splash_ping"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"/>
+                    <ImageView
+                        android:background="@drawable/dc_bg_splash_cast_disc"
+                        android:padding="@dimen/_8sdp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/dc_ic_cast_outline"
+                        android:importantForAccessibility="no"
+                        app:tint="#67e8f9"/>
+                </FrameLayout>
+            </FrameLayout>
+            <View
+                android:background="@drawable/dc_bg_pill"
+                android:backgroundTint="#66ffffff"
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="2dp"
+                android:layout_marginTop="@dimen/_3sdp"/>
+        </LinearLayout>
+    </FrameLayout>
+
+    <TextView
+        style="@style/DC.Text"
+        android:id="@+id/txtSplashTitle"
+        android:fontFamily="@font/pro_display_bold"
+        android:textSize="@dimen/_24ssp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_22sdp"
+        android:text="@string/app_name"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/lav_loading_gift"
-        app:layout_constraintWidth_percent="0.7"
-        app:lottie_autoPlay="true"
-        app:lottie_fileName="anim_dot_splash.json"
-        app:lottie_loop="true"/>
+        app:layout_constraintTop_toBottomOf="@+id/emblem"/>
+
+    <!-- Loader: four pills filled in sequence over the splash delay, then the status line -->
+    <LinearLayout
+        android:id="@+id/loaderPills"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_10sdp"
+        app:layout_constraintBottom_toTopOf="@+id/loaderStatus"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+        <View android:background="@drawable/dc_bg_pill" android:backgroundTint="#26ffffff"
+            android:layout_width="@dimen/_18sdp" android:layout_height="@dimen/_4sdp"/>
+        <View android:background="@drawable/dc_bg_pill" android:backgroundTint="#26ffffff"
+            android:layout_width="@dimen/_18sdp" android:layout_height="@dimen/_4sdp" android:layout_marginStart="@dimen/_6sdp"/>
+        <View android:background="@drawable/dc_bg_pill" android:backgroundTint="#26ffffff"
+            android:layout_width="@dimen/_18sdp" android:layout_height="@dimen/_4sdp" android:layout_marginStart="@dimen/_6sdp"/>
+        <View android:background="@drawable/dc_bg_pill" android:backgroundTint="#26ffffff"
+            android:layout_width="@dimen/_18sdp" android:layout_height="@dimen/_4sdp" android:layout_marginStart="@dimen/_6sdp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/loaderStatus"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_48sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+        <FrameLayout
+            android:clipChildren="false"
+            android:layout_width="@dimen/_6sdp"
+            android:layout_height="@dimen/_6sdp">
+            <View
+                android:id="@+id/statusPing"
+                android:background="@drawable/dc_bg_pill"
+                android:backgroundTint="#bf22d3ee"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+            <View
+                android:background="@drawable/dc_bg_pill"
+                android:backgroundTint="@color/dc_cyan"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </FrameLayout>
+        <TextView
+            style="@style/DC.Text"
+            android:fontFamily="@font/pro_display_medium"
+            android:letterSpacing="0.03"
+            android:textColor="@color/dc_key_icon"
+            android:textSize="@dimen/_10ssp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_6sdp"
+            android:text="@string/LOADING"/>
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

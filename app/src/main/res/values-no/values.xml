@@ -372,4 +372,8 @@
   <string name="you_may_need_to_accept_a_prompt_on_the_target_device_if_you_are_connecting_to_it_for_the_first_time_from_this_device">Du må kanskje godta en melding på målenheten hvis du kobler til den for første gang fra denne enheten.</string>
   <string name="zero">0</string>
     <string name="error_server">Noe er galt, sjekk Internett eller start appen på nytt</string>
+  <string name="remote_key_back">Tilbake</string>
+  <string name="remote_key_menu">Meny</string>
+  <string name="remote_key_power">Av/på</string>
+  <string name="cast_stop">Stopp</string>
 </resources>

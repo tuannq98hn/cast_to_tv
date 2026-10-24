@@ -14,6 +14,7 @@ import com.casttotv.screen.mirroring.databinding.ActivityListMediaBinding
 import com.casttotv.screen.mirroring.databinding.FragmentMediaAllBinding
 import com.casttotv.screen.mirroring.databinding.ItemAlbumPhotoBinding
 import com.casttotv.screen.mirroring.databinding.LayoutItemVideoBinding
+import com.casttotv.screen.mirroring.databinding.LayoutMediaTabBinding
 import com.casttotv.screen.mirroring.models.CastSession
 import com.casttotv.screen.mirroring.models.CastType
 import com.casttotv.screen.mirroring.models.MediaItem
@@ -34,11 +35,17 @@ class MediaActivity : BaseActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityListMediaBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        bindHeader(binding.include2, intent.getStringExtra(EXTRA_MEDIA_TYPE) ?: "Video")
+        bindMediaHeader(binding.include2, intent.getStringExtra(EXTRA_MEDIA_TYPE) ?: "Video")
 
         val tabs = listOf(getString(R.string.txt_all_video), getString(R.string.txt_album_video))
         binding.viewPager.adapter = TabsAdapter()
-        TabLayoutMediator(binding.tabLayout, binding.viewPager) { tab, i -> tab.text = tabs[i] }.attach()
+        val icons = listOf(R.drawable.dc_ic_video_library, R.drawable.dc_ic_folder)
+        TabLayoutMediator(binding.tabLayout, binding.viewPager) { tab, i ->
+            tab.customView = LayoutMediaTabBinding.inflate(layoutInflater).apply {
+                imgTabIcon.setImageResource(icons[i])
+                tvTabLabel.text = tabs[i]
+            }.root
+        }.attach()
     }
 
     /** `um3`/`em3`: tapping a video casts the whole list starting there, connecting first if needed. */
@@ -58,14 +65,16 @@ class MediaActivity : BaseActivity() {
 
         override fun onBindViewHolder(page: Page, position: Int): Unit = with(page.binding) {
             pgLoading.isVisible = true
-            rcvListMedia.layoutManager = GridLayoutManager(this@MediaActivity, 3)
+            rcvListMedia.layoutManager = GridLayoutManager(this@MediaActivity, 2)
             lifecycleScope.launch {
                 if (position == 0) {
                     val videos = withContext(Dispatchers.IO) { MediaStoreRepo.allVideos(this@MediaActivity) }
                     clNoVideo.isVisible = videos.isEmpty()
+                    showTabCount(0, videos.size)
                     rcvListMedia.adapter = VideoGridAdapter(videos, ::castVideos)
                 } else {
                     val albums = withContext(Dispatchers.IO) { MediaStoreRepo.videoAlbums(this@MediaActivity) }
+                    showTabCount(1, albums.size)
                     rcvListMedia.adapter = AlbumGridAdapter(albums) { album ->
                         DetailMediaActivity.album = album
                         open(DetailMediaActivity::class.java)
@@ -74,6 +83,14 @@ class MediaActivity : BaseActivity() {
                 pgLoading.isVisible = false
             }
             Unit
+        }
+    }
+
+    private fun showTabCount(tab: Int, count: Int) {
+        val view = binding.tabLayout.getTabAt(tab)?.customView ?: return
+        LayoutMediaTabBinding.bind(view).tvTabCount.apply {
+            text = count.toString()
+            isVisible = true
         }
     }
 

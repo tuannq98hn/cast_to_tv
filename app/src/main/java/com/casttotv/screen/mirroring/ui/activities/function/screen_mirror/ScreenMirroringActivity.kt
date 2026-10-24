@@ -41,7 +41,7 @@ class ScreenMirroringActivity : BaseActivity() {
         super.onCreate(savedInstanceState)
         val binding = ActivityScreenMirroringBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        binding.imgBack.setOnClickListener { onBackPressedDispatcher.onBackPressed() }
+        bindMediaHeader(binding.header, getString(R.string.screen_mirroring))
         binding.llMirrorTV.setOnClickListener { show(MirrorSmartFragment()) }
         binding.llMirrorDirect.setOnClickListener { show(MirrorDirectFragment()) }
         binding.llMirrorWeb.setOnClickListener { show(MirrorWebFragment()) }

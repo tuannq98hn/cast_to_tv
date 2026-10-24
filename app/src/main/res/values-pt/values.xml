@@ -366,4 +366,8 @@
   <string name="you_may_need_to_accept_a_prompt_on_the_target_device_if_you_are_connecting_to_it_for_the_first_time_from_this_device">Pode ser necessário aceitar um prompt no dispositivo de destino se estiver se conectando a ele pela primeira vez a partir deste dispositivo.</string>
   <string name="zero">0</string>
     <string name="error_server">Algo está errado, verifique a internet ou reinicie o aplicativo</string>
+  <string name="remote_key_back">Voltar</string>
+  <string name="remote_key_menu">Menu</string>
+  <string name="remote_key_power">Ligar</string>
+  <string name="cast_stop">Parar</string>
 </resources>

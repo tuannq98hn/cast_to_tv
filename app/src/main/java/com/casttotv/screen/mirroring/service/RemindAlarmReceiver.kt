@@ -58,6 +58,7 @@ class RemindAlarmReceiver : BroadcastReceiver() {
         val notification = NotificationCompat.Builder(context, ACTION)
             .setSmallIcon(R.drawable.icon_app)
             .setLargeIcon(ContextCompat.getDrawable(context, R.drawable.icon_app)?.toBitmap())
+            .setColor(ContextCompat.getColor(context, R.color.dc_primary))
             .setContentTitle(title)
             .setStyle(NotificationCompat.BigTextStyle().bigText(body))
             .setContentText(body)

@@ -21,11 +21,11 @@ class AndroidTvRemoteFragment : BaseRemoteFragment(), AndroidTvRemote.Listener {
         _binding = FragmentRemoteAndroidTvNewBinding.inflate(inflater, container, false)
         with(binding) {
             bindPressedBackground(
-                imHomeLG, R.drawable.ic_bg_btn_home_lg,
+                imHomeLG, R.drawable.bg_control,
                 mapOf(
-                    rltRemoteUp to R.drawable.ic_bg_btn_home_lg_up, rltRemoteDown to R.drawable.ic_bg_btn_home_lg_down,
-                    rltRemoteLeft to R.drawable.ic_bg_btn_home_lg_left, rltRemoteRight to R.drawable.ic_bg_btn_home_lg_right,
-                    rltRemoteOk to R.drawable.ic_bg_btn_home_lg_ok,
+                    rltRemoteUp to R.drawable.bg_control_up, rltRemoteDown to R.drawable.bg_control_down,
+                    rltRemoteLeft to R.drawable.bg_control_left, rltRemoteRight to R.drawable.bg_control_right,
+                    rltRemoteOk to R.drawable.bg_control_ok,
                 ),
             )
             bindPressedBackground(

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_gravity="center"
-    android:background="@drawable/bg_dialog"
+    android:background="@drawable/dc_bg_dialog"
     android:padding="@dimen/_10sdp"
     android:layout_width="match_parent"
     android:layout_height="@dimen/_200sdp"
@@ -12,13 +12,15 @@
         android:layout_height="match_parent">
         <TextView
             android:textSize="@dimen/_15sdp"
-            android:textColor="@color/black"
+            android:textColor="@color/dc_text_primary"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/_10sdp"
             android:text="keyboard Input"/>
         <EditText
             android:id="@+id/edt_text_input"
+            android:textColor="@color/dc_text_primary"
+            android:backgroundTint="@color/dc_primary_soft"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
         <LinearLayout
@@ -31,10 +33,10 @@
             android:layout_marginBottom="@dimen/_16sdp"
             android:layout_marginVertical="@dimen/_16sdp">
             <TextView
-                android:textColor="@color/color_txt"
+                android:textColor="@color/dc_text_body"
                 android:gravity="center"
                 android:id="@+id/btn_close"
-                android:background="@drawable/bg_button_cancel"
+                android:background="@drawable/dc_bg_button_secondary"
                 android:padding="@dimen/_10sdp"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
@@ -47,7 +49,7 @@
                 android:textColor="@color/white"
                 android:gravity="center"
                 android:id="@+id/btn_send"
-                android:background="@drawable/bg_button"
+                android:background="@drawable/dc_bg_cta_gradient"
                 android:padding="@dimen/_10sdp"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"

@@ -377,4 +377,8 @@
   <string name="you_may_need_to_accept_a_prompt_on_the_target_device_if_you_are_connecting_to_it_for_the_first_time_from_this_device">Möglicherweise müssen Sie eine Eingabeaufforderung auf dem Zielgerät akzeptieren, wenn Sie von diesem Gerät zum ersten Mal eine Verbindung herstellen.</string>
   <string name="zero">0</string>
     <string name="error_server">Etwas stimmt nicht. Bitte überprüfen Sie das Internet oder starten Sie die App neu</string>
+  <string name="remote_key_back">Zurück</string>
+  <string name="remote_key_menu">Menü</string>
+  <string name="remote_key_power">Ein/Aus</string>
+  <string name="cast_stop">Stopp</string>
 </resources>

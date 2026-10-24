@@ -1,12 +1,17 @@
 package com.casttotv.screen.mirroring.ui.activities.purchase
 
+import android.animation.ObjectAnimator
+import android.animation.PropertyValuesHolder
+import android.animation.ValueAnimator
 import android.content.Intent
-import android.media.MediaPlayer
+import android.graphics.LinearGradient
+import android.graphics.Shader
 import android.net.Uri
 import android.os.Bundle
 import android.view.View
-import android.view.animation.Animation
-import android.view.animation.AnimationUtils
+import android.view.animation.DecelerateInterpolator
+import android.view.animation.LinearInterpolator
+import androidx.core.view.doOnLayout
 import android.widget.Toast
 import androidx.activity.addCallback
 import com.casttotv.screen.mirroring.R
@@ -20,15 +25,14 @@ import com.casttotv.screen.mirroring.ui.activities.function.youtube_browser.Yout
 import com.casttotv.screen.mirroring.ui.activities.language.LanguageFirstActivity
 import com.casttotv.screen.mirroring.ui.activities.main.MainActivity
 import com.casttotv.screen.mirroring.ui.activities.webcast.WebCastActivity
-import com.google.android.material.bottomsheet.BottomSheetBehavior
 
-/** Port of `PurchaseActivity` (`activity_premium_old`): yearly plan sheet over a looping promo video. */
+/** Port of `PurchaseActivity` (`activity_premium_old`): Dark Cinema "PRO Upgrade" yearly plan sheet. */
 class PurchaseActivity : BaseActivity() {
 
     private lateinit var binding: ActivityPremiumOldBinding
     private var action = ""
     private var from: String? = null
-    private var music: MediaPlayer? = null
+    private val animators = mutableListOf<ValueAnimator>()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -40,6 +44,7 @@ class PurchaseActivity : BaseActivity() {
         with(binding) {
             tvPolicy.setOnClickListener { startActivity(Intent(Intent.ACTION_VIEW, Uri.parse("https://begamob.com/cast-policy.html"))) }
             tvTerms.setOnClickListener { startActivity(Intent(Intent.ACTION_VIEW, Uri.parse("https://begamob.com/ofs-termofuse.html"))) }
+            tvRestore.setOnClickListener { Premium.restore() }
             imvClose.setOnClickListener { leave() }
             expandable.parentLayout.setOnClickListener {
                 expandable.expand()
@@ -57,60 +62,42 @@ class PurchaseActivity : BaseActivity() {
                 runOnUiThread { testing1ButtonYearPrice.text = getString(R.string.txt_price, price, getString(R.string.year)) }
             }
         }
-        startLooping(binding.shine, R.anim.left_right)
-        startLooping(binding.cardViewPremium, R.anim.shake)
-
-        val sheet = BottomSheetBehavior.from(binding.bottomSheet)
-        sheet.expandedOffset = 140
-        sheet.isFitToContents = false
-        val screen = resources.displayMetrics.heightPixels
-        binding.bottomSheet.post { sheet.peekHeight = screen - binding.videoView.height }
-        sheet.addBottomSheetCallback(object : BottomSheetBehavior.BottomSheetCallback() {
-            override fun onSlide(bottomSheet: View, slideOffset: Float) = Unit
-            override fun onStateChanged(bottomSheet: View, newState: Int) {
-                if (newState == BottomSheetBehavior.STATE_COLLAPSED) {
-                    binding.expandable.post { binding.expandable.collapse() }
-                    binding.expandable.parentLayout.visibility = View.VISIBLE
-                }
-            }
-        })
         onBackPressedDispatcher.addCallback(this) { leave() }
-    }
-
-    override fun onResume() {
-        super.onResume()
-        playVideo()
-        music?.release()
-        music = runCatching { MediaPlayer.create(this, R.raw.audio_intro)?.apply { isLooping = true; start() } }.getOrNull()
-    }
-
-    override fun onPause() {
-        super.onPause()
-        if (binding.videoView.isPlaying) binding.videoView.pause()
-        music?.pause()
+        startDecorations()
     }
 
     override fun onDestroy() {
-        music?.release()
+        animators.forEach { it.cancel() }
         super.onDestroy()
     }
 
-    /** `r()`: looping promo video. */
-    private fun playVideo() = with(binding.videoView) {
-        setVideoURI(Uri.parse("android.resource://$packageName/${R.raw.video_premium_1}"))
-        setOnCompletionListener { start() }
-        setOnErrorListener { _, _, _ -> true }
-        start()
-    }
-
-    private fun startLooping(view: View, anim: Int) {
-        val animation = AnimationUtils.loadAnimation(this, anim)
-        animation.setAnimationListener(object : Animation.AnimationListener {
-            override fun onAnimationStart(a: Animation) = Unit
-            override fun onAnimationRepeat(a: Animation) = Unit
-            override fun onAnimationEnd(a: Animation) = view.startAnimation(animation)
-        })
-        view.startAnimation(animation)
+    /** Stitch PRO Upgrade motion: chip dot pulse, ping behind the devices, CTA shimmer sweep; plus the cyan title gradient. */
+    private fun startDecorations() = with(binding) {
+        animators += ObjectAnimator.ofFloat(premiumDot, View.ALPHA, 1f, 0.35f).apply {
+            duration = 1000; repeatMode = ValueAnimator.REVERSE
+        }
+        animators += ObjectAnimator.ofPropertyValuesHolder(
+            heroPing,
+            PropertyValuesHolder.ofFloat(View.SCALE_X, 1f, 2f),
+            PropertyValuesHolder.ofFloat(View.SCALE_Y, 1f, 2f),
+            PropertyValuesHolder.ofFloat(View.ALPHA, 1f, 0f),
+        ).apply { duration = 1000; interpolator = DecelerateInterpolator() }
+        testing1ButtonYear.clipToOutline = true
+        testing1ButtonYear.doOnLayout { button ->
+            ctaShimmer.visibility = View.VISIBLE
+            animators += ObjectAnimator.ofFloat(ctaShimmer, View.TRANSLATION_X, -ctaShimmer.width.toFloat(), button.width.toFloat()).apply {
+                duration = 2500; interpolator = LinearInterpolator(); repeatCount = ValueAnimator.INFINITE; start()
+            }
+        }
+        txtProTitle.doOnLayout {
+            txtProTitle.paint.shader = LinearGradient(
+                0f, 0f, it.width.toFloat(), it.height.toFloat(),
+                intArrayOf(0xFFFFFFFF.toInt(), 0xFFFFFFFF.toInt(), 0xFFA5F3FC.toInt(), 0xFF38BDF8.toInt()),
+                floatArrayOf(0f, 0.2f, 0.6f, 1f), Shader.TileMode.CLAMP,
+            )
+            txtProTitle.invalidate()
+        }
+        animators.forEach { if (!it.isStarted) { it.repeatCount = ValueAnimator.INFINITE; it.start() } }
     }
 
     /** `o()`: continue where the paywall was opened from. */

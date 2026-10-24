@@ -10,6 +10,6 @@
     <path
         android:fillColor="#00000000"
         android:pathData="M32,151.5L32,151.5A31.5,31.5 0,0 0,63.5 120L63.5,32A31.5,31.5 0,0 0,32 0.5L32,0.5A31.5,31.5 0,0 0,0.5 32L0.5,120A31.5,31.5 0,0 0,32 151.5z"
-        android:strokeColor="#151515"
+        android:strokeColor="@color/dc_key_stroke"
         android:strokeWidth="1"/>
 </vector>

@@ -4,6 +4,8 @@
     android:layout_height="match_parent">
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rcv_list_media"
+        android:paddingBottom="@dimen/_10sdp"
+        android:clipToPadding="false"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -24,8 +26,9 @@
             app:layout_constraintVertical_bias="0.3"
             app:layout_constraintWidth_percent="0.7"/>
         <TextView
-            android:textSize="@dimen/_16sdp"
-            android:textColor="@color/color_default"
+            android:textSize="@dimen/_14ssp"
+            android:textColor="@color/dc_text_muted"
+            android:layout_marginTop="@dimen/_8sdp"
             android:gravity="center"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -38,6 +41,7 @@
     <ProgressBar
         android:id="@+id/pg_loading"
         android:visibility="gone"
+        android:indeterminateTint="@color/dc_primary"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"

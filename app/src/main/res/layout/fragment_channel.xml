@@ -37,7 +37,7 @@
             android:src="@drawable/ic_image_not_found"/>
         <TextView
             android:textSize="@dimen/_10sdp"
-            android:textColor="@color/textColor"
+            android:textColor="@color/dc_text_muted"
             android:layout_gravity="center_horizontal"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -48,7 +48,7 @@
             android:textSize="@dimen/_13sdp"
             android:textColor="@color/white"
             android:id="@+id/btnConnect"
-            android:background="@drawable/bg_border_height"
+            android:background="@drawable/dc_bg_cta_gradient"
             android:paddingLeft="@dimen/_20sdp"
             android:paddingRight="@dimen/_20sdp"
             android:layout_width="wrap_content"
@@ -61,7 +61,7 @@
     </LinearLayout>
     <TextView
         android:textSize="@dimen/_15sdp"
-        android:textColor="@color/color_txt"
+        android:textColor="@color/dc_text_body"
         android:layout_gravity="center_horizontal"
         android:id="@+id/tvChannelFrNotFind"
         android:visibility="gone"
@@ -75,6 +75,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"/>
     <ProgressBar
+        android:indeterminateTint="@color/dc_primary"
         android:id="@+id/loading"
         android:visibility="gone"
         android:layout_width="wrap_content"
@@ -95,7 +96,7 @@
     <TextView
         android:textColor="@color/white"
         android:id="@+id/tvStatus"
-        android:background="#322f34"
+        android:background="@color/dc_surface_raised"
         android:paddingTop="@dimen/_5sdp"
         android:paddingBottom="@dimen/_5sdp"
         android:visibility="gone"

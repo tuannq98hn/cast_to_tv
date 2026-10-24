@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Stitch "Setup Guide" pill: surface-container #1b2029, no stroke, fully rounded, ripple. -->
+<ripple xmlns:android="http://schemas.android.com/apk/res/android" android:color="@color/dc_ripple">
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="#1b2029"/>
+            <corners android:radius="999dp"/>
+        </shape>
+    </item>
+</ripple>

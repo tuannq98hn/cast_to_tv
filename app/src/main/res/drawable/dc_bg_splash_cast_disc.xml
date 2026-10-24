@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Stitch splash phone cast disc: cyan-500/20, 1dp cyan-400/50. -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="oval">
+    <solid android:color="#3306b6d4"/>
+    <stroke android:width="1dp" android:color="#8022d3ee"/>
+</shape>

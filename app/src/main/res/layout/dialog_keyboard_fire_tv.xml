@@ -9,12 +9,13 @@
     android:paddingHorizontal="@dimen/_24sdp">
     <LinearLayout
         android:orientation="vertical"
-        android:background="@drawable/bg_border"
+        android:background="@drawable/dc_bg_dialog"
         android:padding="@dimen/_10sdp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <EditText
-            android:textColor="#939393"
+            android:textColor="@color/dc_text_primary"
+            android:textColorHint="@color/dc_text_subtle"
             android:id="@+id/edt_pinCodeInput"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -23,13 +24,13 @@
             android:lines="1"
             android:drawableRight="@drawable/ic_fire_tv_search_gray"
             android:fontFamily="@font/pro_display_medium"
-            android:backgroundTint="@color/color_main"/>
+            android:backgroundTint="@color/dc_primary_soft"/>
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/_20sdp">
             <TextView
-                android:textColor="@color/color_txt"
+                android:textColor="@color/dc_primary_soft"
                 android:id="@+id/tv_pinCodeOk"
                 android:padding="@dimen/_8sdp"
                 android:layout_width="wrap_content"

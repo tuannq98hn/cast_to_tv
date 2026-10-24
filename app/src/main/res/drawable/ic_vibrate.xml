@@ -1,9 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!-- Dark Cinema toggle (Figma Settings): 48x24 pill, on #00f2fe / off #475569, white 20dp thumb. -->
 <selector xmlns:android="http://schemas.android.com/apk/res/android">
-    <item
-        android:state_checked="false"
-        android:drawable="@drawable/ic_vibrate_off"/>
-    <item
-        android:state_checked="true"
-        android:drawable="@drawable/ic_vibrate_on"/>
+    <item android:state_checked="true">
+        <layer-list>
+            <item><shape android:shape="rectangle"><solid android:color="@color/dc_primary"/><corners android:radius="999dp"/></shape></item>
+            <item android:gravity="end|center_vertical" android:width="20dp" android:height="20dp" android:right="2dp">
+                <shape android:shape="oval"><solid android:color="@color/dc_text_primary"/></shape>
+            </item>
+        </layer-list>
+    </item>
+    <item>
+        <layer-list>
+            <item><shape android:shape="rectangle"><solid android:color="@color/dc_radio_off"/><corners android:radius="999dp"/></shape></item>
+            <item android:gravity="start|center_vertical" android:width="20dp" android:height="20dp" android:left="2dp">
+                <shape android:shape="oval"><solid android:color="@color/dc_text_primary"/></shape>
+            </item>
+        </layer-list>
+    </item>
 </selector>

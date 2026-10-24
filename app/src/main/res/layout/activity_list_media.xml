@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!-- Video Hub (Stitch "Video Hub (Dark Cinema)"): media header, icon+count tabs, video grid / album grid.
+     Left out (no feature behind them): search, multi-select, curated albums row, sort, badges, streaming card, Queue / Cast bar, bottom nav. -->
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
-    android:background="@color/white"
+    android:background="@color/dc_bg"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
     <include
@@ -9,27 +11,30 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        layout="@layout/item_header"/>
+        layout="@layout/layout_media_header"/>
     <com.google.android.material.tabs.TabLayout
         android:id="@+id/tab_layout"
-        android:background="@color/transparent"
+        android:background="@drawable/dc_bg_segment_track"
+        android:padding="@dimen/_3sdp"
         android:layout_width="match_parent"
-        android:layout_height="@dimen/_35sdp"
-        android:layout_marginLeft="@dimen/_10sdp"
-        android:layout_marginTop="@dimen/_10sdp"
-        android:layout_marginRight="@dimen/_10sdp"
-        android:layout_marginHorizontal="@dimen/_10sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginHorizontal="@dimen/_14sdp"
+        android:layout_marginTop="@dimen/_8sdp"
         app:layout_constraintTop_toBottomOf="@+id/include2"
         app:tabBackground="@drawable/bg_tab_layout"
-        app:tabIndicatorColor="@color/transparent"
-        app:tabSelectedTextColor="@color/color_main"
+        app:tabGravity="fill"
+        app:tabIndicatorHeight="0dp"
+        app:tabMode="fixed"
+        app:tabRippleColor="@null"
+        app:tabTextColor="@color/dc_text_secondary"
+        app:tabSelectedTextColor="@color/dc_text_body"
         app:tabTextAppearance="@style/TabLayoutTextStyle"/>
     <androidx.viewpager2.widget.ViewPager2
         android:id="@+id/view_pager"
-        android:padding="@dimen/_5sdp"
+        android:paddingHorizontal="@dimen/_10sdp"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_8sdp"
         android:layout_below="@+id/tab_layout"
         app:layout_constraintBottom_toTopOf="@+id/main_ads_native"
         app:layout_constraintTop_toBottomOf="@+id/tab_layout"/>

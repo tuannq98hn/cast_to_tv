@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Dark Cinema destructive CTA (Figma Exit App): linear-gradient(90deg, #f43f5e, #e11d48, #dc2626), r16. -->
+<ripple xmlns:android="http://schemas.android.com/apk/res/android" android:color="@color/dc_ripple">
+    <item>
+        <shape android:shape="rectangle">
+            <gradient android:angle="0" android:startColor="@color/dc_danger" android:centerColor="@color/dc_power_mid" android:endColor="@color/dc_danger_deep"/>
+            <corners android:radius="@dimen/_16sdp"/>
+        </shape>
+    </item>
+</ripple>

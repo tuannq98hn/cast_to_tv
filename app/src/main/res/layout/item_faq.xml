@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="@drawable/bg_item_faq"
+    android:background="@drawable/dc_bg_glass_card"
     android:paddingLeft="@dimen/_16sdp"
     android:paddingTop="@dimen/_12sdp"
     android:paddingRight="@dimen/_16sdp"
@@ -14,7 +14,7 @@
     android:paddingVertical="@dimen/_12sdp">
     <androidx.appcompat.widget.AppCompatTextView
         android:textSize="@dimen/_14sdp"
-        android:textColor="@color/color_text_new"
+        android:textColor="@color/dc_text_primary"
         android:id="@+id/txt_title"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -29,6 +29,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/ic_arrow_bottom"
+        app:tint="@color/dc_text_muted"
         app:layout_constraintBottom_toBottomOf="@+id/txt_title"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@+id/txt_title"/>
@@ -41,11 +42,12 @@
         android:layout_marginTop="@dimen/_12sdp"
         app:layout_constraintTop_toBottomOf="@+id/txt_title">
         <View
-            android:background="@color/color_sb"
+            android:background="@color/dc_divider"
             android:layout_width="match_parent"
             android:layout_height="1dp"/>
         <androidx.appcompat.widget.AppCompatTextView
             android:textSize="@dimen/_13sdp"
+            android:textColor="@color/dc_text_muted"
             android:id="@+id/txt_detail"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

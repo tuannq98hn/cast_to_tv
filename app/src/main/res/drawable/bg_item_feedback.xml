@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!-- Dark Cinema feedback chip (Figma Feedback): #0b1220cc, 1dp #ffffff1a, pill. -->
 <shape xmlns:android="http://schemas.android.com/apk/res/android">
-    <corners android:radius="@dimen/_32sdp"/>
-    <solid android:color="#f3f6ff"/>
+    <corners android:radius="999dp"/>
+    <solid android:color="@color/dc_feedback_chip"/>
+    <stroke android:width="1dp" android:color="@color/dc_divider"/>
 </shape>

@@ -29,7 +29,7 @@
         android:layout_marginHorizontal="@dimen/_16sdp">
         <TextView
             android:textSize="16sp"
-            android:textColor="@color/black"
+            android:textColor="@color/dc_text_primary"
             android:ellipsize="marquee"
             android:id="@+id/tvNameDevice"
             android:layout_width="match_parent"
@@ -39,7 +39,7 @@
             android:fontFamily="@font/pro_display_semibold"/>
         <TextView
             android:textSize="12sp"
-            android:textColor="@color/color_default"
+            android:textColor="@color/dc_text_muted"
             android:ellipsize="marquee"
             android:id="@+id/text_device_type"
             android:layout_width="match_parent"

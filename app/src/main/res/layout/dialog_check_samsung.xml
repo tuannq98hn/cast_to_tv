@@ -6,8 +6,8 @@
     android:layout_height="wrap_content">
     <LinearLayout
         android:orientation="vertical"
-        android:background="@drawable/bg_dialog"
-        android:padding="@dimen/_15sdp"
+        android:background="@drawable/dc_bg_dialog"
+        android:padding="@dimen/_20sdp"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_margin="@dimen/_25sdp">
@@ -17,10 +17,11 @@
             android:padding="@dimen/_2sdp"
             android:layout_width="@dimen/_18sdp"
             android:layout_height="@dimen/_18sdp"
-            android:src="@drawable/ic_close_black"/>
+            android:src="@drawable/ic_close_black"
+            app:tint="@color/dc_text_muted"/>
         <TextView
-            android:textSize="@dimen/_13sdp"
-            android:textColor="@color/textColor"
+            android:textSize="@dimen/_14sdp"
+            android:textColor="@color/dc_text_primary"
             android:gravity="center"
             android:layout_gravity="center_horizontal"
             android:layout_width="wrap_content"
@@ -31,7 +32,7 @@
             android:fontFamily="@font/pro_display_medium"/>
         <TextView
             android:textSize="@dimen/_10sdp"
-            android:textColor="@color/textColor"
+            android:textColor="@color/dc_text_secondary"
             android:gravity="center"
             android:layout_gravity="center_horizontal"
             android:layout_width="wrap_content"
@@ -47,7 +48,7 @@
             android:src="@drawable/imv_allow"/>
         <TextView
             android:textSize="@dimen/_10sdp"
-            android:textColor="@color/textColor"
+            android:textColor="@color/dc_text_secondary"
             android:gravity="center"
             android:layout_gravity="center_horizontal"
             android:layout_width="wrap_content"

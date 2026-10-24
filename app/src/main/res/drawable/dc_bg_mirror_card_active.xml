@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- First (recommended) mode card: surface-container-high/70 over the ambient background, rounded-lg (2rem), ripple. -->
+<ripple xmlns:android="http://schemas.android.com/apk/res/android" android:color="@color/dc_ripple">
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="#b3262a34"/>
+            <corners android:radius="@dimen/_26sdp"/>
+        </shape>
+    </item>
+</ripple>

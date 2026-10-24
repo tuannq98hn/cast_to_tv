@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Pressed overlay for the up quadrant of bg_control (inner spotlight on the disc); rotated for the other arms. -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="310dp" android:height="310dp" android:viewportWidth="310" android:viewportHeight="310">
+    <path android:fillColor="#1a22d3ee" android:pathData="M56,56A140,140 0,0 1,254 56L198.8,111.2A62,62 0,0 0,111.2 111.2Z"/>
+    <path android:fillColor="#4d22d3ee" android:pathData="M139,45a16,16 0,1 0,32 0a16,16 0,1 0,-32 0Z"/>
+    <path android:strokeColor="@color/dc_primary_soft" android:strokeWidth="2.5" android:strokeLineCap="round" android:strokeLineJoin="round"
+        android:pathData="M147.5,49L155,41.5L162.5,49"/>
+</vector>

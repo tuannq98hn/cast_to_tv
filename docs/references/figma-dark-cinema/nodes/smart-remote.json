@@ -1,0 +1,5247 @@
+{
+ "bounds": {
+  "height": 884,
+  "width": 390,
+  "x": 844,
+  "y": 0
+ },
+ "children": [
+  {
+   "bounds": {
+    "height": 884,
+    "width": 390,
+    "x": 0,
+    "y": 0
+   },
+   "children": [
+    {
+     "bounds": {
+      "height": 288,
+      "width": 288,
+      "x": 51,
+      "y": 48
+     },
+     "constraints": {
+      "horizontal": "CENTER",
+      "vertical": "MIN"
+     },
+     "geometry": {
+      "cornerRadius": 9999
+     },
+     "id": "1:334",
+     "name": "Ambient Atmospheric Glows in Background",
+     "styles": {
+      "effects": [
+       {
+        "radius": 100,
+        "type": "LAYER_BLUR"
+       }
+      ],
+      "fills": [
+       "#8b5cf61a"
+      ]
+     },
+     "type": "RECTANGLE"
+    },
+    {
+     "bounds": {
+      "height": 240,
+      "width": 240,
+      "x": 97.5,
+      "y": 548
+     },
+     "constraints": {
+      "horizontal": "SCALE",
+      "vertical": "MAX"
+     },
+     "geometry": {
+      "cornerRadius": 9999
+     },
+     "id": "1:335",
+     "name": "Overlay+Blur",
+     "styles": {
+      "effects": [
+       {
+        "radius": 90,
+        "type": "LAYER_BLUR"
+       }
+      ],
+      "fills": [
+       "#00f0ff1a"
+      ]
+     },
+     "type": "RECTANGLE"
+    },
+    {
+     "bounds": {
+      "height": 28,
+      "width": 350,
+      "x": 20,
+      "y": 12
+     },
+     "children": [
+      {
+       "bounds": {
+        "height": 16,
+        "width": 22.83,
+        "x": 10,
+        "y": 4
+       },
+       "children": [
+        {
+         "bounds": {
+          "height": 16,
+          "width": 22.83,
+          "x": 0,
+          "y": 0
+         },
+         "characters": "8:46",
+         "id": "1:338",
+         "name": "Text",
+         "styles": {
+          "fills": [
+           "#e2e8f0"
+          ],
+          "fontFamily": "Liberation Sans",
+          "fontSize": 12,
+          "fontStyle": "Bold",
+          "fontWeight": 600,
+          "letterSpacing": {
+           "unit": "PIXELS",
+           "value": -0.30000001192092896
+          },
+          "lineHeight": {
+           "unit": "PIXELS",
+           "value": 16
+          },
+          "textAlignVertical": "CENTER"
+         },
+         "type": "TEXT"
+        }
+       ],
+       "constraints": {
+        "horizontal": "MIN",
+        "vertical": "CENTER"
+       },
+       "id": "1:337",
+       "name": "Container",
+       "styles": {
+        "layout": {
+         "counterAxisSizingMode": "AUTO",
+         "mode": "VERTICAL",
+         "primaryAxisSizingMode": "AUTO"
+        }
+       },
+       "type": "FRAME"
+      },
+      {
+       "bounds": {
+        "height": 16,
+        "width": 96,
+        "x": 111.79,
+        "y": 4
+       },
+       "constraints": {
+        "horizontal": "MIN",
+        "vertical": "CENTER"
+       },
+       "geometry": {
+        "cornerRadius": 9999
+       },
+       "id": "1:339",
+       "name": "Dynamic Island / Speaker cutout simulation",
+       "styles": {
+        "effects": [
+         {
+          "radius": 12,
+          "type": "BACKGROUND_BLUR"
+         }
+        ],
+        "fills": [
+         "#00000099"
+        ],
+        "strokeAlign": "INSIDE",
+        "strokeCap": "NONE",
+        "strokeJoin": "MITER",
+        "strokeWeight": 1,
+        "strokes": [
+         "#ffffff0d"
+        ]
+       },
+       "type": "RECTANGLE"
+      },
+      {
+       "bounds": {
+        "height": 10,
+        "width": 53.25,
+        "x": 286.75,
+        "y": 7
+       },
+       "children": [
+        {
+         "bounds": {
+          "height": 10,
+          "width": 11.25,
+          "x": 0,
+          "y": 0
+         },
+         "children": [
+          {
+           "bounds": {
+            "height": 10,
+            "width": 11.25,
+            "x": 0,
+            "y": 0
+           },
+           "id": "1:342",
+           "name": "Symbol",
+           "styles": {
+            "fills": [
+             "#94a3b8"
+            ]
+           },
+           "type": "VECTOR"
+          }
+         ],
+         "constraints": {
+          "horizontal": "MIN",
+          "vertical": "CENTER"
+         },
+         "id": "1:341",
+         "name": "Container",
+         "styles": {
+          "layout": {
+           "counterAxisSizingMode": "AUTO",
+           "mode": "VERTICAL",
+           "primaryAxisSizingMode": "AUTO"
+          }
+         },
+         "type": "FRAME"
+        },
+        {
+         "bounds": {
+          "height": 8.75,
+          "width": 20.5,
+          "x": 11.25,
+          "y": 0.63
+         },
+         "children": [
+          {
+           "bounds": {
+            "height": 8.75,
+            "width": 12.5,
+            "x": 8,
+            "y": 0
+           },
+           "id": "1:344",
+           "name": "Symbol",
+           "styles": {
+            "fills": [
+             "#94a3b8"
+            ]
+           },
+           "type": "VECTOR"
+          }
+         ],
+         "id": "1:343",
+         "name": "Margin",
+         "styles": {
+          "layout": {
+           "counterAxisSizingMode": "AUTO",
+           "mode": "VERTICAL",
+           "primaryAxisSizingMode": "AUTO"
+          },
+          "padding": {
+           "bottom": 0,
+           "left": 8,
+           "right": 0,
+           "top": 0
+          }
+         },
+         "type": "FRAME"
+        },
+        {
+         "bounds": {
+          "height": 7.5,
+          "width": 21.5,
+          "x": 31.75,
+          "y": 1.25
+         },
+         "children": [
+          {
+           "bounds": {
+            "height": 7.5,
+            "width": 13.5,
+            "x": 8,
+            "y": 0
+           },
+           "id": "1:346",
+           "name": "Symbol",
+           "styles": {
+            "fills": [
+             "#e2e8f0"
+            ]
+           },
+           "type": "VECTOR"
+          }
+         ],
+         "id": "1:345",
+         "name": "Margin",
+         "styles": {
+          "layout": {
+           "counterAxisSizingMode": "AUTO",
+           "mode": "VERTICAL",
+           "primaryAxisSizingMode": "AUTO"
+          },
+          "padding": {
+           "bottom": 0,
+           "left": 8,
+           "right": 0,
+           "top": 0
+          }
+         },
+         "type": "FRAME"
+        }
+       ],
+       "constraints": {
+        "horizontal": "MIN",
+        "vertical": "CENTER"
+       },
+       "id": "1:340",
+       "name": "Container",
+       "styles": {
+        "layout": {
+         "counterAxisAlignItems": "CENTER",
+         "counterAxisSizingMode": "AUTO",
+         "mode": "HORIZONTAL",
+         "primaryAxisSizingMode": "AUTO"
+        }
+       },
+       "type": "FRAME"
+      }
+     ],
+     "constraints": {
+      "horizontal": "STRETCH",
+      "vertical": "MIN"
+     },
+     "id": "1:336",
+     "name": "Header - Mobile iOS Status Bar",
+     "styles": {
+      "layout": {
+       "counterAxisAlignItems": "CENTER",
+       "counterAxisSizingMode": "AUTO",
+       "itemSpacing": 78.80000305175781,
+       "mode": "HORIZONTAL",
+       "primaryAxisAlignItems": "SPACE_BETWEEN",
+       "primaryAxisSizingMode": "FIXED"
+      },
+      "padding": {
+       "bottom": 8,
+       "left": 10,
+       "right": 10,
+       "top": 4
+      }
+     },
+     "type": "FRAME"
+    },
+    {
+     "bounds": {
+      "height": 64,
+      "width": 350,
+      "x": 20,
+      "y": 50.9
+     },
+     "children": [
+      {
+       "bounds": {
+        "height": 44,
+        "width": 350,
+        "x": 0,
+        "y": 4
+       },
+       "children": [
+        {
+         "bounds": {
+          "height": 44,
+          "width": 44,
+          "x": 4,
+          "y": 0
+         },
+         "children": [
+          {
+           "bounds": {
+            "height": 44,
+            "width": 44,
+            "x": 0,
+            "y": 0
+           },
+           "constraints": {
+            "horizontal": "MIN",
+            "vertical": "CENTER"
+           },
+           "geometry": {
+            "cornerRadius": 16
+           },
+           "id": "1:350",
+           "name": "Button - Go back:shadow",
+           "styles": {
+            "effects": [
+             {
+              "color": "#000000",
+              "offsetX": 0,
+              "offsetY": 6,
+              "opacity": 0.7,
+              "radius": 16,
+              "spread": -4,
+              "type": "DROP_SHADOW"
+             },
+             {
+              "color": "#000000",
+              "offsetX": 0,
+              "offsetY": -2,
+              "opacity": 0.6,
+              "radius": 0,
+              "spread": 1,
+              "type": "INNER_SHADOW"
+             },
+             {
+              "color": "#ffffff",
+              "offsetX": 0,
+              "offsetY": 1,
+              "opacity": 0.14,
+              "radius": 0,
+              "spread": 1,
+              "type": "INNER_SHADOW"
+             }
+            ],
+            "fills": [
+             "#ffffff01"
+            ]
+           },
+           "type": "RECTANGLE"
+          },
+          {
+           "bounds": {
+            "height": 12,
+            "width": 14,
+            "x": 15,
+            "y": 16
+           },
+           "children": [
+            {
+             "bounds": {
+              "height": 12,
+              "width": 14,
+              "x": 0,
+              "y": 0
+             },
+             "constraints": {
+              "horizontal": "CENTER",
+              "vertical": "MIN"
+             },
+             "id": "1:352",
+             "name": "Symbol",
+             "styles": {
+              "fills": [
+               "#cbd5e1"
+              ]
+             },
+             "type": "VECTOR"
+            }
+           ],
+           "constraints": {
+            "horizontal": "CENTER",
+            "vertical": "CENTER"
+           },
+           "id": "1:351",
+           "name": "Container",
+           "styles": {
+            "layout": {
+             "counterAxisAlignItems": "CENTER",
+             "counterAxisSizingMode": "AUTO",
+             "mode": "VERTICAL",
+             "primaryAxisSizingMode": "AUTO"
+            }
+           },
+           "type": "FRAME"
+          }
+         ],
+         "constraints": {
+          "horizontal": "MIN",
+          "vertical": "CENTER"
+         },
+         "geometry": {
+          "cornerRadius": 16
+         },
+         "id": "1:349",
+         "name": "Button - Go back",
+         "styles": {
+          "fills": [
+           {
+            "cssString": "linear-gradient(180deg, #1e293bcc 0%, #0f172af2 100%)",
+            "geometry": {
+             "angle": 90,
+             "end": {
+              "percentX": 50,
+              "percentY": 100
+             },
+             "start": {
+              "percentX": 50,
+              "percentY": 0
+             }
+            },
+            "stops": [
+             {
+              "color": "#1e293bcc",
+              "position": 0
+             },
+             {
+              "color": "#0f172af2",
+              "position": 1
+             }
+            ],
+            "type": "GRADIENT_LINEAR"
+           }
+          ],
+          "layout": {
+           "counterAxisAlignItems": "CENTER",
+           "counterAxisSizingMode": "FIXED",
+           "mode": "HORIZONTAL",
+           "primaryAxisAlignItems": "CENTER",
+           "primaryAxisSizingMode": "FIXED"
+          },
+          "strokeAlign": "INSIDE",
+          "strokeCap": "NONE",
+          "strokeJoin": "MITER",
+          "strokeWeight": 1,
+          "strokes": [
+           "#ffffff12"
+          ]
+         },
+         "type": "FRAME"
+        },
+        {
+         "bounds": {
+          "height": 43,
+          "width": 145.72,
+          "x": 102.14,
+          "y": 0.5
+         },
+         "children": [
+          {
+           "bounds": {
+            "height": 24,
+            "width": 125.61,
+            "x": 10.06,
+            "y": 0
+           },
+           "children": [
+            {
+             "bounds": {
+              "height": 24,
+              "width": 125.61,
+              "x": 0,
+              "y": 0
+             },
+             "characters": "Remote Control",
+             "constraints": {
+              "horizontal": "MIN",
+              "vertical": "CENTER"
+             },
+             "id": "1:355",
+             "name": "Text",
+             "styles": {
+              "fills": [
+               "#ffffff"
+              ],
+              "fontFamily": "Liberation Sans",
+              "fontSize": 16,
+              "fontStyle": "Bold",
+              "fontWeight": 600,
+              "letterSpacing": {
+               "unit": "PIXELS",
+               "value": 0.4000000059604645
+              },
+              "lineHeight": {
+               "unit": "PIXELS",
+               "value": 24
+              },
+              "textAlignVertical": "CENTER"
+             },
+             "type": "TEXT"
+            }
+           ],
+           "constraints": {
+            "horizontal": "CENTER",
+            "vertical": "MIN"
+           },
+           "id": "1:354",
+           "name": "Heading 1",
+           "styles": {
+            "layout": {
+             "counterAxisAlignItems": "CENTER",
+             "counterAxisSizingMode": "AUTO",
+             "mode": "HORIZONTAL",
+             "primaryAxisSizingMode": "AUTO"
+            }
+           },
+           "type": "FRAME"
+          },
+          {
+           "bounds": {
+            "height": 19,
+            "width": 145.72,
+            "x": 0,
+            "y": 24
+           },
+           "children": [
+            {
+             "bounds": {
+              "height": 17,
+              "width": 145.72,
+              "x": 0,
+              "y": 2
+             },
+             "children": [
+              {
+               "bounds": {
+                "height": 6,
+                "width": 6,
+                "x": 0,
+                "y": 5.5
+               },
+               "constraints": {
+                "horizontal": "MIN",
+                "vertical": "CENTER"
+               },
+               "geometry": {
+                "cornerRadius": 9999
+               },
+               "id": "1:358",
+               "name": "Background+Shadow",
+               "styles": {
+                "effects": [
+                 {
+                  "color": "#00f0ff",
+                  "offsetX": 0,
+                  "offsetY": 0,
+                  "radius": 8,
+                  "type": "DROP_SHADOW"
+                 }
+                ],
+                "fills": [
+                 "#22d3ee"
+                ]
+               },
+               "type": "RECTANGLE"
+              },
+              {
+               "bounds": {
+                "height": 17,
+                "width": 133.72,
+                "x": 12,
+                "y": 0
+               },
+               "characters": "OLED LIVING ROOM TV",
+               "constraints": {
+                "horizontal": "MIN",
+                "vertical": "CENTER"
+               },
+               "id": "1:359",
+               "name": "Text",
+               "styles": {
+                "fills": [
+                 "#22d3eee5"
+                ],
+                "fontFamily": "Liberation Sans",
+                "fontSize": 11,
+                "fontStyle": "Regular",
+                "fontWeight": 500,
+                "letterSpacing": {
+                 "unit": "PIXELS",
+                 "value": 0.550000011920929
+                },
+                "lineHeight": {
+                 "unit": "PIXELS",
+                 "value": 16.5
+                },
+                "textAlignVertical": "CENTER"
+               },
+               "type": "TEXT"
+              }
+             ],
+             "id": "1:357",
+             "name": "Container",
+             "styles": {
+              "layout": {
+               "counterAxisAlignItems": "CENTER",
+               "counterAxisSizingMode": "AUTO",
+               "itemSpacing": 6,
+               "mode": "HORIZONTAL",
+               "primaryAxisSizingMode": "AUTO"
+              }
+             },
+             "type": "FRAME"
+            }
+           ],
+           "id": "1:356",
+           "name": "Margin",
+           "styles": {
+            "layout": {
+             "counterAxisSizingMode": "AUTO",
+             "mode": "VERTICAL",
+             "primaryAxisSizingMode": "AUTO"
+            },
+            "padding": {
+             "bottom": 0,
+             "left": 0,
+             "right": 0,
+             "top": 2
+            }
+           },
+           "type": "FRAME"
+          }
+         ],
+         "constraints": {
+          "horizontal": "MIN",
+          "vertical": "CENTER"
+         },
+         "id": "1:353",
+         "name": "Center Title with Status Subtitle",
+         "styles": {
+          "layout": {
+           "counterAxisAlignItems": "CENTER",
+           "counterAxisSizingMode": "AUTO",
+           "mode": "VERTICAL",
+           "primaryAxisSizingMode": "AUTO"
+          }
+         },
+         "type": "FRAME"
+        },
+        {
+         "bounds": {
+          "height": 44,
+          "width": 44,
+          "x": 302,
+          "y": 0
+         },
+         "children": [
+          {
+           "bounds": {
+            "height": 44,
+            "width": 44,
+            "x": 0,
+            "y": 0
+           },
+           "constraints": {
+            "horizontal": "MIN",
+            "vertical": "CENTER"
+           },
+           "geometry": {
+            "cornerRadius": 16
+           },
+           "id": "1:361",
+           "name": "Button - Cast status:shadow",
+           "styles": {
+            "effects": [
+             {
+              "color": "#00f0ff",
+              "offsetX": 0,
+              "offsetY": 0,
+              "opacity": 0.45,
+              "radius": 25,
+              "spread": -4,
+              "type": "DROP_SHADOW"
+             }
+            ],
+            "fills": [
+             "#ffffff01"
+            ]
+           },
+           "type": "RECTANGLE"
+          },
+          {
+           "bounds": {
+            "height": 16,
+            "width": 16,
+            "x": 14,
+            "y": 14
+           },
+           "children": [
+            {
+             "bounds": {
+              "height": 16,
+              "width": 16,
+              "x": 0,
+              "y": 0
+             },
+             "constraints": {
+              "horizontal": "CENTER",
+              "vertical": "MIN"
+             },
+             "id": "1:363",
+             "name": "Symbol",
+             "styles": {
+              "fills": [
+               "#22d3ee"
+              ]
+             },
+             "type": "VECTOR"
+            }
+           ],
+           "constraints": {
+            "horizontal": "CENTER",
+            "vertical": "CENTER"
+           },
+           "id": "1:362",
+           "name": "Container",
+           "styles": {
+            "layout": {
+             "counterAxisAlignItems": "CENTER",
+             "counterAxisSizingMode": "AUTO",
+             "mode": "VERTICAL",
+             "primaryAxisSizingMode": "AUTO"
+            }
+           },
+           "type": "FRAME"
+          }
+         ],
+         "constraints": {
+          "horizontal": "MIN",
+          "vertical": "CENTER"
+         },
+         "geometry": {
+          "cornerRadius": 16
+         },
+         "id": "1:360",
+         "name": "Button - Cast status",
+         "styles": {
+          "fills": [
+           {
+            "cssString": "linear-gradient(135deg, #08334466 0%, #0f172a 100%)",
+            "geometry": {
+             "angle": 45,
+             "end": {
+              "percentX": 100,
+              "percentY": 100
+             },
+             "start": {
+              "percentX": 0,
+              "percentY": 0
+             }
+            },
+            "stops": [
+             {
+              "color": "#08334466",
+              "position": 0
+             },
+             {
+              "color": "#0f172a",
+              "position": 1
+             }
+            ],
+            "type": "GRADIENT_LINEAR"
+           }
+          ],
+          "layout": {
+           "counterAxisAlignItems": "CENTER",
+           "counterAxisSizingMode": "FIXED",
+           "mode": "HORIZONTAL",
+           "primaryAxisAlignItems": "CENTER",
+           "primaryAxisSizingMode": "FIXED"
+          },
+          "strokeAlign": "INSIDE",
+          "strokeCap": "NONE",
+          "strokeJoin": "MITER",
+          "strokeWeight": 1,
+          "strokes": [
+           "#06b6d44d"
+          ]
+         },
+         "type": "FRAME"
+        }
+       ],
+       "constraints": {
+        "horizontal": "STRETCH",
+        "vertical": "MIN"
+       },
+       "id": "1:348",
+       "name": "Section - Top Navigation Header",
+       "styles": {
+        "layout": {
+         "counterAxisAlignItems": "CENTER",
+         "counterAxisSizingMode": "AUTO",
+         "itemSpacing": 54.099998474121094,
+         "mode": "HORIZONTAL",
+         "primaryAxisAlignItems": "SPACE_BETWEEN",
+         "primaryAxisSizingMode": "FIXED"
+        },
+        "padding": {
+         "bottom": 0,
+         "left": 4,
+         "right": 4,
+         "top": 0
+        }
+       },
+       "type": "FRAME"
+      }
+     ],
+     "constraints": {
+      "horizontal": "STRETCH",
+      "vertical": "MIN"
+     },
+     "id": "1:347",
+     "name": "Section - Top Navigation Header:margin",
+     "styles": {
+      "layout": {
+       "counterAxisSizingMode": "FIXED",
+       "mode": "VERTICAL",
+       "primaryAxisSizingMode": "AUTO"
+      },
+      "padding": {
+       "bottom": 16,
+       "left": 0,
+       "right": 0,
+       "top": 4
+      }
+     },
+     "type": "FRAME"
+    },
+    {
+     "bounds": {
+      "height": 72,
+      "width": 350,
+      "x": 20,
+      "y": 125.8
+     },
+     "children": [
+      {
+       "bounds": {
+        "height": 56,
+        "width": 350,
+        "x": 0,
+        "y": 0
+       },
+       "children": [
+        {
+         "bounds": {
+          "height": 42,
+          "width": 336,
+          "x": 7,
+          "y": 7
+         },
+         "children": [
+          {
+           "bounds": {
+            "height": 38,
+            "width": 107.69,
+            "x": 0,
+            "y": 0
+           },
+           "children": [
+            {
+             "bounds": {
+              "height": 38,
+              "width": 108,
+              "x": 0,
+              "y": 0
+             },
+             "constraints": {
+              "horizontal": "STRETCH",
+              "vertical": "STRETCH"
+             },
+             "geometry": {
+              "cornerRadius": 12
+             },
+             "id": "1:368",
+             "name": "Button - Tab 1: D-Pad (Active):shadow",
+             "styles": {
+              "effects": [
+               {
+                "color": "#ffffff",
+                "offsetX": 0,
+                "offsetY": 4,
+                "opacity": 0.05,
+                "radius": 6,
+                "spread": -4,
+                "type": "DROP_SHADOW"
+               },
+               {
+                "color": "#ffffff",
+                "offsetX": 0,
+                "offsetY": 10,
+                "opacity": 0.05,
+                "radius": 15,
+                "spread": -3,
+                "type": "DROP_SHADOW"
+               }
+              ],
+              "fills": [
+               "#ffffff01"
+              ]
+             },
+             "type": "RECTANGLE"
+            },
+            {
+             "bounds": {
+              "height": 14,
+              "width": 14,
+              "x": 24.75,
+              "y": 12
+             },
+             "children": [
+              {
+               "bounds": {
+                "height": 14,
+                "width": 14,
+                "x": 0,
+                "y": 0
+               },
+               "constraints": {
+                "horizontal": "CENTER",
+                "vertical": "MIN"
+               },
+               "id": "1:370",
+               "name": "Symbol",
+               "styles": {
+                "fills": [
+                 "#22d3ee"
+                ]
+               },
+               "type": "VECTOR"
+              }
+             ],
+             "constraints": {
+              "horizontal": "CENTER",
+              "vertical": "CENTER"
+             },
+             "id": "1:369",
+             "name": "Container",
+             "styles": {
+              "layout": {
+               "counterAxisAlignItems": "CENTER",
+               "counterAxisSizingMode": "AUTO",
+               "mode": "VERTICAL",
+               "primaryAxisSizingMode": "AUTO"
+              }
+             },
+             "type": "FRAME"
+            },
+            {
+             "bounds": {
+              "height": 16,
+              "width": 36.17,
+              "x": 46.75,
+              "y": 11
+             },
+             "children": [
+              {
+               "bounds": {
+                "height": 16,
+                "width": 36.17,
+                "x": 0,
+                "y": 0
+               },
+               "characters": "D-Pad",
+               "constraints": {
+                "horizontal": "CENTER",
+                "vertical": "MIN"
+               },
+               "id": "1:372",
+               "name": "Text",
+               "styles": {
+                "fills": [
+                 "#ffffff"
+                ],
+                "fontFamily": "Liberation Sans",
+                "fontSize": 12,
+                "fontStyle": "Bold",
+                "fontWeight": 600,
+                "letterSpacing": {
+                 "unit": "PIXELS",
+                 "value": 0.30000001192092896
+                },
+                "lineHeight": {
+                 "unit": "PIXELS",
+                 "value": 16
+                },
+                "textAlignHorizontal": "CENTER",
+                "textAlignVertical": "CENTER"
+               },
+               "type": "TEXT"
+              }
+             ],
+             "constraints": {
+              "horizontal": "CENTER",
+              "vertical": "CENTER"
+             },
+             "id": "1:371",
+             "name": "Container",
+             "styles": {
+              "layout": {
+               "counterAxisAlignItems": "CENTER",
+               "counterAxisSizingMode": "AUTO",
+               "mode": "VERTICAL",
+               "primaryAxisSizingMode": "AUTO"
+              }
+             },
+             "type": "FRAME"
+            }
+           ],
+           "geometry": {
+            "cornerRadius": 12
+           },
+           "id": "1:367",
+           "name": "Button - Tab 1: D-Pad (Active)",
+           "styles": {
+            "fills": [
+             {
+              "cssString": "linear-gradient(180deg, #ffffff26 0%, #ffffff0d 100%)",
+              "geometry": {
+               "angle": 90,
+               "end": {
+                "percentX": 50,
+                "percentY": 100
+               },
+               "start": {
+                "percentX": 50,
+                "percentY": 0
+               }
+              },
+              "stops": [
+               {
+                "color": "#ffffff26",
+                "position": 0
+               },
+               {
+                "color": "#ffffff0d",
+                "position": 1
+               }
+              ],
+              "type": "GRADIENT_LINEAR"
+             }
+            ],
+            "layout": {
+             "counterAxisAlignItems": "CENTER",
+             "counterAxisSizingMode": "AUTO",
+             "itemSpacing": 8,
+             "mode": "HORIZONTAL",
+             "primaryAxisAlignItems": "CENTER",
+             "primaryAxisSizingMode": "AUTO"
+            },
+            "padding": {
+             "bottom": 10,
+             "left": 23.75,
+             "right": 23.770000457763672,
+             "top": 10
+            },
+            "strokeAlign": "INSIDE",
+            "strokeCap": "NONE",
+            "strokeJoin": "MITER",
+            "strokeWeight": 1,
+            "strokes": [
+             "#ffffff33"
+            ]
+           },
+           "type": "FRAME"
+          },
+          {
+           "bounds": {
+            "height": 42,
+            "width": 108.01,
+            "x": 113.69,
+            "y": 0
+           },
+           "children": [
+            {
+             "bounds": {
+              "height": 12,
+              "width": 10.51,
+              "x": 28.73,
+              "y": 15
+             },
+             "children": [
+              {
+               "bounds": {
+                "height": 12,
+                "width": 10.51,
+                "x": 0,
+                "y": 0
+               },
+               "constraints": {
+                "horizontal": "CENTER",
+                "vertical": "MIN"
+               },
+               "id": "1:375",
+               "name": "Symbol",
+               "styles": {
+                "fills": [
+                 "#94a3b8"
+                ]
+               },
+               "type": "VECTOR"
+              }
+             ],
+             "constraints": {
+              "horizontal": "CENTER",
+              "vertical": "CENTER"
+             },
+             "id": "1:374",
+             "name": "Container",
+             "styles": {
+              "layout": {
+               "counterAxisAlignItems": "CENTER",
+               "counterAxisSizingMode": "AUTO",
+               "mode": "VERTICAL",
+               "primaryAxisSizingMode": "AUTO"
+              }
+             },
+             "type": "FRAME"
+            },
+            {
+             "bounds": {
+              "height": 16,
+              "width": 32.03,
+              "x": 47.24,
+              "y": 13
+             },
+             "children": [
+              {
+               "bounds": {
+                "height": 16,
+                "width": 32.03,
+                "x": 0,
+                "y": 0
+               },
+               "characters": "Touch",
+               "constraints": {
+                "horizontal": "CENTER",
+                "vertical": "MIN"
+               },
+               "id": "1:377",
+               "name": "Text",
+               "styles": {
+                "fills": [
+                 "#94a3b8"
+                ],
+                "fontFamily": "Liberation Sans",
+                "fontSize": 12,
+                "fontStyle": "Regular",
+                "fontWeight": 500,
+                "lineHeight": {
+                 "unit": "PIXELS",
+                 "value": 16
+                },
+                "textAlignHorizontal": "CENTER",
+                "textAlignVertical": "CENTER"
+               },
+               "type": "TEXT"
+              }
+             ],
+             "constraints": {
+              "horizontal": "CENTER",
+              "vertical": "CENTER"
+             },
+             "id": "1:376",
+             "name": "Container",
+             "styles": {
+              "layout": {
+               "counterAxisAlignItems": "CENTER",
+               "counterAxisSizingMode": "AUTO",
+               "mode": "VERTICAL",
+               "primaryAxisSizingMode": "AUTO"
+              }
+             },
+             "type": "FRAME"
+            }
+           ],
+           "geometry": {
+            "cornerRadius": 12
+           },
+           "id": "1:373",
+           "name": "Button - Tab 2: Touchpad Mode",
+           "styles": {
+            "layout": {
+             "counterAxisAlignItems": "CENTER",
+             "counterAxisSizingMode": "AUTO",
+             "itemSpacing": 8,
+             "mode": "HORIZONTAL",
+             "primaryAxisAlignItems": "CENTER",
+             "primaryAxisSizingMode": "AUTO"
+            },
+            "padding": {
+             "bottom": 13,
+             "left": 28.729999542236328,
+             "right": 28.739999771118164,
+             "top": 13
+            }
+           },
+           "type": "FRAME"
+          },
+          {
+           "bounds": {
+            "height": 42,
+            "width": 108,
+            "x": 227.7,
+            "y": 0
+           },
+           "children": [
+            {
+             "bounds": {
+              "height": 7.5,
+              "width": 10.5,
+              "x": 31.06,
+              "y": 17.25
+             },
+             "children": [
+              {
+               "bounds": {
+                "height": 7.5,
+                "width": 10.5,
+                "x": 0,
+                "y": 0
+               },
+               "constraints": {
+                "horizontal": "CENTER",
+                "vertical": "MIN"
+               },
+               "id": "1:380",
+               "name": "Symbol",
+               "styles": {
+                "fills": [
+                 "#94a3b8"
+                ]
+               },
+               "type": "VECTOR"
+              }
+             ],
+             "constraints": {
+              "horizontal": "CENTER",
+              "vertical": "CENTER"
+             },
+             "id": "1:379",
+             "name": "Container",
+             "styles": {
+              "layout": {
+               "counterAxisAlignItems": "CENTER",
+               "counterAxisSizingMode": "AUTO",
+               "mode": "VERTICAL",
+               "primaryAxisSizingMode": "AUTO"
+              }
+             },
+             "type": "FRAME"
+            },
+            {
+             "bounds": {
+              "height": 16,
+              "width": 27.36,
+              "x": 49.56,
+              "y": 13
+             },
+             "children": [
+              {
+               "bounds": {
+                "height": 16,
+                "width": 27.36,
+                "x": 0,
+                "y": 0
+               },
+               "characters": "Apps",
+               "constraints": {
+                "horizontal": "CENTER",
+                "vertical": "MIN"
+               },
+               "id": "1:382",
+               "name": "Text",
+               "styles": {
+                "fills": [
+                 "#94a3b8"
+                ],
+                "fontFamily": "Liberation Sans",
+                "fontSize": 12,
+                "fontStyle": "Regular",
+                "fontWeight": 500,
+                "lineHeight": {
+                 "unit": "PIXELS",
+                 "value": 16
+                },
+                "textAlignHorizontal": "CENTER",
+                "textAlignVertical": "CENTER"
+               },
+               "type": "TEXT"
+              }
+             ],
+             "constraints": {
+              "horizontal": "CENTER",
+              "vertical": "CENTER"
+             },
+             "id": "1:381",
+             "name": "Container",
+             "styles": {
+              "layout": {
+               "counterAxisAlignItems": "CENTER",
+               "counterAxisSizingMode": "AUTO",
+               "mode": "VERTICAL",
+               "primaryAxisSizingMode": "AUTO"
+              }
+             },
+             "type": "FRAME"
+            }
+           ],
+           "geometry": {
+            "cornerRadius": 12
+           },
+           "id": "1:378",
+           "name": "Button - Tab 3: Channel Grid",
+           "styles": {
+            "layout": {
+             "counterAxisAlignItems": "CENTER",
+             "counterAxisSizingMode": "AUTO",
+             "itemSpacing": 8,
+             "mode": "HORIZONTAL",
+             "primaryAxisAlignItems": "CENTER",
+             "primaryAxisSizingMode": "AUTO"
+            },
+            "padding": {
+             "bottom": 13,
+             "left": 31.059999465942383,
+             "right": 31.079999923706055,
+             "top": 13
+            }
+           },
+           "type": "FRAME"
+          }
+         ],
+         "constraints": {
+          "horizontal": "STRETCH",
+          "vertical": "MIN"
+         },
+         "id": "1:366",
+         "name": "Container",
+         "styles": {
+          "layout": {
+           "counterAxisSizingMode": "AUTO",
+           "itemSpacing": 6,
+           "mode": "HORIZONTAL",
+           "primaryAxisSizingMode": "FIXED"
+          }
+         },
+         "type": "FRAME"
+        }
+       ],
+       "constraints": {
+        "horizontal": "STRETCH",
+        "vertical": "MIN"
+       },
+       "geometry": {
+        "cornerRadius": 16
+       },
+       "id": "1:365",
+       "name": "Navigation Mode Segmented Control",
+       "styles": {
+        "effects": [
+         {
+          "color": "#000000",
+          "offsetX": 0,
+          "offsetY": 2,
+          "opacity": 0.05,
+          "radius": 4,
+          "spread": 1,
+          "type": "INNER_SHADOW"
+         },
+         {
+          "radius": 24,
+          "type": "BACKGROUND_BLUR"
+         }
+        ],
+        "fills": [
+         "#00000066"
+        ],
+        "layout": {
+         "counterAxisSizingMode": "FIXED",
+         "mode": "VERTICAL",
+         "primaryAxisSizingMode": "AUTO"
+        },
+        "padding": {
+         "bottom": 6,
+         "left": 6,
+         "right": 6,
+         "top": 6
+        },
+        "strokeAlign": "INSIDE",
+        "strokeCap": "NONE",
+        "strokeJoin": "MITER",
+        "strokeWeight": 1,
+        "strokes": [
+         "#ffffff1a"
+        ]
+       },
+       "type": "FRAME"
+      }
+     ],
+     "constraints": {
+      "horizontal": "STRETCH",
+      "vertical": "MIN"
+     },
+     "id": "1:364",
+     "name": "Navigation Mode Segmented Control:margin",
+     "styles": {
+      "layout": {
+       "counterAxisSizingMode": "FIXED",
+       "mode": "VERTICAL",
+       "primaryAxisSizingMode": "AUTO"
+      },
+      "padding": {
+       "bottom": 16,
+       "left": 0,
+       "right": 0,
+       "top": 0
+      }
+     },
+     "type": "FRAME"
+    },
+    {
+     "bounds": {
+      "height": 96.5,
+      "width": 350,
+      "x": 20,
+      "y": 208.7
+     },
+     "children": [
+      {
+       "bounds": {
+        "height": 76.5,
+        "width": 350,
+        "x": 0,
+        "y": 0
+       },
+       "children": [
+        {
+         "bounds": {
+          "height": 76.5,
+          "width": 76.5,
+          "x": 4,
+          "y": 0
+         },
+         "children": [
+          {
+           "bounds": {
+            "height": 76.5,
+            "width": 76.5,
+            "x": 0,
+            "y": 0
+           },
+           "constraints": {
+            "horizontal": "STRETCH",
+            "vertical": "STRETCH"
+           },
+           "geometry": {
+            "cornerRadius": 16
+           },
+           "id": "1:386",
+           "name": "Button - Back:shadow",
+           "styles": {
+            "effects": [
+             {
+              "color": "#000000",
+              "offsetX": 0,
+              "offsetY": 6,
+              "opacity": 0.7,
+              "radius": 16,
+              "spread": -4,
+              "type": "DROP_SHADOW"
+             },
+             {
+              "color": "#000000",
+              "offsetX": 0,
+              "offsetY": -2,
+              "opacity": 0.6,
+              "radius": 0,
+              "spread": 1,
+              "type": "INNER_SHADOW"
+             },
+             {
+              "color": "#ffffff",
+              "offsetX": 0,
+              "offsetY": 1,
+              "opacity": 0.14,
+              "radius": 0,
+              "spread": 1,
+              "type": "INNER_SHADOW"
+             }
+            ],
+            "fills": [
+             "#ffffff01"
+            ]
+           },
+           "type": "RECTANGLE"
+          }
+         ],
+         "geometry": {
+          "cornerRadius": 16
+         },
+         "id": "1:385",
+         "name": "Button - Back",
+         "styles": {
+          "fills": [
+           {
+            "cssString": "linear-gradient(180deg, #1e293bcc 0%, #0f172af2 100%)",
+            "geometry": {
+             "angle": 90,
+             "end": {
+              "percentX": 50,
+              "percentY": 100
+             },
+             "start": {
+              "percentX": 50,
+              "percentY": 0
+             }
+            },
+            "stops": [
+             {
+              "color": "#1e293bcc",
+              "position": 0
+             },
+             {
+              "color": "#0f172af2",
+              "position": 1
+             }
+            ],
+            "type": "GRADIENT_LINEAR"
+           }
+          ],
+          "strokeAlign": "INSIDE",
+          "strokeCap": "NONE",
+          "strokeJoin": "MITER",
+          "strokeWeight": 1,
+          "strokes": [
+           "#ffffff12"
+          ]
+         },
+         "type": "FRAME"
+        },
+        {
+         "bounds": {
+          "height": 70.5,
+          "width": 76.5,
+          "x": 92.5,
+          "y": 0
+         },
+         "children": [
+          {
+           "bounds": {
+            "height": 70.5,
+            "width": 76.5,
+            "x": 0,
+            "y": 0
+           },
+           "constraints": {
+            "horizontal": "STRETCH",
+            "vertical": "STRETCH"
+           },
+           "geometry": {
+            "cornerRadius": 16
+           },
+           "id": "1:388",
+           "name": "Button - Home:shadow",
+           "styles": {
+            "effects": [
+             {
+              "color": "#000000",
+              "offsetX": 0,
+              "offsetY": 6,
+              "opacity": 0.7,
+              "radius": 16,
+              "spread": -4,
+              "type": "DROP_SHADOW"
+             },
+             {
+              "color": "#000000",
+              "offsetX": 0,
+              "offsetY": -2,
+              "opacity": 0.6,
+              "radius": 0,
+              "spread": 1,
+              "type": "INNER_SHADOW"
+             },
+             {
+              "color": "#ffffff",
+              "offsetX": 0,
+              "offsetY": 1,
+              "opacity": 0.14,
+              "radius": 0,
+              "spread": 1,
+              "type": "INNER_SHADOW"
+             }
+            ],
+            "fills": [
+             "#ffffff01"
+            ]
+           },
+           "type": "RECTANGLE"
+          },
+          {
+           "bounds": {
+            "height": 14,
+            "width": 15.75,
+            "x": 30.38,
+            "y": 28.25
+           },
+           "children": [
+            {
+             "bounds": {
+              "height": 14,
+              "width": 15.75,
+              "x": 0,
+              "y": 0
+             },
+             "constraints": {
+              "horizontal": "CENTER",
+              "vertical": "MIN"
+             },
+             "id": "1:390",
+             "name": "Symbol",
+             "styles": {
+              "fills": [
+               "#cbd5e1"
+              ]
+             },
+             "type": "VECTOR"
+            }
+           ],
+           "constraints": {
+            "horizontal": "CENTER",
+            "vertical": "CENTER"
+           },
+           "id": "1:389",
+           "name": "Container",
+           "styles": {
+            "layout": {
+             "counterAxisAlignItems": "CENTER",
+             "counterAxisSizingMode": "AUTO",
+             "mode": "VERTICAL",
+             "primaryAxisSizingMode": "AUTO"
+            }
+           },
+           "type": "FRAME"
+          }
+         ],
+         "geometry": {
+          "cornerRadius": 16
+         },
+         "id": "1:387",
+         "name": "Button - Home",
+         "styles": {
+          "fills": [
+           {
+            "cssString": "linear-gradient(180deg, #1e293bcc 0%, #0f172af2 100%)",
+            "geometry": {
+             "angle": 90,
+             "end": {
+              "percentX": 50,
+              "percentY": 100
+             },
+             "start": {
+              "percentX": 50,
+              "percentY": 0
+             }
+            },
+            "stops": [
+             {
+              "color": "#1e293bcc",
+              "position": 0
+             },
+             {
+              "color": "#0f172af2",
+              "position": 1
+             }
+            ],
+            "type": "GRADIENT_LINEAR"
+           }
+          ],
+          "layout": {
+           "counterAxisAlignItems": "CENTER",
+           "counterAxisSizingMode": "AUTO",
+           "mode": "HORIZONTAL",
+           "primaryAxisAlignItems": "CENTER",
+           "primaryAxisSizingMode": "AUTO"
+          },
+          "padding": {
+           "bottom": 27.25,
+           "left": 29.3799991607666,
+           "right": 29.3700008392334,
+           "top": 27.25
+          },
+          "strokeAlign": "INSIDE",
+          "strokeCap": "NONE",
+          "strokeJoin": "MITER",
+          "strokeWeight": 1,
+          "strokes": [
+           "#ffffff12"
+          ]
+         },
+         "type": "FRAME"
+        },
+        {
+         "bounds": {
+          "height": 76.5,
+          "width": 76.5,
+          "x": 181,
+          "y": 0
+         },
+         "children": [
+          {
+           "bounds": {
+            "height": 76.5,
+            "width": 76.5,
+            "x": 0,
+            "y": 0
+           },
+           "constraints": {
+            "horizontal": "STRETCH",
+            "vertical": "STRETCH"
+           },
+           "geometry": {
+            "cornerRadius": 16
+           },
+           "id": "1:392",
+           "name": "Button - Options:shadow",
+           "styles": {
+            "effects": [
+             {
+              "color": "#000000",
+              "offsetX": 0,
+              "offsetY": 6,
+              "opacity": 0.7,
+              "radius": 16,
+              "spread": -4,
+              "type": "DROP_SHADOW"
+             },
+             {
+              "color": "#000000",
+              "offsetX": 0,
+              "offsetY": -2,
+              "opacity": 0.6,
+              "radius": 0,
+              "spread": 1,
+              "type": "INNER_SHADOW"
+             },
+             {
+              "color": "#ffffff",
+              "offsetX": 0,
+              "offsetY": 1,
+              "opacity": 0.14,
+              "radius": 0,
+              "spread": 1,
+              "type": "INNER_SHADOW"
+             }
+            ],
+            "fills": [
+             "#ffffff01"
+            ]
+           },
+           "type": "RECTANGLE"
+          },
+          {
+           "bounds": {
+            "height": 20,
+            "width": 10.5,
+            "x": 33,
+            "y": 28.25
+           },
+           "children": [
+            {
+             "bounds": {
+              "height": 20,
+              "width": 10.5,
+              "x": 0,
+              "y": 0
+             },
+             "characters": "*",
+             "constraints": {
+              "horizontal": "CENTER",
+              "vertical": "MIN"
+             },
+             "id": "1:394",
+             "name": "Text",
+             "styles": {
+              "fills": [
+               "#cbd5e1"
+              ],
+              "fontFamily": "Font Awesome 6 Free",
+              "fontSize": 14,
+              "fontStyle": "Solid",
+              "fontWeight": 900,
+              "lineHeight": {
+               "unit": "PIXELS",
+               "value": 20
+              },
+              "textAlignHorizontal": "CENTER",
+              "textAlignVertical": "CENTER"
+             },
+             "type": "TEXT"
+            }
+           ],
+           "constraints": {
+            "horizontal": "CENTER",
+            "vertical": "CENTER"
+           },
+           "id": "1:393",
+           "name": "Container",
+           "styles": {
+            "layout": {
+             "counterAxisAlignItems": "CENTER",
+             "counterAxisSizingMode": "AUTO",
+             "mode": "VERTICAL",
+             "primaryAxisSizingMode": "AUTO"
+            }
+           },
+           "type": "FRAME"
+          }
+         ],
+         "geometry": {
+          "cornerRadius": 16
+         },
+         "id": "1:391",
+         "name": "Button - Options",
+         "styles": {
+          "fills": [
+           {
+            "cssString": "linear-gradient(180deg, #1e293bcc 0%, #0f172af2 100%)",
+            "geometry": {
+             "angle": 90,
+             "end": {
+              "percentX": 50,
+              "percentY": 100
+             },
+             "start": {
+              "percentX": 50,
+              "percentY": 0
+             }
+            },
+            "stops": [
+             {
+              "color": "#1e293bcc",
+              "position": 0
+             },
+             {
+              "color": "#0f172af2",
+              "position": 1
+             }
+            ],
+            "type": "GRADIENT_LINEAR"
+           }
+          ],
+          "layout": {
+           "counterAxisAlignItems": "CENTER",
+           "counterAxisSizingMode": "AUTO",
+           "mode": "HORIZONTAL",
+           "primaryAxisAlignItems": "CENTER",
+           "primaryAxisSizingMode": "AUTO"
+          },
+          "padding": {
+           "bottom": 27.25,
+           "left": 32,
+           "right": 32,
+           "top": 27.25
+          },
+          "strokeAlign": "INSIDE",
+          "strokeCap": "NONE",
+          "strokeJoin": "MITER",
+          "strokeWeight": 1,
+          "strokes": [
+           "#ffffff12"
+          ]
+         },
+         "type": "FRAME"
+        },
+        {
+         "bounds": {
+          "height": 68,
+          "width": 75.5,
+          "x": 269.5,
+          "y": 0
+         },
+         "children": [
+          {
+           "bounds": {
+            "height": 67.5,
+            "width": 75.5,
+            "x": 0,
+            "y": 0
+           },
+           "constraints": {
+            "horizontal": "STRETCH",
+            "vertical": "STRETCH"
+           },
+           "geometry": {
+            "cornerRadius": 16
+           },
+           "id": "1:396",
+           "name": "Button - Power:shadow",
+           "styles": {
+            "effects": [
+             {
+              "color": "#ff3355",
+              "offsetX": 0,
+              "offsetY": 0,
+              "opacity": 0.55,
+              "radius": 25,
+              "spread": -3,
+              "type": "DROP_SHADOW"
+             }
+            ],
+            "fills": [
+             "#ffffff01"
+            ]
+           },
+           "type": "RECTANGLE"
+          },
+          {
+           "bounds": {
+            "height": 16,
+            "width": 16,
+            "x": 62.5,
+            "y": -3
+           },
+           "children": [
+            {
+             "bounds": {
+              "height": 16,
+              "width": 16,
+              "x": 0,
+              "y": 0
+             },
+             "constraints": {
+              "horizontal": "MAX",
+              "vertical": "MIN"
+             },
+             "geometry": {
+              "cornerRadius": 9999
+             },
+             "id": "1:398",
+             "name": "PRO Crown Badge:shadow",
+             "styles": {
+              "effects": [
+               {
+                "color": "#78350f",
+                "offsetX": 0,
+                "offsetY": 2,
+                "opacity": 0.6,
+                "radius": 4,
+                "spread": -2,
+                "type": "DROP_SHADOW"
+               },
+               {
+                "color": "#78350f",
+                "offsetX": 0,
+                "offsetY": 4,
+                "opacity": 0.6,
+                "radius": 6,
+                "spread": -1,
+                "type": "DROP_SHADOW"
+               }
+              ],
+              "fills": [
+               "#ffffff01"
+              ]
+             },
+             "type": "RECTANGLE"
+            },
+            {
+             "bounds": {
+              "height": 7,
+              "width": 9,
+              "x": 3.5,
+              "y": 4.5
+             },
+             "children": [
+              {
+               "bounds": {
+                "height": 7,
+                "width": 9,
+                "x": 0,
+                "y": 0
+               },
+               "constraints": {
+                "horizontal": "CENTER",
+                "vertical": "MIN"
+               },
+               "id": "1:400",
+               "name": "Symbol",
+               "styles": {
+                "fills": [
+                 "#451a03"
+                ]
+               },
+               "type": "VECTOR"
+              }
+             ],
+             "constraints": {
+              "horizontal": "CENTER",
+              "vertical": "CENTER"
+             },
+             "id": "1:399",
+             "name": "Container",
+             "styles": {
+              "layout": {
+               "counterAxisAlignItems": "CENTER",
+               "counterAxisSizingMode": "AUTO",
+               "mode": "VERTICAL",
+               "primaryAxisSizingMode": "AUTO"
+              }
+             },
+             "type": "FRAME"
+            }
+           ],
+           "constraints": {
+            "horizontal": "MAX",
+            "vertical": "MIN"
+           },
+           "geometry": {
+            "cornerRadius": 9999
+           },
+           "id": "1:397",
+           "name": "PRO Crown Badge",
+           "styles": {
+            "fills": [
+             "#fbbf24"
+            ],
+            "layout": {
+             "counterAxisAlignItems": "CENTER",
+             "counterAxisSizingMode": "FIXED",
+             "mode": "HORIZONTAL",
+             "primaryAxisAlignItems": "CENTER",
+             "primaryAxisSizingMode": "FIXED"
+            }
+           },
+           "type": "FRAME"
+          },
+          {
+           "bounds": {
+            "height": 15.5,
+            "width": 15,
+            "x": 30.25,
+            "y": 26.25
+           },
+           "children": [
+            {
+             "bounds": {
+              "height": 15.5,
+              "width": 15,
+              "x": 0,
+              "y": 0
+             },
+             "constraints": {
+              "horizontal": "CENTER",
+              "vertical": "MIN"
+             },
+             "id": "1:402",
+             "name": "Symbol",
+             "styles": {
+              "fills": [
+               "#ffffff"
+              ]
+             },
+             "type": "VECTOR"
+            }
+           ],
+           "constraints": {
+            "horizontal": "CENTER",
+            "vertical": "CENTER"
+           },
+           "id": "1:401",
+           "name": "Shadow",
+           "styles": {
+            "effects": [
+             {
+              "color": "#000000",
+              "offsetX": 0,
+              "offsetY": 1,
+              "opacity": 0.05,
+              "radius": 1,
+              "type": "DROP_SHADOW"
+             }
+            ],
+            "layout": {
+             "counterAxisAlignItems": "CENTER",
+             "counterAxisSizingMode": "AUTO",
+             "mode": "VERTICAL",
+             "primaryAxisSizingMode": "AUTO"
+            }
+           },
+           "type": "FRAME"
+          }
+         ],
+         "geometry": {
+          "cornerRadius": 16
+         },
+         "id": "1:395",
+         "name": "Button - Power",
+         "styles": {
+          "fills": [
+           {
+            "cssString": "linear-gradient(180deg, #f43f5e 0%, #e11d48 50%, #b91c1c 100%)",
+            "geometry": {
+             "angle": 90,
+             "end": {
+              "percentX": 50,
+              "percentY": 100
+             },
+             "start": {
+              "percentX": 50,
+              "percentY": 0
+             }
+            },
+            "stops": [
+             {
+              "color": "#f43f5e",
+              "position": 0
+             },
+             {
+              "color": "#e11d48",
+              "position": 0.5
+             },
+             {
+              "color": "#b91c1c",
+              "position": 1
+             }
+            ],
+            "type": "GRADIENT_LINEAR"
+           }
+          ],
+          "layout": {
+           "counterAxisAlignItems": "CENTER",
+           "counterAxisSizingMode": "AUTO",
+           "mode": "HORIZONTAL",
+           "primaryAxisAlignItems": "CENTER",
+           "primaryAxisSizingMode": "AUTO"
+          },
+          "padding": {
+           "bottom": 25.25,
+           "left": 29.25,
+           "right": 29.25,
+           "top": 25.25
+          },
+          "strokeAlign": "INSIDE",
+          "strokeCap": "NONE",
+          "strokeJoin": "MITER",
+          "strokeWeight": 1,
+          "strokes": [
+           "#fb718580"
+          ]
+         },
+         "type": "FRAME"
+        }
+       ],
+       "constraints": {
+        "horizontal": "STRETCH",
+        "vertical": "MIN"
+       },
+       "id": "1:384",
+       "name": "Section - System Quick Controls (Back, Home, Options, Power)",
+       "styles": {
+        "layout": {
+         "counterAxisSizingMode": "AUTO",
+         "itemSpacing": 12,
+         "mode": "HORIZONTAL",
+         "primaryAxisSizingMode": "FIXED"
+        },
+        "padding": {
+         "bottom": 0,
+         "left": 4,
+         "right": 4,
+         "top": 0
+        }
+       },
+       "type": "FRAME"
+      }
+     ],
+     "constraints": {
+      "horizontal": "STRETCH",
+      "vertical": "MIN"
+     },
+     "id": "1:383",
+     "name": "Section - System Quick Controls (Back, Home, Options, Power):margin",
+     "styles": {
+      "layout": {
+       "counterAxisSizingMode": "FIXED",
+       "mode": "VERTICAL",
+       "primaryAxisSizingMode": "AUTO"
+      },
+      "padding": {
+       "bottom": 20,
+       "left": 0,
+       "right": 0,
+       "top": 0
+      }
+     },
+     "type": "FRAME"
+    },
+    {
+     "bounds": {
+      "height": 288,
+      "width": 350,
+      "x": 20,
+      "y": 316.1
+     },
+     "children": [
+      {
+       "bounds": {
+        "height": 280,
+        "width": 350,
+        "x": 0,
+        "y": 4
+       },
+       "children": [
+        {
+         "bounds": {
+          "height": 285,
+          "width": 285,
+          "x": 32.5,
+          "y": -2.5
+         },
+         "geometry": {
+          "cornerRadius": 9999
+         },
+         "id": "1:405",
+         "name": "Exterior Ambient Circular Glow Ring",
+         "opacity": 0.6,
+         "styles": {
+          "strokeAlign": "INSIDE",
+          "strokeCap": "NONE",
+          "strokeJoin": "MITER",
+          "strokeWeight": 1,
+          "strokes": [
+           "#06b6d41a"
+          ]
+         },
+         "type": "RECTANGLE"
+        },
+        {
+         "bounds": {
+          "height": 310,
+          "width": 310,
+          "x": 20,
+          "y": -15
+         },
+         "geometry": {
+          "cornerRadius": 9999
+         },
+         "id": "1:406",
+         "name": "Border",
+         "styles": {
+          "strokeAlign": "INSIDE",
+          "strokeCap": "NONE",
+          "strokeJoin": "MITER",
+          "strokeWeight": 1,
+          "strokes": [
+           "#a855f71a"
+          ]
+         },
+         "type": "RECTANGLE"
+        },
+        {
+         "bounds": {
+          "height": 280,
+          "width": 280,
+          "x": 35,
+          "y": 0
+         },
+         "children": [
+          {
+           "bounds": {
+            "height": 280,
+            "width": 280,
+            "x": 0,
+            "y": 0
+           },
+           "children": [
+            {
+             "bounds": {
+              "height": 96,
+              "width": 280,
+              "x": 0,
+              "y": 92
+             },
+             "constraints": {
+              "horizontal": "CENTER",
+              "vertical": "CENTER"
+             },
+             "geometry": {
+              "cornerRadius": 36
+             },
+             "id": "1:409",
+             "name": "Horizontal Bar",
+             "styles": {
+              "effects": [
+               {
+                "color": "#ffffff",
+                "offsetX": 0,
+                "offsetY": 1,
+                "opacity": 0.15,
+                "radius": 1,
+                "spread": 1,
+                "type": "INNER_SHADOW"
+               }
+              ],
+              "fills": [
+               {
+                "cssString": "linear-gradient(90deg, #172036 0%, #1e2945 50%, #172036 100%)",
+                "geometry": {
+                 "angle": 0,
+                 "end": {
+                  "percentX": 100,
+                  "percentY": 50
+                 },
+                 "start": {
+                  "percentX": 0,
+                  "percentY": 50
+                 }
+                },
+                "stops": [
+                 {
+                  "color": "#172036",
+                  "position": 0
+                 },
+                 {
+                  "color": "#1e2945",
+                  "position": 0.5
+                 },
+                 {
+                  "color": "#172036",
+                  "position": 1
+                 }
+                ],
+                "type": "GRADIENT_LINEAR"
+               }
+              ],
+              "strokeAlign": "INSIDE",
+              "strokeCap": "NONE",
+              "strokeJoin": "MITER",
+              "strokeWeight": 1,
+              "strokes": [
+               "#ffffff1a"
+              ]
+             },
+             "type": "RECTANGLE"
+            },
+            {
+             "bounds": {
+              "height": 280,
+              "width": 96,
+              "x": 92,
+              "y": 0
+             },
+             "geometry": {
+              "cornerRadius": 36
+             },
+             "id": "1:410",
+             "name": "Vertical Bar",
+             "styles": {
+              "effects": [
+               {
+                "color": "#ffffff",
+                "offsetX": 0,
+                "offsetY": 1,
+                "opacity": 0.15,
+                "radius": 1,
+                "spread": 1,
+                "type": "INNER_SHADOW"
+               }
+              ],
+              "fills": [
+               {
+                "cssString": "linear-gradient(180deg, #172036 0%, #1e2945 50%, #172036 100%)",
+                "geometry": {
+                 "angle": 90,
+                 "end": {
+                  "percentX": 50,
+                  "percentY": 100
+                 },
+                 "start": {
+                  "percentX": 50,
+                  "percentY": 0
+                 }
+                },
+                "stops": [
+                 {
+                  "color": "#172036",
+                  "position": 0
+                 },
+                 {
+                  "color": "#1e2945",
+                  "position": 0.5
+                 },
+                 {
+                  "color": "#172036",
+                  "position": 1
+                 }
+                ],
+                "type": "GRADIENT_LINEAR"
+               }
+              ],
+              "strokeAlign": "INSIDE",
+              "strokeCap": "NONE",
+              "strokeJoin": "MITER",
+              "strokeWeight": 1,
+              "strokes": [
+               "#ffffff1a"
+              ]
+             },
+             "type": "RECTANGLE"
+            }
+           ],
+           "constraints": {
+            "horizontal": "STRETCH",
+            "vertical": "STRETCH"
+           },
+           "id": "1:408",
+           "name": "Outer Cross Structure Background",
+           "styles": {
+            "layout": {
+             "counterAxisAlignItems": "CENTER",
+             "counterAxisSizingMode": "FIXED",
+             "mode": "HORIZONTAL",
+             "primaryAxisAlignItems": "CENTER",
+             "primaryAxisSizingMode": "FIXED"
+            }
+           },
+           "type": "FRAME"
+          },
+          {
+           "bounds": {
+            "height": 80,
+            "width": 96,
+            "x": 92,
+            "y": 6
+           },
+           "children": [
+            {
+             "bounds": {
+              "height": 32,
+              "width": 32,
+              "x": 32,
+              "y": 8
+             },
+             "children": [
+              {
+               "bounds": {
+                "height": 9,
+                "width": 15.75,
+                "x": 8.13,
+                "y": 11.5
+               },
+               "children": [
+                {
+                 "bounds": {
+                  "height": 9,
+                  "width": 15.75,
+                  "x": 0,
+                  "y": 0
+                 },
+                 "constraints": {
+                  "horizontal": "CENTER",
+                  "vertical": "MIN"
+                 },
+                 "id": "1:414",
+                 "name": "Symbol",
+                 "styles": {
+                  "fills": [
+                   "#cbd5e1"
+                  ]
+                 },
+                 "type": "VECTOR"
+                }
+               ],
+               "constraints": {
+                "horizontal": "CENTER",
+                "vertical": "CENTER"
+               },
+               "id": "1:413",
+               "name": "Container",
+               "styles": {
+                "layout": {
+                 "counterAxisAlignItems": "CENTER",
+                 "counterAxisSizingMode": "AUTO",
+                 "mode": "VERTICAL",
+                 "primaryAxisSizingMode": "AUTO"
+                }
+               },
+               "type": "FRAME"
+              }
+             ],
+             "constraints": {
+              "horizontal": "CENTER",
+              "vertical": "MIN"
+             },
+             "geometry": {
+              "cornerRadius": 9999
+             },
+             "id": "1:412",
+             "name": "Overlay",
+             "styles": {
+              "fills": [
+               "#ffffff0d"
+              ],
+              "layout": {
+               "counterAxisAlignItems": "CENTER",
+               "counterAxisSizingMode": "FIXED",
+               "mode": "HORIZONTAL",
+               "primaryAxisAlignItems": "CENTER",
+               "primaryAxisSizingMode": "FIXED"
+              }
+             },
+             "type": "FRAME"
+            }
+           ],
+           "id": "1:411",
+           "name": "Button - Navigate Up",
+           "styles": {
+            "layout": {
+             "counterAxisAlignItems": "CENTER",
+             "counterAxisSizingMode": "FIXED",
+             "mode": "VERTICAL",
+             "primaryAxisSizingMode": "FIXED"
+            },
+            "padding": {
+             "bottom": 0,
+             "left": 0,
+             "right": 0,
+             "top": 8
+            }
+           },
+           "type": "FRAME"
+          },
+          {
+           "bounds": {
+            "height": 80,
+            "width": 96,
+            "x": 92,
+            "y": 194
+           },
+           "children": [
+            {
+             "bounds": {
+              "height": 32,
+              "width": 32,
+              "x": 32,
+              "y": 40
+             },
+             "children": [
+              {
+               "bounds": {
+                "height": 9,
+                "width": 15.75,
+                "x": 8.13,
+                "y": 11.5
+               },
+               "children": [
+                {
+                 "bounds": {
+                  "height": 9,
+                  "width": 15.75,
+                  "x": 0,
+                  "y": 0
+                 },
+                 "constraints": {
+                  "horizontal": "CENTER",
+                  "vertical": "MIN"
+                 },
+                 "id": "1:418",
+                 "name": "Symbol",
+                 "styles": {
+                  "fills": [
+                   "#cbd5e1"
+                  ]
+                 },
+                 "type": "VECTOR"
+                }
+               ],
+               "constraints": {
+                "horizontal": "CENTER",
+                "vertical": "CENTER"
+               },
+               "id": "1:417",
+               "name": "Container",
+               "styles": {
+                "layout": {
+                 "counterAxisAlignItems": "CENTER",
+                 "counterAxisSizingMode": "AUTO",
+                 "mode": "VERTICAL",
+                 "primaryAxisSizingMode": "AUTO"
+                }
+               },
+               "type": "FRAME"
+              }
+             ],
+             "constraints": {
+              "horizontal": "CENTER",
+              "vertical": "MAX"
+             },
+             "geometry": {
+              "cornerRadius": 9999
+             },
+             "id": "1:416",
+             "name": "Overlay",
+             "styles": {
+              "fills": [
+               "#ffffff0d"
+              ],
+              "layout": {
+               "counterAxisAlignItems": "CENTER",
+               "counterAxisSizingMode": "FIXED",
+               "mode": "HORIZONTAL",
+               "primaryAxisAlignItems": "CENTER",
+               "primaryAxisSizingMode": "FIXED"
+              }
+             },
+             "type": "FRAME"
+            }
+           ],
+           "constraints": {
+            "horizontal": "MIN",
+            "vertical": "MAX"
+           },
+           "id": "1:415",
+           "name": "Button - Navigate Down",
+           "styles": {
+            "layout": {
+             "counterAxisAlignItems": "CENTER",
+             "counterAxisSizingMode": "FIXED",
+             "mode": "VERTICAL",
+             "primaryAxisAlignItems": "MAX",
+             "primaryAxisSizingMode": "FIXED"
+            },
+            "padding": {
+             "bottom": 8,
+             "left": 0,
+             "right": 0,
+             "top": 0
+            }
+           },
+           "type": "FRAME"
+          },
+          {
+           "bounds": {
+            "height": 96,
+            "width": 80,
+            "x": 6,
+            "y": 92
+           },
+           "children": [
+            {
+             "bounds": {
+              "height": 32,
+              "width": 32,
+              "x": 8,
+              "y": 32
+             },
+             "children": [
+              {
+               "bounds": {
+                "height": 15.75,
+                "width": 9,
+                "x": 11.5,
+                "y": 8.13
+               },
+               "children": [
+                {
+                 "bounds": {
+                  "height": 15.75,
+                  "width": 9,
+                  "x": 0,
+                  "y": 0
+                 },
+                 "constraints": {
+                  "horizontal": "CENTER",
+                  "vertical": "MIN"
+                 },
+                 "id": "1:422",
+                 "name": "Symbol",
+                 "styles": {
+                  "fills": [
+                   "#cbd5e1"
+                  ]
+                 },
+                 "type": "VECTOR"
+                }
+               ],
+               "constraints": {
+                "horizontal": "CENTER",
+                "vertical": "CENTER"
+               },
+               "id": "1:421",
+               "name": "Container",
+               "styles": {
+                "layout": {
+                 "counterAxisAlignItems": "CENTER",
+                 "counterAxisSizingMode": "AUTO",
+                 "mode": "VERTICAL",
+                 "primaryAxisSizingMode": "AUTO"
+                }
+               },
+               "type": "FRAME"
+              }
+             ],
+             "constraints": {
+              "horizontal": "MIN",
+              "vertical": "CENTER"
+             },
+             "geometry": {
+              "cornerRadius": 9999
+             },
+             "id": "1:420",
+             "name": "Overlay",
+             "styles": {
+              "fills": [
+               "#ffffff0d"
+              ],
+              "layout": {
+               "counterAxisAlignItems": "CENTER",
+               "counterAxisSizingMode": "FIXED",
+               "mode": "HORIZONTAL",
+               "primaryAxisAlignItems": "CENTER",
+               "primaryAxisSizingMode": "FIXED"
+              }
+             },
+             "type": "FRAME"
+            }
+           ],
+           "id": "1:419",
+           "name": "Button - Navigate Left",
+           "styles": {
+            "layout": {
+             "counterAxisAlignItems": "CENTER",
+             "counterAxisSizingMode": "FIXED",
+             "mode": "HORIZONTAL",
+             "primaryAxisSizingMode": "FIXED"
+            },
+            "padding": {
+             "bottom": 0,
+             "left": 8,
+             "right": 0,
+             "top": 0
+            }
+           },
+           "type": "FRAME"
+          },
+          {
+           "bounds": {
+            "height": 96,
+            "width": 80,
+            "x": 194,
+            "y": 92
+           },
+           "children": [
+            {
+             "bounds": {
+              "height": 32,
+              "width": 32,
+              "x": 40,
+              "y": 32
+             },
+             "children": [
+              {
+               "bounds": {
+                "height": 15.75,
+                "width": 9,
+                "x": 11.5,
+                "y": 8.13
+               },
+               "children": [
+                {
+                 "bounds": {
+                  "height": 15.75,
+                  "width": 9,
+                  "x": 0,
+                  "y": 0
+                 },
+                 "constraints": {
+                  "horizontal": "CENTER",
+                  "vertical": "MIN"
+                 },
+                 "id": "1:426",
+                 "name": "Symbol",
+                 "styles": {
+                  "fills": [
+                   "#cbd5e1"
+                  ]
+                 },
+                 "type": "VECTOR"
+                }
+               ],
+               "constraints": {
+                "horizontal": "CENTER",
+                "vertical": "CENTER"
+               },
+               "id": "1:425",
+               "name": "Container",
+               "styles": {
+                "layout": {
+                 "counterAxisAlignItems": "CENTER",
+                 "counterAxisSizingMode": "AUTO",
+                 "mode": "VERTICAL",
+                 "primaryAxisSizingMode": "AUTO"
+                }
+               },
+               "type": "FRAME"
+              }
+             ],
+             "constraints": {
+              "horizontal": "MAX",
+              "vertical": "CENTER"
+             },
+             "geometry": {
+              "cornerRadius": 9999
+             },
+             "id": "1:424",
+             "name": "Overlay",
+             "styles": {
+              "fills": [
+               "#ffffff0d"
+              ],
+              "layout": {
+               "counterAxisAlignItems": "CENTER",
+               "counterAxisSizingMode": "FIXED",
+               "mode": "HORIZONTAL",
+               "primaryAxisAlignItems": "CENTER",
+               "primaryAxisSizingMode": "FIXED"
+              }
+             },
+             "type": "FRAME"
+            }
+           ],
+           "constraints": {
+            "horizontal": "MAX",
+            "vertical": "MIN"
+           },
+           "id": "1:423",
+           "name": "Button - Navigate Right",
+           "styles": {
+            "layout": {
+             "counterAxisAlignItems": "CENTER",
+             "counterAxisSizingMode": "FIXED",
+             "mode": "HORIZONTAL",
+             "primaryAxisAlignItems": "MAX",
+             "primaryAxisSizingMode": "FIXED"
+            },
+            "padding": {
+             "bottom": 0,
+             "left": 0,
+             "right": 8,
+             "top": 0
+            }
+           },
+           "type": "FRAME"
+          },
+          {
+           "bounds": {
+            "height": 96,
+            "width": 96,
+            "x": 92,
+            "y": 92
+           },
+           "children": [
+            {
+             "bounds": {
+              "height": 96,
+              "width": 96,
+              "x": 0,
+              "y": 0
+             },
+             "constraints": {
+              "horizontal": "CENTER",
+              "vertical": "CENTER"
+             },
+             "geometry": {
+              "cornerRadius": 9999
+             },
+             "id": "1:428",
+             "name": "Button - Confirm Selection:shadow",
+             "styles": {
+              "effects": [
+               {
+                "color": "#8b5cf6",
+                "offsetX": 0,
+                "offsetY": 0,
+                "opacity": 0.45,
+                "radius": 35,
+                "spread": -5,
+                "type": "DROP_SHADOW"
+               }
+              ],
+              "fills": [
+               "#ffffff01"
+              ]
+             },
+             "type": "RECTANGLE"
+            },
+            {
+             "bounds": {
+              "height": 80,
+              "width": 80,
+              "x": 8,
+              "y": 8
+             },
+             "constraints": {
+              "horizontal": "STRETCH",
+              "vertical": "STRETCH"
+             },
+             "geometry": {
+              "cornerRadius": 9999
+             },
+             "id": "1:429",
+             "name": "Concentric Precision Ring Detail",
+             "styles": {
+              "strokeAlign": "INSIDE",
+              "strokeCap": "NONE",
+              "strokeJoin": "MITER",
+              "strokeWeight": 1,
+              "strokes": [
+               "#ffffff33"
+              ]
+             },
+             "type": "RECTANGLE"
+            },
+            {
+             "bounds": {
+              "height": 28,
+              "width": 28.81,
+              "x": 33.6,
+              "y": 34
+             },
+             "children": [
+              {
+               "bounds": {
+                "height": 28,
+                "width": 28.81,
+                "x": 0,
+                "y": 0
+               },
+               "characters": "OK",
+               "constraints": {
+                "horizontal": "CENTER",
+                "vertical": "MIN"
+               },
+               "id": "1:431",
+               "name": "Text",
+               "styles": {
+                "fills": [
+                 "#ffffff"
+                ],
+                "fontFamily": "Liberation Sans",
+                "fontSize": 18,
+                "fontStyle": "Bold",
+                "fontWeight": 800,
+                "letterSpacing": {
+                 "unit": "PIXELS",
+                 "value": 0.8999999761581421
+                },
+                "lineHeight": {
+                 "unit": "PIXELS",
+                 "value": 28
+                },
+                "textAlignHorizontal": "CENTER",
+                "textAlignVertical": "CENTER"
+               },
+               "type": "TEXT"
+              }
+             ],
+             "constraints": {
+              "horizontal": "CENTER",
+              "vertical": "CENTER"
+             },
+             "id": "1:430",
+             "name": "Shadow",
+             "styles": {
+              "effects": [
+               {
+                "color": "#000000",
+                "offsetX": 0,
+                "offsetY": 1,
+                "opacity": 0.1,
+                "radius": 2,
+                "type": "DROP_SHADOW"
+               },
+               {
+                "color": "#000000",
+                "offsetX": 0,
+                "offsetY": 1,
+                "opacity": 0.06,
+                "radius": 1,
+                "type": "DROP_SHADOW"
+               }
+              ],
+              "layout": {
+               "counterAxisAlignItems": "CENTER",
+               "counterAxisSizingMode": "AUTO",
+               "mode": "VERTICAL",
+               "primaryAxisSizingMode": "AUTO"
+              }
+             },
+             "type": "FRAME"
+            }
+           ],
+           "constraints": {
+            "horizontal": "CENTER",
+            "vertical": "CENTER"
+           },
+           "geometry": {
+            "cornerRadius": 9999
+           },
+           "id": "1:427",
+           "name": "Button - Confirm Selection",
+           "styles": {
+            "fills": [
+             {
+              "cssString": "linear-gradient(135deg, #6366f1 0%, #4f46e5 50%, #7e22ce 100%)",
+              "geometry": {
+               "angle": 45,
+               "end": {
+                "percentX": 100,
+                "percentY": 100
+               },
+               "start": {
+                "percentX": 0,
+                "percentY": 0
+               }
+              },
+              "stops": [
+               {
+                "color": "#6366f1",
+                "position": 0
+               },
+               {
+                "color": "#4f46e5",
+                "position": 0.5
+               },
+               {
+                "color": "#7e22ce",
+                "position": 1
+               }
+              ],
+              "type": "GRADIENT_LINEAR"
+             }
+            ],
+            "layout": {
+             "counterAxisAlignItems": "CENTER",
+             "counterAxisSizingMode": "FIXED",
+             "mode": "VERTICAL",
+             "primaryAxisAlignItems": "CENTER",
+             "primaryAxisSizingMode": "FIXED"
+            },
+            "strokeAlign": "INSIDE",
+            "strokeCap": "NONE",
+            "strokeJoin": "MITER",
+            "strokeWeight": 2,
+            "strokes": [
+             "#a5b4fc66"
+            ]
+           },
+           "type": "FRAME"
+          }
+         ],
+         "constraints": {
+          "horizontal": "CENTER",
+          "vertical": "CENTER"
+         },
+         "id": "1:407",
+         "name": "D-Pad Body Container",
+         "styles": {
+          "effects": [
+           {
+            "color": "#000000",
+            "offsetX": 0,
+            "offsetY": 14,
+            "opacity": 0.85,
+            "radius": 28,
+            "type": "DROP_SHADOW"
+           }
+          ],
+          "layout": {
+           "counterAxisAlignItems": "CENTER",
+           "counterAxisSizingMode": "FIXED",
+           "mode": "HORIZONTAL",
+           "primaryAxisAlignItems": "CENTER",
+           "primaryAxisSizingMode": "FIXED"
+          }
+         },
+         "type": "FRAME"
+        }
+       ],
+       "constraints": {
+        "horizontal": "STRETCH",
+        "vertical": "MIN"
+       },
+       "id": "1:404",
+       "name": "Section - Directional Controller (Ergonomic D-Pad)",
+       "styles": {
+        "layout": {
+         "counterAxisAlignItems": "CENTER",
+         "counterAxisSizingMode": "AUTO",
+         "mode": "HORIZONTAL",
+         "primaryAxisAlignItems": "CENTER",
+         "primaryAxisSizingMode": "FIXED"
+        }
+       },
+       "type": "FRAME"
+      }
+     ],
+     "constraints": {
+      "horizontal": "STRETCH",
+      "vertical": "MIN"
+     },
+     "id": "1:403",
+     "name": "Section - Directional Controller (Ergonomic D-Pad):margin",
+     "styles": {
+      "layout": {
+       "counterAxisSizingMode": "FIXED",
+       "mode": "VERTICAL",
+       "primaryAxisSizingMode": "AUTO"
+      },
+      "padding": {
+       "bottom": 4,
+       "left": 0,
+       "right": 0,
+       "top": 4
+      }
+     },
+     "type": "FRAME"
+    },
+    {
+     "bounds": {
+      "height": 208,
+      "width": 350,
+      "x": 20,
+      "y": 615
+     },
+     "children": [
+      {
+       "bounds": {
+        "height": 192,
+        "width": 350,
+        "x": 0,
+        "y": 16
+       },
+       "children": [
+        {
+         "bounds": {
+          "height": 56,
+          "width": 342,
+          "x": 4,
+          "y": 0
+         },
+         "children": [
+          {
+           "bounds": {
+            "height": 56,
+            "width": 105,
+            "x": 0,
+            "y": 0
+           },
+           "children": [
+            {
+             "bounds": {
+              "height": 56,
+              "width": 105,
+              "x": 0,
+              "y": 0
+             },
+             "constraints": {
+              "horizontal": "STRETCH",
+              "vertical": "MIN"
+             },
+             "geometry": {
+              "cornerRadius": 16
+             },
+             "id": "1:436",
+             "name": "Button - Voice Search:shadow",
+             "styles": {
+              "effects": [
+               {
+                "color": "#000000",
+                "offsetX": 0,
+                "offsetY": 6,
+                "opacity": 0.7,
+                "radius": 16,
+                "spread": -4,
+                "type": "DROP_SHADOW"
+               },
+               {
+                "color": "#000000",
+                "offsetX": 0,
+                "offsetY": -2,
+                "opacity": 0.6,
+                "radius": 0,
+                "spread": 1,
+                "type": "INNER_SHADOW"
+               },
+               {
+                "color": "#ffffff",
+                "offsetX": 0,
+                "offsetY": 1,
+                "opacity": 0.14,
+                "radius": 0,
+                "spread": 1,
+                "type": "INNER_SHADOW"
+               }
+              ],
+              "fills": [
+               "#ffffff01"
+              ]
+             },
+             "type": "RECTANGLE"
+            },
+            {
+             "bounds": {
+              "height": 16,
+              "width": 11,
+              "x": 47,
+              "y": 20
+             },
+             "children": [
+              {
+               "bounds": {
+                "height": 16,
+                "width": 11,
+                "x": 0,
+                "y": 0
+               },
+               "constraints": {
+                "horizontal": "CENTER",
+                "vertical": "MIN"
+               },
+               "id": "1:438",
+               "name": "Symbol",
+               "styles": {
+                "fills": [
+                 "#cbd5e1"
+                ]
+               },
+               "type": "VECTOR"
+              }
+             ],
+             "constraints": {
+              "horizontal": "CENTER",
+              "vertical": "CENTER"
+             },
+             "id": "1:437",
+             "name": "Container",
+             "styles": {
+              "layout": {
+               "counterAxisAlignItems": "CENTER",
+               "counterAxisSizingMode": "AUTO",
+               "mode": "VERTICAL",
+               "primaryAxisSizingMode": "AUTO"
+              }
+             },
+             "type": "FRAME"
+            },
+            {
+             "bounds": {
+              "height": 14,
+              "width": 14,
+              "x": 82,
+              "y": 7
+             },
+             "children": [
+              {
+               "bounds": {
+                "height": 5.25,
+                "width": 6.75,
+                "x": 3.63,
+                "y": 4.38
+               },
+               "children": [
+                {
+                 "bounds": {
+                  "height": 5.25,
+                  "width": 6.75,
+                  "x": 0,
+                  "y": 0
+                 },
+                 "constraints": {
+                  "horizontal": "CENTER",
+                  "vertical": "MIN"
+                 },
+                 "id": "1:441",
+                 "name": "Symbol",
+                 "styles": {
+                  "fills": [
+                   "#451a03"
+                  ]
+                 },
+                 "type": "VECTOR"
+                }
+               ],
+               "constraints": {
+                "horizontal": "CENTER",
+                "vertical": "CENTER"
+               },
+               "id": "1:440",
+               "name": "Container",
+               "styles": {
+                "layout": {
+                 "counterAxisAlignItems": "CENTER",
+                 "counterAxisSizingMode": "AUTO",
+                 "mode": "VERTICAL",
+                 "primaryAxisSizingMode": "AUTO"
+                }
+               },
+               "type": "FRAME"
+              }
+             ],
+             "constraints": {
+              "horizontal": "MAX",
+              "vertical": "MIN"
+             },
+             "geometry": {
+              "cornerRadius": 9999
+             },
+             "id": "1:439",
+             "name": "Background+Shadow",
+             "styles": {
+              "effects": [
+               {
+                "color": "#000000",
+                "offsetX": 0,
+                "offsetY": 1,
+                "opacity": 0.05,
+                "radius": 2,
+                "type": "DROP_SHADOW"
+               }
+              ],
+              "fills": [
+               "#fbbf24"
+              ],
+              "layout": {
+               "counterAxisAlignItems": "CENTER",
+               "counterAxisSizingMode": "FIXED",
+               "mode": "HORIZONTAL",
+               "primaryAxisAlignItems": "CENTER",
+               "primaryAxisSizingMode": "FIXED"
+              }
+             },
+             "type": "FRAME"
+            }
+           ],
+           "geometry": {
+            "cornerRadius": 16
+           },
+           "id": "1:435",
+           "name": "Button - Voice Search",
+           "styles": {
+            "fills": [
+             {
+              "cssString": "linear-gradient(180deg, #1e293bcc 0%, #0f172af2 100%)",
+              "geometry": {
+               "angle": 90,
+               "end": {
+                "percentX": 50,
+                "percentY": 100
+               },
+               "start": {
+                "percentX": 50,
+                "percentY": 0
+               }
+              },
+              "stops": [
+               {
+                "color": "#1e293bcc",
+                "position": 0
+               },
+               {
+                "color": "#0f172af2",
+                "position": 1
+               }
+              ],
+              "type": "GRADIENT_LINEAR"
+             }
+            ],
+            "layout": {
+             "counterAxisAlignItems": "CENTER",
+             "counterAxisSizingMode": "FIXED",
+             "mode": "HORIZONTAL",
+             "primaryAxisAlignItems": "CENTER",
+             "primaryAxisSizingMode": "AUTO"
+            },
+            "padding": {
+             "bottom": 0,
+             "left": 46,
+             "right": 46,
+             "top": 0
+            },
+            "strokeAlign": "INSIDE",
+            "strokeCap": "NONE",
+            "strokeJoin": "MITER",
+            "strokeWeight": 1,
+            "strokes": [
+             "#ffffff12"
+            ]
+           },
+           "type": "FRAME"
+          },
+          {
+           "bounds": {
+            "height": 56,
+            "width": 106,
+            "x": 117,
+            "y": 0
+           },
+           "children": [
+            {
+             "bounds": {
+              "height": 56,
+              "width": 106,
+              "x": 0,
+              "y": 0
+             },
+             "constraints": {
+              "horizontal": "STRETCH",
+              "vertical": "MIN"
+             },
+             "geometry": {
+              "cornerRadius": 16
+             },
+             "id": "1:443",
+             "name": "Button - Keyboard Input:shadow",
+             "styles": {
+              "effects": [
+               {
+                "color": "#000000",
+                "offsetX": 0,
+                "offsetY": 6,
+                "opacity": 0.7,
+                "radius": 16,
+                "spread": -4,
+                "type": "DROP_SHADOW"
+               },
+               {
+                "color": "#000000",
+                "offsetX": 0,
+                "offsetY": -2,
+                "opacity": 0.6,
+                "radius": 0,
+                "spread": 1,
+                "type": "INNER_SHADOW"
+               },
+               {
+                "color": "#ffffff",
+                "offsetX": 0,
+                "offsetY": 1,
+                "opacity": 0.14,
+                "radius": 0,
+                "spread": 1,
+                "type": "INNER_SHADOW"
+               }
+              ],
+              "fills": [
+               "#ffffff01"
+              ]
+             },
+             "type": "RECTANGLE"
+            },
+            {
+             "bounds": {
+              "height": 12,
+              "width": 18,
+              "x": 44,
+              "y": 22
+             },
+             "children": [
+              {
+               "bounds": {
+                "height": 12,
+                "width": 18,
+                "x": 0,
+                "y": 0
+               },
+               "constraints": {
+                "horizontal": "CENTER",
+                "vertical": "MIN"
+               },
+               "id": "1:445",
+               "name": "Symbol",
+               "styles": {
+                "fills": [
+                 "#cbd5e1"
+                ]
+               },
+               "type": "VECTOR"
+              }
+             ],
+             "constraints": {
+              "horizontal": "CENTER",
+              "vertical": "CENTER"
+             },
+             "id": "1:444",
+             "name": "Container",
+             "styles": {
+              "layout": {
+               "counterAxisAlignItems": "CENTER",
+               "counterAxisSizingMode": "AUTO",
+               "mode": "VERTICAL",
+               "primaryAxisSizingMode": "AUTO"
+              }
+             },
+             "type": "FRAME"
+            },
+            {
+             "bounds": {
+              "height": 14,
+              "width": 14,
+              "x": 83,
+              "y": 7
+             },
+             "children": [
+              {
+               "bounds": {
+                "height": 5.25,
+                "width": 6.75,
+                "x": 3.63,
+                "y": 4.38
+               },
+               "children": [
+                {
+                 "bounds": {
+                  "height": 5.25,
+                  "width": 6.75,
+                  "x": 0,
+                  "y": 0
+                 },
+                 "constraints": {
+                  "horizontal": "CENTER",
+                  "vertical": "MIN"
+                 },
+                 "id": "1:448",
+                 "name": "Symbol",
+                 "styles": {
+                  "fills": [
+                   "#451a03"
+                  ]
+                 },
+                 "type": "VECTOR"
+                }
+               ],
+               "constraints": {
+                "horizontal": "CENTER",
+                "vertical": "CENTER"
+               },
+               "id": "1:447",
+               "name": "Container",
+               "styles": {
+                "layout": {
+                 "counterAxisAlignItems": "CENTER",
+                 "counterAxisSizingMode": "AUTO",
+                 "mode": "VERTICAL",
+                 "primaryAxisSizingMode": "AUTO"
+                }
+               },
+               "type": "FRAME"
+              }
+             ],
+             "constraints": {
+              "horizontal": "MAX",
+              "vertical": "MIN"
+             },
+             "geometry": {
+              "cornerRadius": 9999
+             },
+             "id": "1:446",
+             "name": "Background+Shadow",
+             "styles": {
+              "effects": [
+               {
+                "color": "#000000",
+                "offsetX": 0,
+                "offsetY": 1,
+                "opacity": 0.05,
+                "radius": 2,
+                "type": "DROP_SHADOW"
+               }
+              ],
+              "fills": [
+               "#fbbf24"
+              ],
+              "layout": {
+               "counterAxisAlignItems": "CENTER",
+               "counterAxisSizingMode": "FIXED",
+               "mode": "HORIZONTAL",
+               "primaryAxisAlignItems": "CENTER",
+               "primaryAxisSizingMode": "FIXED"
+              }
+             },
+             "type": "FRAME"
+            }
+           ],
+           "geometry": {
+            "cornerRadius": 16
+           },
+           "id": "1:442",
+           "name": "Button - Keyboard Input",
+           "styles": {
+            "fills": [
+             {
+              "cssString": "linear-gradient(180deg, #1e293bcc 0%, #0f172af2 100%)",
+              "geometry": {
+               "angle": 90,
+               "end": {
+                "percentX": 50,
+                "percentY": 100
+               },
+               "start": {
+                "percentX": 50,
+                "percentY": 0
+               }
+              },
+              "stops": [
+               {
+                "color": "#1e293bcc",
+                "position": 0
+               },
+               {
+                "color": "#0f172af2",
+                "position": 1
+               }
+              ],
+              "type": "GRADIENT_LINEAR"
+             }
+            ],
+            "layout": {
+             "counterAxisAlignItems": "CENTER",
+             "counterAxisSizingMode": "FIXED",
+             "mode": "HORIZONTAL",
+             "primaryAxisAlignItems": "CENTER",
+             "primaryAxisSizingMode": "AUTO"
+            },
+            "padding": {
+             "bottom": 0,
+             "left": 43,
+             "right": 43,
+             "top": 0
+            },
+            "strokeAlign": "INSIDE",
+            "strokeCap": "NONE",
+            "strokeJoin": "MITER",
+            "strokeWeight": 1,
+            "strokes": [
+             "#ffffff12"
+            ]
+           },
+           "type": "FRAME"
+          },
+          {
+           "bounds": {
+            "height": 56,
+            "width": 106,
+            "x": 235,
+            "y": 0
+           },
+           "children": [
+            {
+             "bounds": {
+              "height": 56,
+              "width": 106,
+              "x": 0,
+              "y": 0
+             },
+             "constraints": {
+              "horizontal": "STRETCH",
+              "vertical": "MIN"
+             },
+             "geometry": {
+              "cornerRadius": 16
+             },
+             "id": "1:450",
+             "name": "Button - Private Headphones Mode:shadow",
+             "styles": {
+              "effects": [
+               {
+                "color": "#000000",
+                "offsetX": 0,
+                "offsetY": 6,
+                "opacity": 0.7,
+                "radius": 16,
+                "spread": -4,
+                "type": "DROP_SHADOW"
+               },
+               {
+                "color": "#000000",
+                "offsetX": 0,
+                "offsetY": -2,
+                "opacity": 0.6,
+                "radius": 0,
+                "spread": 1,
+                "type": "INNER_SHADOW"
+               },
+               {
+                "color": "#ffffff",
+                "offsetX": 0,
+                "offsetY": 1,
+                "opacity": 0.14,
+                "radius": 0,
+                "spread": 1,
+                "type": "INNER_SHADOW"
+               }
+              ],
+              "fills": [
+               "#ffffff01"
+              ]
+             },
+             "type": "RECTANGLE"
+            },
+            {
+             "bounds": {
+              "height": 14,
+              "width": 16,
+              "x": 45,
+              "y": 21
+             },
+             "children": [
+              {
+               "bounds": {
+                "height": 14,
+                "width": 16,
+                "x": 0,
+                "y": 0
+               },
+               "constraints": {
+                "horizontal": "CENTER",
+                "vertical": "MIN"
+               },
+               "id": "1:452",
+               "name": "Symbol",
+               "styles": {
+                "fills": [
+                 "#cbd5e1"
+                ]
+               },
+               "type": "VECTOR"
+              }
+             ],
+             "constraints": {
+              "horizontal": "CENTER",
+              "vertical": "CENTER"
+             },
+             "id": "1:451",
+             "name": "Container",
+             "styles": {
+              "layout": {
+               "counterAxisAlignItems": "CENTER",
+               "counterAxisSizingMode": "AUTO",
+               "mode": "VERTICAL",
+               "primaryAxisSizingMode": "AUTO"
+              }
+             },
+             "type": "FRAME"
+            }
+           ],
+           "geometry": {
+            "cornerRadius": 16
+           },
+           "id": "1:449",
+           "name": "Button - Private Headphones Mode",
+           "styles": {
+            "fills": [
+             {
+              "cssString": "linear-gradient(180deg, #1e293bcc 0%, #0f172af2 100%)",
+              "geometry": {
+               "angle": 90,
+               "end": {
+                "percentX": 50,
+                "percentY": 100
+               },
+               "start": {
+                "percentX": 50,
+                "percentY": 0
+               }
+              },
+              "stops": [
+               {
+                "color": "#1e293bcc",
+                "position": 0
+               },
+               {
+                "color": "#0f172af2",
+                "position": 1
+               }
+              ],
+              "type": "GRADIENT_LINEAR"
+             }
+            ],
+            "layout": {
+             "counterAxisAlignItems": "CENTER",
+             "counterAxisSizingMode": "FIXED",
+             "mode": "HORIZONTAL",
+             "primaryAxisAlignItems": "CENTER",
+             "primaryAxisSizingMode": "AUTO"
+            },
+            "padding": {
+             "bottom": 0,
+             "left": 44,
+             "right": 44,
+             "top": 0
+            },
+            "strokeAlign": "INSIDE",
+            "strokeCap": "NONE",
+            "strokeJoin": "MITER",
+            "strokeWeight": 1,
+            "strokes": [
+             "#ffffff12"
+            ]
+           },
+           "type": "FRAME"
+          }
+         ],
+         "constraints": {
+          "horizontal": "STRETCH",
+          "vertical": "MIN"
+         },
+         "id": "1:434",
+         "name": "Row 1: Smart Assistance & Audio Mode",
+         "styles": {
+          "layout": {
+           "counterAxisSizingMode": "AUTO",
+           "itemSpacing": 12,
+           "mode": "HORIZONTAL",
+           "primaryAxisSizingMode": "FIXED"
+          }
+         },
+         "type": "FRAME"
+        },
+        {
+         "bounds": {
+          "height": 56,
+          "width": 342,
+          "x": 4,
+          "y": 68
+         },
+         "children": [
+          {
+           "bounds": {
+            "height": 56,
+            "width": 106,
+            "x": 0,
+            "y": 0
+           },
+           "children": [
+            {
+             "bounds": {
+              "height": 56,
+              "width": 106,
+              "x": 0,
+              "y": 0
+             },
+             "constraints": {
+              "horizontal": "STRETCH",
+              "vertical": "MIN"
+             },
+             "geometry": {
+              "cornerRadius": 16
+             },
+             "id": "1:455",
+             "name": "Button - Rewind:shadow",
+             "styles": {
+              "effects": [
+               {
+                "color": "#000000",
+                "offsetX": 0,
+                "offsetY": 6,
+                "opacity": 0.7,
+                "radius": 16,
+                "spread": -4,
+                "type": "DROP_SHADOW"
+               },
+               {
+                "color": "#000000",
+                "offsetX": 0,
+                "offsetY": -2,
+                "opacity": 0.6,
+                "radius": 0,
+                "spread": 1,
+                "type": "INNER_SHADOW"
+               },
+               {
+                "color": "#ffffff",
+                "offsetX": 0,
+                "offsetY": 1,
+                "opacity": 0.14,
+                "radius": 0,
+                "spread": 1,
+                "type": "INNER_SHADOW"
+               }
+              ],
+              "fills": [
+               "#ffffff01"
+              ]
+             },
+             "type": "RECTANGLE"
+            },
+            {
+             "bounds": {
+              "height": 12.01,
+              "width": 16,
+              "x": 45,
+              "y": 21.99
+             },
+             "children": [
+              {
+               "bounds": {
+                "height": 12.01,
+                "width": 16,
+                "x": 0,
+                "y": 0
+               },
+               "constraints": {
+                "horizontal": "CENTER",
+                "vertical": "MIN"
+               },
+               "id": "1:457",
+               "name": "Symbol",
+               "styles": {
+                "fills": [
+                 "#cbd5e1"
+                ]
+               },
+               "type": "VECTOR"
+              }
+             ],
+             "constraints": {
+              "horizontal": "CENTER",
+              "vertical": "CENTER"
+             },
+             "id": "1:456",
+             "name": "Container",
+             "styles": {
+              "layout": {
+               "counterAxisAlignItems": "CENTER",
+               "counterAxisSizingMode": "AUTO",
+               "mode": "VERTICAL",
+               "primaryAxisSizingMode": "AUTO"
+              }
+             },
+             "type": "FRAME"
+            }
+           ],
+           "geometry": {
+            "cornerRadius": 16
+           },
+           "id": "1:454",
+           "name": "Button - Rewind",
+           "styles": {
+            "fills": [
+             {
+              "cssString": "linear-gradient(180deg, #1e293bcc 0%, #0f172af2 100%)",
+              "geometry": {
+               "angle": 90,
+               "end": {
+                "percentX": 50,
+                "percentY": 100
+               },
+               "start": {
+                "percentX": 50,
+                "percentY": 0
+               }
+              },
+              "stops": [
+               {
+                "color": "#1e293bcc",
+                "position": 0
+               },
+               {
+                "color": "#0f172af2",
+                "position": 1
+               }
+              ],
+              "type": "GRADIENT_LINEAR"
+             }
+            ],
+            "layout": {
+             "counterAxisAlignItems": "CENTER",
+             "counterAxisSizingMode": "FIXED",
+             "mode": "HORIZONTAL",
+             "primaryAxisAlignItems": "CENTER",
+             "primaryAxisSizingMode": "AUTO"
+            },
+            "padding": {
+             "bottom": 0,
+             "left": 44,
+             "right": 44,
+             "top": 0
+            },
+            "strokeAlign": "INSIDE",
+            "strokeCap": "NONE",
+            "strokeJoin": "MITER",
+            "strokeWeight": 1,
+            "strokes": [
+             "#ffffff12"
+            ]
+           },
+           "type": "FRAME"
+          },
+          {
+           "bounds": {
+            "height": 56,
+            "width": 105.99,
+            "x": 118,
+            "y": 0
+           },
+           "children": [
+            {
+             "bounds": {
+              "height": 56,
+              "width": 106,
+              "x": 0,
+              "y": 0
+             },
+             "constraints": {
+              "horizontal": "STRETCH",
+              "vertical": "MIN"
+             },
+             "geometry": {
+              "cornerRadius": 16
+             },
+             "id": "1:459",
+             "name": "Button - Play or Pause:shadow",
+             "styles": {
+              "effects": [
+               {
+                "color": "#000000",
+                "offsetX": 0,
+                "offsetY": 6,
+                "opacity": 0.7,
+                "radius": 16,
+                "spread": -4,
+                "type": "DROP_SHADOW"
+               },
+               {
+                "color": "#000000",
+                "offsetX": 0,
+                "offsetY": -2,
+                "opacity": 0.6,
+                "radius": 0,
+                "spread": 1,
+                "type": "INNER_SHADOW"
+               },
+               {
+                "color": "#ffffff",
+                "offsetX": 0,
+                "offsetY": 1,
+                "opacity": 0.14,
+                "radius": 0,
+                "spread": 1,
+                "type": "INNER_SHADOW"
+               }
+              ],
+              "fills": [
+               "#ffffff01"
+              ]
+             },
+             "type": "RECTANGLE"
+            },
+            {
+             "bounds": {
+              "height": 12.26,
+              "width": 12.5,
+              "x": 38.7,
+              "y": 21.87
+             },
+             "children": [
+              {
+               "bounds": {
+                "height": 12.26,
+                "width": 10.5,
+                "x": 2,
+                "y": 0
+               },
+               "children": [
+                {
+                 "bounds": {
+                  "height": 12.26,
+                  "width": 10.5,
+                  "x": 0,
+                  "y": 0
+                 },
+                 "constraints": {
+                  "horizontal": "CENTER",
+                  "vertical": "MIN"
+                 },
+                 "id": "1:462",
+                 "name": "Symbol",
+                 "styles": {
+                  "fills": [
+                   "#22d3ee"
+                  ]
+                 },
+                 "type": "VECTOR"
+                }
+               ],
+               "id": "1:461",
+               "name": "Container",
+               "styles": {
+                "layout": {
+                 "counterAxisAlignItems": "CENTER",
+                 "counterAxisSizingMode": "AUTO",
+                 "mode": "VERTICAL",
+                 "primaryAxisSizingMode": "AUTO"
+                }
+               },
+               "type": "FRAME"
+              }
+             ],
+             "id": "1:460",
+             "name": "Margin",
+             "styles": {
+              "layout": {
+               "counterAxisSizingMode": "AUTO",
+               "mode": "VERTICAL",
+               "primaryAxisSizingMode": "AUTO"
+              },
+              "padding": {
+               "bottom": 0,
+               "left": 2,
+               "right": 0,
+               "top": 0
+              }
+             },
+             "type": "FRAME"
+            },
+            {
+             "bounds": {
+              "height": 16,
+              "width": 7.34,
+              "x": 51.2,
+              "y": 20
+             },
+             "children": [
+              {
+               "bounds": {
+                "height": 16,
+                "width": 3.34,
+                "x": 2,
+                "y": 0
+               },
+               "children": [
+                {
+                 "bounds": {
+                  "height": 16,
+                  "width": 3.34,
+                  "x": 0,
+                  "y": 0
+                 },
+                 "characters": "/",
+                 "constraints": {
+                  "horizontal": "CENTER",
+                  "vertical": "MIN"
+                 },
+                 "id": "1:465",
+                 "name": "Text",
+                 "styles": {
+                  "fills": [
+                   "#ffffff4d"
+                  ],
+                  "fontFamily": "Liberation Sans",
+                  "fontSize": 12,
+                  "fontStyle": "Regular",
+                  "fontWeight": 400,
+                  "lineHeight": {
+                   "unit": "PIXELS",
+                   "value": 16
+                  },
+                  "textAlignHorizontal": "CENTER",
+                  "textAlignVertical": "CENTER"
+                 },
+                 "type": "TEXT"
+                }
+               ],
+               "id": "1:464",
+               "name": "Container",
+               "styles": {
+                "layout": {
+                 "counterAxisAlignItems": "CENTER",
+                 "counterAxisSizingMode": "AUTO",
+                 "mode": "VERTICAL",
+                 "primaryAxisSizingMode": "AUTO"
+                }
+               },
+               "type": "FRAME"
+              }
+             ],
+             "id": "1:463",
+             "name": "Margin",
+             "styles": {
+              "layout": {
+               "counterAxisSizingMode": "AUTO",
+               "mode": "VERTICAL",
+               "primaryAxisSizingMode": "AUTO"
+              },
+              "padding": {
+               "bottom": 0,
+               "left": 2,
+               "right": 2,
+               "top": 0
+              }
+             },
+             "type": "FRAME"
+            },
+            {
+             "bounds": {
+              "height": 10.5,
+              "width": 8.75,
+              "x": 58.54,
+              "y": 22.75
+             },
+             "children": [
+              {
+               "bounds": {
+                "height": 10.5,
+                "width": 8.75,
+                "x": 0,
+                "y": 0
+               },
+               "constraints": {
+                "horizontal": "CENTER",
+                "vertical": "MIN"
+               },
+               "id": "1:467",
+               "name": "Symbol",
+               "styles": {
+                "fills": [
+                 "#22d3ee"
+                ]
+               },
+               "type": "VECTOR"
+              }
+             ],
+             "constraints": {
+              "horizontal": "CENTER",
+              "vertical": "CENTER"
+             },
+             "id": "1:466",
+             "name": "Container",
+             "styles": {
+              "layout": {
+               "counterAxisAlignItems": "CENTER",
+               "counterAxisSizingMode": "AUTO",
+               "mode": "VERTICAL",
+               "primaryAxisSizingMode": "AUTO"
+              }
+             },
+             "type": "FRAME"
+            }
+           ],
+           "geometry": {
+            "cornerRadius": 16
+           },
+           "id": "1:458",
+           "name": "Button - Play or Pause",
+           "styles": {
+            "fills": [
+             {
+              "cssString": "linear-gradient(180deg, #1e293bcc 0%, #0f172af2 100%)",
+              "geometry": {
+               "angle": 90,
+               "end": {
+                "percentX": 50,
+                "percentY": 100
+               },
+               "start": {
+                "percentX": 50,
+                "percentY": 0
+               }
+              },
+              "stops": [
+               {
+                "color": "#1e293bcc",
+                "position": 0
+               },
+               {
+                "color": "#0f172af2",
+                "position": 1
+               }
+              ],
+              "type": "GRADIENT_LINEAR"
+             }
+            ],
+            "layout": {
+             "counterAxisAlignItems": "CENTER",
+             "counterAxisSizingMode": "FIXED",
+             "mode": "HORIZONTAL",
+             "primaryAxisAlignItems": "CENTER",
+             "primaryAxisSizingMode": "AUTO"
+            },
+            "padding": {
+             "bottom": 0,
+             "left": 37.70000076293945,
+             "right": 37.70000076293945,
+             "top": 0
+            },
+            "strokeAlign": "INSIDE",
+            "strokeCap": "NONE",
+            "strokeJoin": "MITER",
+            "strokeWeight": 1,
+            "strokes": [
+             "#ffffff12"
+            ]
+           },
+           "type": "FRAME"
+          },
+          {
+           "bounds": {
+            "height": 56,
+            "width": 106,
+            "x": 235.99,
+            "y": 0
+           },
+           "children": [
+            {
+             "bounds": {
+              "height": 56,
+              "width": 106,
+              "x": 0,
+              "y": 0
+             },
+             "constraints": {
+              "horizontal": "STRETCH",
+              "vertical": "MIN"
+             },
+             "geometry": {
+              "cornerRadius": 16
+             },
+             "id": "1:469",
+             "name": "Button - Fast Forward:shadow",
+             "styles": {
+              "effects": [
+               {
+                "color": "#000000",
+                "offsetX": 0,
+                "offsetY": 6,
+                "opacity": 0.7,
+                "radius": 16,
+                "spread": -4,
+                "type": "DROP_SHADOW"
+               },
+               {
+                "color": "#000000",
+                "offsetX": 0,
+                "offsetY": -2,
+                "opacity": 0.6,
+                "radius": 0,
+                "spread": 1,
+                "type": "INNER_SHADOW"
+               },
+               {
+                "color": "#ffffff",
+                "offsetX": 0,
+                "offsetY": 1,
+                "opacity": 0.14,
+                "radius": 0,
+                "spread": 1,
+                "type": "INNER_SHADOW"
+               }
+              ],
+              "fills": [
+               "#ffffff01"
+              ]
+             },
+             "type": "RECTANGLE"
+            },
+            {
+             "bounds": {
+              "height": 12.01,
+              "width": 16,
+              "x": 45,
+              "y": 21.99
+             },
+             "children": [
+              {
+               "bounds": {
+                "height": 12.01,
+                "width": 16,
+                "x": 0,
+                "y": 0
+               },
+               "constraints": {
+                "horizontal": "CENTER",
+                "vertical": "MIN"
+               },
+               "id": "1:471",
+               "name": "Symbol",
+               "styles": {
+                "fills": [
+                 "#cbd5e1"
+                ]
+               },
+               "type": "VECTOR"
+              }
+             ],
+             "constraints": {
+              "horizontal": "CENTER",
+              "vertical": "CENTER"
+             },
+             "id": "1:470",
+             "name": "Container",
+             "styles": {
+              "layout": {
+               "counterAxisAlignItems": "CENTER",
+               "counterAxisSizingMode": "AUTO",
+               "mode": "VERTICAL",
+               "primaryAxisSizingMode": "AUTO"
+              }
+             },
+             "type": "FRAME"
+            }
+           ],
+           "geometry": {
+            "cornerRadius": 16
+           },
+           "id": "1:468",
+           "name": "Button - Fast Forward",
+           "styles": {
+            "fills": [
+             {
+              "cssString": "linear-gradient(180deg, #1e293bcc 0%, #0f172af2 100%)",
+              "geometry": {
+               "angle": 90,
+               "end": {
+                "percentX": 50,
+                "percentY": 100
+               },
+               "start": {
+                "percentX": 50,
+                "percentY": 0
+               }
+              },
+              "stops": [
+               {
+                "color": "#1e293bcc",
+                "position": 0
+               },
+               {
+                "color": "#0f172af2",
+                "position": 1
+               }
+              ],
+              "type": "GRADIENT_LINEAR"
+             }
+            ],
+            "layout": {
+             "counterAxisAlignItems": "CENTER",
+             "counterAxisSizingMode": "FIXED",
+             "mode": "HORIZONTAL",
+             "primaryAxisAlignItems": "CENTER",
+             "primaryAxisSizingMode": "AUTO"
+            },
+            "padding": {
+             "bottom": 0,
+             "left": 44,
+             "right": 44,
+             "top": 0
+            },
+            "strokeAlign": "INSIDE",
+            "strokeCap": "NONE",
+            "strokeJoin": "MITER",
+            "strokeWeight": 1,
+            "strokes": [
+             "#ffffff12"
+            ]
+           },
+           "type": "FRAME"
+          }
+         ],
+         "constraints": {
+          "horizontal": "STRETCH",
+          "vertical": "MIN"
+         },
+         "id": "1:453",
+         "name": "Row 2: Media Playback Bar",
+         "styles": {
+          "layout": {
+           "counterAxisSizingMode": "AUTO",
+           "itemSpacing": 12,
+           "mode": "HORIZONTAL",
+           "primaryAxisSizingMode": "FIXED"
+          }
+         },
+         "type": "FRAME"
+        },
+        {
+         "bounds": {
+          "height": 56,
+          "width": 342,
+          "x": 4,
+          "y": 136
+         },
+         "children": [
+          {
+           "bounds": {
+            "height": 56,
+            "width": 106,
+            "x": 0,
+            "y": 0
+           },
+           "children": [
+            {
+             "bounds": {
+              "height": 56,
+              "width": 106,
+              "x": 0,
+              "y": 0
+             },
+             "constraints": {
+              "horizontal": "STRETCH",
+              "vertical": "MIN"
+             },
+             "geometry": {
+              "cornerRadius": 16
+             },
+             "id": "1:474",
+             "name": "Button - Volume Down:shadow",
+             "styles": {
+              "effects": [
+               {
+                "color": "#000000",
+                "offsetX": 0,
+                "offsetY": 6,
+                "opacity": 0.7,
+                "radius": 16,
+                "spread": -4,
+                "type": "DROP_SHADOW"
+               },
+               {
+                "color": "#000000",
+                "offsetX": 0,
+                "offsetY": -2,
+                "opacity": 0.6,
+                "radius": 0,
+                "spread": 1,
+                "type": "INNER_SHADOW"
+               },
+               {
+                "color": "#ffffff",
+                "offsetX": 0,
+                "offsetY": 1,
+                "opacity": 0.14,
+                "radius": 0,
+                "spread": 1,
+                "type": "INNER_SHADOW"
+               }
+              ],
+              "fills": [
+               "#ffffff01"
+              ]
+             },
+             "type": "RECTANGLE"
+            },
+            {
+             "bounds": {
+              "height": 14,
+              "width": 14,
+              "x": 46,
+              "y": 21
+             },
+             "children": [
+              {
+               "bounds": {
+                "height": 14,
+                "width": 14,
+                "x": 0,
+                "y": 0
+               },
+               "constraints": {
+                "horizontal": "CENTER",
+                "vertical": "MIN"
+               },
+               "id": "1:476",
+               "name": "Symbol",
+               "styles": {
+                "fills": [
+                 "#cbd5e1"
+                ]
+               },
+               "type": "VECTOR"
+              }
+             ],
+             "constraints": {
+              "horizontal": "CENTER",
+              "vertical": "CENTER"
+             },
+             "id": "1:475",
+             "name": "Container",
+             "styles": {
+              "layout": {
+               "counterAxisAlignItems": "CENTER",
+               "counterAxisSizingMode": "AUTO",
+               "mode": "VERTICAL",
+               "primaryAxisSizingMode": "AUTO"
+              }
+             },
+             "type": "FRAME"
+            }
+           ],
+           "geometry": {
+            "cornerRadius": 16
+           },
+           "id": "1:473",
+           "name": "Button - Volume Down",
+           "styles": {
+            "fills": [
+             {
+              "cssString": "linear-gradient(180deg, #1e293bcc 0%, #0f172af2 100%)",
+              "geometry": {
+               "angle": 90,
+               "end": {
+                "percentX": 50,
+                "percentY": 100
+               },
+               "start": {
+                "percentX": 50,
+                "percentY": 0
+               }
+              },
+              "stops": [
+               {
+                "color": "#1e293bcc",
+                "position": 0
+               },
+               {
+                "color": "#0f172af2",
+                "position": 1
+               }
+              ],
+              "type": "GRADIENT_LINEAR"
+             }
+            ],
+            "layout": {
+             "counterAxisAlignItems": "CENTER",
+             "counterAxisSizingMode": "FIXED",
+             "mode": "HORIZONTAL",
+             "primaryAxisAlignItems": "CENTER",
+             "primaryAxisSizingMode": "AUTO"
+            },
+            "padding": {
+             "bottom": 0,
+             "left": 45,
+             "right": 45,
+             "top": 0
+            },
+            "strokeAlign": "INSIDE",
+            "strokeCap": "NONE",
+            "strokeJoin": "MITER",
+            "strokeWeight": 1,
+            "strokes": [
+             "#ffffff12"
+            ]
+           },
+           "type": "FRAME"
+          },
+          {
+           "bounds": {
+            "height": 56,
+            "width": 106,
+            "x": 118,
+            "y": 0
+           },
+           "children": [
+            {
+             "bounds": {
+              "height": 56,
+              "width": 106,
+              "x": 0,
+              "y": 0
+             },
+             "constraints": {
+              "horizontal": "STRETCH",
+              "vertical": "MIN"
+             },
+             "geometry": {
+              "cornerRadius": 16
+             },
+             "id": "1:478",
+             "name": "Button - Mute Audio:shadow",
+             "styles": {
+              "effects": [
+               {
+                "color": "#000000",
+                "offsetX": 0,
+                "offsetY": 6,
+                "opacity": 0.7,
+                "radius": 16,
+                "spread": -4,
+                "type": "DROP_SHADOW"
+               },
+               {
+                "color": "#000000",
+                "offsetX": 0,
+                "offsetY": -2,
+                "opacity": 0.6,
+                "radius": 0,
+                "spread": 1,
+                "type": "INNER_SHADOW"
+               },
+               {
+                "color": "#ffffff",
+                "offsetX": 0,
+                "offsetY": 1,
+                "opacity": 0.14,
+                "radius": 0,
+                "spread": 1,
+                "type": "INNER_SHADOW"
+               }
+              ],
+              "fills": [
+               "#ffffff01"
+              ]
+             },
+             "type": "RECTANGLE"
+            },
+            {
+             "bounds": {
+              "height": 14,
+              "width": 18,
+              "x": 44,
+              "y": 21
+             },
+             "children": [
+              {
+               "bounds": {
+                "height": 14,
+                "width": 18,
+                "x": 0,
+                "y": 0
+               },
+               "constraints": {
+                "horizontal": "CENTER",
+                "vertical": "MIN"
+               },
+               "id": "1:480",
+               "name": "Symbol",
+               "styles": {
+                "fills": [
+                 "#94a3b8"
+                ]
+               },
+               "type": "VECTOR"
+              }
+             ],
+             "constraints": {
+              "horizontal": "CENTER",
+              "vertical": "CENTER"
+             },
+             "id": "1:479",
+             "name": "Container",
+             "styles": {
+              "layout": {
+               "counterAxisAlignItems": "CENTER",
+               "counterAxisSizingMode": "AUTO",
+               "mode": "VERTICAL",
+               "primaryAxisSizingMode": "AUTO"
+              }
+             },
+             "type": "FRAME"
+            }
+           ],
+           "geometry": {
+            "cornerRadius": 16
+           },
+           "id": "1:477",
+           "name": "Button - Mute Audio",
+           "styles": {
+            "fills": [
+             {
+              "cssString": "linear-gradient(180deg, #1e293bcc 0%, #0f172af2 100%)",
+              "geometry": {
+               "angle": 90,
+               "end": {
+                "percentX": 50,
+                "percentY": 100
+               },
+               "start": {
+                "percentX": 50,
+                "percentY": 0
+               }
+              },
+              "stops": [
+               {
+                "color": "#1e293bcc",
+                "position": 0
+               },
+               {
+                "color": "#0f172af2",
+                "position": 1
+               }
+              ],
+              "type": "GRADIENT_LINEAR"
+             }
+            ],
+            "layout": {
+             "counterAxisAlignItems": "CENTER",
+             "counterAxisSizingMode": "FIXED",
+             "mode": "HORIZONTAL",
+             "primaryAxisAlignItems": "CENTER",
+             "primaryAxisSizingMode": "AUTO"
+            },
+            "padding": {
+             "bottom": 0,
+             "left": 43,
+             "right": 43,
+             "top": 0
+            },
+            "strokeAlign": "INSIDE",
+            "strokeCap": "NONE",
+            "strokeJoin": "MITER",
+            "strokeWeight": 1,
+            "strokes": [
+             "#ffffff12"
+            ]
+           },
+           "type": "FRAME"
+          },
+          {
+           "bounds": {
+            "height": 56,
+            "width": 106,
+            "x": 236,
+            "y": 0
+           },
+           "children": [
+            {
+             "bounds": {
+              "height": 56,
+              "width": 106,
+              "x": 0,
+              "y": 0
+             },
+             "constraints": {
+              "horizontal": "STRETCH",
+              "vertical": "MIN"
+             },
+             "geometry": {
+              "cornerRadius": 16
+             },
+             "id": "1:482",
+             "name": "Button - Volume Up:shadow",
+             "styles": {
+              "effects": [
+               {
+                "color": "#000000",
+                "offsetX": 0,
+                "offsetY": 6,
+                "opacity": 0.7,
+                "radius": 16,
+                "spread": -4,
+                "type": "DROP_SHADOW"
+               },
+               {
+                "color": "#000000",
+                "offsetX": 0,
+                "offsetY": -2,
+                "opacity": 0.6,
+                "radius": 0,
+                "spread": 1,
+                "type": "INNER_SHADOW"
+               },
+               {
+                "color": "#ffffff",
+                "offsetX": 0,
+                "offsetY": 1,
+                "opacity": 0.14,
+                "radius": 0,
+                "spread": 1,
+                "type": "INNER_SHADOW"
+               }
+              ],
+              "fills": [
+               "#ffffff01"
+              ]
+             },
+             "type": "RECTANGLE"
+            },
+            {
+             "bounds": {
+              "height": 14.32,
+              "width": 20,
+              "x": 43,
+              "y": 20.84
+             },
+             "children": [
+              {
+               "bounds": {
+                "height": 14.32,
+                "width": 20,
+                "x": 0,
+                "y": 0
+               },
+               "constraints": {
+                "horizontal": "CENTER",
+                "vertical": "MIN"
+               },
+               "id": "1:484",
+               "name": "Symbol",
+               "styles": {
+                "fills": [
+                 "#cbd5e1"
+                ]
+               },
+               "type": "VECTOR"
+              }
+             ],
+             "constraints": {
+              "horizontal": "CENTER",
+              "vertical": "CENTER"
+             },
+             "id": "1:483",
+             "name": "Container",
+             "styles": {
+              "layout": {
+               "counterAxisAlignItems": "CENTER",
+               "counterAxisSizingMode": "AUTO",
+               "mode": "VERTICAL",
+               "primaryAxisSizingMode": "AUTO"
+              }
+             },
+             "type": "FRAME"
+            }
+           ],
+           "geometry": {
+            "cornerRadius": 16
+           },
+           "id": "1:481",
+           "name": "Button - Volume Up",
+           "styles": {
+            "fills": [
+             {
+              "cssString": "linear-gradient(180deg, #1e293bcc 0%, #0f172af2 100%)",
+              "geometry": {
+               "angle": 90,
+               "end": {
+                "percentX": 50,
+                "percentY": 100
+               },
+               "start": {
+                "percentX": 50,
+                "percentY": 0
+               }
+              },
+              "stops": [
+               {
+                "color": "#1e293bcc",
+                "position": 0
+               },
+               {
+                "color": "#0f172af2",
+                "position": 1
+               }
+              ],
+              "type": "GRADIENT_LINEAR"
+             }
+            ],
+            "layout": {
+             "counterAxisAlignItems": "CENTER",
+             "counterAxisSizingMode": "FIXED",
+             "mode": "HORIZONTAL",
+             "primaryAxisAlignItems": "CENTER",
+             "primaryAxisSizingMode": "AUTO"
+            },
+            "padding": {
+             "bottom": 0,
+             "left": 42,
+             "right": 42,
+             "top": 0
+            },
+            "strokeAlign": "INSIDE",
+            "strokeCap": "NONE",
+            "strokeJoin": "MITER",
+            "strokeWeight": 1,
+            "strokes": [
+             "#ffffff12"
+            ]
+           },
+           "type": "FRAME"
+          }
+         ],
+         "constraints": {
+          "horizontal": "STRETCH",
+          "vertical": "MIN"
+         },
+         "id": "1:472",
+         "name": "Row 3: Audio Master Volume Controls",
+         "styles": {
+          "layout": {
+           "counterAxisSizingMode": "AUTO",
+           "itemSpacing": 12,
+           "mode": "HORIZONTAL",
+           "primaryAxisSizingMode": "FIXED"
+          }
+         },
+         "type": "FRAME"
+        }
+       ],
+       "constraints": {
+        "horizontal": "STRETCH",
+        "vertical": "MIN"
+       },
+       "id": "1:433",
+       "name": "Media & Convenience Controls Section",
+       "styles": {
+        "layout": {
+         "counterAxisSizingMode": "FIXED",
+         "itemSpacing": 12,
+         "mode": "VERTICAL",
+         "primaryAxisSizingMode": "AUTO"
+        },
+        "padding": {
+         "bottom": 0,
+         "left": 4,
+         "right": 4,
+         "top": 0
+        }
+       },
+       "type": "FRAME"
+      }
+     ],
+     "constraints": {
+      "horizontal": "STRETCH",
+      "vertical": "MIN"
+     },
+     "id": "1:432",
+     "name": "Media & Convenience Controls Section:margin",
+     "styles": {
+      "layout": {
+       "counterAxisSizingMode": "FIXED",
+       "mode": "VERTICAL",
+       "primaryAxisSizingMode": "AUTO"
+      },
+      "padding": {
+       "bottom": 0,
+       "left": 0,
+       "right": 0,
+       "top": 16
+      }
+     },
+     "type": "FRAME"
+    },
+    {
+     "bounds": {
+      "height": 22,
+      "width": 350,
+      "x": 20,
+      "y": 833.9
+     },
+     "children": [
+      {
+       "bounds": {
+        "height": 4,
+        "width": 128,
+        "x": 111,
+        "y": 16
+       },
+       "constraints": {
+        "horizontal": "CENTER",
+        "vertical": "MIN"
+       },
+       "geometry": {
+        "cornerRadius": 9999
+       },
+       "id": "1:486",
+       "name": "Overlay",
+       "styles": {
+        "fills": [
+         "#ffffff33"
+        ]
+       },
+       "type": "RECTANGLE"
+      }
+     ],
+     "constraints": {
+      "horizontal": "STRETCH",
+      "vertical": "MIN"
+     },
+     "id": "1:485",
+     "name": "Footer - iOS Bottom Home Bar Indicator",
+     "styles": {
+      "layout": {
+       "counterAxisSizingMode": "AUTO",
+       "mode": "HORIZONTAL",
+       "primaryAxisAlignItems": "CENTER",
+       "primaryAxisSizingMode": "FIXED"
+      },
+      "padding": {
+       "bottom": 2,
+       "left": 0,
+       "right": 0,
+       "top": 16
+      }
+     },
+     "type": "FRAME"
+    }
+   ],
+   "constraints": {
+    "horizontal": "STRETCH",
+    "vertical": "CENTER"
+   },
+   "id": "1:333",
+   "name": "Main - Mobile Device Frame Shell",
+   "styles": {
+    "layout": {
+     "counterAxisSizingMode": "FIXED",
+     "itemSpacing": 10.899999618530273,
+     "mode": "VERTICAL",
+     "primaryAxisSizingMode": "AUTO"
+    },
+    "padding": {
+     "bottom": 28,
+     "left": 20,
+     "right": 20,
+     "top": 12
+    }
+   },
+   "type": "FRAME"
+  }
+ ],
+ "id": "1:332",
+ "name": "Cast to TV - Smart Remote (Dark Cinema)",
+ "styles": {
+  "fills": [
+   "#ffffff",
+   {
+    "cssString": "linear-gradient(180deg, #070b14 0%, #0a0f1d 50%, #0e131f 100%)",
+    "geometry": {
+     "angle": 90,
+     "end": {
+      "percentX": 50,
+      "percentY": 100
+     },
+     "start": {
+      "percentX": 50,
+      "percentY": 0
+     }
+    },
+    "stops": [
+     {
+      "color": "#070b14",
+      "position": 0
+     },
+     {
+      "color": "#0a0f1d",
+      "position": 0.5
+     },
+     {
+      "color": "#0e131f",
+      "position": 1
+     }
+    ],
+    "type": "GRADIENT_LINEAR"
+   }
+  ],
+  "layout": {
+   "counterAxisAlignItems": "CENTER",
+   "counterAxisSizingMode": "AUTO",
+   "mode": "HORIZONTAL",
+   "primaryAxisAlignItems": "CENTER",
+   "primaryAxisSizingMode": "FIXED"
+  }
+ },
+ "type": "FRAME"
+}

@@ -7,7 +7,7 @@
     android:layout_marginRight="@dimen/_24sdp"
     android:layout_marginHorizontal="@dimen/_24sdp">
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:background="@drawable/bg_dialog"
+        android:background="@drawable/dc_bg_dialog"
         android:paddingBottom="@dimen/_16sdp"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -25,7 +25,7 @@
             app:layout_constraintWidth_percent="0.75"/>
         <androidx.appcompat.widget.AppCompatTextView
             android:textSize="@dimen/_14sdp"
-            android:textColor="@color/black"
+            android:textColor="@color/dc_text_body"
             android:gravity="center"
             android:id="@+id/txt_main"
             android:layout_width="match_parent"
@@ -43,9 +43,9 @@
             android:gravity="center"
             android:orientation="horizontal"
             android:id="@+id/ll_turn_on"
-            android:background="@drawable/bg_btn_refresh"
+            android:background="@drawable/dc_bg_cta_gradient"
             android:layout_width="0dp"
-            android:layout_height="@dimen/_40sdp"
+            android:layout_height="@dimen/_44sdp"
             android:layout_marginLeft="@dimen/_24sdp"
             android:layout_marginTop="@dimen/_16sdp"
             android:layout_marginRight="@dimen/_24sdp"

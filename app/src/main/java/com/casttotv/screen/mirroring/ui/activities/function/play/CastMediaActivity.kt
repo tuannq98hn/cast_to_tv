@@ -2,6 +2,8 @@ package com.casttotv.screen.mirroring.ui.activities.function.play
 
 import android.annotation.SuppressLint
 import android.app.Dialog
+import android.graphics.Color
+import android.graphics.drawable.ColorDrawable
 import android.os.Bundle
 import android.os.CountDownTimer
 import android.view.LayoutInflater
@@ -77,6 +79,7 @@ class CastMediaActivity : BaseActivity() {
 
         castingDialog = Dialog(this).apply {
             setContentView(R.layout.dialog_casting)
+            window?.setBackgroundDrawable(ColorDrawable(Color.TRANSPARENT))
             findViewById<View>(R.id.tv_help)?.setOnClickListener {
                 // `s3` case 3.
                 startActivity(android.content.Intent(this@CastMediaActivity, com.casttotv.screen.mirroring.ui.activities.support.HelpActivity::class.java))
@@ -102,7 +105,7 @@ class CastMediaActivity : BaseActivity() {
         FileServer.stop()
     }
 
-    private fun setupHeader() = bindHeader(
+    private fun setupHeader() = bindMediaHeader(
         binding.include4,
         when (type) {
             CastType.PHOTO_OFFLINE -> "Cast Photo"
@@ -110,6 +113,8 @@ class CastMediaActivity : BaseActivity() {
             CastType.PHOTO_BROWSER -> "Photo Browser"
             else -> "Cast Video"
         },
+        // video mode shows the TV in its own casting bar
+        showStatus = type == CastType.PHOTO_OFFLINE || type == CastType.PHOTO_ONLINE || type == CastType.PHOTO_BROWSER,
     )
 
     // region photo mode
@@ -179,6 +184,7 @@ class CastMediaActivity : BaseActivity() {
     private fun setupVideoMode() = with(binding) {
         slPhoto.visibility = View.GONE
         slVideo.visibility = View.VISIBLE
+        tvCastingDevice.text = TvConnect.deviceName
         seekbarTime.isEnabled = TvConnect.isConnectWeb || TvConnect.castDevice?.hasCapability(MediaControl.Seek) == true
         seekbarTime.setOnSeekBarChangeListener(object : SeekBar.OnSeekBarChangeListener {
             override fun onProgressChanged(seekBar: SeekBar, progress: Int, fromUser: Boolean) = Unit
@@ -475,7 +481,7 @@ class CastMediaActivity : BaseActivity() {
     // endregion
 }
 
-/** `av2`: horizontal photo strip; the selected photo gets the main-color border. */
+/** `av2`: horizontal photo strip; the selected photo gets the cyan border. */
 private class ThumbAdapter(private val items: List<MediaItem>, private val onClick: (Int) -> Unit) :
     RecyclerView.Adapter<ThumbAdapter.Holder>() {
     class Holder(val binding: ItemImageBinding) : RecyclerView.ViewHolder(binding.root)
@@ -494,7 +500,7 @@ private class ThumbAdapter(private val items: List<MediaItem>, private val onCli
     override fun onBindViewHolder(holder: Holder, position: Int) {
         val context = holder.itemView.context
         holder.binding.imv.setBorderColor(
-            ContextCompat.getColor(context, if (items[position].isSelected) R.color.color_main else R.color.transparent),
+            ContextCompat.getColor(context, if (items[position].isSelected) R.color.dc_primary else R.color.transparent),
         )
         Glide.with(holder.itemView).load(items[position].path).into(holder.binding.imv)
         holder.itemView.setOnClickListener { onClick(holder.bindingAdapterPosition) }
@@ -535,8 +541,8 @@ private class PlaylistAdapter(
         with(holder.binding) {
             Glide.with(root).load(items[position].path).into(imgVideoOffline)
             tvName.text = items[position].title
-            if (position == current()) rlItem.background = ContextCompat.getDrawable(context, R.drawable.bg_item_selected)
-            else rlItem.setBackgroundColor(ContextCompat.getColor(context, R.color.white))
+            if (position == current()) rlItem.background = ContextCompat.getDrawable(context, R.drawable.dc_bg_icon_tile)
+            else rlItem.setBackgroundColor(ContextCompat.getColor(context, R.color.transparent))
             imvClose.setOnClickListener { onRemove(holder.bindingAdapterPosition) }
             root.setOnClickListener { onPlay(holder.bindingAdapterPosition) }
         }

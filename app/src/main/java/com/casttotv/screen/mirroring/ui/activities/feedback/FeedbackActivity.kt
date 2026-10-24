@@ -59,7 +59,7 @@ class FeedbackActivity : BaseActivity() {
         topics().forEach { (view, t) ->
             val on = t == selected
             view.background = ContextCompat.getDrawable(this, if (on) R.drawable.bg_item_feedback_selected else R.drawable.bg_item_feedback)
-            view.setTextColor(ContextCompat.getColor(this, if (on) R.color.white else R.color.black))
+            view.setTextColor(ContextCompat.getColor(this, if (on) R.color.white else R.color.dc_text_body))
         }
     }
 

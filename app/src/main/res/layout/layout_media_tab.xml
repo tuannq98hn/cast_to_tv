@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Video Hub segmented tab (Stitch): icon, label, count badge (filled once that page has loaded). -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/imgTabIcon"
+        android:duplicateParentState="true"
+        android:layout_width="@dimen/_13sdp"
+        android:layout_height="@dimen/_13sdp"
+        app:tint="@color/dc_tab_icon"/>
+    <TextView
+        android:id="@+id/tvTabLabel"
+        android:duplicateParentState="true"
+        android:fontFamily="@font/pro_display_semibold"
+        android:includeFontPadding="false"
+        android:maxLines="1"
+        android:textColor="@color/dc_tab_label"
+        android:textSize="@dimen/_12ssp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_6sdp"/>
+    <TextView
+        android:id="@+id/tvTabCount"
+        android:background="@drawable/dc_bg_pill"
+        android:backgroundTint="#1affffff"
+        android:fontFamily="@font/pro_display_bold"
+        android:includeFontPadding="false"
+        android:paddingHorizontal="@dimen/_5sdp"
+        android:paddingVertical="@dimen/_2sdp"
+        android:textColor="@color/dc_primary_soft"
+        android:textSize="@dimen/_8ssp"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_6sdp"/>
+</LinearLayout>

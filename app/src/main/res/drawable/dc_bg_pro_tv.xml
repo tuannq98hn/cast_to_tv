@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Stitch PRO Upgrade TV bezel: gradient (to bottom, slate-900, #0e1424), 1dp slate-700/60, r12. -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle">
+    <gradient android:angle="270" android:startColor="#0f172a" android:endColor="#0e1424"/>
+    <stroke android:width="1dp" android:color="#99334155"/>
+    <corners android:radius="@dimen/_9sdp"/>
+</shape>

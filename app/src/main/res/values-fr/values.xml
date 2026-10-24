@@ -377,4 +377,8 @@
   <string name="you_may_need_to_accept_a_prompt_on_the_target_device_if_you_are_connecting_to_it_for_the_first_time_from_this_device">Vous devrez peut-être accepter une invite sur lappareil cible si vous vous y connectez pour la première fois à partir de cet appareil.</string>
   <string name="zero">0</string>
     <string name="error_server">Quelque chose ne va pas, veuillez vérifier sur Internet ou redémarrer l\'application</string>
+  <string name="remote_key_back">Retour</string>
+  <string name="remote_key_menu">Menu</string>
+  <string name="remote_key_power">Marche</string>
+  <string name="cast_stop">Arrêter</string>
 </resources>

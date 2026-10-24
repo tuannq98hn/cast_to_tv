@@ -18,7 +18,7 @@ class DetailMediaActivity : BaseActivity() {
         setContentView(binding.root)
         bindHeader(binding.include3, "Video")
         val videos = album?.photos.orEmpty()
-        binding.rcvListMedia.layoutManager = GridLayoutManager(this, 3)
+        binding.rcvListMedia.layoutManager = GridLayoutManager(this, 2)
         binding.rcvListMedia.adapter = VideoGridAdapter(videos) { list, position ->
             withConnection {
                 CastSession.start(CastType.VIDEO_OFFLINE, list, position)

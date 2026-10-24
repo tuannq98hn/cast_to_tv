@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Main Hub hero: linear-gradient(90deg, #4f46e5, #6366f1, #06b6d4) + reflective sheen (180deg, #ffffff33, transparent, #00000040), r24. -->
+<ripple xmlns:android="http://schemas.android.com/apk/res/android" android:color="@color/dc_ripple">
+    <item>
+        <layer-list>
+            <item>
+                <shape android:shape="rectangle">
+                    <gradient android:angle="0" android:startColor="@color/dc_indigo" android:centerColor="@color/dc_indigo_soft" android:endColor="@color/dc_cyan"/>
+                    <corners android:radius="@dimen/_24sdp"/>
+                </shape>
+            </item>
+            <item>
+                <shape android:shape="rectangle">
+                    <gradient android:angle="270" android:startColor="@color/dc_hero_sheen_top" android:centerColor="@android:color/transparent" android:endColor="@color/dc_hero_sheen_bottom"/>
+                    <corners android:radius="@dimen/_24sdp"/>
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+</ripple>

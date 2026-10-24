@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="@color/white"
+    android:background="@color/dc_bg"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
     <androidx.viewpager2.widget.ViewPager2
@@ -12,13 +12,14 @@
         app:layout_constraintTop_toTopOf="parent"/>
     <ImageView
         android:id="@+id/imvClose"
-        android:background="@drawable/ripple_effect_exit"
-        android:padding="@dimen/_4sdp"
+        android:background="@drawable/dc_bg_icon_button"
+        android:padding="@dimen/_8sdp"
         android:visibility="gone"
         android:layout_width="@dimen/_32sdp"
         android:layout_height="@dimen/_32sdp"
         android:layout_margin="@dimen/_16sdp"
         android:src="@drawable/ic_close_black"
+        app:tint="@color/dc_text_primary"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"/>
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -28,9 +29,10 @@
         app:layout_constraintBottom_toBottomOf="parent">
         <androidx.appcompat.widget.AppCompatButton
             android:textSize="16sp"
-            android:textColor="@color/white"
+            android:textColor="@color/dc_text_on_primary"
+            android:fontFamily="@font/pro_display_bold"
             android:id="@+id/btnNext"
-            android:background="@drawable/bg_border30_color_main"
+            android:background="@drawable/dc_bg_cta_onboarding"
             android:paddingTop="16dp"
             android:paddingBottom="16dp"
             android:visibility="visible"
@@ -55,7 +57,7 @@
             app:layout_constraintBottom_toTopOf="@+id/indicatorView">
             <TextView
                 android:textSize="14sp"
-                android:textColor="@color/black"
+                android:textColor="@color/dc_text_muted"
                 android:gravity="center"
                 android:id="@+id/tvLoading"
                 android:layout_width="match_parent"
@@ -72,7 +74,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/tvLoading"/>
             <TextView
                 android:textSize="14sp"
-                android:textColor="@color/black"
+                android:textColor="@color/dc_text_primary"
                 android:id="@+id/tvProgress"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -91,14 +93,14 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:dotsColor="@color/color_main"
-            app:dotsStrokeColor="@color/color_line"/>
+            app:dotsColor="@color/dc_primary"
+            app:dotsStrokeColor="@color/dc_radio_off"/>
     </androidx.constraintlayout.widget.ConstraintLayout>
     <LinearLayout
         android:gravity="center"
         android:orientation="vertical"
         android:id="@+id/llConnect"
-        android:background="#99000000"
+        android:background="@color/dc_scrim"
         android:focusable="true"
         android:visibility="gone"
         android:clickable="true"
@@ -107,7 +109,7 @@
         <LinearLayout
             android:gravity="center"
             android:orientation="vertical"
-            android:background="@drawable/bg_border"
+            android:background="@drawable/dc_bg_dialog"
             android:paddingLeft="@dimen/_21sdp"
             android:paddingTop="@dimen/_40sdp"
             android:paddingRight="@dimen/_21sdp"
@@ -142,7 +144,7 @@
                 app:lottie_fileName="anim_fail_connect.json"/>
             <TextView
                 android:textSize="@dimen/_11sdp"
-                android:textColor="@color/black"
+                android:textColor="@color/dc_text_primary"
                 android:gravity="center"
                 android:id="@+id/tvStatusConnect"
                 android:layout_width="match_parent"

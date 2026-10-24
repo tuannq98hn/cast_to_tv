@@ -27,11 +27,11 @@ class SamsungRemoteFragment : BaseRemoteFragment() {
         _binding = FragmentRemoteSsBinding.inflate(inflater, container, false)
         with(binding) {
             bindPressedBackground(
-                imvHome, R.drawable.bg_btn_home_ss,
+                imvHome, R.drawable.bg_control,
                 mapOf(
-                    llRemoteUpSs to R.drawable.bg_btn_home_ss_up, llRemoteDownSs to R.drawable.bg_btn_home_ss_down,
-                    llRemoteLeftSs to R.drawable.bg_btn_home_ss_left, llRemoteRightSs to R.drawable.bg_btn_home_ss_right,
-                    llRemoteOkSs to R.drawable.bg_btn_home_ss_ok,
+                    llRemoteUpSs to R.drawable.bg_control_up, llRemoteDownSs to R.drawable.bg_control_down,
+                    llRemoteLeftSs to R.drawable.bg_control_left, llRemoteRightSs to R.drawable.bg_control_right,
+                    llRemoteOkSs to R.drawable.bg_control_ok,
                 ),
             )
             bindPressedBackground(
@@ -88,7 +88,7 @@ class SamsungRemoteFragment : BaseRemoteFragment() {
         llTab.setBackgroundResource(if (mouse) R.drawable.bg_default_ss else R.drawable.bg_on_select_ss)
         imvIconMouse.setImageResource(if (mouse) R.drawable.ic_tab_mouse_on else R.drawable.ic_tab_mouse_off)
         imvIconTouch.setImageResource(if (mouse) R.drawable.ic_touch_off_ss else R.drawable.ic_touch_on_ss)
-        ctTouchpadSS.setBackgroundResource(if (mouse) R.drawable.img_touchpad_ss_mouse else R.drawable.img_touchpad_ss)
+        tvTouchHint.setText(if (mouse) R.string.touchpad_hint_mouse else R.string.txt_tab)
         ctTouchpadSS.setOnTouchListener(
             if (mouse) {
                 PointerTouchListener(

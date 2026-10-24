@@ -1,4 +1,459 @@
 {
-  "seq": 0,
-  "issues": []
+  "seq": 23,
+  "issues": [
+    {
+      "id": "I-001",
+      "title": "T-001 blocked: I need the Figma token values, and I can't read them here. The acceptance criter",
+      "description": "I need the Figma token values, and I can't read them here. The acceptance criteria say the color tokens come from Figma globalVars.styles. That export isn't in the repo (grep finds no 'globalVars'), and both figma-mcp-go get_styles and get_variable_defs were denied permission in this non-interactive session. Glass/translucent fills can't be read back accurately from the composited PNGs in docs/references/figma-dark-cinema/. Question: can you either (a) grant figma-mcp-go get_styles/get_variable_defs/get_nodes_info permission for dev-1, or (b) put the globalVars.styles export (YAML/JSON) at docs/references/figma-dark-cinema/global-styles.yaml? Once I have either one, I'll build T1 as planned (see note).",
+      "type": "blocker",
+      "severity": "high",
+      "status": "done",
+      "task": "T-001",
+      "assignee": null,
+      "notes": [
+        {
+          "at": "2026-10-23T04:23:04.587Z",
+          "by": "human",
+          "text": "Resolved when T-001 went back to todo"
+        }
+      ],
+      "created_by": "dev-1",
+      "created_at": "2026-10-23T04:15:43.648Z",
+      "updated_at": "2026-10-23T04:23:04.586Z"
+    },
+    {
+      "id": "I-002",
+      "title": "T-002 blocked: T-002 depends on T1 (T-001: color tokens, dark Theme.CastTV, glass card/chip/ico",
+      "description": "T-002 depends on T1 (T-001: color tokens, dark Theme.CastTV, glass card/chip/icon tile/CTA drawables, shared header include). The plan's task table lists T2 Deps = T1, but the board's depends_on is empty. T-001 is pending, blocked on I-001 (no Figma token values available). Building the Main Hub now would mean inventing the tokens and components that T1 is meant to define, and redoing them later. Question: should T-002 wait for T-001 (please add depends_on T-001 and resolve I-001 first), or do you want me to build Main Hub with hardcoded colors sampled from main-hub.png and migrate them to T1 tokens later?",
+      "type": "blocker",
+      "severity": "high",
+      "status": "done",
+      "task": "T-002",
+      "assignee": null,
+      "notes": [
+        {
+          "at": "2026-10-23T04:23:04.638Z",
+          "by": "human",
+          "text": "Resolved when T-002 went back to todo"
+        }
+      ],
+      "created_by": "dev-1",
+      "created_at": "2026-10-23T04:16:12.527Z",
+      "updated_at": "2026-10-23T04:23:04.638Z"
+    },
+    {
+      "id": "I-003",
+      "title": "T-003 blocked: T-003 depends on T1 (T-001). The plan's task table lists T3 Deps = T1, but the b",
+      "description": "T-003 depends on T1 (T-001). The plan's task table lists T3 Deps = T1, but the board's depends_on is empty. SubSale (24) and the expanded More options (38) are 'self-styled' with T1 tokens/components (glass sheet, gradient CTA, chip, text styles), and PurchaseActivity's glass sheet needs the same tokens. T-001 is pending, blocked on I-001 (Figma token values not available), and T-002 is blocked for the same reason (I-002). Building now would mean inventing the tokens T1 is meant to define and redoing them later. Question: should T-003 wait for T-001 (please add depends_on T-001 and resolve I-001), or should I build Purchase/SubSale with colors hardcoded from pro-upgrade.png and move them to T1 tokens later?",
+      "type": "blocker",
+      "severity": "high",
+      "status": "done",
+      "task": "T-003",
+      "assignee": null,
+      "notes": [
+        {
+          "at": "2026-10-23T04:23:04.688Z",
+          "by": "human",
+          "text": "Resolved when T-003 went back to todo"
+        }
+      ],
+      "created_by": "dev-1",
+      "created_at": "2026-10-23T04:16:40.845Z",
+      "updated_at": "2026-10-23T04:23:04.688Z"
+    },
+    {
+      "id": "I-004",
+      "title": "T-004 blocked: Depends on T1 (T-001), and T-001 is blocked (I-001: no Figma token values). The ",
+      "description": "Depends on T1 (T-001), and T-001 is blocked (I-001: no Figma token values). The plan's task table lists T4a deps=T1. The remote shell has to use T1's color tokens, glass/chip drawables, text styles, dark theme and shared header include. If I build it now, I'd have to invent those tokens myself, and they would clash with T1 or get redone. Question: should T-004 wait until T-001 is unblocked and done (recommended; please also add depends_on T-001), or do you want me to self-style it now with colors sampled from smart-remote.png and accept that T1 will rework it? My implementation plan is in the task notes.",
+      "type": "blocker",
+      "severity": "high",
+      "status": "done",
+      "task": "T-004",
+      "assignee": null,
+      "notes": [
+        {
+          "at": "2026-10-23T04:23:04.739Z",
+          "by": "human",
+          "text": "Resolved when T-004 went back to todo"
+        }
+      ],
+      "created_by": "dev-1",
+      "created_at": "2026-10-23T04:17:14.257Z",
+      "updated_at": "2026-10-23T04:23:04.738Z"
+    },
+    {
+      "id": "I-005",
+      "title": "T-005 blocked: Depends on T1 (T-001), which is blocked on I-001 (no Figma token values; figma-m",
+      "description": "Depends on T1 (T-001), which is blocked on I-001 (no Figma token values; figma-mcp-go get_styles is still denied for dev-1, which I re-checked today). The plan's table lists T4b deps=T1: the key, D-pad, OK, power and crown styles have to be built on T1's color tokens and its bg_key drawable. If I build them now, I'd have to invent tokens that T1 would then rework. This is the same situation as T-004. Question: should T-005 wait for T-001 (recommended; please add depends_on T-001), or should I self-style it now with colors sampled from smart-remote.png?",
+      "type": "blocker",
+      "severity": "high",
+      "status": "done",
+      "task": "T-005",
+      "assignee": null,
+      "notes": [
+        {
+          "at": "2026-10-23T04:23:04.788Z",
+          "by": "human",
+          "text": "Resolved when T-005 went back to todo"
+        }
+      ],
+      "created_by": "dev-1",
+      "created_at": "2026-10-23T04:17:44.652Z",
+      "updated_at": "2026-10-23T04:23:04.788Z"
+    },
+    {
+      "id": "I-006",
+      "title": "T-007 blocked: T-007 depends on T1 (T-001). The plan's table lists T5 Deps = T1, but board depe",
+      "description": "T-007 depends on T1 (T-001). The plan's table lists T5 Deps = T1, but board depends_on is empty. Photo Cast needs T1's color tokens, bg_chip, bg_glass_card, the shared header include, and the dark Theme.CastTV. T-001 is pending, blocked on I-001 (Figma token values not available). Building now would mean inventing tokens that T1 is supposed to define, then redoing them later; T-002 to T-005 are blocked for the same reason. Question: should T-007 wait for T-001 (recommended; please add depends_on T-001 and resolve I-001), or should I build Photo Cast with colors hardcoded from photo-cast.png and move them to T1 tokens later?",
+      "type": "blocker",
+      "severity": "high",
+      "status": "done",
+      "task": "T-007",
+      "assignee": null,
+      "notes": [
+        {
+          "at": "2026-10-23T04:23:04.890Z",
+          "by": "human",
+          "text": "Resolved when T-007 went back to todo"
+        }
+      ],
+      "created_by": "dev-1",
+      "created_at": "2026-10-23T04:18:19.924Z",
+      "updated_at": "2026-10-23T04:23:04.889Z"
+    },
+    {
+      "id": "I-007",
+      "title": "T-008 blocked: T-008 depends on T1 (T-001). The plan lists T6 Deps = T1, but the board's depend",
+      "description": "T-008 depends on T1 (T-001). The plan lists T6 Deps = T1, but the board's depends_on is empty. T-001 is pending, blocked on I-001 (Figma token values not available). Nothing from T1 is in the repo: no glass card, chip, icon tile or CTA drawables, no shared header include, and Theme.CastTV is still Light (values.xml:525). Video Hub needs these, and Album Detail (30) is explicitly self-styled from T1 components. Question: should T-008 wait for T-001 (recommended; add depends_on T-001 and resolve I-001), or should I build it with colors hardcoded from video-hub.png and move them to T1 tokens later?",
+      "type": "blocker",
+      "severity": "high",
+      "status": "done",
+      "task": "T-008",
+      "assignee": null,
+      "notes": [
+        {
+          "at": "2026-10-23T04:23:04.939Z",
+          "by": "human",
+          "text": "Resolved when T-008 went back to todo"
+        }
+      ],
+      "created_by": "dev-1",
+      "created_at": "2026-10-23T04:18:48.866Z",
+      "updated_at": "2026-10-23T04:23:04.938Z"
+    },
+    {
+      "id": "I-008",
+      "title": "T-009 blocked: T-009 depends on T1 (T-001). The plan lists T7 Deps = T1, but the board's depend",
+      "description": "T-009 depends on T1 (T-001). The plan lists T7 Deps = T1, but the board's depends_on is empty. T-001 is still pending and blocked on I-001 (no Figma token values), so there are no Dark Cinema tokens, no dark Theme.CastTV, and no glass card/chip/CTA/sheet drawables in res/. The plan says screens 26/27 are self-styled from T1 components, so I can't build them yet. I could hard-code values for 28 (Cast Player), but T1 would just have to redo that work. Question: resolve I-001 so T-001 can land first (and set depends_on=[T-001] for T-002..T-016 so the loop stops dispatching them early)? Or do you want me to go ahead and hard-code the colors for this one screen?",
+      "type": "blocker",
+      "severity": "high",
+      "status": "done",
+      "task": "T-009",
+      "assignee": null,
+      "notes": [
+        {
+          "at": "2026-10-23T04:23:04.990Z",
+          "by": "human",
+          "text": "Resolved when T-009 went back to todo"
+        }
+      ],
+      "created_by": "dev-1",
+      "created_at": "2026-10-23T04:19:14.514Z",
+      "updated_at": "2026-10-23T04:23:04.990Z"
+    },
+    {
+      "id": "I-009",
+      "title": "T-010 blocked: T-010 depends on T1 (T-001). The plan's task table lists T9 Deps = T1, but board",
+      "description": "T-010 depends on T1 (T-001). The plan's task table lists T9 Deps = T1, but board depends_on is empty. T-001 is blocked on I-001: there are no Figma token values, and figma-mcp-go get_styles/get_variable_defs were denied. The repo has no Dark Cinema color tokens, dark Theme.CastTV, or glass card/chip/CTA/dialog drawables yet. SearchTV, the device item and the dialogs need those tokens. InstallChannelRoku is 'self-styled' and is by definition built from T1 components. If I built T9 now I would have to invent the tokens and redo the work after T1. Question: unblock I-001 (grant the figma-mcp-go read tools or add docs/references/figma-dark-cinema/global-styles.yaml) so T-001 can land first, then re-dispatch T-010 with depends_on=[T-001]?",
+      "type": "blocker",
+      "severity": "high",
+      "status": "done",
+      "task": "T-010",
+      "assignee": null,
+      "notes": [
+        {
+          "at": "2026-10-23T04:23:05.039Z",
+          "by": "human",
+          "text": "Resolved when T-010 went back to todo"
+        }
+      ],
+      "created_by": "dev-1",
+      "created_at": "2026-10-23T04:19:44.215Z",
+      "updated_at": "2026-10-23T04:23:05.039Z"
+    },
+    {
+      "id": "I-010",
+      "title": "T-011 blocked: T-011 depends on T1 (T-001), which is still blocked on I-001 (no Figma token val",
+      "description": "T-011 depends on T1 (T-001), which is still blocked on I-001 (no Figma token values). The plan lists T10 Deps = T1, but the board's depends_on is empty. QR Scan is specified as 'self-styled using T1 components', and those don't exist yet (no tokens or glass/chip/CTA drawables in res/). If I style Screen Mirroring now, I'd have to invent color values that T1 would then contradict. Question: should T-011 wait for T-001 (please add T-001 to depends_on), or do you want me to pick token values from the PNGs now and accept rework later?",
+      "type": "blocker",
+      "severity": "high",
+      "status": "done",
+      "task": "T-011",
+      "assignee": null,
+      "notes": [
+        {
+          "at": "2026-10-23T04:23:05.091Z",
+          "by": "human",
+          "text": "Resolved when T-011 went back to todo"
+        }
+      ],
+      "created_by": "dev-1",
+      "created_at": "2026-10-23T04:20:10.945Z",
+      "updated_at": "2026-10-23T04:23:05.091Z"
+    },
+    {
+      "id": "I-011",
+      "title": "T-006 blocked: Depends on T4b (T-005), which is blocked on T1 (T-001 / I-001: no Figma token va",
+      "description": "Depends on T4b (T-005), which is blocked on T1 (T-001 / I-001: no Figma token values). The task says 'Apply T4b styles' to the brand remotes, touchpad, channels and Guide FireTV, but those styles and T1's tokens/drawables don't exist in res/ yet. Building them here would duplicate T-001/T-005 work and invent tokens. Question: please add depends_on T-005 (and T-001) and re-dispatch T-006 once they're done. Or do you want T4c self-styled now with colors sampled from smart-remote.png? If so, that decision should apply to T-001/T-005 first.",
+      "type": "blocker",
+      "severity": "high",
+      "status": "done",
+      "task": "T-006",
+      "assignee": null,
+      "notes": [
+        {
+          "at": "2026-10-23T04:23:04.839Z",
+          "by": "human",
+          "text": "Resolved when T-006 went back to todo"
+        }
+      ],
+      "created_by": "dev-1",
+      "created_at": "2026-10-23T04:20:39.222Z",
+      "updated_at": "2026-10-23T04:23:04.838Z"
+    },
+    {
+      "id": "I-012",
+      "title": "T-012 blocked: T-012 depends on T1 (T-001). The plan lists T11 Deps = T1, but board depends_on ",
+      "description": "T-012 depends on T1 (T-001). The plan lists T11 Deps = T1, but board depends_on is empty. T-001 is still pending, blocked on I-001 (no Figma token values), so the Dark Cinema tokens, dark Theme.CastTV, glass card/chip/CTA drawables and shared header don't exist yet. Screens 13, 14 and 17 are 'self-styled using T1 components', and screens 15/16 need the same tokens. Building them now would mean inventing colors and components that T1 would then replace. Question: should I wait for T-001 (resolve I-001, then add depends_on T-001 to T-012), or build T11 against provisional tokens sampled from web-video-cast.png and accept rework once T1 lands?",
+      "type": "blocker",
+      "severity": "high",
+      "status": "done",
+      "task": "T-012",
+      "assignee": null,
+      "notes": [
+        {
+          "at": "2026-10-23T04:23:05.142Z",
+          "by": "human",
+          "text": "Resolved when T-012 went back to todo"
+        }
+      ],
+      "created_by": "dev-1",
+      "created_at": "2026-10-23T04:20:58.880Z",
+      "updated_at": "2026-10-23T04:23:05.142Z"
+    },
+    {
+      "id": "I-013",
+      "title": "T-013 blocked: T-013 depends on T1 (T-001). The plan's task table lists T12 Deps = T1, but the ",
+      "description": "T-013 depends on T1 (T-001). The plan's task table lists T12 Deps = T1, but the board's depends_on is empty. T-001 is still pending on I-001: there are no Figma token values (no globalVars export in the repo, figma-mcp-go style reads are denied). Without T1's color tokens, dark Theme.CastTV, glass card/CTA drawables and text styles, I'd have to make up Splash/Language/Intro styling that T1 would then overwrite. Question: should I wait for T-001 (resolve I-001, then set T-013 depends_on T-001), or build T12 now with my own local colors read off the PNGs and accept rework later? I recommend waiting.",
+      "type": "blocker",
+      "severity": "high",
+      "status": "done",
+      "task": "T-013",
+      "assignee": null,
+      "notes": [
+        {
+          "at": "2026-10-23T04:23:05.193Z",
+          "by": "human",
+          "text": "Resolved when T-013 went back to todo"
+        }
+      ],
+      "created_by": "dev-1",
+      "created_at": "2026-10-23T04:21:34.967Z",
+      "updated_at": "2026-10-23T04:23:05.192Z"
+    },
+    {
+      "id": "I-014",
+      "title": "T-005 failed 3 attempts",
+      "description": "Agent dev-1 ended (exit 1) without \"task submit\" or \"task block\". Last output: You've hit your session limit · resets 1:30pm (Asia/Saigon)",
+      "type": "blocker",
+      "severity": "high",
+      "status": "done",
+      "task": "T-005",
+      "assignee": null,
+      "notes": [
+        {
+          "at": "2026-10-23T04:51:35.264Z",
+          "by": "human",
+          "text": "Resolved when T-005 went back to todo"
+        }
+      ],
+      "created_by": "loop",
+      "created_at": "2026-10-23T04:50:13.642Z",
+      "updated_at": "2026-10-23T04:51:35.263Z"
+    },
+    {
+      "id": "I-015",
+      "title": "T-007 failed 3 attempts",
+      "description": "Agent dev-1 ended (exit 1) without \"task submit\" or \"task block\". Last output: You've hit your session limit · resets 1:30pm (Asia/Saigon)",
+      "type": "blocker",
+      "severity": "high",
+      "status": "done",
+      "task": "T-007",
+      "assignee": null,
+      "notes": [
+        {
+          "at": "2026-10-23T04:51:35.323Z",
+          "by": "human",
+          "text": "Resolved when T-007 went back to todo"
+        }
+      ],
+      "created_by": "loop",
+      "created_at": "2026-10-23T04:50:22.748Z",
+      "updated_at": "2026-10-23T04:51:35.322Z"
+    },
+    {
+      "id": "I-016",
+      "title": "T-008 failed 3 attempts",
+      "description": "Agent dev-1 ended (exit 1) without \"task submit\" or \"task block\". Last output: You've hit your session limit · resets 1:30pm (Asia/Saigon)",
+      "type": "blocker",
+      "severity": "high",
+      "status": "done",
+      "task": "T-008",
+      "assignee": null,
+      "notes": [
+        {
+          "at": "2026-10-23T04:51:35.377Z",
+          "by": "human",
+          "text": "Resolved when T-008 went back to todo"
+        }
+      ],
+      "created_by": "loop",
+      "created_at": "2026-10-23T04:50:31.836Z",
+      "updated_at": "2026-10-23T04:51:35.376Z"
+    },
+    {
+      "id": "I-017",
+      "title": "T-009 failed 3 attempts",
+      "description": "Agent dev-1 ended (exit 1) without \"task submit\" or \"task block\". Last output: You've hit your session limit · resets 1:30pm (Asia/Saigon)",
+      "type": "blocker",
+      "severity": "high",
+      "status": "done",
+      "task": "T-009",
+      "assignee": null,
+      "notes": [
+        {
+          "at": "2026-10-23T04:51:35.431Z",
+          "by": "human",
+          "text": "Resolved when T-009 went back to todo"
+        }
+      ],
+      "created_by": "loop",
+      "created_at": "2026-10-23T04:50:40.695Z",
+      "updated_at": "2026-10-23T04:51:35.430Z"
+    },
+    {
+      "id": "I-018",
+      "title": "T-010 failed 3 attempts",
+      "description": "Agent dev-1 ended (exit 1) without \"task submit\" or \"task block\". Last output: You've hit your session limit · resets 1:30pm (Asia/Saigon)",
+      "type": "blocker",
+      "severity": "high",
+      "status": "done",
+      "task": "T-010",
+      "assignee": null,
+      "notes": [
+        {
+          "at": "2026-10-23T04:51:35.487Z",
+          "by": "human",
+          "text": "Resolved when T-010 went back to todo"
+        }
+      ],
+      "created_by": "loop",
+      "created_at": "2026-10-23T04:50:49.881Z",
+      "updated_at": "2026-10-23T04:51:35.486Z"
+    },
+    {
+      "id": "I-019",
+      "title": "T-011 failed 3 attempts",
+      "description": "Agent dev-1 ended (exit 1) without \"task submit\" or \"task block\". Last output: You've hit your session limit · resets 1:30pm (Asia/Saigon)",
+      "type": "blocker",
+      "severity": "high",
+      "status": "done",
+      "task": "T-011",
+      "assignee": null,
+      "notes": [
+        {
+          "at": "2026-10-23T04:51:35.542Z",
+          "by": "human",
+          "text": "Resolved when T-011 went back to todo"
+        }
+      ],
+      "created_by": "loop",
+      "created_at": "2026-10-23T04:50:58.850Z",
+      "updated_at": "2026-10-23T04:51:35.542Z"
+    },
+    {
+      "id": "I-020",
+      "title": "T-012 failed 3 attempts",
+      "description": "Agent dev-1 ended (exit 1) without \"task submit\" or \"task block\". Last output: You've hit your session limit · resets 1:30pm (Asia/Saigon)",
+      "type": "blocker",
+      "severity": "high",
+      "status": "done",
+      "task": "T-012",
+      "assignee": null,
+      "notes": [
+        {
+          "at": "2026-10-23T04:51:35.607Z",
+          "by": "human",
+          "text": "Resolved when T-012 went back to todo"
+        }
+      ],
+      "created_by": "loop",
+      "created_at": "2026-10-23T04:51:07.993Z",
+      "updated_at": "2026-10-23T04:51:35.606Z"
+    },
+    {
+      "id": "I-021",
+      "title": "T-013 failed 3 attempts",
+      "description": "Agent dev-1 ended (exit 1) without \"task submit\" or \"task block\". Last output: You've hit your session limit · resets 1:30pm (Asia/Saigon)",
+      "type": "blocker",
+      "severity": "high",
+      "status": "done",
+      "task": "T-013",
+      "assignee": null,
+      "notes": [
+        {
+          "at": "2026-10-23T04:51:35.664Z",
+          "by": "human",
+          "text": "Resolved when T-013 went back to todo"
+        }
+      ],
+      "created_by": "loop",
+      "created_at": "2026-10-23T04:51:16.915Z",
+      "updated_at": "2026-10-23T04:51:35.663Z"
+    },
+    {
+      "id": "I-022",
+      "title": "Splash: main Lottie (anim_splash.json, lav_loading_gift) never renders; only the dot Lottie shows",
+      "description": "",
+      "type": "bug",
+      "severity": "medium",
+      "status": "todo",
+      "task": "T-013",
+      "assignee": null,
+      "notes": [
+        {
+          "at": "2026-10-23T11:48:05.328Z",
+          "by": "dev-1",
+          "text": "Seen on emulator-5554 (debug build, 2026-10-23): screencaps during SplashActivity's 2 s show only anim_dot_splash. Same result with the original HEAD anim_splash.json, so it isn't from T-013's recolor. Logcat: 'LOTTIE: Animation contains merge paths ... must be manually enabled'. Adding app:lottie_enableMergePathsForKitKatAndAbove=true did not fix it in a quick try. Next: check lav_loading_gift bounds (0dp x 0dp + ratio + width_percent) and async load timing."
+        }
+      ],
+      "created_by": "dev-1",
+      "created_at": "2026-10-23T11:48:00.227Z",
+      "updated_at": "2026-10-23T11:48:05.327Z"
+    },
+    {
+      "id": "I-023",
+      "title": "Feedback 'Other' chip shows 'Crash & Bugs' (txt_other uses @string/text_error_3)",
+      "description": "",
+      "type": "bug",
+      "severity": "medium",
+      "status": "todo",
+      "task": "T-014",
+      "assignee": null,
+      "notes": [],
+      "created_by": "dev-1",
+      "created_at": "2026-10-23T11:59:26.945Z",
+      "updated_at": "2026-10-23T11:59:26.946Z"
+    }
+  ]
 }

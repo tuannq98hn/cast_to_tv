@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Screen Mirroring "Start" CTA: linear-gradient(90deg, #3131c0, #00f2fe, #3131c0), fully rounded, ripple. No glow. -->
+<ripple xmlns:android="http://schemas.android.com/apk/res/android" android:color="@color/dc_ripple">
+    <item>
+        <shape android:shape="rectangle">
+            <gradient android:angle="0" android:startColor="@color/dc_chip_active_start" android:centerColor="@color/dc_primary" android:endColor="@color/dc_chip_active_start"/>
+            <corners android:radius="999dp"/>
+        </shape>
+    </item>
+</ripple>

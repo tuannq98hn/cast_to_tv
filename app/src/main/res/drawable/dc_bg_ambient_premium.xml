@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Stitch "PRO Upgrade": #0a0e17 canvas, teal flare top-left, violet flare bottom-left. No blur. -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@color/dc_bg_alt"/>
+    <item>
+        <shape android:shape="rectangle">
+            <gradient android:type="radial" android:centerX="0.15" android:centerY="0.0" android:gradientRadius="75%p"
+                android:startColor="#3306b6d4" android:endColor="@android:color/transparent"/>
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="rectangle">
+            <gradient android:type="radial" android:centerX="0.1" android:centerY="0.35" android:gradientRadius="60%p"
+                android:startColor="#2e8b5cf6" android:endColor="@android:color/transparent"/>
+        </shape>
+    </item>
+</layer-list>

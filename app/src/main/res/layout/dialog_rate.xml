@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="@drawable/bg_dialog"
-    android:padding="@dimen/_16sdp"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_margin="@dimen/_24sdp">
+    android:paddingHorizontal="@dimen/_24sdp">
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:background="@drawable/dc_bg_dialog_opaque"
+    android:padding="@dimen/_20sdp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/dialogRate_constraint"
         android:layout_width="match_parent"
@@ -13,8 +16,8 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/dialogRate_img">
         <TextView
-            android:textSize="@dimen/_15sdp"
-            android:textColor="@color/black"
+            style="@style/DC.Text.Title"
+            android:textSize="@dimen/_20ssp"
             android:gravity="center"
             android:id="@+id/dialogRate_title"
             android:layout_width="match_parent"
@@ -23,12 +26,12 @@
             android:layout_marginTop="@dimen/_40sdp"
             android:layout_marginRight="@dimen/_5sdp"
             android:text="@string/title_rate1"
-            android:fontFamily="@font/pro_display_bold"
             android:layout_marginHorizontal="@dimen/_5sdp"
             app:layout_constraintTop_toTopOf="parent"/>
         <TextView
-            android:textSize="@dimen/_13sdp"
-            android:textColor="@color/color_gray"
+            style="@style/DC.Text.Body"
+            android:fontFamily="@font/pro_display_regular"
+            android:textColor="@color/dc_text_muted"
             android:gravity="center"
             android:id="@+id/dialogRate_description"
             android:layout_width="0dp"
@@ -45,7 +48,7 @@
             android:id="@+id/ratting_bar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
+            android:layout_marginTop="@dimen/_16sdp"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/dialogRate_description"
@@ -58,10 +61,12 @@
             app:srb_numStars="5"
             app:srb_rating="5"
             app:srb_scrollable="true"
-            app:srb_starHeight="@dimen/_35sdp"
-            app:srb_starPadding="@dimen/_10sdp"
-            app:srb_starWidth="@dimen/_35sdp"/>
+            app:srb_starHeight="@dimen/_28sdp"
+            app:srb_starPadding="@dimen/_6sdp"
+            app:srb_starWidth="@dimen/_28sdp"/>
         <TextView
+            style="@style/DC.Text.Caption"
+            android:fontFamily="@font/pro_display_semibold"
             android:id="@+id/tv_exit"
             android:visibility="gone"
             android:layout_width="wrap_content"
@@ -73,48 +78,47 @@
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/ratting_bar"/>
         <Button
-            android:textColor="@color/white"
+            style="@style/DC.Text.Button"
+            android:textSize="@dimen/_14ssp"
+            android:textColor="@color/dc_text_primary"
             android:id="@+id/btnRate"
-            android:background="@drawable/bg_button"
+            android:background="@drawable/dc_bg_cta_gradient"
             android:layout_width="match_parent"
-            android:layout_height="@dimen/_40sdp"
-            android:layout_marginLeft="@dimen/_20sdp"
-            android:layout_marginTop="@dimen/_15sdp"
-            android:layout_marginRight="@dimen/_20sdp"
+            android:layout_height="@dimen/_44sdp"
+            android:layout_marginTop="@dimen/_20sdp"
             android:text="@string/rate"
+            android:textAllCaps="true"
             android:fontFamily="@font/pro_display_bold"
-            android:layout_marginHorizontal="@dimen/_20sdp"
+            android:stateListAnimator="@null"
             app:layout_constraintTop_toBottomOf="@+id/ratting_bar"/>
         <EditText
-            android:textSize="@dimen/_10sdp"
+            android:textSize="@dimen/_12ssp"
+            android:textColor="@color/dc_text_body"
+            android:textColorHint="@color/dc_text_subtle"
             android:gravity="top"
             android:id="@+id/edt_dialog_rate_input"
-            android:background="@drawable/bg_feedback"
-            android:padding="@dimen/_5sdp"
+            android:background="@drawable/dc_bg_textarea"
+            android:padding="@dimen/_10sdp"
             android:visibility="gone"
             android:layout_width="match_parent"
             android:layout_height="@dimen/_80sdp"
-            android:layout_marginLeft="@dimen/_10sdp"
-            android:layout_marginTop="@dimen/_10sdp"
-            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_16sdp"
             android:hint="@string/please_leave_a_feedback_to_help_us_improve_product"
-            android:layout_marginHorizontal="@dimen/_10sdp"
             app:layout_constraintTop_toBottomOf="@+id/ratting_bar"/>
         <Button
-            android:textColor="@color/white"
-            android:gravity="center"
+            style="@style/DC.Text.Button"
+            android:textSize="@dimen/_14ssp"
+            android:textColor="@color/dc_text_primary"
             android:id="@+id/dialogRate_submit"
-            android:background="@drawable/bg_button"
+            android:background="@drawable/dc_bg_cta_gradient"
             android:visibility="gone"
             android:layout_width="match_parent"
-            android:layout_height="@dimen/_40sdp"
-            android:layout_marginLeft="@dimen/_20sdp"
-            android:layout_marginTop="@dimen/_15sdp"
-            android:layout_marginRight="@dimen/_20sdp"
+            android:layout_height="@dimen/_44sdp"
+            android:layout_marginTop="@dimen/_16sdp"
             android:text="@string/submit"
             android:textAllCaps="true"
             android:fontFamily="@font/pro_display_bold"
-            android:layout_marginHorizontal="@dimen/_20sdp"
+            android:stateListAnimator="@null"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/edt_dialog_rate_input"/>
@@ -128,3 +132,4 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

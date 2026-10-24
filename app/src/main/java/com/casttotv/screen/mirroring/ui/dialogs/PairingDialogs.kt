@@ -27,6 +27,7 @@ class PairingAlertDialog(context: Context, private val onOk: () -> Unit) : Dialo
         requestWindowFeature(Window.FEATURE_NO_TITLE)
         val binding = DialogPairingAlertBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        window?.setBackgroundDrawable(ColorDrawable(Color.TRANSPARENT))
         binding.btnCancel.setOnClickListener { dismiss() }
         binding.btnOk.setOnClickListener {
             onOk()

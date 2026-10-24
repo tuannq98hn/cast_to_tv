@@ -40,7 +40,7 @@ class PhotoOfflineActivity : BaseActivity() {
         binding = ActivityPhotoOfflineBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        bindHeader(binding.header, getString(R.string.txt_photo))
+        bindMediaHeader(binding.header, getString(R.string.txt_photo))
         binding.rcvListAlbum.layoutManager = LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false)
         binding.rcvListAlbum.adapter = albumAdapter
         binding.vpgMedia.offscreenPageLimit = 3
@@ -73,7 +73,7 @@ class PhotoOfflineActivity : BaseActivity() {
 
         override fun instantiateItem(container: ViewGroup, position: Int): Any {
             val page = FragmentMediaBinding.inflate(LayoutInflater.from(container.context), container, false)
-            page.rcvList.layoutManager = GridLayoutManager(container.context, 3)
+            page.rcvList.layoutManager = GridLayoutManager(container.context, 2)
             page.rcvList.adapter = PhotoGridAdapter(albums[position].photos, ::onPhotoClicked)
             container.addView(page.root)
             return page.root
@@ -113,15 +113,17 @@ private class AlbumAdapter(private val onClick: (Int) -> Unit) : RecyclerView.Ad
         with(holder.binding) {
             tvNameAlbum.text = album.name
             llBg.background = ContextCompat.getDrawable(
-                context, if (album.isSelected) R.drawable.bg_border20_color_main else R.drawable.bg_border20_f3f6ff,
+                context, if (album.isSelected) R.drawable.dc_bg_chip_active else R.drawable.dc_bg_chip,
             )
-            tvNameAlbum.setTextColor(ContextCompat.getColor(context, if (album.isSelected) R.color.white else R.color.text_color))
+            tvNameAlbum.setTextColor(ContextCompat.getColor(context, if (album.isSelected) R.color.dc_text_primary else R.color.dc_text_secondary))
+            tvCount.isVisible = album.isSelected
+            tvCount.text = String.format(java.util.Locale.getDefault(), "%,d", album.photos.size)
             root.setOnClickListener { onClick(holder.bindingAdapterPosition) }
         }
     }
 }
 
-/** `qm3`: 3-column photo grid (the ad cell at index 6 is dropped with the ads). */
+/** `qm3`: 2-column photo grid (the ad cell at index 6 is dropped with the ads). */
 private class PhotoGridAdapter(
     private val photos: List<MediaItem>,
     private val onClick: (List<MediaItem>, Int) -> Unit,
@@ -137,6 +139,7 @@ private class PhotoGridAdapter(
     override fun onBindViewHolder(holder: Holder, position: Int) {
         Glide.with(holder.itemView).load(photos[position].path).placeholder(R.drawable.ic_image_default).centerCrop()
             .into(holder.binding.imgPhoto)
+        holder.binding.tvPhotoName.text = photos[position].title.ifEmpty { java.io.File(photos[position].path).nameWithoutExtension }
         holder.itemView.setOnClickListener { onClick(photos, holder.bindingAdapterPosition) }
     }
 }

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Dark Cinema device card (Connect Devices): surface-container/60, no stroke, rounded-2xl r16, ripple. No real blur. -->
+<ripple xmlns:android="http://schemas.android.com/apk/res/android" android:color="@color/dc_ripple">
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="#991b2029"/>
+            <corners android:radius="@dimen/_16sdp"/>
+        </shape>
+    </item>
+</ripple>

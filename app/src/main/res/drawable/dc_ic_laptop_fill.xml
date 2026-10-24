@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Material Symbols "laptop_chromebook" FILL 1 (Apache 2.0): solid screen on a base. Tint at the call site. -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android" android:width="24dp" android:height="24dp" android:viewportWidth="24" android:viewportHeight="24">
+    <path android:fillColor="#FFFFFFFF" android:pathData="M22,18V3H2v15H0v2h24v-2H22zM14,18h-4v-1h4V18z"/>
+</vector>

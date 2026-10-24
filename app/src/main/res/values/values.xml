@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
   <array name="ad_site_filters">
     <item>dddsa.com</item>
     <item>sdsda.com</item>
@@ -75,6 +75,100 @@
   <color name="transparent">#00ffffff</color>
   <color name="white">#ffffff</color>
   <color name="white50">#4f000000</color>
+  <!-- Dark Cinema tokens (docs/references/figma-dark-cinema/tokens.md, see design-system-reference-llms.txt) -->
+  <color name="dc_bg">#070b14</color>
+  <color name="dc_bg_alt">#0a0e17</color>
+  <color name="dc_surface">#0f131d</color>
+  <color name="dc_surface_raised">#171c25</color>
+  <color name="dc_primary">#00f2fe</color>
+  <color name="dc_primary_soft">#22d3ee</color>
+  <color name="dc_violet">#8b5cf6</color>
+  <color name="dc_violet_soft">#c0c1ff</color>
+  <color name="dc_indigo">#4f46e5</color>
+  <color name="dc_blue">#3b82f6</color>
+  <color name="dc_gold">#fbbf24</color>
+  <color name="dc_success">#10b981</color>
+  <color name="dc_danger">#f43f5e</color>
+  <color name="dc_danger_deep">#dc2626</color>
+  <color name="dc_text_primary">#ffffff</color>
+  <color name="dc_text_body">#dfe2f0</color>
+  <color name="dc_text_secondary">#b9cacb</color>
+  <color name="dc_text_muted">#94a3b8</color>
+  <color name="dc_text_subtle">#64748b</color>
+  <color name="dc_text_on_primary">#002022</color>
+  <color name="dc_glass_start">#99192239</color>
+  <color name="dc_glass_end">#b20d1322</color>
+  <color name="dc_glass_stroke">#14ffffff</color>
+  <color name="dc_chip_bg">#14ffffff</color>
+  <color name="dc_chip_stroke">#1fffffff</color>
+  <color name="dc_icon_tile_start">#3306b6d4</color>
+  <color name="dc_icon_tile_end">#333b82f6</color>
+  <color name="dc_icon_tile_stroke">#4d06b6d4</color>
+  <color name="dc_key_start">#cc1e293b</color>
+  <color name="dc_key_end">#f20f172a</color>
+  <color name="dc_key_stroke">#12ffffff</color>
+  <color name="dc_dialog_start">#bf192030</color>
+  <color name="dc_dialog_end">#e00d111b</color>
+  <color name="dc_dialog_stroke">#1affffff</color>
+  <color name="dc_sheet_bg">#f20f131d</color>
+  <color name="dc_sheet_stroke">#99334155</color>
+  <color name="dc_scrim">#99000000</color>
+  <color name="dc_divider">#1affffff</color>
+  <color name="dc_ripple">#33ffffff</color>
+  <color name="dc_cyan">#06b6d4</color>
+  <color name="dc_indigo_soft">#6366f1</color>
+  <color name="dc_hero_sheen_top">#33ffffff</color>
+  <color name="dc_hero_sheen_bottom">#40000000</color>
+  <color name="dc_chevron_bg">#0dffffff</color>
+  <color name="dc_key_icon">#cbd5e1</color>
+  <color name="dc_crown_icon">#451a03</color>
+  <color name="dc_power_mid">#e11d48</color>
+  <color name="dc_power_end">#b91c1c</color>
+  <color name="dc_power_stroke">#80fb7185</color>
+  <color name="dc_chip_active_start">#3131c0</color>
+  <color name="dc_segment_track">#cc262a34</color>
+  <color name="dc_segment_active">#b2353944</color>
+  <color name="dc_media_card">#b21b2029</color>
+  <color name="dc_media_scrim">#cc0a0e17</color>
+  <color name="dc_player_btn">#9931353f</color>
+  <color name="dc_player_stop">#4d93000a</color>
+  <color name="dc_player_track">#31353f</color>
+  <color name="dc_device_card">#bf1b2029</color>
+  <color name="dc_badge_bg">#9931353f</color>
+  <color name="dc_primary_tint">#3300f2fe</color>
+  <color name="dc_cta_pill_end">#3b49df</color>
+  <color name="dc_coral">#ff6b4a</color>
+  <color name="dc_coral_deep">#e63946</color>
+  <color name="dc_amber">#f59e0b</color>
+  <color name="dc_amber_deep">#d97706</color>
+  <color name="dc_blue_deep">#2563eb</color>
+  <color name="dc_text_on_cta">#006a70</color>
+  <color name="dc_web_tile">#80262a34</color>
+  <color name="dc_omnibox">#cc0a0e17</color>
+  <color name="dc_sky">#4facfe</color>
+  <color name="dc_mint">#38ef7d</color>
+  <color name="dc_radio_off">#475569</color>
+  <color name="dc_dot_off">#cc334155</color>
+  <color name="dc_lang_card">#94131a2a</color>
+  <color name="dc_lang_selected_start">#80082f49</color>
+  <color name="dc_lang_selected_end">#a60e223d</color>
+  <color name="dc_lang_selected_stroke">#9906b6d4</color>
+  <color name="dc_glow_cyan">#3800f2fe</color>
+  <color name="dc_glow_cyan_soft">#2606b6d4</color>
+  <color name="dc_glow_violet">#388b5cf6</color>
+  <color name="dc_glow_purple">#338e2de2</color>
+  <color name="dc_glow_blue">#262563eb</color>
+  <color name="dc_icon_button">#b8121826</color>
+  <color name="dc_vip_start">#d91e2943</color>
+  <color name="dc_vip_end">#f2131b2e</color>
+  <color name="dc_gold_tint">#33fbbf24</color>
+  <color name="dc_gold_stroke">#66fbbf24</color>
+  <color name="dc_pink">#ec4899</color>
+  <color name="dc_purple">#a855f7</color>
+  <color name="dc_feedback_chip">#cc0b1220</color>
+  <color name="dc_feedback_chip_on_start">#2e00f0ff</color>
+  <color name="dc_feedback_chip_on_end">#382b7fff</color>
+  <color name="dc_textarea">#a6070b14</color>
   <dimen name="ads_icon_size">44dp</dimen>
   <dimen name="ads_margin_gone">16dp</dimen>
   <dimen name="ads_padding">4dp</dimen>
@@ -298,6 +392,10 @@
   <string name="refresh_page">Refresh Page</string>
   <string name="regular_price_for_year_s">Regular price for year %s</string>
   <string name="remote">Remote</string>
+  <string name="remote_tab_dpad" xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">D-Pad</string>
+  <string name="remote_tab_touch" xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">Touch</string>
+  <string name="remote_tab_number" xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">Number</string>
+  <string name="remote_tab_apps" xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">Apps</string>
   <string name="remote_tv">Remote Control</string>
   <string name="remove_ads">Remove ads</string>
   <string name="remove_ads_in_app">Remove Ads in app</string>
@@ -463,6 +561,9 @@
   <string name="txt_price" formatted="false">%s/%s</string>
   <string name="txt_price_year">%s / year</string>
   <string name="txt_tab">Swipe to navigate \nTap for “OK”</string>
+  <string name="touchpad_hint_mouse" xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">Only use on web browser</string>
+  <string name="touchpad_back" xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">BACK</string>
+  <string name="touchpad_exit" xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">EXIT</string>
   <string name="txt_tiktok">Tiktok</string>
   <string name="typing_url_in">Typing URL in your PC’s web browser</string>
   <string name="ultimate_screen_mirroring">Ultimate Screen Mirroring</string>
@@ -517,15 +618,169 @@
     <item name="cornerFamily">rounded</item>
     <item name="cornerSize">50%</item>
   </style>
+  <!-- Video Hub segmented tabs (T6): 14 / 600, letter spacing 0.28px. -->
   <style name="TabLayoutTextStyle" parent="">
-    <item name="android:textSize">16sp</item>
-    <item name="android:textColor">@color/color_default</item>
-    <item name="fontFamily">@font/pro_display_bold</item>
+    <item name="android:textSize">@dimen/_13ssp</item>
+    <item name="android:textColor">@color/dc_text_secondary</item>
+    <item name="fontFamily">@font/pro_display_semibold</item>
+    <item name="android:letterSpacing">0.02</item>
+    <item name="textAllCaps">false</item>
   </style>
-  <style name="Theme.CastTV" parent="@style/Theme.AppCompat.Light.NoActionBar">
+  <style name="Theme.CastTV" parent="@style/Theme.AppCompat.NoActionBar">
+    <item name="colorPrimary">@color/dc_bg</item>
+    <item name="colorPrimaryDark">@color/dc_bg</item>
+    <item name="colorAccent">@color/dc_primary</item>
+    <item name="android:windowBackground">@color/dc_bg</item>
+    <item name="android:statusBarColor">@color/dc_bg</item>
+    <item name="android:navigationBarColor">@color/dc_bg</item>
+    <item name="android:textColorPrimary">@color/dc_text_primary</item>
+    <item name="android:textColorSecondary">@color/dc_text_muted</item>
+  </style>
+  <style name="DC.Text" parent="">
+    <item name="android:includeFontPadding">false</item>
+    <item name="android:textColor">@color/dc_text_primary</item>
+  </style>
+  <!-- 22 / 800 / 33: screen title -->
+  <style name="DC.Text.Title">
+    <item name="android:textSize">@dimen/_22ssp</item>
+    <item name="android:fontFamily">@font/pro_display_bold</item>
+  </style>
+  <!-- 18 / 600 / 26: section / header title -->
+  <style name="DC.Text.Heading">
+    <item name="android:textSize">@dimen/_18ssp</item>
+    <item name="android:fontFamily">@font/pro_display_semibold</item>
+    <item name="lineHeight">@dimen/_26ssp</item>
+  </style>
+  <!-- 15 / 700 / 18.75: card title -->
+  <style name="DC.Text.CardTitle">
+    <item name="android:textSize">@dimen/_15ssp</item>
+    <item name="android:fontFamily">@font/pro_display_bold</item>
+  </style>
+  <!-- 16 / 600 / 24: button -->
+  <style name="DC.Text.Button">
+    <item name="android:textSize">@dimen/_16ssp</item>
+    <item name="android:fontFamily">@font/pro_display_semibold</item>
+    <item name="android:gravity">center</item>
+  </style>
+  <!-- 14 / 500 / 20: body -->
+  <style name="DC.Text.Body">
+    <item name="android:textSize">@dimen/_14ssp</item>
+    <item name="android:fontFamily">@font/pro_display_medium</item>
+    <item name="android:textColor">@color/dc_text_body</item>
+    <item name="lineHeight">@dimen/_20ssp</item>
+  </style>
+  <!-- 12 / 400 / 16: caption / card subtitle -->
+  <style name="DC.Text.Caption">
+    <item name="android:textSize">@dimen/_12ssp</item>
+    <item name="android:fontFamily">@font/pro_display_regular</item>
+    <item name="android:textColor">@color/dc_text_muted</item>
+    <item name="lineHeight">@dimen/_16ssp</item>
+  </style>
+  <!-- 10 / 700 / 12: uppercase label / badge -->
+  <style name="DC.Text.Label">
+    <item name="android:textSize">@dimen/_10ssp</item>
+    <item name="android:fontFamily">@font/pro_display_bold</item>
+    <item name="android:textColor">@color/dc_text_secondary</item>
+    <item name="android:textAllCaps">true</item>
+    <item name="android:letterSpacing">0.05</item>
+  </style>
+  <!-- Dark Cinema remote keys (T4b); shared by every brand remote. -->
+  <style name="DC.Remote.Key" parent="">
+    <item name="android:background">@drawable/dc_bg_key</item>
+  </style>
+  <style name="DC.Remote.Key.Power">
+    <item name="android:background">@drawable/dc_bg_key_power</item>
+  </style>
+  <style name="DC.Remote.KeyIcon" parent="">
+    <item name="android:layout_width">@dimen/size_icon_small</item>
+    <item name="android:layout_height">@dimen/size_icon_small</item>
+    <item name="android:tint">@color/dc_key_icon</item>
+  </style>
+  <style name="DC.Remote.KeyIcon.Accent">
+    <item name="android:tint">@color/dc_primary_soft</item>
+  </style>
+  <style name="DC.Remote.Crown" parent="">
+    <item name="android:layout_width">@dimen/_14sdp</item>
+    <item name="android:layout_height">@dimen/_14sdp</item>
+    <item name="android:layout_margin">@dimen/_4sdp</item>
+    <item name="android:padding">@dimen/_2sdp</item>
+    <item name="android:background">@drawable/dc_bg_crown</item>
+    <item name="android:src">@drawable/ic_tag_vip</item>
+    <item name="android:tint">@color/dc_crown_icon</item>
+    <item name="android:clickable">false</item>
+    <item name="android:focusable">false</item>
+  </style>
+  <style name="DC.Remote.OkLabel" parent="DC.Text">
+    <item name="android:textSize">@dimen/_18ssp</item>
+    <item name="android:textColor">#cffafe</item>
+    <item name="android:fontFamily">@font/pro_display_bold</item>
+    <item name="android:letterSpacing">0.05</item>
+  </style>
+  <style name="DC.Remote.TouchLabel" parent="DC.Text">
+    <item name="android:layout_width">wrap_content</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:textSize">@dimen/_13ssp</item>
+    <item name="android:fontFamily">@font/pro_display_medium</item>
+    <item name="android:textColor">@color/dc_text_body</item>
+  </style>
+  <!-- Dark Cinema Settings rows (T13): 36dp accent tile + title + chevron, Figma row 68dp. -->
+  <style name="DC.Settings.Row" parent="">
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:minHeight">@dimen/_56sdp</item>
+    <item name="android:orientation">horizontal</item>
+    <item name="android:gravity">center_vertical</item>
+    <item name="android:paddingStart">@dimen/_14sdp</item>
+    <item name="android:paddingEnd">@dimen/_14sdp</item>
+    <item name="android:background">?attr/selectableItemBackground</item>
+  </style>
+  <style name="DC.Settings.Icon" parent="">
+    <item name="android:layout_width">@dimen/_30sdp</item>
+    <item name="android:layout_height">@dimen/_30sdp</item>
+    <item name="android:padding">@dimen/_6sdp</item>
+    <item name="android:background">@drawable/dc_bg_icon_tile_tint</item>
+  </style>
+  <style name="DC.Settings.Title" parent="DC.Text">
+    <item name="android:layout_width">0dp</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:layout_weight">1</item>
+    <item name="android:layout_marginStart">@dimen/_12sdp</item>
+    <item name="android:layout_marginEnd">@dimen/_8sdp</item>
+    <item name="android:textSize">@dimen/_13ssp</item>
+    <item name="android:fontFamily">@font/pro_display_semibold</item>
+    <item name="android:textColor">@color/dc_text_body</item>
+  </style>
+  <style name="DC.Settings.Chevron" parent="">
+    <item name="android:layout_width">@dimen/_12sdp</item>
+    <item name="android:layout_height">@dimen/_12sdp</item>
+    <item name="android:src">@drawable/ic_arrow</item>
+    <item name="tint">@color/dc_text_subtle</item>
+  </style>
+  <style name="DC.Settings.Divider" parent="">
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_height">1dp</item>
+    <item name="android:background">@color/dc_divider</item>
+  </style>
+  <style name="DC.Settings.Section" parent="DC.Text.Label">
+    <item name="android:layout_width">wrap_content</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:layout_marginStart">@dimen/_22sdp</item>
+    <item name="android:layout_marginTop">@dimen/_20sdp</item>
+    <item name="android:layout_marginBottom">@dimen/_8sdp</item>
+    <item name="android:textSize">@dimen/_11ssp</item>
+    <item name="android:textColor">@color/dc_text_muted</item>
+    <item name="android:letterSpacing">0.1</item>
+  </style>
+  <style name="DC.Settings.Group" parent="">
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:layout_marginStart">@dimen/_14sdp</item>
+    <item name="android:layout_marginEnd">@dimen/_14sdp</item>
+    <item name="android:orientation">vertical</item>
+    <item name="android:background">@drawable/dc_bg_glass_card</item>
   </style>
   <style name="Theme.Splash" parent="@style/Theme.CastTV">
-    <item name="android:windowBackground">@drawable/bg_splash</item>
+    <item name="android:windowBackground">@drawable/dc_bg_ambient_splash</item>
   </style>
   <style name="progressBarBlue" parent="@style/Theme.AppCompat">
     <item name="colorAccent">@color/color_main</item>
@@ -534,4 +789,11 @@
     <item name="cornerSize">12dp</item>
   </style>
     <string name="error_server">Something is wrong, please check the internet or restart the app</string>
+  <string name="dc_dot" translatable="false">•</string>
+  <!-- Dark Cinema PRO Upgrade (T3); English only until translated. -->
+  <string name="restore_purchase" xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">Restore Purchase</string>
+  <string name="remote_key_back" tools:ignore="MissingTranslation">Back</string>
+  <string name="remote_key_menu" tools:ignore="MissingTranslation">Menu</string>
+  <string name="remote_key_power" tools:ignore="MissingTranslation">Power</string>
+  <string name="cast_stop" tools:ignore="MissingTranslation">Stop</string>
 </resources>

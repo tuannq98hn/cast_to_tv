@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Dark Cinema backdrop with a single cyan flare at the top (Figma Language Selection). No blur. -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@color/dc_bg"/>
+    <item>
+        <shape android:shape="rectangle">
+            <gradient android:type="radial" android:centerX="0.5" android:centerY="0.0" android:gradientRadius="80%p"
+                android:startColor="@color/dc_glow_cyan_soft" android:endColor="@android:color/transparent"/>
+        </shape>
+    </item>
+</layer-list>

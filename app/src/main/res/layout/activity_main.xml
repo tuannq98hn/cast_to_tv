@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!-- Main Hub, Stitch "Main Hub Redesigned Menu (Dark Cinema)". Only blocks backed by an existing feature are built:
+     no TV-status subtitle, latency/FPS chips, QR Scanner, Music, Cloud Drive,
+     format badges or Integrated Channels (YouTube moved to Quick tools, Vimeo dropped). View IDs are bound in MainActivity; keep them. -->
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:orientation="vertical"
-    android:background="@color/white"
+    android:background="@drawable/dc_bg_ambient_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
     <androidx.core.widget.NestedScrollView
@@ -11,420 +13,499 @@
         android:fillViewport="true"
         app:layout_constraintBottom_toTopOf="@+id/bannerAds"
         app:layout_constraintTop_toTopOf="parent">
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:paddingBottom="@dimen/_8sdp"
+        <LinearLayout
+            android:orientation="vertical"
+            android:paddingHorizontal="@dimen/_15sdp"
+            android:paddingBottom="@dimen/_16sdp"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
-            <View
-                android:id="@+id/imageView2"
-                android:background="@drawable/bg_header_home"
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                app:layout_constraintDimensionRatio="1.57:1"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"/>
-            <RelativeLayout
-                android:id="@+id/include"
+            android:layout_height="wrap_content">
+            <!-- Header: brand tile + title, settings, premium badge -->
+            <LinearLayout
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent">
+                android:layout_marginTop="@dimen/_10sdp">
+                <ImageView
+                    android:background="@drawable/dc_bg_icon_tile"
+                    android:padding="@dimen/_7sdp"
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:src="@drawable/ic_cast_connected_black"
+                    android:importantForAccessibility="no"
+                    app:tint="@color/dc_primary_soft"/>
+                <TextView
+                    style="@style/DC.Text.Title"
+                    android:id="@+id/txt_title"
+                    android:textSize="@dimen/_18ssp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginStart="@dimen/_8sdp"
+                    android:text="@string/app_name"
+                    android:maxLines="1"
+                    android:ellipsize="end"/>
                 <ImageView
                     android:id="@+id/imv_setting"
-                    android:padding="@dimen/_7sdp"
-                    android:layout_width="@dimen/_40sdp"
-                    android:layout_height="@dimen/_40sdp"
-                    android:layout_marginTop="@dimen/_8sdp"
-                    android:layout_marginBottom="@dimen/_8sdp"
-                    android:src="@drawable/ic_setting"
-                    android:layout_centerVertical="true"
-                    android:layout_marginStart="@dimen/_8sdp"
-                    android:layout_marginVertical="@dimen/_8sdp"/>
-                <TextView
-                    android:textSize="@dimen/_20sdp"
-                    android:textColor="#202020"
-                    android:gravity="center"
-                    android:id="@+id/txt_title"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/app_name"
-                    android:layout_alignTop="@+id/imv_setting"
-                    android:layout_alignBottom="@+id/imv_setting"
-                    android:fontFamily="@font/pro_display_bold"
-                    android:layout_marginStart="@dimen/_8sdp"
-                    android:layout_toEndOf="@+id/imv_setting"/>
+                    android:background="@drawable/dc_bg_key"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:padding="@dimen/_6sdp"
+                    android:layout_width="@dimen/_26sdp"
+                    android:layout_height="@dimen/_26sdp"
+                    android:layout_marginEnd="@dimen/_6sdp"
+                    android:src="@drawable/dc_ic_tune"
+                    android:contentDescription="@string/setting"
+                    app:tint="@color/dc_key_icon"/>
                 <com.airbnb.lottie.LottieAnimationView
                     android:id="@+id/cast_premium"
-                    android:layout_width="@dimen/_95sdp"
-                    android:layout_height="@dimen/_28sdp"
-                    android:layout_centerVertical="true"
-                    android:layout_marginEnd="@dimen/_16sdp"
-                    android:layout_alignParentEnd="true"
+                    android:layout_width="@dimen/_80sdp"
+                    android:layout_height="@dimen/_26sdp"
                     app:lottie_autoPlay="true"
                     app:lottie_loop="true"
                     app:lottie_rawRes="@raw/anim_premium"/>
-            </RelativeLayout>
-            <TextView
-                android:textSize="@dimen/_14sdp"
-                android:textColor="@color/color_text_new"
-                android:id="@+id/textView"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="@dimen/_15sdp"
-                android:text="@string/four_ensure"
-                android:fontFamily="@font/pro_display_medium"
-                android:layout_marginStart="@dimen/_16sdp"
-                app:layout_constraintBottom_toTopOf="@+id/rl_connect"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/include"
-                app:layout_constraintWidth_percent="0.67"/>
-            <RelativeLayout
-                android:id="@+id/rl_connect"
-                android:background="@drawable/bg_content_feedback"
-                android:layout_width="0dp"
-                android:layout_height="@dimen/_63sdp"
-                android:layout_marginLeft="@dimen/_16sdp"
-                android:layout_marginRight="@dimen/_16sdp"
-                android:layout_marginBottom="@dimen/_20sdp"
-                android:elevation="@dimen/_2sdp"
-                android:layout_marginHorizontal="@dimen/_16sdp"
-                app:layout_constraintBottom_toBottomOf="@+id/imageView2"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintWidth_percent="0.67">
-                <ImageView
-                    android:id="@+id/imv_connect"
-                    android:clickable="false"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/ic_no_connect_home"
-                    android:layout_centerVertical="true"
-                    android:layout_marginStart="@dimen/_16sdp"/>
-                <com.airbnb.lottie.LottieAnimationView
-                    android:id="@+id/img_next"
-                    android:padding="@dimen/_4sdp"
-                    android:layout_width="@dimen/_40sdp"
-                    android:layout_height="@dimen/_20sdp"
-                    android:layout_centerVertical="true"
-                    android:layout_marginStart="@dimen/_8sdp"
-                    android:layout_alignParentEnd="true"
-                    app:lottie_autoPlay="true"
-                    app:lottie_fileName="anim_arrow.json"
-                    app:lottie_loop="true"/>
-                <LinearLayout
-                    android:orientation="vertical"
-                    android:clickable="false"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_centerVertical="true"
-                    android:layout_marginStart="@dimen/_10sdp"
-                    android:layout_toStartOf="@+id/img_next"
-                    android:layout_toEndOf="@+id/imv_connect">
-                    <TextView
-                        android:textSize="@dimen/_16sdp"
-                        android:textColor="@color/color_text_new"
-                        android:ellipsize="end"
-                        android:id="@+id/tvTitleConnect"
-                        android:clickable="false"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="@string/text_connect_to_tv"
-                        android:maxLines="1"
-                        android:fontFamily="@font/pro_display_bold"/>
-                    <TextView
-                        android:textSize="@dimen/_11sdp"
-                        android:id="@+id/tvStatusConnect"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="@dimen/_4sdp"
-                        android:text="@string/tab_to_connect"
-                        android:maxLines="1"
-                        android:fontFamily="@font/pro_display_regular"/>
-                </LinearLayout>
-            </RelativeLayout>
+            </LinearLayout>
+            <!-- Device card: tap to connect / disconnect; pills open the Remote and its Channels tab -->
             <LinearLayout
+                android:id="@+id/rl_connect"
                 android:orientation="vertical"
-                android:id="@+id/linearLayout23"
+                android:background="@drawable/dc_bg_connect_card"
+                android:padding="@dimen/_10sdp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="@dimen/_10sdp"
-                android:layout_marginTop="@dimen/_16sdp"
-                android:layout_marginRight="@dimen/_10sdp"
-                android:layout_marginBottom="@dimen/_16sdp"
-                android:layout_marginHorizontal="@dimen/_10sdp"
-                android:layout_marginVertical="@dimen/_16sdp"
-                app:layout_constraintTop_toBottomOf="@+id/imageView2">
+                android:layout_marginTop="@dimen/_14sdp">
                 <LinearLayout
                     android:gravity="center_vertical"
                     android:orientation="horizontal"
-                    android:id="@+id/rl_mirror"
-                    android:background="@drawable/bg_mirror_home"
-                    android:paddingTop="@dimen/_16sdp"
-                    android:paddingBottom="@dimen/_16sdp"
                     android:layout_width="match_parent"
-                    android:layout_height="@dimen/_100sdp"
-                    android:paddingVertical="@dimen/_16sdp">
-                    <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_height="wrap_content">
+                    <FrameLayout
+                        android:layout_width="@dimen/_30sdp"
+                        android:layout_height="@dimen/_30sdp">
+                        <ImageView
+                            android:id="@+id/imv_connect"
+                            android:background="@drawable/dc_bg_radar_well"
+                            android:clickable="false"
+                            android:padding="@dimen/_6sdp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/dc_ic_radar"
+                            app:tint="@color/dc_primary_soft"/>
+                        <View
+                            android:id="@+id/viewConnectedDot"
+                            android:background="@drawable/dc_bg_status_dot"
+                            android:visibility="gone"
+                            android:layout_gravity="bottom|end"
+                            android:layout_width="@dimen/_8sdp"
+                            android:layout_height="@dimen/_8sdp"
+                            android:layout_marginEnd="-2dp"
+                            android:layout_marginBottom="-2dp"/>
+                    </FrameLayout>
+                    <LinearLayout
                         android:orientation="vertical"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="@dimen/_20sdp"
-                        android:layout_marginRight="@dimen/_20sdp"
                         android:layout_weight="1"
-                        android:layout_marginHorizontal="@dimen/_20sdp">
+                        android:layout_marginHorizontal="@dimen/_9sdp">
                         <TextView
-                            android:textSize="@dimen/_20sdp"
-                            android:textColor="@color/white"
-                            android:clickable="false"
-                            android:layout_width="wrap_content"
+                            style="@style/DC.Text.CardTitle"
+                            android:id="@+id/tvTitleConnect"
+                            android:textSize="@dimen/_12ssp"
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="@string/text_screen_mirror"
-                            android:fontFamily="@font/pro_display_bold"/>
+                            android:text="@string/text_connect_to_tv"
+                            android:maxLines="1"
+                            android:ellipsize="end"/>
                         <TextView
-                            android:textSize="@dimen/_14sdp"
-                            android:textColor="@color/white"
-                            android:gravity="center"
-                            android:clickable="false"
-                            android:layout_width="wrap_content"
+                            style="@style/DC.Text.Caption"
+                            android:id="@+id/tvStatusConnect"
+                            android:textSize="@dimen/_10ssp"
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="@string/mirror_phone_s_screen_to_tv"
-                            android:fontFamily="@font/pro_display_medium"/>
-                    </androidx.appcompat.widget.LinearLayoutCompat>
-                    <com.airbnb.lottie.LottieAnimationView
-                        android:layout_gravity="end"
-                        android:id="@+id/img_anim_loading"
+                            android:layout_marginTop="@dimen/_2sdp"
+                            android:text="@string/tab_to_connect"
+                            android:maxLines="1"
+                            android:ellipsize="end"/>
+                    </LinearLayout>
+                    <TextView
+                        style="@style/DC.Text"
+                        android:id="@+id/tvConnectAction"
+                        android:background="@drawable/dc_bg_switch_pill"
                         android:clickable="false"
-                        android:layout_width="@dimen/_72sdp"
-                        android:layout_height="@dimen/_56sdp"
-                        android:layout_marginEnd="@dimen/_16sdp"
-                        app:lottie_autoPlay="true"
-                        app:lottie_fileName="anim_home.json"
-                        app:lottie_loop="true"/>
+                        android:drawableEnd="@drawable/dc_ic_swap_horiz"
+                        android:drawablePadding="@dimen/_3sdp"
+                        android:drawableTint="@color/dc_primary_soft"
+                        android:fontFamily="@font/pro_display_semibold"
+                        android:gravity="center_vertical"
+                        android:paddingHorizontal="@dimen/_8sdp"
+                        android:paddingVertical="@dimen/_4sdp"
+                        android:textColor="@color/dc_primary_soft"
+                        android:textSize="@dimen/_10ssp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/connect"/>
                 </LinearLayout>
+                <View
+                    android:background="@color/dc_divider"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="@dimen/_9sdp"/>
                 <LinearLayout
                     android:orientation="horizontal"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/_2sdp">
-                    <LinearLayout
-                        android:gravity="center_vertical"
-                        android:orientation="vertical"
-                        android:id="@+id/rl_remote"
-                        android:background="@drawable/bg_remote_home"
-                        android:padding="@dimen/_16sdp"
+                    android:layout_marginTop="@dimen/_8sdp">
+                    <FrameLayout
+                        android:id="@+id/btnRemoteConsole"
+                        android:background="@drawable/dc_bg_quick_pill"
+                        android:paddingVertical="@dimen/_6sdp"
+                        android:paddingHorizontal="@dimen/_6sdp"
                         android:layout_width="0dp"
-                        android:layout_height="@dimen/_100sdp"
+                        android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:layout_marginEnd="1dp">
-                        <ImageView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:src="@drawable/ic_remote_home"
-                            android:layout_marginStart="@dimen/_8sdp"/>
+                        android:layout_marginEnd="@dimen/_4sdp">
                         <TextView
-                            android:textSize="@dimen/_16sdp"
-                            android:textColor="@color/white"
+                            style="@style/DC.Text"
+                            android:drawableStart="@drawable/dc_ic_settings_remote_small"
+                            android:drawablePadding="@dimen/_4sdp"
+                            android:drawableTint="@color/dc_primary_soft"
+                            android:fontFamily="@font/pro_display_semibold"
+                            android:gravity="center_vertical"
+                            android:textColor="@color/dc_key_icon"
+                            android:textSize="@dimen/_10ssp"
+                            android:maxLines="1"
+                            android:ellipsize="end"
+                            android:layout_gravity="center"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginTop="@dimen/_4sdp"
-                            android:text="@string/remote_tv"
-                            android:fontFamily="@font/pro_display_bold"
-                            android:layout_marginStart="@dimen/_8sdp"/>
-                    </LinearLayout>
-                    <LinearLayout
-                        android:gravity="center_vertical"
-                        android:orientation="vertical"
-                        android:id="@+id/ct_youtube"
-                        android:background="@drawable/bg_youtube_home"
-                        android:padding="@dimen/_16sdp"
+                            android:text="@string/remote_tv"/>
+                    </FrameLayout>
+                    <FrameLayout
+                        android:id="@+id/btnLiveChannels"
+                        android:background="@drawable/dc_bg_quick_pill"
+                        android:paddingVertical="@dimen/_6sdp"
+                        android:paddingHorizontal="@dimen/_6sdp"
                         android:layout_width="0dp"
-                        android:layout_height="@dimen/_100sdp"
+                        android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:layout_marginStart="1dp">
-                        <ImageView
-                            android:layout_width="@dimen/_28sdp"
-                            android:layout_height="@dimen/_28sdp"
-                            android:src="@drawable/ic_youtube_home"
-                            android:layout_marginStart="@dimen/_8sdp"/>
+                        android:layout_marginStart="@dimen/_4sdp">
                         <TextView
-                            android:textSize="@dimen/_16sdp"
-                            android:textColor="@color/white"
+                            style="@style/DC.Text"
+                            android:drawableStart="@drawable/dc_ic_live_tv"
+                            android:drawablePadding="@dimen/_4sdp"
+                            android:drawableTint="#c084fc"
+                            android:fontFamily="@font/pro_display_semibold"
+                            android:gravity="center_vertical"
+                            android:textColor="@color/dc_key_icon"
+                            android:textSize="@dimen/_10ssp"
+                            android:maxLines="1"
+                            android:ellipsize="end"
+                            android:layout_gravity="center"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginTop="@dimen/_4sdp"
-                            android:text="@string/cast_youtube"
-                            android:fontFamily="@font/pro_display_bold"
-                            android:layout_marginStart="@dimen/_8sdp"/>
-                    </LinearLayout>
+                            android:text="@string/channel"/>
+                    </FrameLayout>
                 </LinearLayout>
             </LinearLayout>
+            <!-- Hero: Screen Mirror. The whole card is the button; the Start pill is decoration. -->
+            <LinearLayout
+                android:id="@+id/rl_mirror"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:background="@drawable/dc_bg_hero_broadcast"
+                android:padding="@dimen/_14sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_12sdp">
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+                    <TextView
+                        style="@style/DC.Text.Title"
+                        android:textSize="@dimen/_18ssp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/text_screen_mirror"/>
+                    <TextView
+                        style="@style/DC.Text.Caption"
+                        android:textColor="@color/dc_key_icon"
+                        android:textSize="@dimen/_10ssp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_4sdp"
+                        android:text="@string/mirror_phone_s_screen_to_tv"/>
+                    <TextView
+                        style="@style/DC.Text"
+                        android:background="@drawable/dc_bg_cta_broadcast"
+                        android:clickable="false"
+                        android:drawableStart="@drawable/dc_ic_cast_connected"
+                        android:drawablePadding="@dimen/_5sdp"
+                        android:drawableTint="@color/dc_text_on_primary"
+                        android:fontFamily="@font/pro_display_bold"
+                        android:gravity="center_vertical"
+                        android:paddingHorizontal="@dimen/_10sdp"
+                        android:paddingVertical="@dimen/_5sdp"
+                        android:textColor="@color/dc_text_on_primary"
+                        android:textSize="@dimen/_11ssp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:text="@string/start"/>
+                </LinearLayout>
+                <!-- Stitch hero art: TV with mirrored apps + phone, drawn with views -->
+                <FrameLayout
+                    android:layout_width="@dimen/_96sdp"
+                    android:layout_height="@dimen/_66sdp"
+                    android:layout_marginStart="@dimen/_6sdp">
+                    <FrameLayout
+                        android:background="@drawable/dc_bg_mirror_tv"
+                        android:padding="@dimen/_4sdp"
+                        android:layout_width="@dimen/_80sdp"
+                        android:layout_height="@dimen/_50sdp">
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:background="@drawable/dc_bg_mirror_tv_screen"
+                            android:padding="@dimen/_4sdp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                            <View
+                                android:id="@+id/viewMirrorPing"
+                                android:background="@drawable/dc_bg_pulse_dot"
+                                android:layout_width="@dimen/_6sdp"
+                                android:layout_height="@dimen/_6sdp"/>
+                            <Space
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"/>
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_8sdp">
+                                <View android:background="@drawable/dc_bg_mirror_bar" android:backgroundTint="#6622d3ee"
+                                    android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1"/>
+                                <View android:background="@drawable/dc_bg_mirror_bar" android:backgroundTint="#806366f1"
+                                    android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1"
+                                    android:layout_marginHorizontal="@dimen/_3sdp"/>
+                                <View android:background="@drawable/dc_bg_mirror_bar" android:backgroundTint="#9967e8f9"
+                                    android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1"/>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </FrameLayout>
+                    <View
+                        android:background="@drawable/dc_bg_mirror_bar"
+                        android:backgroundTint="#8022d3ee"
+                        android:layout_gravity="bottom"
+                        android:layout_width="@dimen/_22sdp"
+                        android:layout_height="@dimen/_2sdp"
+                        android:layout_marginStart="@dimen/_29sdp"
+                        android:layout_marginBottom="@dimen/_10sdp"/>
+                    <FrameLayout
+                        android:background="@drawable/dc_bg_mirror_phone"
+                        android:padding="@dimen/_2sdp"
+                        android:layout_gravity="bottom|end"
+                        android:layout_width="@dimen/_24sdp"
+                        android:layout_height="@dimen/_42sdp">
+                        <ImageView
+                            android:background="@drawable/dc_bg_mirror_phone_screen"
+                            android:padding="@dimen/_4sdp"
+                            android:layout_gravity="center"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_26sdp"
+                            android:src="@drawable/dc_ic_screen_share_fill"
+                            app:tint="@color/dc_text_primary"
+                            android:importantForAccessibility="no"/>
+                    </FrameLayout>
+                </FrameLayout>
+            </LinearLayout>
+            <!-- Quick tools: Remote, Web browser cast, YouTube -->
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_14sdp">
+                <LinearLayout
+                    android:id="@+id/rl_remote"
+                    android:orientation="vertical"
+                    android:background="@drawable/dc_bg_glass_card"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:padding="@dimen/_10sdp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="@dimen/_5sdp">
+                    <ImageView
+                        android:background="@drawable/dc_bg_icon_tile_tint"
+                        android:backgroundTint="@color/dc_violet"
+                        android:padding="@dimen/_6sdp"
+                        android:layout_width="@dimen/_28sdp"
+                        android:layout_height="@dimen/_28sdp"
+                        android:src="@drawable/dc_ic_settings_remote"
+                        android:importantForAccessibility="no"
+                        app:tint="@color/dc_violet_soft"/>
+                    <TextView
+                        style="@style/DC.Text.CardTitle"
+                        android:textSize="@dimen/_12ssp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:maxLines="1"
+                        android:ellipsize="end"
+                        android:layout_marginTop="@dimen/_14sdp"
+                        android:text="@string/remote"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/ct_driver"
+                    android:orientation="vertical"
+                    android:background="@drawable/dc_bg_glass_card"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:padding="@dimen/_10sdp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginHorizontal="@dimen/_5sdp">
+                    <ImageView
+                        android:background="@drawable/dc_bg_icon_tile_tint"
+                        android:backgroundTint="@color/dc_cyan"
+                        android:padding="@dimen/_6sdp"
+                        android:layout_width="@dimen/_28sdp"
+                        android:layout_height="@dimen/_28sdp"
+                        android:src="@drawable/dc_ic_language"
+                        android:importantForAccessibility="no"
+                        app:tint="@color/dc_primary_soft"/>
+                    <TextView
+                        style="@style/DC.Text.CardTitle"
+                        android:textSize="@dimen/_12ssp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_14sdp"
+                        android:text="@string/text_browser"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/ct_youtube"
+                    android:orientation="vertical"
+                    android:background="@drawable/dc_bg_glass_card"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:padding="@dimen/_10sdp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginStart="@dimen/_5sdp">
+                    <ImageView
+                        android:background="@drawable/dc_bg_icon_tile_tint"
+                        android:backgroundTint="@color/dc_danger"
+                        android:padding="@dimen/_6sdp"
+                        android:layout_width="@dimen/_28sdp"
+                        android:layout_height="@dimen/_28sdp"
+                        android:src="@drawable/dc_ic_smart_display"
+                        android:importantForAccessibility="no"
+                        app:tint="#f87171"/>
+                    <TextView
+                        style="@style/DC.Text.CardTitle"
+                        android:textSize="@dimen/_12ssp"
+                        android:maxLines="1"
+                        android:ellipsize="end"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_14sdp"
+                        android:text="@string/cast_youtube"/>
+                </LinearLayout>
+            </LinearLayout>
+            <!-- Ad slots kept for MainActivity, always hidden there. -->
             <LinearLayout
                 android:orientation="vertical"
                 android:id="@+id/llAds"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                app:layout_constraintTop_toBottomOf="@+id/linearLayout23">
+                android:layout_height="wrap_content">
                 <FrameLayout android:visibility="gone"
                     android:id="@+id/nativeAds"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="8dp"
-                    android:layout_marginBottom="8dp"
-                    android:layout_marginVertical="8dp"
-                    app:layout_constraintBottom_toBottomOf="parent"/>
+                    android:layout_marginVertical="8dp"/>
                 <LinearLayout
                     android:orientation="vertical"
                     android:id="@+id/lnl_banner"
-                    android:background="@color/white"
                     android:visibility="gone"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentBottom="true"
-                    app:layout_constraintBottom_toBottomOf="parent">
+                    android:layout_height="wrap_content">
                     <FrameLayout android:visibility="gone"
                         android:id="@+id/main_ads_native"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="@dimen/_10sdp"
-                        android:layout_marginBottom="@dimen/_10sdp"
-                        android:layout_marginVertical="@dimen/_10sdp"
-                        app:layout_constraintBottom_toBottomOf="parent"/>
+                        android:layout_marginVertical="@dimen/_10sdp"/>
                 </LinearLayout>
             </LinearLayout>
+            <!-- Cast media: Video, Photo -->
             <TextView
-                android:textSize="@dimen/_18sdp"
-                android:textColor="@color/color_text_new"
+                style="@style/DC.Text.Label"
                 android:id="@+id/txt_tv_cast"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="@dimen/_16sdp"
-                android:layout_marginTop="@dimen/_8sdp"
-                android:layout_marginRight="@dimen/_16sdp"
-                android:text="@string/text_tv_cast"
-                android:fontFamily="@font/pro_display_bold"
-                android:layout_marginHorizontal="@dimen/_16sdp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/llAds"/>
-            <LinearLayout
-                android:orientation="horizontal"
-                android:id="@+id/ll_function"
+                android:textColor="@color/dc_text_muted"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="@dimen/_16sdp"
-                android:layout_marginTop="@dimen/_8sdp"
-                android:layout_marginRight="@dimen/_16sdp"
-                android:layout_marginHorizontal="@dimen/_16sdp"
-                app:layout_constraintTop_toBottomOf="@+id/txt_tv_cast">
+                android:layout_marginTop="@dimen/_16sdp"
+                android:layout_marginStart="@dimen/_3sdp"
+                android:text="@string/text_tv_cast"/>
+            <LinearLayout
+                android:id="@+id/ll_function"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_8sdp">
                 <LinearLayout
+                    android:id="@+id/ll_video_off"
                     android:orientation="vertical"
+                    android:background="@drawable/dc_bg_glass_card"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:padding="@dimen/_10sdp"
                     android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1">
-                    <LinearLayout
-                        android:gravity="center_vertical"
-                        android:orientation="vertical"
-                        android:id="@+id/ll_photo_off"
-                        android:background="@drawable/bg_photo_home"
-                        android:padding="@dimen/_16sdp"
-                        android:layout_width="match_parent"
-                        android:layout_height="0dp"
-                        android:layout_weight="1"
-                        android:layout_marginEnd="@dimen/_6sdp">
-                        <ImageView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:src="@drawable/ic_photo_home"/>
-                        <TextView
-                            android:textSize="@dimen/_16sdp"
-                            android:textColor="@color/color_text_new"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="@dimen/_6sdp"
-                            android:text="@string/menu_photo"
-                            android:fontFamily="@font/pro_display_bold"/>
-                    </LinearLayout>
-                    <LinearLayout
-                        android:gravity="center_vertical"
-                        android:orientation="vertical"
-                        android:id="@+id/ct_vimeo"
-                        android:background="@drawable/bg_vimeo_home"
-                        android:padding="@dimen/_16sdp"
-                        android:layout_width="match_parent"
-                        android:layout_height="0dp"
-                        android:layout_marginTop="@dimen/_12sdp"
-                        android:layout_weight="1"
-                        android:layout_marginEnd="@dimen/_6sdp">
-                        <ImageView
-                            android:layout_width="@dimen/_28sdp"
-                            android:layout_height="@dimen/_28sdp"
-                            android:src="@drawable/ic_vimeo"/>
-                        <TextView
-                            android:textSize="@dimen/_16sdp"
-                            android:textColor="@color/color_text_new"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="@dimen/_6sdp"
-                            android:text="@string/vimeo"
-                            android:fontFamily="@font/pro_display_bold"/>
-                    </LinearLayout>
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="@dimen/_5sdp">
+                    <ImageView
+                        android:background="@drawable/dc_bg_icon_tile_tint"
+                        android:backgroundTint="@color/dc_cyan"
+                        android:padding="@dimen/_6sdp"
+                        android:layout_width="@dimen/_28sdp"
+                        android:layout_height="@dimen/_28sdp"
+                        android:src="@drawable/dc_ic_movie"
+                        android:importantForAccessibility="no"
+                        app:tint="@color/dc_primary_soft"/>
+                    <TextView
+                        style="@style/DC.Text.CardTitle"
+                        android:textSize="@dimen/_13ssp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_18sdp"
+                        android:text="@string/menu_video"/>
                 </LinearLayout>
                 <LinearLayout
+                    android:id="@+id/ll_photo_off"
                     android:orientation="vertical"
+                    android:background="@drawable/dc_bg_glass_card"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:padding="@dimen/_10sdp"
                     android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1">
-                    <LinearLayout
-                        android:gravity="center_vertical"
-                        android:orientation="vertical"
-                        android:id="@+id/ll_video_off"
-                        android:background="@drawable/bg_video_home"
-                        android:padding="@dimen/_12sdp"
-                        android:layout_width="match_parent"
-                        android:layout_height="0dp"
-                        android:layout_weight="1"
-                        android:layout_marginStart="@dimen/_6sdp">
-                        <ImageView
-                            android:layout_width="@dimen/_28sdp"
-                            android:layout_height="@dimen/_28sdp"
-                            android:src="@drawable/ic_video_home"/>
-                        <TextView
-                            android:textSize="@dimen/_16sdp"
-                            android:textColor="@color/color_text_new"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="@dimen/_6sdp"
-                            android:text="@string/menu_video"
-                            android:fontFamily="@font/pro_display_bold"/>
-                    </LinearLayout>
-                    <LinearLayout
-                        android:gravity="center_vertical"
-                        android:orientation="vertical"
-                        android:id="@+id/ct_driver"
-                        android:background="@drawable/bg_web_home"
-                        android:padding="@dimen/_12sdp"
-                        android:layout_width="match_parent"
-                        android:layout_height="0dp"
-                        android:layout_marginTop="@dimen/_12sdp"
-                        android:layout_weight="1"
-                        android:layout_marginStart="@dimen/_6sdp">
-                        <ImageView
-                            android:layout_width="@dimen/_28sdp"
-                            android:layout_height="@dimen/_28sdp"
-                            android:src="@drawable/ic_browser_home"/>
-                        <TextView
-                            android:textSize="@dimen/_16sdp"
-                            android:textColor="@color/color_text_new"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="@dimen/_6sdp"
-                            android:text="@string/text_browser"
-                            android:fontFamily="@font/pro_display_bold"/>
-                    </LinearLayout>
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginStart="@dimen/_5sdp">
+                    <ImageView
+                        android:background="@drawable/dc_bg_icon_tile_tint"
+                        android:backgroundTint="@color/dc_gold"
+                        android:padding="@dimen/_6sdp"
+                        android:layout_width="@dimen/_28sdp"
+                        android:layout_height="@dimen/_28sdp"
+                        android:src="@drawable/dc_ic_photo_library"
+                        android:importantForAccessibility="no"
+                        app:tint="@color/dc_gold"/>
+                    <TextView
+                        style="@style/DC.Text.CardTitle"
+                        android:textSize="@dimen/_13ssp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_18sdp"
+                        android:text="@string/menu_photo"/>
                 </LinearLayout>
             </LinearLayout>
-        </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
     </androidx.core.widget.NestedScrollView>
     <FrameLayout android:visibility="gone"
         android:id="@+id/bannerAds"
@@ -433,7 +514,7 @@
         app:layout_constraintBottom_toBottomOf="parent"/>
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/llThanksAds"
-        android:background="@color/white"
+        android:background="@color/dc_bg"
         android:visibility="gone"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -449,8 +530,7 @@
                 android:layout_height="@dimen/_190sdp"
                 android:src="@drawable/imv_tks_ads"/>
             <TextView
-                android:textSize="@dimen/_14sdp"
-                android:textColor="#151515"
+                style="@style/DC.Text.Body"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/_30sdp"

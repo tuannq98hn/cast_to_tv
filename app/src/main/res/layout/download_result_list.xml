@@ -30,7 +30,7 @@
         <TextView
             android:textAppearance="?android:attr/textAppearanceLarge"
             android:textSize="@dimen/_14sdp"
-            android:textColor="@color/color_text_new"
+            android:textColor="@color/dc_text_primary"
             android:id="@+id/tv_film_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -43,7 +43,7 @@
             app2:layout_constraintTop_toTopOf="parent"/>
         <TextView
             android:textSize="@dimen/_11sdp"
-            android:textColor="@color/color_default"
+            android:textColor="@color/dc_text_muted"
             android:layout_gravity="left"
             android:id="@+id/txtVidSize"
             android:layout_width="wrap_content"
@@ -69,11 +69,11 @@
         app2:layout_constraintTop_toBottomOf="@+id/linearLayout15">
         <TextView
             android:textSize="@dimen/_14sdp"
-            android:textColor="@color/color_main"
+            android:textColor="@color/dc_text_primary"
             android:gravity="center"
             android:layout_gravity="right"
             android:id="@+id/btnPreview"
-            android:background="@drawable/bg_button_old"
+            android:background="@drawable/dc_bg_button_secondary"
             android:layout_width="0dp"
             android:layout_height="@dimen/_28sdp"
             android:text="@string/Preview"
@@ -87,7 +87,7 @@
             android:gravity="center"
             android:layout_gravity="right"
             android:id="@+id/btnDownload"
-            android:background="@drawable/bg_button"
+            android:background="@drawable/dc_bg_cta_gradient"
             android:layout_width="0dp"
             android:layout_height="@dimen/_28sdp"
             android:layout_marginLeft="2dp"

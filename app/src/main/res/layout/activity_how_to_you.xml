@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/dc_bg"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
     <include
@@ -12,18 +13,20 @@
         app:layout_constraintBottom_toTopOf="@+id/btn_got_it"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        android:clipToPadding="false"
+        android:paddingTop="@dimen/_4sdp"
         app:layout_constraintTop_toBottomOf="@+id/include5"/>
     <Button
-        android:textSize="@dimen/_16sdp"
-        android:textColor="@color/white"
+        style="@style/DC.Text.Button"
+        android:textColor="@color/dc_text_primary"
         android:id="@+id/btn_got_it"
-        android:background="@drawable/bg_button"
+        android:background="@drawable/dc_bg_cta_gradient"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="@dimen/_44sdp"
         android:layout_margin="@dimen/_16sdp"
         android:text="@string/i_got_it"
         android:textAllCaps="false"
-        android:fontFamily="@font/pro_display_bold"
+        android:stateListAnimator="@null"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/rcv_list"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
